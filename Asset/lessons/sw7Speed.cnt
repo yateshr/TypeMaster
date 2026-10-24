@@ -1,0 +1,273 @@
+$description=Förbättra Din Skrivhastighet
+$longdesc=Syftet med denna kurs är att öka din skrivhastighet. Du kommer att fokusera på tangenterna för vardera finger, skriva längre texter och öva på de vangligaste förekommande orden i svenskan.
+$version=7.0
+$language=swe
+$chapters=6
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 6.9.2006 9:58
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=jotain
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=85,90,95
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Förbättra Din Skrivhastighet
+keyboard=finnish.kbd
+wizardname=SW7QWERT
+simplewizard=1
+last free=1
+
+begin chapter
+ chapter name=1;Fokusera på hemraden
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTOÖÄÅ
+ new keys=cC,
+ new keys=gGhH
+ new keys=nNvV
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.
+ new keys=?-:
+ new keys=asdfjklöäåei
+
+ begin exercise
+   type=Kursbeskrivning
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7Speed_1_1_1.htm;Förbättra Din Skrivhastighet;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Repetera hemraden
+   duration=2
+    EVENT=KEY2;2;file:sw7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Meningar med F J
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed01021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Meningar med D K
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed01031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Meningar med S L
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed01041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Meningar med A Ö
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed01061sentence2.txt;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=4
+    EVENT=TEXT2;4;file:sw7speed01051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Fokusera på tangenterna för pekfingret
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Repetera tangenterna
+   duration=2
+    EVENT=KEY2;2;file:sw7speed02011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Meningar med R T Y U
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed02031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Meningar med G H
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed02041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Meningar med V B N M
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed02051sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=4
+    EVENT=TEXT2;4;file:sw7speed02021key2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Fokusera på tangenterna för långfingret
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Repetera E C I ,
+   duration=2
+    EVENT=KEY2;2;file:sw7speed03011keyintro.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Meningar med E and I
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed03021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;11
+ end exercise
+
+ begin exercise
+   type=Meningar med C
+   duration=2
+    EVENT=SENTENCE2;2;file:sw7speed03031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;11
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=4
+    EVENT=PARAGRAPH2;4;file:sw7speed03041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=4
+    EVENT=TEXT2;4;file:sw7speed03051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Fokusera på tangenterna för ringfingret
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Repetera W X O .
+   duration=2
+    EVENT=KEY2;2;file:sw7speed04011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Meningar med W and O
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed04021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;12
+ end exercise
+
+ begin exercise
+   type=Meningar med X
+   duration=2
+    EVENT=SENTENCE2;2;file:sw7speed04031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;12
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=4
+    EVENT=PARAGRAPH2;4;file:sw7speed04041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=4
+    EVENT=TEXT2;4;file:sw7speed04051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Fokusera på tangenterna för lillfingret
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Repetera Q Z P Å Ä
+   duration=2
+    EVENT=KEY2;2;file:sw7speed05011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Meningar med Q and P
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed05021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;13
+ end exercise
+
+ begin exercise
+   type=Meningar med Z Å Ä
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed05031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;13
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=4
+    EVENT=PARAGRAPH2;4;file:sw7speed05041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=4
+    EVENT=TEXT2;4;file:sw7speed05051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Vanliga ord i svenskan
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Vanliga ord i svenskan
+   duration=3
+    EVENT=WORD2;3;file:sw7speed06011word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Mera vanliga ord
+   duration=3
+    EVENT=WORD2;3;file:sw7speed06051word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Meningar med vanliga ord
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7speed06021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7speed06021word2.txt;0;0;0;0;0;0;0;40;75;175;125;15
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7speed06031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter

@@ -1,0 +1,11 @@
+La formule n = 1(x / 3y) * (- 25 / 12x) * -6x permet de calculer le temps parcouru entre Aix-en-Provence et Neuilly-sur-Seine par 25 % des pigeons de l'équipe "Vol & Revient". 
+
+Marianne a un problème : elle écrit son nom 80 % (4/5) du temps Mari-Anne, dit son professeur. "Aussi, pourquoi écrit-elle le nom de famille Gagnon+Dugas et non Gagnon/Dugas ou Gagnon-Dugas ?" demande le professeur. 
+
+"C'est incroyable !" s'écriait-il. "20 % de la forêt a brûlé ! Si je compte 20 % de cette année et 40 % l'année dernière, c'est -50 % de domaine ! Peut-être devront nous déménager à Aix-en-Provence ?"
+
++20 % = 1 + (20 / 100) alors que -20 % = 1 - (20 / 100). 
+
+Pierre doit résoudre l'équation 3x / 8y = 25x(9 * 5x / 2y) et la seule indication dans son livre des éditions Lire&Maths est que le résultat = 20 % de 3(x / 2y). 
+
+Paul se demanda discrètement ; il ne voulait pas qu'on le remarque : "Si 80 % des gens ne m'aiment pas chez Marche&Nature, peut-être 50 % d'entre eux m'apprécient ailleurs (Vert & Eco / Air & Vent / Mer & Kayak) ?" 

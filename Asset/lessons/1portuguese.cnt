@@ -1,0 +1,748 @@
+$description=Curso Completo
+$longdesc=Torne-se um dactilografo eficiente, aprendendo uma técnica rápida e acessível e começando pelas regras elementares.
+$version=1.0
+$language=pt
+$chapters=12
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 10.1.2005 16:28
+
+newkeysloops=4
+wordloop=2
+wordmaxloop=4
+
+contents name=Curso Completo
+keyboard=all
+default time=45
+wizardname=1PORTUGUESE
+simplewizard=1
+last free=2
+keyboardbase=QWERTY
+
+begin chapter
+ chapter name=1;Linha Base && e i
+ picture=ch1.pic
+ durationpercent=87
+ extradescr=
+ New keys_qwerty=asdfjklç
+ begin exercise
+   type=Linha base: asdf jklç
+   duration=5
+    EVENT=MESSAGE;0;File:ptbasi1.int;Conceitos base;basic1.bmp;left
+    EVENT=MESSAGE;0;File:ptbas1b.int;Posição dos Dedos;basic1.bmp;left
+    EVENT=MESSAGE;0;File:ptbasi2.int;Posição dos Dedos;basic1.bmp;left
+    EVENT=NEWKEYS;5;File:pt0101.exc
+ end exercise
+
+ begin exercise
+   type=Combinações
+   duration=3
+    EVENT=MESSAGE;0;File:ptbasi3.int;Instruções;stdtip.bmp;left
+    EVENT=KEYBROW;3;File:pt0102.exc
+ end exercise
+
+ begin exercise
+   type=Jogo Bolhas
+   duration=3
+    EVENT=BUBBLES;3;asdfjklç
+ end exercise
+
+ New keys=ei
+ begin exercise
+   type=Novas teclas: e i
+   duration=4
+    EVENT=MESSAGE;0;File:ptbasi4.int;Conceitos base;stdtip.bmp;left
+    EVENT=NEWKEYS;1;keybuilder:ie
+    EVENT=NEWKEYS;2;File:pt0104.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=5
+    EVENT=WORD;1;File:pt0105a.exc;space;2;4
+    EVENT=KEYBROW;3;File:pt0105b.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=7
+    EVENT=KEYBSENTENCE;7;File:pt0106.exc
+ end exercise
+
+ begin exercise
+   type=Jogo Nuvens
+   duration=3
+    EVENT=CLOUDS;3;pt0107.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=8
+    EVENT=MESSAGE;0;file:ptergo1.int;Ergonomia;tip01.bmp;Left
+    EVENT=MESSAGE;0;file:ptergo2.int;Ergonomia;tip01.bmp;Left
+    EVENT=MESSAGE;0;file:ptergo3.int;Ergonomia;tip03.bmp;Left
+    EVENT=SENTENCE;8;File:pt0108.exc;true
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas r u
+ picture=ch1.pic
+ durationpercent=92
+ extradescr=
+ New keys=ru
+ begin exercise
+   type=Novas teclas: r u
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:ru
+    EVENT=NEWKEYS;2;File:pt0201.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=5
+    EVENT=WORD;1;File:pt0202a.exc;space;2;4
+    EVENT=KEYBROW;3;File:pt0202b.exc
+ end exercise
+
+ begin exercise
+   type=Jogo Bolhas
+   duration=3
+    EVENT=BUBBLES;3;asdfjkl
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=5
+    EVENT=KEYBSENTENCE;5;File:pt0204.exc
+ end exercise
+
+ begin exercise
+   type=Jogo WordTris
+   duration=3
+    EVENT=WORDTRIS;3;pt0205.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=6
+    EVENT=SENTENCE;6;File:pt0206.exc;true
+ end exercise
+
+ begin exercise
+   type=Revisão
+   duration=7
+    EVENT=BUILDER;7;ruieasdfjklçi
+ end exercise
+
+ begin exercise
+   type=Texto
+   duration=8
+    EVENT=TEXT;8;File:pt0208.exc;true
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Maiúsculas && ponto
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ New keys=ASDFJKLÇEIRU
+ begin exercise
+   type=Nova tecla: Shift
+   duration=4
+    EVENT=MESSAGE;0;File:ptcapi.int;Utilizando Maiúsculas;basic1.bmp;left
+    EVENT=NEWKEYS;4;File:pt0301.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=5
+    EVENT=WORD;1;File:pt0302a.exc;space;2;4
+    EVENT=KEYBROW;3;File:pt0302b.exc
+ end exercise
+
+ begin exercise
+   type=Jogo Bolhas
+   duration=3
+    EVENT=BUBBLES;3;asdfjkl
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=5
+    EVENT=SENTENCE;5;File:pt0304.exc
+ end exercise
+
+ New keys=.
+ begin exercise
+   type=Nova tecla: Ponto
+   duration=3
+    EVENT=NEWKEYS;0;keybuilder:.
+    EVENT=NEWKEYS;3;File:pt0305.exc
+ end exercise
+
+ begin exercise
+   type=Parágrafos
+   duration=6
+    EVENT=MESSAGE;0;File:ptbad.int;Má Postura;tip02.bmp;left
+    EVENT=PARAGRAPH;6;File:pt0306.exc;true
+ end exercise
+
+ begin exercise
+   type=Revisão
+   duration=7
+    EVENT=BUILDER;7;ruieasdfjklçi
+ end exercise
+
+ begin exercise
+   type=Texto
+   duration=10
+    EVENT=TEXT;10;File:pt0308.exc;true
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas n t && vírgula
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ New keys=tTnN
+ begin exercise
+   type=Novas teclas: n t
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:tn
+    EVENT=NEWKEYS;2;File:pt0401.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=5
+    EVENT=WORD;1;File:pt0402a.exc;space;2;4
+    EVENT=KEYBROW;3;File:pt0402b.exc
+ end exercise
+
+ begin exercise
+   type=Jogo Nuvens
+   duration=3
+    EVENT=CLOUDS;3;wordbuilder:tTnN
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=5
+    EVENT=SENTENCE;5;File:pt0404.exc
+ end exercise
+
+ New keys=,
+ begin exercise
+   type=Nova tecla: Vírgula
+   duration=3
+    EVENT=NEWKEYS;0;keybuilder:,
+    EVENT=NEWKEYS;3;File:pt0405.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=7
+    EVENT=KEYBSENTENCE;7;File:pt0406.exc
+ end exercise
+
+ begin exercise
+   type=Parágrafos
+   duration=10
+    EVENT=PARAGRAPH;10;File:pt0407.exc;true
+ end exercise
+
+ begin exercise
+   type=Revisão
+   duration=7
+    EVENT=BUILDER;7;tTnN
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas c o && acentos
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ New keys=cCoO
+ begin exercise
+   type=Novas teclas: c o
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:co
+    EVENT=NEWKEYS;2;File:pt0501.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=5
+    EVENT=WORD;1;File:pt0502a.exc;space;2;4
+    EVENT=KEYBROW;3;File:pt0502b.exc
+ end exercise
+
+ begin exercise
+   type=Jogo WordTris
+   duration=3
+    EVENT=WORDTRIS;3;wordbuilder:cCoO
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=6
+    EVENT=SENTENCE;6;File:pt0504.exc
+ end exercise
+
+ New keys=ãõêôâáéíóúèàÃÕÊÔÂÁÉÍÓÚÈÀ
+ begin exercise
+   type=Acentos: ´` ~ ^
+   duration=5
+    EVENT=MESSAGE;0;File:ptaccent.int;Escrever letras acentuadas;stdtip.bmp;left
+    EVENT=NEWKEYS;5;File:pt0505.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=6
+    EVENT=WORD;1;File:pt0506a.exc;space;2;4
+    EVENT=KEYBROW;4;File:pt0506b.exc
+ end exercise
+
+ begin exercise
+   type=Texto
+   duration=10
+    EVENT=TEXT;10;File:pt0507.exc;true
+ end exercise
+
+ begin exercise
+   type=Revisão
+   duration=5
+    EVENT=BUILDER;5;coãõêôâáéíóúèà
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas m v && hífen
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ New keys=mMvV
+ begin exercise
+   type=Novas teclas: m v
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:vm
+    EVENT=NEWKEYS;2;File:pt0601.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=5
+    EVENT=WORD;1;File:pt0602a.exc;space;2;4
+    EVENT=KEYBROW;3;File:pt0602b.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=6
+    EVENT=SENTENCE;6;File:pt0603.exc
+ end exercise
+
+ New keys=-
+ begin exercise
+   type=Nova tecla: Hífen  
+   duration=3
+    EVENT=NEWKEYS;0;keybuilder:-
+    EVENT=NEWKEYS;3;File:pt0604.exc
+ end exercise
+
+ begin exercise
+   type=Jogo Bolhas
+   duration=3
+    EVENT=BUBBLES;3;asdfjkl
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=6
+    EVENT=KEYBSENTENCE;6;File:pt0606.exc
+ end exercise
+
+ begin exercise
+   type=Texto
+   duration=10
+    EVENT=TEXT;10;File:pt0607.exc;true
+ end exercise
+
+ begin exercise
+   type=Revisão
+   duration=6
+    EVENT=BUILDER;6;vVmM
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas p q && parênteses
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ New keys=pPqQ
+ begin exercise
+   type=Novas teclas: p q
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:pq
+    EVENT=NEWKEYS;2;File:pt0701.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=4
+    EVENT=WORD;0;File:pt0702a.exc;space;2;4
+    EVENT=KEYBROW;4;File:pt0702b.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=6
+    EVENT=SENTENCE;6;File:pt0703.exc
+ end exercise
+
+ New keys=()
+ begin exercise
+   type=Novas teclas: ( )
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:()
+    EVENT=NEWKEYS;2;File:pt0704.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=6
+    EVENT=KEYBSENTENCE;6;File:pt0705.exc
+ end exercise
+
+ begin exercise
+   type=Jogo WordTris
+   duration=3
+    EVENT=WORDTRIS;3;wordbuilder:PpQq
+ end exercise
+
+ begin exercise
+   type=Texto
+   duration=10
+    EVENT=TEXT;10;File:pt0707.exc;true
+ end exercise
+
+ begin exercise
+   type=Revisão
+   duration=6
+    EVENT=BUILDER;6;qQpP
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas g h ! ?
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ New keys=gGhH
+ begin exercise
+   type=Novas teclas: g h
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:gh
+    EVENT=NEWKEYS;2;File:pt0801.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=4
+    EVENT=WORD;0;File:pt0802a.exc;space;2;4
+    EVENT=KEYBROW;4;File:pt0802b.exc
+ end exercise
+
+ begin exercise
+   type=Jogo Nuvens
+   duration=3
+    EVENT=CLOUDS;3;wordbuilder:gGhH
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=6
+    EVENT=SENTENCE;6;File:pt0803.exc
+ end exercise
+
+ New keys=!?
+ begin exercise
+   type=Novas teclas: ! ?
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:!?
+    EVENT=NEWKEYS;2;File:pt0804.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=7
+    EVENT=KEYBSENTENCE;7;File:pt0805.exc
+ end exercise
+
+ begin exercise
+   type=Texto
+   duration=10
+    EVENT=TEXT;10;File:pt0807.exc;true
+ end exercise
+
+ begin exercise
+   type=Revisão
+   duration=7
+    EVENT=BUILDER;7;gh
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas b x z "
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ New keys=bBxX
+ begin exercise
+   type=Novas teclas: b x
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:bx
+    EVENT=NEWKEYS;2;File:pt0901.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=5
+    EVENT=WORD;1;File:pt0902a.exc;space;2;4
+    EVENT=KEYBROW;3;File:pt0902b.exc
+ end exercise
+
+ begin exercise
+   type=Jogo WordTris
+   duration=3
+    EVENT=WORDTRIS;3;wordbuilder:bBxX
+ end exercise
+
+ New keys=zZ"
+ begin exercise
+   type=Novas teclas: z "
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:z"
+    EVENT=NEWKEYS;2;File:pt0904.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=5
+    EVENT=WORD;1;File:pt0905a.exc;space;2;4   
+    EVENT=KEYBSENTENCE;3;File:pt0905b.exc
+ end exercise
+
+ begin exercise
+   type=Parágrafos
+   duration=8
+    EVENT=PARAGRAPH;8;File:pt0906.exc;true
+ end exercise
+
+ begin exercise
+   type=Jogo Bolhas
+   duration=3
+    EVENT=BUBBLES;3;asdfjkl
+ end exercise
+
+ begin exercise
+   type=Texto
+   duration=10
+    EVENT=TEXT;10;File:pt0908.exc;true
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas w y %; :
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ New keys=wWyY
+ begin exercise
+   type=Novas teclas: w y
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:wy
+    EVENT=NEWKEYS;3;File:pt1001.exc
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=5
+    EVENT=MESSAGE;1;file:1portuguese010021message.txt;Exercícios em Inglês;stdtip.bmp;left
+    EVENT=WORD;1;File:pt1002a.exc;space;2;4
+    EVENT=KEYBROW;3;File:pt1002b.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=6
+    EVENT=SENTENCE;6;File:pt1003.exc
+ end exercise
+
+ New keys=%;:
+ begin exercise
+   type=Novas teclas: %; :
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:%;:;;0;0
+    EVENT=NEWKEYS;3;File:pt1004.exc
+ end exercise
+
+ begin exercise
+   type=Jogo Bolhas
+   duration=3
+    EVENT=BUBBLES;3;asdfjkl
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=6
+    EVENT=KEYBSENTENCE;6;File:pt1005.exc
+ end exercise
+
+ begin exercise
+   type=Texto
+   duration=8
+    EVENT=TEXT;8;File:pt1007.exc;true
+ end exercise
+
+ begin exercise
+   type=Revisão
+   duration=8
+    EVENT=BUILDER;8;wy
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Algarismos
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ New keys=12345
+ begin exercise
+   type=Novas teclas: 12345
+   duration=5
+    EVENT=NEWKEYS;3;File:pt1101a.exc
+    EVENT=WORD;1;File:pt1101b.exc;space;2;4
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=3
+    EVENT=KEYBROW;3;File:pt1102.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=5
+    EVENT=SENTENCE;5;File:pt1103.exc
+ end exercise
+
+ New keys=67890
+ begin exercise
+   type=Novas teclas: 67890
+   duration=5
+    EVENT=NEWKEYS;3;File:pt1104a.exc
+    EVENT=WORD;1;File:pt1104b.exc;space;2;4
+ end exercise
+
+ begin exercise
+   type=Palavras
+   duration=3
+    EVENT=KEYBROW;3;File:pt1105.exc
+ end exercise
+
+ begin exercise
+   type=Frases
+   duration=5
+    EVENT=SENTENCE;5;File:pt1107.exc
+ end exercise
+
+ begin exercise
+   type=Revisão
+   duration=7
+    EVENT=BUILDER;7;asdf
+ end exercise
+
+ begin exercise
+   type=Texto
+   duration=10
+    EVENT=TEXT;10;file:pt1108.exc;true
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Carácteres Especiais
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ New keys=+
+ begin exercise
+   type=Novas teclas: + 
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:+
+    EVENT=NEWKEYS;2;File:pt1201.exc
+ end exercise
+
+ begin exercise
+   type=Combinações
+   duration=4
+    EVENT=KEYBROW;4;File:pt1202.exc
+ end exercise
+
+ New keys=*/%
+ begin exercise
+   type=Novas teclas: * / %
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:*%
+    EVENT=NEWKEYS;0;keybuilder:/
+    EVENT=NEWKEYS;2;File:pt1203.exc
+ end exercise
+
+ begin exercise
+   type=Combinações
+   duration=4
+    EVENT=KEYBSENTENCE;4;File:pt1204.exc
+ end exercise
+
+ begin exercise
+   type=Jogo Bolhas
+   duration=3
+    EVENT=BUBBLES;3;asdf
+ end exercise
+
+ begin exercise
+   type=Parágrafos
+   duration=7
+    EVENT=PARAGRAPH;7;File:pt1206.exc;true
+ end exercise
+
+ begin exercise
+   type=Revisão
+   duration=6
+    EVENT=BUILDER;6;asdf
+ end exercise
+
+ begin exercise
+   type=Teste final
+   duration=10
+    EVENT=TEXT;10;file:pt1208.exc;true
+    EVENT=MESSAGE;0;file:ptprotr.int;ProTrainer;stdtip.bmp;left
+ end exercise
+
+end chapter

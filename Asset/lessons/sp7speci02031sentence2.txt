@@ -1,0 +1,31 @@
+"Vengándose, uno se iguala a su enemigo; perdonándolo, se muestra superior a él." Francis Bacon. 
+
+En HTML, el signo & se usa para caracteres especiales: los ejemplos más típicos son &gt; &lt, y &amp;. 
+
+¡Tom&Jerry siempre pelean! 
+Voy al restaurante Tenedor&Cuchillo. 
+¡Carmen&Timo es una empresa fantástica! 
+
+"¿Sufre más aquél que espera siempre que aquél que nunca esperó a nadie?" Pablo Neruda. 
+
+A. Panzini dijo:"el rico no gozaría nada si le faltase la envidia de los demás." 
+
+Un proverbio italiano dice: "el amor y la tos no pueden ocultarse." 
+
+Los novios grabaron en el árbol: "Pedro&Ana para siempre." 
+
+"El hombre se diferencia del animal en que bebe sin sed y ama sin tiempo." José Ortega y Gasset 
+
+Anónimamente alguien dijo: "Sólo los sabios discuten, los demás imponen sus ideas." 
+
+Lauren&Hardy eran conocidos como "El Gordo y El Flaco." 
+
+José Benavent dijo: "De poco sirve el saber de hoy sin el saber de mañana." 
+
+En textos españoles antiguos es frecuente encontrar & empleado en la expresión latina adoptada et cetera, en las formas &c. o &cetera. 
+
+"Los niños son la esperanza del mundo." José Martí dijo. 
+
+¡Oliver&Benji eran los futbolistas preferidos de su infancia! 
+
+"No hay mayor pobreza que la soledad," dijo la Madre Teresa de Calcuta. 

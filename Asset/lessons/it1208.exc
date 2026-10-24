@@ -1,0 +1,22 @@
+2.1.3 URI relativi 
+Un URI relativo non contiene alcuna informazione sullo schema di denominazione. Il suo percorso si riferisce genericamente ad una risorsa sulla stessa macchina che ospita il documento corrente. Gli URI relativi possono contenere componenti di percorso relativo (ad es., ".." significa un livello più in alto nella gerarchia definita dal percorso), e possono contenere identificatori di frammento. 
+
+Gli URI relativi sono risolti in URI completi utilizzando un URI di base. Come esempio di risoluzione di un URI relativo, si supponga di avere l'URI di base "http://www.azienda4356.com/support/intro.html". L'URI relativo nella seguente marcatura per un collegamento ipertestuale: A href="suppliers.html" Suppliers /A. 
+
+Si espandererebbe nell'URI completo "http://www.azienda4356.com/support/suppliers.html", mentre l'URI relativo nella seguente marcatura per un'immagine 
+IMG src="../icons/logo.gif" alt="logo". Si espanderebbe nell'URI completo "http://www.azienda4356.com/icons/logo.gif". 
+
+In HTML, gli URI sono usati per: Collegarsi ad un altro documento o risorsa, (si vedano gli elementi A e LINK). 
+Collegarsi ad un foglio di stile esterno o ad uno script (si vedano gli elementi LINK e SCRIPT). 
+
+Includere un'immagine, un oggetto, o un applet in una pagina (si vedano gli elementi IMG, OBJECT, APPLET e INPUT). 
+Creare una mappa sensibile (si vedano gli elementi MAP e AREA). 
+
+Inoltrare un modulo (si veda l'elemento FORM). Creare un documento a frame (si vedano gli elementi FRAME e IFRAME). Citare un riferimento esterno (si vedano gli elementi Q, BLOCKQUOTE, INS e DEL). 
+
+Riferirsi alle convenzioni sui metadati che descrivono un documento (si veda l'elemento HEAD). Si consulti la sezione sul tipo URI per maggiori informazioni sugli URI. 
+
+2.2.1 Breve storia dell'HTML 
+L'HTML è stato originariamente sviluppato da Tim Berners-Lee durante la sua permanenza al CERN. 
+
+L'HTML 2.0 (Novembre 1995, si veda RFC1866) è stato sviluppato sotto l'egida della Internet Engineering Task Force (IETF) per codificare quanto era entrato a far parte dell'uso comune alla fine del 1994. L'HTML+ (1993) e l'HTML 3.0 (1995, si veda HTML30) hanno proposto versioni molto più ricche dell'HTML. 

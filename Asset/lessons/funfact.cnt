@@ -1,0 +1,644 @@
+$description=Fun Facts
+$longdesc=Practice typing while learning the various fun facts!
+$version=7.0
+$language=eng
+$chapters=11
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 01.10.2021 10.49
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+load icr=
+goalinfo=
+short name=
+default time=0
+
+contents name=Fun Facts
+keyboard=all
+wizardname=
+simplewizard=1
+last free=0
+
+begin chapter
+ chapter name=1;Level 1
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 01 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 01 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 01 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+begin chapter
+ chapter name=1;Level 2
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 02 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 02 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 02 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+begin chapter
+ chapter name=1;Level 3
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 03 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 03 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 03 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+
+begin chapter
+ chapter name=1;Level 4
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 04 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 04 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 04 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+
+begin chapter
+ chapter name=1;Level 5
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 05 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 05 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 05 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+
+
+begin chapter
+ chapter name=1;Level 06
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 06 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 06 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 06 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+
+
+
+begin chapter
+ chapter name=1;Level 07
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 07 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 07 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 07 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+
+
+
+begin chapter
+ chapter name=1;Level 08
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 08 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 08 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 08 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+
+
+
+begin chapter
+ chapter name=1;Level 09
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 09 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 09 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 09 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+
+
+
+begin chapter
+ chapter name=1;Level 10
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 10 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 10 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 10 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+
+
+
+begin chapter
+ chapter name=1;Level 11
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 11 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 11 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 11 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+
+
+
+begin chapter
+ chapter name=1;Level 12
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 12 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 12 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 12 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+
+
+
+
+begin chapter
+ chapter name=1;Level 13
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]´`
+ new keys=asdfjklgh
+ begin exercise
+   type=Story 1
+   duration=5
+    
+    EVENT=TEXT;5;file:Level 13 Story 01.txt;false;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 2
+   duration=5
+    EVENT=TEXT;5;file:Level 13 Story 02.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Story 3
+   duration=10
+    EVENT=TEXT;5;file:Level 13 Story 03.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+
+end chapter
+
+
+

@@ -1,0 +1,272 @@
+$description=Curso de Mejora de Velocidad
+$longdesc=Este curso está diseñado para aumentar su velocidad de tecleo y confianza. Se centrará en las teclas que abarca cada dedo, escribirá textos más largos y practicará palabras comunes.
+$version=7.0
+$language=spa
+$chapters=6
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 1.8.2006 14:01
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=jotain
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Curso de Mejora de Velocidad
+alternatekeyboards=1
+keyboard=all
+wizardname=SP7QWERT
+simplewizard=1
+last free=1
+keyboardbase=QWERTY QWERTZ AZERTY SWISSGER
+
+begin chapter
+ chapter name=1;Teclas de la fila central
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=asdfjkl
+ new keys=SEMICOLON
+ new keys=eirnoctuq
+ new keys=ASDFJKLÑEIRNOCTUQ
+ new keys=,´~
+ new keys=%;:
+ new keys=áéíóúÁÉÍÓÚñ
+ new keys=¡!?¿
+ new keys=pPgGmMbB
+ new keys=yYvVhHzZxXwW
+ new keys=.
+ begin exercise
+   type=Descripción del curso
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7speed_1_1_1.htm;Curso de Mejora de Velocidad;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Repaso de la fila central
+   duration=3
+    EVENT=KEY2;3;file:sp7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Frases con F y J
+   duration=2
+    EVENT=SENTENCE2;2;file:sp7speed01021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Frases con D y K
+   duration=2
+    EVENT=SENTENCE2;2;file:sp7speed01031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Frases con S y L
+   duration=2
+    EVENT=SENTENCE2;2;file:sp7speed01041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Frases con A y Ñ
+   duration=2
+    EVENT=SENTENCE2;2;file:sp7speed01061sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Texto con todas las letras
+   duration=4
+    EVENT=TEXT2;4;file:sp7speed01051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas del dedo índice
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Repaso de teclas del índice
+   duration=2
+    EVENT=KEY2;2;file:sp7speed02011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Frases con R T Y y U
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7speed02031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Frases con G y H
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7speed02041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Frases con V B N y M
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7speed02051sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Texto con todas las letras
+   duration=4
+    EVENT=TEXT2;4;file:sp7speed02021key2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas del dedo medio
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Repaso de E C e I
+   duration=2
+    EVENT=KEY2;2;file:sp7speed03011keyintro.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Frases con E e I
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7speed03021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;11
+ end exercise
+
+ begin exercise
+   type=Frases con C
+   duration=2
+    EVENT=SENTENCE2;2;file:sp7speed03031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;11
+ end exercise
+
+ begin exercise
+   type=Párrafos con todas las letras
+   duration=4
+    EVENT=PARAGRAPH2;4;file:sp7speed03041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Texto con todas las letras
+   duration=4
+    EVENT=TEXT2;4;file:sp7speed03051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas del dedo anular
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Repaso de W X y O
+   duration=2
+    EVENT=KEY2;2;file:sp7speed04011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Frases con W y O
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7speed04021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;12
+ end exercise
+
+ begin exercise
+   type=Frases con X
+   duration=2
+    EVENT=SENTENCE2;2;file:sp7speed04031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;12
+ end exercise
+
+ begin exercise
+   type=Párrafos con todas las letras
+   duration=4
+    EVENT=PARAGRAPH2;4;file:sp7speed04041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Texto con todas las letras
+   duration=4
+    EVENT=TEXT2;4;file:sp7speed04051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas del dedo meñique
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Repaso de Q Z y P
+   duration=2
+    EVENT=KEY2;2;file:sp7speed05011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Frases con Q y P
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7speed05021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;13
+ end exercise
+
+ begin exercise
+   type=Frases con Z
+   duration=2
+    EVENT=SENTENCE2;2;file:sp7speed05031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;13
+ end exercise
+
+ begin exercise
+   type=Párrafos con todas las letras
+   duration=4
+    EVENT=PARAGRAPH2;4;file:sp7speed05041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Texto con todas las letras
+   duration=4
+    EVENT=TEXT2;4;file:sp7speed05051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Palabras comunes
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Palabras comunes
+   duration=3
+    EVENT=WORD2;3;file:sp7speed06011word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Más palabras comunes
+   duration=3
+    EVENT=WORD2;3;file:sp7speed06051word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Frases con palabras comunes
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7speed06021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Palabras con Tildes
+   duration=3
+    EVENT=WORD2;3;file:sp7speed06021word2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Texto con todas las letras
+   duration=3
+    EVENT=TEXT2;3;file:sp7speed06031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter

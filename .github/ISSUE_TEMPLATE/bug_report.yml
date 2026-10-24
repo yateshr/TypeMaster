@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a reproducible TypeMaster problem
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: TypeMaster version
+      placeholder: 1.10.2
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows and display
+      description: Windows version, resolution and scaling percentage
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the affected screen and exact actions.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or logs
+      description: Remove candidate names, remarks and other private information first.

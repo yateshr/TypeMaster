@@ -1,0 +1,173 @@
+$description=Cours sur le pavé numérique
+$longdesc=Apprenez la technique dactylographique de ces 10 touches.
+$version=7.0
+$language=fr
+$chapters=3
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 8.9.2006 11:03
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=jotain
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Cours sur le Pavé Numérique
+keyboard=numpad.kbd
+wizardname=
+simplewizard=1
+last free=0
+
+begin chapter
+ chapter name=1;Chiffres
+ picture=ch1.pic
+ durationpercent=101
+ extradescr=
+ new keys=456789
+ begin exercise
+   type=Le pavé numérique
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_numpad_1_1_1.htm;Le pavé numérique;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_numpad_1_1_2.htm;Positions des doigts;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_numpad_1_1_3.htm;Num Lock/Ver Num;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Nombres 4-9
+   duration=2
+    EVENT=KEY2;2;file:num0101.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de séquences
+   duration=2
+    EVENT=SENTENCE2;2;File:num0102.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=1230
+ begin exercise
+   type=Nombres 1-3 et 0
+   duration=2
+    EVENT=KEY2;2;file:num0103a.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de séquences
+   duration=2
+    EVENT=SENTENCE2;2;File:num0104.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Exercice de lignes
+   duration=3
+    EVENT=SENTENCE2;3;File:num0105.exc;true;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Jeu des Bulles
+   duration=1
+    EVENT=BUBBLES;1;456789
+ end exercise
+
+ begin exercise
+   type=Exercice supplémentaire
+   duration=3
+    EVENT=TEXT2;3;File:num0107.exc;true;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Signes spéciaux
+ picture=ch1.pic
+ durationpercent=101
+ extradescr=
+ new keys=+.,
+ begin exercise
+   type=Touches + .
+   duration=2
+    EVENT=KEY2;2;file:num0201.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de séquences
+   duration=2
+    EVENT=SENTENCE2;2;File:num0202.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=/*-
+ begin exercise
+   type=Touches / * -
+   duration=2
+    EVENT=KEY2;2;file:num0203.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de séquences
+   duration=2
+    EVENT=SENTENCE2;2;File:num0204.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Exercice de lignes
+   duration=3
+    EVENT=SENTENCE2;3;File:num0205.exc;true;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Jeu des Bulles
+   duration=1
+    EVENT=BUBBLES;1;asdfjklei
+ end exercise
+
+ begin exercise
+   type=Exercice supplémentaire
+   duration=3
+    EVENT=TEXT2;3;File:num0207.exc;true;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Révision
+ picture=ch1.pic
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Nombres et .
+   duration=3
+    EVENT=SENTENCE2;3;file:num0301.exc;true;0;0;0;0;0;0;25;75;175;125;8
+ end exercise
+
+ new keys=+
+ begin exercise
+   type=Jeu des Bulles
+   duration=2
+    EVENT=BUBBLES;2;none
+ end exercise
+
+ begin exercise
+   type=Signes spéciaux
+   duration=4
+    EVENT=SENTENCE2;4;file:num0302.exc;true;0;0;0;0;0;0;25;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Jeu des Nuages
+   duration=2
+    EVENT=CLOUDS;2;chiffres.vcb.fr;true
+ end exercise
+
+ begin exercise
+   type=Exercice supplémentaire
+   duration=4
+    EVENT=TEXT2;4;File:num0304.exc;true;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter

@@ -1,0 +1,5 @@
+Seija haluaa vaateostoksille Jim & Jonesiin. - Siellä on nyt ALE. Paidat ovat -30 % ja löytökorista saa tuotteita "jopa 75 %:n alennuksella". "75 % + 30 % - siitähän tulee yhteensä jo 105 %:n alennus", Esa vinoilee. Seija ei lannistu, vaan lähtee ostamaan paita & housu/hame -yhdistelmää, 100 euroa/kpl. 
+
+Eikan veli Saku tarvitsee apua matematiikassa: "1 l 75 %:sta liuosta sekoitetaan 3 l:aan 69 %:sta liuosta. Mikä on syntyneen nesteen pitoisuus?" Eikka pitää enemmän (75/100 + 69/100)/4=X -tyylisistä laskuista. Saku ehdottaa tulokseksi "noin 0-1 %". Eikka laskee X:n ja saa tulokseksi X=0,36. 
+
+Saku haluaisi myös tietää, mitä on n %:a tilavuudesta, kun a=92 %, b=67g ja x=n/b+a. Sitä Eikka ei jaksa enää miettiä. Hänelle riittää, että lauantai = vapaapäivä. Laskut voi laskea huomenna/ylihuomenna/ensi kesänä. 

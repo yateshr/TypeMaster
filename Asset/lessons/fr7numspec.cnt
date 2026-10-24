@@ -1,0 +1,242 @@
+$description=Cours sur les signes spéciaux
+$longdesc=Elargi vos compétences aux signes spéciaux, comme les caractères mathématiques et les parenthèses. Remarque : Assurez vous de prendre d'abord le Cours sur les Chiffres.
+$version=7.0
+$language=fr
+$chapters=4
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 7.3.2007 14:19
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Cours sur les signes spéciaux
+keyboard=ALL
+nosemicolonreplacement=1
+wizardname=FR7AZERT
+simplewizard=1
+last free=0
+keyboardbase=QWERTY QWERTZ AZERTY SWISSGER
+
+begin chapter
+ chapter name=1;Signes %; : ? !
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=qsdfjklm
+ new keys=SEMICOLON
+ new keys=ie
+ new keys=tu
+ new keys=ao
+ new keys=nc
+ new keys=QSDFJKLMIETUAONC
+ new keys=gGhH
+ new keys='
+ new keys=éè
+ new keys=pPrR
+ new keys=,
+ new keys=çà
+ new keys=!?
+ new keys=xXyY
+ new keys=":
+ new keys=vVbB
+ new keys=ùwWzZ
+ new keys=âêîôûëïü
+ new keys=1234567890
+ new keys=.
+ new keys=:%;
+ begin exercise
+   type=Touches %; :
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7speci01011key2qw.txt;0;0;NOSEMI;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTZ=KEY2;2;file:fr7speci01011key2.txt;0;0;NOSEMI;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:fr7speci01011key2.txt;0;0;NOSEMI;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:fr7speci01011key2.txt;0;0;NOSEMI;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ new keys=!?
+ begin exercise
+   type=Exercice de phrases
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7speci01021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Touches ? !
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7speci01031key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTZ=KEY2;2;file:fr7speci01031key2qz.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:fr7speci01031key2qz.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:fr7speci01031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7speci01051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7speci01041word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7speci01061text2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Signes " && * /
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys="&
+ begin exercise
+   type=Touches " &
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7speci02011key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTZ=KEY2;2;file:fr7speci02011key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:fr7speci02011key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:fr7speci02011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7speci02021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ new keys=*/
+ begin exercise
+   type=Touches * /
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7speci02041key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTZ=KEY2;2;file:fr7speci02041key2qz.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:fr7speci02041key2qz.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:fr7speci02041key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7speci02031sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7speci02051word2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7speci02061text2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Signes + - %= %
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=+-
+ begin exercise
+   type=Touches + -
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7speci03011key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTZ=KEY2;2;file:fr7speci03011key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:fr7speci03011key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:fr7speci03011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ new keys=%=%
+ begin exercise
+   type=Touches %= %
+   duration=3
+    EVENT_QWERTY=KEY2;3;file:fr7speci03031key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTZ=KEY2;3;file:fr7speci03031key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;3;file:fr7speci03031key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;3;file:fr7speci03031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7speci03021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7speci03041word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7speci03051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7speci03061text2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Signes ( )
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=()
+ begin exercise
+   type=Touches ( )
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7speci04011key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTZ=KEY2;2;file:fr7speci04011key2qz.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:fr7speci04011key2qz.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:fr7speci04011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=2
+    EVENT=WORD2;2;file:fr7speci04021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7speci04041sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7speci04051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7speci04061text2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+end chapter

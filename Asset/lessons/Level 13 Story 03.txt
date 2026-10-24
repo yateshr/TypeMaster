@@ -1,0 +1,11 @@
+With the blossoming of the electronics and technologies industries, automotive engineers have kept pace by updating both standard and "extra" features in modern cars; they are more complex to build, but, at least in theory, they are easier for the consumer to drive, as the computer does most of the "thinking."
+
+During the technological upgrades, engineers refitted the vehicles with features that used to be luxury or non-existent items, but which today come standard.
+
+These are but a few of the new standard features: 1) a suspension that can be changed from luxury sedan to sports car at the flick of the driver's switch, 2) front and side air bags and collision-detection devices; and 3) anti-lock brakes that provide traction control on slippery roads - the car's "brain" senses when a wheel is spinning too fast, and it adjusts the ride so the tires grip the road better.
+
+Some other improvements include a) cruise control devices that automatically detect radar scans and slow the car down to its proper cruising speed; b) Global Positioning Satellite (GPS) location detectors, and c) on-board navigation systems that display maps, locations, and possible routes to avoid obstacles, such as traffic jams.
+
+All the electronics are managed through a master on-board computer, which coordinates the car's operation for maximum efficiency. Sometimes the navigational system is hooked into another computer so drivers can access roadside assistance should the need arise.
+
+The automobile industry is also "going green" a lot more these days. Special devices called catalytic converters have be re-tooled to reduce the car's emissions, helping to clear the air. Some companies are also making some vehicles with recycled materials, while others are using hybrid gas-electric engines.

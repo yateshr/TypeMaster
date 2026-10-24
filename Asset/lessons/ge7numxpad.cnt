@@ -1,0 +1,172 @@
+$description=Kurs für den Ziffernblock
+$longdesc=Lernen Sie, den Ziffernblock zu beherrschen.
+$version=7.0
+$language=ger
+$chapters=3
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 3.7.2007 14:29
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=jotain
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Kurs für den Ziffernblock
+keyboard=numpad.kbd
+wizardname=
+simplewizard=1
+last free=1
+
+begin chapter
+ chapter name=1;Zahlen
+ picture=ch1.pic
+ durationpercent=101
+ extradescr=
+ new keys=456789
+ begin exercise
+   type=Die nummerische Tastatur
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_numpad_1_1_1.htm;Die nummerische Tastatur;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_ger_numpad_1_1_2.htm;Die Position der Finger;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_ger_numpad_1_1_3.htm;Die Taste Num Lock;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Die Zahlen 4-9
+   duration=2
+    EVENT=KEY2;2;file:num0101.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=2
+    EVENT=SENTENCE2;2;File:num0102.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=1230
+ begin exercise
+   type=Die Zahlen 1-3 und 0
+   duration=2
+    EVENT=KEY2;2;file:num0103a.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=2
+    EVENT=SENTENCE2;2;File:num0104.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT=SENTENCE2;3;File:num0105.exc;true;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=1
+    EVENT=BUBBLES;1;none;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=3
+    EVENT=TEXT2;3;File:num0107.exc;true;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Sonderzeichen
+ picture=ch1.pic
+ durationpercent=101
+ extradescr=
+ new keys=+.,
+ begin exercise
+   type=Neue Tasten: + ,
+   duration=2
+    EVENT=KEY2;2;file:num0201.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=2
+    EVENT=SENTENCE2;2;File:num0202.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=/*-
+ begin exercise
+   type=Neue Tasten: / * -
+   duration=2
+    EVENT=KEY2;2;file:num0203.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=2
+    EVENT=SENTENCE2;2;File:num0204.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT=SENTENCE2;3;File:num0205.exc;true;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=1
+    EVENT=BUBBLES;1;asdfjklei
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=3
+    EVENT=TEXT2;3;File:num0207.exc;true;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Wiederholung
+ picture=ch1.pic
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Die Zahlen und das Komma
+   duration=3
+    EVENT=SENTENCE2;3;file:num0301.exc;true;0;0;0;0;0;0;25;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=2
+    EVENT=BUBBLES;2;none
+ end exercise
+
+ begin exercise
+   type=Sonderzeichen
+   duration=4
+    EVENT=SENTENCE2;4;file:num0302.exc;true;0;0;0;0;0;0;25;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Wolkenspiel
+   duration=2
+    EVENT=CLOUDS;2;zahlen.vcb.ger;true
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=4
+    EVENT=TEXT2;4;File:num0304.exc;true;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter

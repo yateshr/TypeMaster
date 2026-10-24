@@ -1,0 +1,136 @@
+$description=Nummerkurs
+$longdesc=Den här kursen som består av två lektioner lär dig att skriva nummer på nummerraden.
+$version=7.0
+$language=swe
+$chapters=2
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 31.7.2006 11:35
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=85,90,95
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Nummerkurs
+keyboard=finnish.kbd
+wizardname=SW7QWERT
+simplewizard=1
+last free=1
+
+begin chapter
+ chapter name=1;Numren 3, 4, 5, 6, 7 och 8
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTOÖÄÅ
+ new keys=cC,
+ new keys=gGhH
+ new keys=nNvV
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.
+ new keys=?-:
+ new keys=asdfjklöäåei
+
+ begin exercise
+   type=Nummerraden
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7NumRow_1_1_1.htm;Nummerraden;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ new keys=4567
+ begin exercise
+   type=Numren 4 5 6 7
+   duration=4
+    EVENT=KEYINTRO;0;file:sw7NumRow0011keyintro.txt;4567;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7NumRow0012keyintro.txt;45;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7NumRow0013keyintro.txt;67;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7NumRow01015keyintro.txt;4567;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;4;file:sw7NumRow0012key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7NumRow0021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ new keys=38
+ begin exercise
+   type=Numren 3 och 8
+   duration=2
+    EVENT=KEYINTRO;0;file:sw7NumRow0021keyintro.txt;38;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7NumRow1022keyintro.txt;38;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7NumRow01033keyintro.txt;38;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:sw7NumRow1023key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7NumRow1041sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7NumRow1051paragraph2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Numren 1, 2, 9 och 0
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=29
+ begin exercise
+   type=Numren 2 och 9
+   duration=2
+    EVENT=KEYINTRO;0;file:sw7NumRow2011keyintro5106.txt;29;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7NumRow2011keyintro.txt;29;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7NumRow02013keyintro.txt;29;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:sw7NumRow2012key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ new keys=10
+ begin exercise
+   type=Numren 1 och 0
+   duration=2
+    EVENT=KEYINTRO;0;file:sw7NumRow2021keyintro.txt;10;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7NumRow2022keyintro.txt;10;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7NumRow02023keyintro.txt;newkeys;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:sw7NumRow2023key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7NumRow2031sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=4
+    EVENT=PARAGRAPH2;4;file:sw7NumRow2041paragraph2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=4
+    EVENT=TEXT2;4;file:sw7NumRow2051text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter

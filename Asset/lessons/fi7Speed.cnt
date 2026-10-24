@@ -1,0 +1,274 @@
+$description=Nopeuden kehittäminen
+$longdesc=Tämän kurssin avulla voit kehittää kirjoitusnopeutta ja sujuvuutta. Kurssi sisältää liikerataharjoituksia eri sormille, yleisimpien sanojen treenausta sekä pidempiä tekstejä.
+$version=7.0
+$language=fin
+$chapters=6
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 10.10.2006 14:23
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=jotain
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=85,90,95
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Nopeuden kehittäminen
+alternatekeyboards=1
+keyboard=finnish.kbd
+wizardname=fi7qwert
+simplewizard=1
+last free=1
+
+begin chapter
+ chapter name=1;Keskity perusriviin
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTOÖÄÅ
+ new keys=cC,
+ new keys=gGhH
+ new keys=nNvV
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=?-:%;
+ new keys=asdfjklöäåei
+ new keys=.
+
+ begin exercise
+   type=Johdanto
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7Speed_1_1_1.htm;Kirjoitusnopeutta kasvattamaan;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Kertaa perusrivi
+   duration=2
+    EVENT=KEY2;2;file:fi7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla A Ö
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7speed01021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla S L
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7speed01031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla D K
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7speed01041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla F J
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7speed01061sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=4
+    EVENT=TEXT2;4;file:fi7speed01051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Keskity etusormien näppäimiin
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Kertaa etusormien näppäimet
+   duration=3
+    EVENT=KEY2;3;file:fi7speed02011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla R T Y U
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7speed02031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla G H
+   duration=2
+    EVENT=SENTENCE2;2;file:fi7speed02041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla V B N M
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7speed02051sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=4
+    EVENT=TEXT2;4;file:fi7speed02021key2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Keskity keskisormien näppäimiin
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Kertaa E C I ,
+   duration=2
+    EVENT=KEY2;2;file:fi7speed03011keyintro.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla E I
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7speed03021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;11
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimella C
+   duration=2
+    EVENT=SENTENCE2;2;file:fi7speed03031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;11
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=4
+    EVENT=PARAGRAPH2;4;file:fi7speed03041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=4
+    EVENT=TEXT2;4;file:fi7speed03051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Keskity nimettömien näppäimiin
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Kertaa W X O .
+   duration=3
+    EVENT=KEY2;3;file:fi7speed04011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla W O
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7speed04021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;12
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimella X
+   duration=1
+    EVENT=SENTENCE2;1;file:fi7speed04031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;12
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=4
+    EVENT=PARAGRAPH2;4;file:fi7speed04041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=4
+    EVENT=TEXT2;4;file:fi7speed04051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Keskity pikkusormien näppäimiin
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Kertaa Q Z P Å Ä
+   duration=3
+    EVENT=KEY2;3;file:fi7speed05011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla Ä P
+   duration=2
+    EVENT=SENTENCE2;2;file:fi7speed05031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;13
+ end exercise
+
+ begin exercise
+   type=Lauseita kirjaimilla Q Z Å
+   duration=2
+    EVENT=SENTENCE2;2;file:fi7speed05021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;13
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=4
+    EVENT=PARAGRAPH2;4;file:fi7speed05041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=4
+    EVENT=TEXT2;4;file:fi7speed05051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Usein käytettyjä sanoja
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Yleisimpiä sanoja
+   duration=3
+    EVENT=WORD2;3;file:fi7speed06011word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Lisää yleisimpiä sanoja
+   duration=3
+    EVENT=WORD2;3;file:fi7speed06051word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7speed06021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7speed06021word2.txt;0;0;0;0;0;0;0;40;75;175;125;15
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7speed06031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter

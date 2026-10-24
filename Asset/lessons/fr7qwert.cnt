@@ -1,0 +1,708 @@
+$description=Cours de dactylographie (QWERTY|Z)
+$longdesc=Ce cours couvre les lettres et les signes de ponctuations les plus courants. A la fin de ce cours vous serez capable de taper avec vos dix doigts sans regarder le clavier. La disposition QWERTY est utilisée au Canada, QWERTZ en Suisse.
+$version=7.0
+$language=fr
+$chapters=12
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 19.2.2007 13:17
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=auttaako tama
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Cours de dactylographie (QWERTY|Z)
+alternatekeyboards=1
+keyboard=ALL
+wizardname=FR7QWERT
+simplewizard=1
+last free=2
+keyboardbase=QWERTY QWERTZ SWISSGER
+
+begin chapter
+ chapter name=1;Les touches de base et E I
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Bases dactylographiques
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_fre_fr7azert_1_1_1.htm;Qu'est que la dactylo ?;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7qwert_1_1_2.htm;La rangée initiale;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_1_3.htm;Technique de frappe;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_1_4.htm;Trucs et astuces;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_1_5.htm;Prêt;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ begin exercise
+   type=Les touches de base
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7qwert01021keyintro7141.txt;asdfjkl%3B;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7qwert01021keyintro.txt;asdf;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7qwert01023keyintro.txt;jkl%3B;SHOW;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert01024keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7qwert01025keyintro3433.txt;asdfjkl%3B;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7qwert01022keyintro4155.txt;asdfjkl%3B;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert01028keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7qwert01029keyintro.txt;asdfjkl%3B;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7qwert01013key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Résultats
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_fre_fr7azert_1_2_1.htm;Résultats de frappe;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_2_3.htm;Vitesse de frappe;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_2_4.htm;Vitesse brute et nette;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_2_2.htm;Pourcentage de précision;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_2_5.htm;Touches difficiles;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de touches
+   duration=3
+    EVENT=KEY2;3;file:fr7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Astuce : Tests dactylo
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_6_1.htm;Faire un pré-test !;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ new keys=ei
+ begin exercise
+   type=Nouvelles touches E et I
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_2_1_1.htm;Rangée d'extension;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert02012keyintro.txt;ei;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert02013keyintro.txt;ei;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert02017keyintro.txt;ei;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7qwert02012key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7qwert02021word2.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_7_1.htm;Effacer et Entrée;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=PARAGRAPH2;3;file:fr7qwert02051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Touches T U et Q
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=tu
+ begin exercise
+   type=Nouvelles touches T U
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7azert03011keyintro.txt;tu;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert03012keyintro.txt;tu;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert03013keyintro.txt;tu%29;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7qwert03012key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7qwert03021word2.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Optimisation de la durée
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_fre_fr7azert_2_2_1.htm;L'optimisation de la durée ?;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_2_2_2.htm;L'observation du progrès;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_2_2_3.htm;Déconnecter l'optimisation de la durée;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ new keys=q
+ begin exercise
+   type=Nouvelle touche Q
+   duration=1
+    EVENT=KEYINTRO;0;file:fr7qwert02041htmlmessage.txt;q;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7qwert02042keyintro.txt;q;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7qwert02043keyintro.txt;q;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:fr7qwert03031key2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=2
+    EVENT=WORD2;2;file:fr7qwert03041paragraph2.txt;newkeys;0;0;0;0;0;40;75;175;125;4;0
+ end exercise
+
+ begin exercise
+   type=Exercise de phrases
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7qwert02061sentence2.txt;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Astuce : Le Satellite
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_2_3_1.htm;Essayer le Satellite;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7qwert03051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Touches M et O
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=mo
+ begin exercise
+   type=Nouvelles touches M O
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7qwert04011keyintro8555.txt;mo;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7qwert04012keyintro.txt;mo;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7qwert04013keyintro.txt;mo;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7qwert04012key28449.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7qwert04021word23455.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Ergonomie
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_fre_fr7azert_1_4_1.htm;Bonne ergonomie;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_4_2.htm;Chaise et bureau;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_4_3.htm;Affichage et clavier;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_4_4.htm;Bonne posture;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_4_5.htm;Bonnes habitudes de travail;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7azert04031sentence25312.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Astuce : Jeux dactylo
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_1_5_1.htm;Jeux TypingMaster;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7azert04041paragraph21934.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7azert04051text230.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Touches C et N
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=cn
+ begin exercise
+   type=Nouvelles touches C N
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7azert012011keyintro.txt;cn;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert012012keyintro.txt;cn;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert012013keyintro.txt;cn;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7qwert012012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7azert012021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7azert012031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Astuce : Rapport de Progression
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_4_5_1.htm;Statistiques sur long terme;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7azert012041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7azert012051text2.txt;0;0;0;0;0;0;3.7;3.7;3.7;3.7;3.7;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Les majuscules et le point
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=ASDFJKLEITUQMOCN
+ begin exercise
+   type=Les Majuscules
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_5_1_1.htm;Utiliser la touche MAJ;0;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert05011keyintro.txt;FJ;PRESS;left
+    EVENT=KEYINTRO;0;file:fr7azert05013keyintro.txt;FJ;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7qwert05012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7azert05021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=.
+ begin exercise
+   type=Le point
+   duration=1
+    EVENT=KEYINTRO;0;file:fr7azert05032keyintro.txt;newkeys;0;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert05041keyintro.txt;%2E;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert05033keyintro.txt;%2E;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:fr7qwert05042key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7azert05031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7azert05041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7azert05051text2.txt;0;0;0;0;0;0;3.7;3.7;3.7;3.7;3.7;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Touches G H et l'apostrophe
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=gGhH
+ begin exercise
+   type=Nouvelles touches G H
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7azert06011message.txt;gh;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert06011keyintro.txt;gh;PRESS;left
+    EVENT=KEYINTRO;0;file:fr7azert06013keyintro.txt;gh;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7qwert06012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7azert06021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys='
+ begin exercise
+   type=L'apostrophe
+   duration=1
+    EVENT=KEYINTRO;0;file:fr7azert06032keyintro.txt;%27;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert06041keyintro.txt;%27;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert06033keyintro.txt;%27;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:fr7qwert06031keyintro.txt;newkeys;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7azert06031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7azert06041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Astuce : Vérifier votre posture
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_5_5_1.htm;Vérifier posture;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7azert06051text2.txt;0;0;0;0;0;0;3.7;3.7;3.7;3.7;3.7;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Touches é è et la virgule ,
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=éèÉÈ
+ begin exercise
+   type=Nouvelles touches é è
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7azert07011keyintro.txt;%E9%E8;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert07013keyintro.txt;%E9%E8;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert07013keyintro7461.txt;%E9%E8;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7qwert07012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7azert07021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=,
+ begin exercise
+   type=La virgule
+   duration=1
+    EVENT=KEYINTRO;0;file:fr7azert07021keyintro.txt;%2C;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert07023keyintro.txt;%2C;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert07024keyintro.txt;%2C;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:fr7qwert07023key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7azert07031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Astuce : Faites des pauses
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_7_5_1.htm;Prenez une pause;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7azert07041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7azert07051text2.txt;0;0;0;0;0;0;3.7;3.7;3.7;3.7;3.7;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Touches R et P
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=rRpP
+ begin exercise
+   type=Nouvelles touches R P
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7azert08011keyintro.txt;rp;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert08012keyintro.txt;rp;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert08013keyintro.txt;rp;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7azert08012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7azert08021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7azert08031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Astuce : Rythme de frappe
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_6_5_1.htm;Trouver un rythme;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7azert08041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7azert08051text2.txt;0;0;0;0;0;0;3.7;3.7;3.7;3.7;3.7;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Touches ç à et ! ?
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=çàÇÀ
+ begin exercise
+   type=Nouvelles touches ç à
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7azert09011keyintro9423.txt;%E7%E0;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert09011keyintro.txt;%E7%E0;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert09013keyintro.txt;%E7%E0;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7qwert09012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7azert09021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=?!
+ begin exercise
+   type=Exercice de phrases
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7azert09031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Touches ? !
+   duration=2
+    EVENT=KEYINTRO;0;file:fr7azert09032keyintro.txt;%3F%21;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert09041keyintro.txt;%21%3F;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert09033keyintro.txt;%3F%21;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:fr7qwert09031key2.txt;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7azert09041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7azert09051text2.txt;0;0;0;0;0;0;3.7;3.7;3.7;3.7;3.7;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Touches X Y et " :
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=xXyY
+ begin exercise
+   type=Nouvelles touches X Y
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7azert010011keyintro7697.txt;xy;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert010011keyintro.txt;xy;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert010013keyintro.txt;xy;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=KEY2;3;file:fr7qwert010012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+    EVENT_QWERTZ=KEY2;3;file:fr7qwert010012key2qz.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7azert010021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=":
+ begin exercise
+   type=Touches " :
+   duration=2
+    EVENT=KEYINTRO;0;file:fr7azert10032keyintro.txt;%22%3A;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert10041keyintro.txt;%22%3A;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert10033keyintro.txt;%22%3A;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:fr7qwert010031key2.txt;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7azert010031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=2
+    EVENT=PARAGRAPH2;2;file:fr7azert010041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7azert010051text2.txt;0;0;0;0;0;0;3.7;3.7;3.7;3.7;3.7;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Touches V B et -
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=vVbB
+ begin exercise
+   type=Nouvelles touches V B
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7azert013011keyintro7697.txt;vb;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert013011keyintro.txt;vb;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert013013keyintro.txt;vb;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fr7qwert013012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7azert013021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+new keys=-
+  begin exercise
+   type=Le trait d'union
+   duration=1
+    EVENT=KEYINTRO;0;file:fr7azert013032keyintro.txt;%2D;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert013033keyintro.txt;%2D;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert013034keyintro.txt;%2D;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:fr7qwert013042key2.txt;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7azert013031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7azert013041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7azert013051text2.txt;0;0;0;0;0;0;3.7;3.7;3.7;3.7;3.7;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Touches Z W ù ^ ¨
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=zZwW
+ begin exercise
+   type=Nouvelles touches Z W
+   duration=3
+    EVENT=KEYINTRO;0;file:fr7azert011011test.txt;zw;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert011011key2.txt;zw;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert011013keyintro.txt;zw;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=KEY2;3;file:fr7qwert011012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+    EVENT_QWERTZ=KEY2;3;file:fr7qwert011012key2qz.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=WORD2;3;file:fr7azert011021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=ùâêîôûëïü
+ begin exercise
+   type=Nouvelles touches ù ¨ ^
+   duration=4
+    EVENT=HTMLMESSAGE;2;fr7azert012031htmlmessage.htm;Taper les accents spéciaux;0;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert011032keyintro.txt;%F9%A8;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert011041keyintro.txt;%F9%F4%FC;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7azert011033keyintro.txt;%F9%F4%FC;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:fr7qwert012031key2.txt;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=2
+    EVENT=WORD2;2;file:fr7azert011031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7azert011041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Astuce : Tests dactylo
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_12_5_1.htm;Faire un test dactylo;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7azert011051text2.txt;0;0;0;0;0;0;3.7;3.7;3.7;3.7;3.7;5
+ end exercise
+
+ begin exercise
+   type=Terminé - et maintenant ?
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_12_1_1.htm;Mettre vos compétences en action;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_12_1_2.htm;Utilisant le Satellite;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7azert_12_1_3.htm;Cours additionnels;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter

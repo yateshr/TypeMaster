@@ -1,0 +1,328 @@
+$description=Sonderzeichen
+$longdesc=Erweitern Sie Ihre Kenntnisse über Sonderzeichen, Internet-Zeichen und mathematische Operatoren. Hinweis: Bitte bearbeiten Sie vorher den Kurs über Zahlen.
+$version=7.0
+$language=ger
+$chapters=4
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 28.2.2006 17:08
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Sonderzeichen
+alternatekeyboards=1
+keyboard=ALL
+wizardname=GE7QWERT
+simplewizard=1
+last free=1
+keyboardbase=QWERTY AZERTY QWERTZ SWISSGER
+
+begin chapter
+ chapter name=1;Die Tasten %; : _ ! ? 
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjklö
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTOÖ
+ new keys=gGhH
+ new keys=nNvV
+ new keys=?üÜäÄ
+ new keys_qwertz=ß
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.
+ new keys=ei
+ new keys=cC,-
+ new keys=1234567890
+ new keys=%;:_
+
+ begin exercise
+   type=Tasten %; : und Unterstrich
+   duration=2
+    EVENT=KEY2;2;file:ge7speci01011key2.txt;0;0;NOSEMI;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=2
+    EVENT=SENTENCE2;2;file:ge7speci01021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ new keys=?!
+ begin exercise
+   type=Die Tasten ! ?
+   duration=2
+    EVENT_QWERTZ=KEY2;2;file:ge7speci01031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:ge7speci01031key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTY=KEY2;2;file:ge7speci01031key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:ge7speci01031key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=3
+    EVENT=WORD2;3;file:ge7speci01041word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speci01051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speci01051sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speci01051sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_AZERTY=SENTENCE2;3;file:ge7speci01051sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Abschnittsübung
+   duration=3
+    EVENT_QWERTZ=PARAGRAPH2;3;file:ge7speci01061text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_SWISSGER=PARAGRAPH2;3;file:ge7speci01061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_QWERTY=PARAGRAPH2;3;file:ge7speci01061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_AZERTY=PARAGRAPH2;3;file:ge7speci01061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten " ( ) # ' 
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys="()
+ begin exercise
+   type=Die Tasten " ( )
+   duration=2
+    EVENT=KEY2;2;file:ge7speci02011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=2
+    EVENT=SENTENCE2;2;file:ge7speci02021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speci02031sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speci02031sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speci02031sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_AZERTY=SENTENCE2;3;file:ge7speci02031sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=#'
+ begin exercise
+   type=Die Tasten # '
+   duration=2
+    EVENT_QWERTZ=KEY2;2;file:ge7speci02041key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEYINTRO;1;file:ge7numspec02042message.txt;#;0;;0;0;0;0;0;0;0;0;0
+    EVENT_SWISSGER=KEY2;2;file:ge7speci02041key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTY=KEY2;2;file:ge7speci02041key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:ge7speci02041key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT=SENTENCE2;3;file:ge7speci02051word2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Abschnittsübung
+   duration=3
+    EVENT_QWERTZ=PARAGRAPH2;3;file:ge7speci02061text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_SWISSGER=PARAGRAPH2;3;file:ge7speci02061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_QWERTY=PARAGRAPH2;3;file:ge7speci02061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_AZERTY=PARAGRAPH2;3;file:ge7speci02061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten + - %= * / 
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=+-%=
+ begin exercise
+   type=Die Tasten + - %=
+   duration=2
+    EVENT_QWERTZ=KEY2;2;file:ge7speci03011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:ge7speci03011key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTY=KEY2;2;file:ge7speci03011key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:ge7speci03011key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=2
+    EVENT_QWERTZ=SENTENCE2;2;file:ge7speci03021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+    EVENT_SWISSGER=SENTENCE2;2;file:ge7speci03021word2sw.txt;0;0;0;0;0;0;0;25;75;175;125;2
+    EVENT_QWERTY=SENTENCE2;2;file:ge7speci03021word2sw.txt;0;0;0;0;0;0;0;25;75;175;125;2
+    EVENT_AZERTY=SENTENCE2;2;file:ge7speci03021word2sw.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ new keys=*/
+ begin exercise
+   type=Die Tasten * /
+   duration=2
+    EVENT_QWERTZ=KEY2;2;file:ge7speci03031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:ge7speci03031key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTY=KEY2;2;file:ge7speci03031key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:ge7speci03031key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT=SENTENCE2;3;file:ge7speci03041word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Abschnittsübung
+   duration=3
+    EVENT_QWERTZ=PARAGRAPH2;3;file:ge7speci03051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_SWISSGER=PARAGRAPH2;3;file:ge7speci03051sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_QWERTY=PARAGRAPH2;3;file:ge7speci03051sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_AZERTY=PARAGRAPH2;3;file:ge7speci03051sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=3
+    EVENT_QWERTZ=TEXT2;3;file:ge7speci03061text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_SWISSGER=TEXT2;3;file:ge7speci03061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_QWERTY=TEXT2;3;file:ge7speci03061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_AZERTY=TEXT2;3;file:ge7speci03061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten % $ < >
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=%$
+ begin exercise
+   type=Die Tasten % $
+   duration=2
+    EVENT_QWERTZ=KEY2;2;file:ge7speci04011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:ge7speci04011key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTY=KEY2;2;file:ge7speci04011key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:ge7speci04011key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=2
+    EVENT=SENTENCE2;2;file:ge7speci04021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ new keys=<>
+ begin exercise
+   type=Die Tasten < >
+   duration=2
+    EVENT=KEY2;2;file:ge7speci04031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speci04041sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speci04041sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;2
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speci04041sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;2
+    EVENT_AZERTY=SENTENCE2;3;file:ge7speci04041sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Abschnittsübung
+   duration=3
+    EVENT_QWERTZ=PARAGRAPH2;3;file:ge7speci04051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_SWISSGER=PARAGRAPH2;3;file:ge7speci04051sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_QWERTY=PARAGRAPH2;3;file:ge7speci04051sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_AZERTY=PARAGRAPH2;3;file:ge7speci04051sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=3
+    EVENT_QWERTZ=TEXT2;3;file:ge7speci04061text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_SWISSGER=TEXT2;3;file:ge7speci04061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_QWERTY=TEXT2;3;file:ge7speci04061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_AZERTY=TEXT2;3;file:ge7speci04061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten § && € @ \
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=§ &
+ begin exercise
+   type=Die Tasten § &
+   duration=2
+    EVENT_QWERTZ=KEY2;2;file:ge7speci05011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:ge7speci05011key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTY=KEY2;2;file:ge7speci05011key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:ge7speci05011key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=2
+    EVENT=SENTENCE2;2;file:ge7speci05021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ new keys=@ € \
+ begin exercise
+   type=Die Tasten € @ \
+   duration=2
+    EVENT=HTMLMESSAGE;0;msg_ger_numspec_5_3_1.htm;Sonderzeichen mit der Taste AltGr;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;file:ge7numspec05032keyintro.txt;%40%80%5C;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;file:ge7numspec05033keyintro.txt;%40%80%5C;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTZ=KEY2;2;file:ge7speci05031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:ge7speci05031key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTY=KEY2;2;file:ge7speci05031key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:ge7speci05031key2sw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT=SENTENCE2;3;file:ge7speci05041sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Abschnittsübung
+   duration=3
+    EVENT=PARAGRAPH2;3;file:ge7speci05051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=3
+    EVENT_QWERTZ=TEXT2;3;file:ge7speci05061text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_SWISSGER=TEXT2;3;file:ge7speci05061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_QWERTY=TEXT2;3;file:ge7speci05061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_AZERTY=TEXT2;3;file:ge7speci05061text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter

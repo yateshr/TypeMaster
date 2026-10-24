@@ -1,0 +1,18 @@
+Gli interi 2,3,5,7,11 posseggono soltanto divisori banali. L'intero 15, oltre ai divisori banali, possiede quattro divisori non banali: 3, -3, 5 e -5. Di questi 3 e -3, da una parte, e 5 e -5, dall'altra, sono associati. 
+
+Usando il principio di induzione, provare le seguenti identità, per ogni intero positivo n. 
+1+2+3+(1/4)+n = n*(n+1)/2 
+1+3+5+(1/4)+(2n-1) = n2 
+12+22+32+(1/4)+n2 = n*(n+1)*(2n+1)/6 
+
+Un intero positivo n si dice perfetto se è somma dei suoi divisori positivi propri. Per esempio, i primi due numeri perfetti sono: 
+6 = 1+2+3 
+28 = 1+2+4+7+14 
+
+Le espressioni aritmetiche sono costruite con i seguenti operatori infissi: 
+X + Y per l'addizione; 
+X - Y per la sottrazione; 
+X * Y per la moltiplicazione; 
+X / Y per la divisione intera. 
+
+Il matematico tedesco Peter Gustav Lejeune-Dirichelet (1805-1859) era piuttosto pigro nella corrispondenza. Quando nacque il suo primogenito, dimenticò di comunicare al suocero la notizia. Quest'ultimo, appresa per proprio conto la notizia, scrisse al genero: Avresti potuto almeno inviarmi un biglietto con su scritto 2+1=3. 

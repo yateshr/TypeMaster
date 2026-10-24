@@ -1,0 +1,21 @@
+Jos n=5 niin n!=5*4*3*2*1 
+
+Asteriski eli * tai tähti ei ole sama kuin Asterix. 
+
+Hienoa! Ihanaa! Mahtavaa! Upeata! 
+
+(3x*2+4x-2) + (-7x*2-10x+17) 
+
+2*3=6 ja 2(3)=8. 
+
+"Aivan mahtavaa!" huusi Jari. 
+
+Paljonko on (3*4) (4*3)? Onko se 12*12? Kyllä! 
+
+"Hurraa! Hurraa! Hurraa!" huusi yleisö villisti. 
+
+Voit käyttää *-merkkiä merkitsemään alaviitettä. 
+
+Tiedostonimissä ei voi käyttää erikoismerkkejä kuten ! & %. 
+
+Lopeta! Lopeta heti! Etkö kuule? 

@@ -1,0 +1,186 @@
+﻿$version=6
+
+' Imported from KLC: Polish Keyboard Layout
+layoutcode;00000415
+
+MaterialBased;qwertz
+HomeRow;asdfjklł
+DefaultSize;32;34
+FontSize;18;14;14
+
+'1. Row - Number keys
+Key;1;1;1;32;-;-;˛;·
+Key;1;+1;0;32;-;-;1;!
+Key;2;+1;0;32;-;-;2;"
+Key;3;+1;0;32;-;-;3;#
+Key;4;+1;0;32;-;-;4;¤
+Key;4;+1;0;32;-;-;5;%
+Key;5;+7;0;32;-;-;6;&
+Key;5;+1;0;32;-;-;7;/
+Key;6;+1;0;32;-;-;8;(
+Key;7;+1;0;32;-;-;9;)
+Key;8;+1;0;32;-;-;0;=
+Key;8;+1;0;32;-;-;+;?
+Key;8;+1;0;32;-;-;';*
+BackSpaceKey;8;+1;0;65;0;DAS;
+
+'2. Row - QWERTY row
+TabKey;1;1;+1;48;-;SD;;
+Key;1;+1;0;32;-;-;q;Q
+Key;2;+1;0;32;-;-;w;W
+Key;3;+1;0;32;-;-;e;E
+Key;4;+1;0;32;-;-;r;R
+Key;4;+1;0;32;-;-;t;T
+Key;5;+7;0;32;-;-;z;Z
+Key;5;+1;0;32;-;-;u;U
+Key;6;+1;0;32;-;-;i;I
+Key;7;+1;0;32;-;-;o;O
+Key;8;+1;0;32;-;-;p;P
+Key;8;+1;0;32;-;-;ż;ń
+Key;8;+1;0;32;-;-;ś;ć
+EnterKey;8;+1;0;50;70;DAS;
+
+'3. Row - Home row
+CapsLockKey;1;1;72;57;-;SD;Caps;
+Key;1;+1;0;32;-;-;a;A
+Key;2;+1;0;32;-;-;s;S
+Key;3;+1;0;32;-;-;d;D
+Key;4;+1;0;32;-;-;f;F
+Key;4;+1;0;32;-;-;g;G
+Key;5;+7;0;32;-;-;h;H
+Key;5;+1;0;32;-;-;j;J
+Key;6;+1;0;32;-;-;k;K
+Key;7;+1;0;32;-;-;l;L
+Key;8;+1;0;32;-;-;ł;Ł
+Key;8;+1;0;32;-;-;ą;ę
+Key;8;+1;0;32;-;-;ó;ź
+
+'4. Row - ZXCV row
+ControlKey;1;1;+1;48;-;SDA;1;Shift
+Key;1;+1;0;32;-;-;<;>
+Key;1;+1;0;32;-;-;y;Y
+Key;2;+1;0;32;-;-;x;X
+Key;3;+1;0;32;-;-;c;C
+Key;4;+1;0;32;-;-;v;V
+Key;4;+1;0;32;-;-;b;B
+Key;5;+7;0;32;-;-;n;N
+Key;5;+1;0;32;-;-;m;M
+Key;6;+1;0;32;-;-;,;;
+Key;7;+1;0;32;-;-;.;:
+Key;8;+1;0;32;-;-;-;_
+ControlKey;8;+1;0;83;-;SDA;1;Shift
+
+'5. Row - Control keys
+ControlKey;1;1;+1;40;-;DS;2;Ctrl
+ControlKey;1;+1;0;34;-;SD;2;
+ControlKey;9;+1;0;48;-;SD;3;Alt
+SpaceKey;9;+1;0;235;-;AS;
+ControlKey;9;+1;0;48;-;DS;4;Alt Gr
+ControlKey;1;+1;0;34;-;SD;2;
+ControlKey;8;+1;0;56;-;DS;2;Ctrl
+
+
+Deadkey;^
+A;Â
+I;Î
+O;Ô
+a;â
+i;î
+o;ô
+ ;^
+
+Deadkey;¨
+A;Ä
+E;Ë
+O;Ö
+U;Ü
+a;ä
+e;ë
+o;ö
+u;ü
+ ;¨
+
+Deadkey;´
+R;Ŕ
+A;Á
+L;Ĺ
+C;Ć
+E;É
+I;Í
+N;Ń
+O;Ó
+U;Ú
+Y;Ý
+S;Ś
+Z;Ź
+r;ŕ
+a;á
+l;ĺ
+c;ć
+e;é
+i;í
+n;ń
+o;ó
+u;ú
+y;ý
+s;ś
+z;ź
+ ;´
+
+Deadkey;¸
+S;Ş
+C;Ç
+T;Ţ
+s;ş
+c;ç
+t;ţ
+ ;¸
+
+Deadkey;ˇ
+T;Ť
+Z;Ž
+C;Č
+E;Ě
+D;Ď
+R;Ř
+S;Š
+N;Ň
+t;ť
+z;ž
+c;č
+e;ě
+d;ď
+r;ř
+s;š
+n;ň
+ ;ˇ
+
+Deadkey;˘
+A;Ă
+a;ă
+ ;˘
+
+Deadkey;˛
+A;Ą
+E;Ę
+a;ą
+e;ę
+ ;˛
+
+Deadkey;˝
+O;Ő
+U;Ű
+o;ő
+u;ű
+ ;˝
+
+Deadkey;°
+U;Ů
+u;ů
+ ;°
+
+Deadkey;·
+Z;Ż
+z;ż
+ ;·
+

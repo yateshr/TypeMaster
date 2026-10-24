@@ -1,0 +1,13 @@
+#
+#2004/3/23
+category=beginner
+version=1.00
+name=A Love Letter from Heavenly Father to India (2 minute, 15 WPM)
+copyright=This is an excerpt from FathersLoveLetter.com 
+author=FathersLoveLetter.com
+description=A Love Letter From Heaven (2 minute, 15 WPM)
+language=eng
+time=2
+mustTypeAll=0
+;MinAccuracy=95
+MinSpeed=15

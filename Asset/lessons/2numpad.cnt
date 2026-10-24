@@ -1,0 +1,181 @@
+$description=Curso do Teclado Numérico
+$longdesc=Aprenda a utilizar o teclado númerico com eficiência e rapidez.
+$version=1.00
+$copyright=TMProductions 1999, all rights reserved.
+$language=pt
+
+; excercises version 1.00
+;****
+; All rights reserved. (c) 1998 TMProductions
+;****
+
+wordloop=2
+wordmaxloop=4
+sentenceloop=0
+sentencemaxloop=0
+
+contents name=Numpad contents
+keyboard=numpad.kbd
+default time=0
+
+; note, the wizardname entry below is empty by purpose
+wizardname=
+
+
+begin chapter
+  chapter name=1;Algarismos
+  picture=ch1.pic
+  durationpercent=99
+  new keys=456789
+
+  begin exercise
+    type=Teclas novas: 4-9
+    duration=5
+    Event=message;0;File:ptnum2.int;Treino númerico;stdtip.bmp;left
+    Event=message;0;File:ptnum1.int;Num Lock;stdtip.bmp;left
+    Event=NewKeys;1;file:num0101.exc;ENTER
+  end exercise
+
+  begin exercise
+    type=Sequências
+    duration=5
+;    Event=message;0;File:uknum23.int;Instruções;stdtip.bmp;left
+    Event=word;30;File:num0102.exc;ENTER
+  end exercise
+
+  new keys=1230
+
+  begin exercise
+    type=Teclas novas: 1-3 e 0
+    duration=4
+;    Event=message;0;File:Ukbasi4.int;Conceitos base;stdtip.bmp;left
+    Event=NewKeys;1;file:num0103a.exc;ENTER
+    Event=NewKeys;1;file:num0103b.exc;ENTER
+  end exercise
+
+  begin exercise
+    type=Sequências
+    duration=5
+    Event=Word;30;File:num0104.exc;ENTER
+  end exercise
+
+  begin exercise
+    type=Linhas
+    duration=5
+    Event=keyboard;30;File:num0105.exc;true
+  end exercise
+
+  begin exercise
+    type=Jogo Bolhas
+    duration=3
+    Event=bubbles;5;asdfjklei
+  end exercise
+
+  begin exercise
+    type=Linhas
+    duration=10
+    Event=Text;30;File:num0107.exc;true
+  end exercise
+
+
+end chapter
+
+
+// 2 chapter
+
+begin chapter
+  chapter name=2;Carácteres especiais
+  picture=ch1.pic
+  durationpercent=99
+  new keys=+.
+
+  begin exercise
+    type=Teclas novas: + .
+    duration=5
+    Event=NewKeys;1;file:num0201.exc;ENTER
+  end exercise
+
+  begin exercise
+    type=Sequências
+    duration=5
+    Event=word;30;File:num0202.exc;ENTER
+  end exercise
+
+  new keys=/*-
+
+  begin exercise
+    type=Teclas novas: / * -
+    duration=4
+    Event=NewKeys;1;file:num0203.exc;ENTER
+  end exercise
+
+  begin exercise
+    type=Sequências
+    duration=5
+    Event=word;30;File:num0204.exc;ENTER
+  end exercise
+
+  begin exercise
+    type=Linhas
+    duration=5
+    Event=keyboard;30;File:num0205.exc;true
+  end exercise
+
+  begin exercise
+    type=Jogo Bolhas
+    duration=3
+    Event=bubbles;5;asdfjklei
+  end exercise
+
+  begin exercise
+    type=Linhas
+    duration=10
+    Event=Text;30;File:num0207.exc;true
+  end exercise
+
+
+end chapter
+
+begin chapter
+  chapter name=3;Revisão
+  picture=ch1.pic
+  durationpercent=99
+
+  begin exercise
+    type=Algarismos e ponto
+    duration=5
+    Event=sentence;1;file:num0301.exc;true
+  end exercise
+
+  new keys=+
+  begin exercise
+    type=Jogo Bolhas
+    duration=3
+    Event=bubbles;5;asdfjklei
+  end exercise
+
+  begin exercise
+    type=Carácteres especiais
+    duration=5
+    Event=sentence;1;file:num0302.exc;true
+  end exercise
+
+  begin exercise
+    type=Jogo Bolhas
+    duration=3
+    Event=bubbles;5;asdfjklei
+  end exercise
+
+  begin exercise
+    type=Teste final
+    duration=10
+    Event=Text;30;File:num0304.exc;true
+  end exercise
+
+
+
+end chapter
+
+
+
+end contents

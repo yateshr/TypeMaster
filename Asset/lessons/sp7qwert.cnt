@@ -1,0 +1,612 @@
+$description=Curso de Escritura al Tacto
+$longdesc=En este curso, aprenderá las posiciones de las letras y teclas de puntuación más comunes en el teclado. Tras completar el curso será capaz de mecanografiar con los 10 dedos sin mirar al teclado.
+$version=7.0
+$language=spa
+$chapters=11
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 4.1.2007 14:59
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=auttaako tama
+durationsystem=static
+defaultduration=2
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Curso de Escritura al Tacto
+alternatekeyboards=1
+keyboard=all
+wizardname=SP7QWERT
+simplewizard=1
+last free=2
+keyboardbase=QWERTY QWERTZ AZERTY SWISSGER
+
+begin chapter
+ chapter name=1;La fila central
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ begin exercise
+   type=Introducción
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_spa_sp7qwert_1_1_1.htm;¿Qué es la Escritura al Tacto?;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_1_2.htm;Posición de los Dedos;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_1_3.htm;Teclear;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_1_4.htm;Ayudas para Aprender;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_1_5.htm;Preparado para Comenzar;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Teclas de la Fila Central
+   duration=3
+    EVENT=KEYINTRO;0;file:sp7qwert01021keyintro7141.txt;asdfjkl%3B;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert01021keyintro.txt;asdf;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert01023keyintro.txt;jkl%3B;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert01024keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert01025keyintro3433.txt;asdfjkl%3B;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert01022keyintro4155.txt;asdfjkl%3B;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert01028keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert01029keyintro.txt;asdfjkl%3B;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert01013key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ver resultados
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_spa_sp7qwert_1_2_1.htm;Resultados de Escritura;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_2_3.htm;Velocidad de Escritura;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_2_4.htm;Velocidad Bruta y Neta;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_2_2.htm;Porcentaje de Acierto;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_2_5.htm;Teclas con dificultad;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Teclas
+   duration=3
+    EVENT=KEY2;3;file:sp7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Ayuda: Exámenes
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_6_1.htm;¡Realice un pre-examen!;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+new keys=ñ
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3    
+    EVENT=HTMLMESSAGE;0;sp7qwert01061htmlmessage.htm;La tecla Ñ;0;left;0;0;0;0;0;0;0;0
+    EVENT=WORD2;3;file:sp7qwert01031word2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_7_1.htm;Teclas de Retroceso e Intro;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=PARAGRAPH2;3;file:sp7qwert01052text2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas E e I
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=ei
+ begin exercise
+   type=Nuevas teclas E I
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_2_1_1.htm;Fila de extensión;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert02012keyintro.txt;ei;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert02013keyintro.txt;ei;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert02017keyintro.txt;ei;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert02012key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Duración Optimizada
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_spa_sp7qwert_2_2_1.htm;What is Optimized Duration?;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_2_2_2.htm;Monitoring Your Progress;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_2_2_3.htm;Turning Off Optimized Duration;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7qwert02021word2.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7qwert02041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Ayuda: Intente con el Satélite
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_2_3_1.htm;Poner a prueba el Satélite;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7qwert02051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas R y N
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=rn
+ begin exercise
+   type=Nuevas teclas R N
+   duration=3
+    EVENT=KEYINTRO;0;file:sp7qwert03011keyintro.txt;rn;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert03012keyintro.txt;rn;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert03013keyintro.txt;rn;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert03012key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7qwert03021word2.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Ergonomía
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_spa_sp7qwert_1_4_1.htm;Buena Ergonomía;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_4_2.htm;Silla y Escritorio;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_4_3.htm;Pantalla y teclado;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_4_4.htm;Buena Postura;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_4_5.htm;Práctica en Posición Adecuada;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7qwert03031key2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7qwert03041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Ayuda: Juegos
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_1_5_1.htm;Juegos de TypingMaster;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7qwert03051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas C y O
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=co
+ begin exercise
+   type=Nuevas teclas C O
+   duration=3
+    EVENT=KEYINTRO;0;file:sp7qwert04011keyintro8555.txt;co;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert04012keyintro.txt;co;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert04013keyintro.txt;co;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert04012key28449.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7qwert04021word23455.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7qwert04031sentence25312.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Ayuda: Informes de Progreso
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_4_5_1.htm;Estadísticas a largo plazo;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7qwert04041paragraph21934.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7qwert04051text230.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas T U y Q
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=tuq
+ begin exercise
+   type=Nuevas teclas T U Q
+   duration=3
+    EVENT=KEYINTRO;0;file:sp7qwert012011keyintro.txt;tuq;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert012012keyintro.txt;tuq;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert012013keyintro.txt;tuq;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert012012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7qwert012021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7qwert012031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Ayuda: Ritmo de escritura
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_6_5_1.htm;Buscando el Ritmo;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7qwert012041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7qwert012051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas mayúsculas, punto y tilde
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=ASDFJKLÑEIRNCOTUQ
+ begin exercise
+   type=Mayúsculas
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_5_1_1.htm;Usando las teclas para Mayúsculas;0;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert05011keyintro.txt;FJ;PRESS;left
+    EVENT=KEYINTRO;0;file:sp7qwert05013keyintro.txt;FJ;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert05012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7qwert05021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=.
+ new keys=áéíóúÁÉÍÓÚüÜ´
+ begin exercise
+   type=Punto y tilde
+   duration=1
+    EVENT=HTMLMESSAGE;1;sp7school06031htmlmessage.htm;Las tildes;0;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert05032keyintro.txt;%2E%B4;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert05041keyintro.txt;%2E%E1;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert05033keyintro.txt;%2E%B4;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:sp7qwert05042key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7qwert05031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7qwert05041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7qwert05051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas G y P
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=pgPG
+ begin exercise
+   type=Nuevas teclas G P
+   duration=3
+    EVENT=KEYINTRO;0;file:sp7qwert06011message.txt;gp;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert06011keyintro.txt;gp;PRESS;left
+    EVENT=KEYINTRO;0;file:sp7qwert06013keyintro.txt;gp;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert06012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7qwert06021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7qwert06031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Ayuda: Tome pausas
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_7_5_1.htm;Tome una pausa;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7qwert06041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7qwert06051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas B M y coma
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=mMbB
+ begin exercise
+   type=Nuevas teclas B M
+   duration=3
+    EVENT=KEYINTRO;0;file:sp7qwert07011keyintro.txt;bm;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert07013keyintro.txt;bm;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert07013keyintro7461.txt;bm;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert07012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7qwert07021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7qwert07031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ new keys=,
+ begin exercise
+   type=Coma
+   duration=1
+    EVENT=KEYINTRO;0;file:sp7qwert07021keyintro.txt;%2C;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert07023keyintro.txt;%2C;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert07024keyintro.txt;%2C;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:sp7qwert07023key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7qwert07041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Ayuda: Compruebe su postura
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_5_5_1.htm;Compruebe su posición;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7qwert07051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas V Y y ¿ ?
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=vVyY
+ begin exercise
+   type=Nuevas teclas V Y
+   duration=3
+    EVENT=KEYINTRO;0;file:sp7qwert08011keyintro.txt;vy;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert08012keyintro.txt;vy;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert08013keyintro.txt;vy;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert08012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7qwert08021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=?¿
+ begin exercise
+   type=Nuevas teclas ¿ ?
+   duration=1
+    EVENT=KEYINTRO;0;file:sp7qwert08021keyintro8416.txt;%3F%BF;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert08021keyintro.txt;%3F%BF;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert08023keyintro.txt;%3F%BF;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:sp7qwert08022key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7qwert08031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7qwert08041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7qwert08051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas Z H y ¡ !
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=zZhH
+ begin exercise
+   type=Nuevas teclas Z H
+   duration=3
+    EVENT=KEYINTRO;0;file:sp7qwert09011keyintro9423.txt;zh;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert09011keyintro.txt;zh;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert09013keyintro.txt;zh;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert09012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7qwert09021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=¡!
+ begin exercise
+   type=Nuevas teclas ¡ !
+   duration=2
+    EVENT=KEYINTRO;0;file:sp7qwert09014keyintro.txt;%A1%21;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert09015keyintro.txt;%A1%21;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert09016keyintro.txt;%A1%21;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:sp7qwert09021school.txt;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7qwert09031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=TEXT2;3;file:sp7qwert09041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7qwert09051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Teclas W y X
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=xXwW
+ begin exercise
+   type=Nuevas teclas W X
+   duration=3
+    EVENT=KEYINTRO;0;file:sp7qwert010011keyintro7697.txt;wx;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert010011keyintro.txt;wx;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7qwert010013keyintro.txt;wx;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sp7qwert010012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7qwert010021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7qwert010031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7qwert010041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Ayuda: Examenes
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_12_5_1.htm;Realice un Examen de Mecanografía;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7qwert010051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+ begin exercise
+   type=¿Qué hacer a continuación?
+   duration=2
+    EVENT=HTMLMESSAGE;2;msg_spa_sp7qwert_12_1_1.htm;Poner a prueba sus habilidades;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_12_1_2.htm;Usar el Satélite;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7qwert_12_1_3.htm;Cursos Adicionales;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter

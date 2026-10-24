@@ -1,0 +1,156 @@
+$description=Cours sur les chiffres
+$longdesc=Ces deux leçons vont vous apprendre à utiliser la rangée des chiffres.
+$version=7.0
+$language=fr
+$chapters=2
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 8.8.2006 13:56
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Cours sur les Chiffres
+alternatekeyboards=1
+keyboard=ALL
+wizardname=FR7AZERT
+simplewizard=1
+last free=0
+keyboardbase=QWERTY QWERTZ AZERTY SWISSGER
+
+begin chapter
+ chapter name=1;Chiffres 3, 4, 5, 6, 7 et 8
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=qsdfjklm
+ new keys=SEMICOLON
+ new keys=ie
+ new keys=tu
+ new keys=ao
+ new keys=nc
+ new keys=QSDFJKLMIETUAONC
+ new keys=gGhH
+ new keys='
+ new keys=éè
+ new keys=pPrR
+ new keys=,
+ new keys=çÇà
+ new keys=?
+ new keys=xXyY
+ new keys=":
+ new keys=vVbB
+ new keys=ùwWzZ
+ new keys=âêîôûëïü
+ new keys=.
+
+ begin exercise
+   type=La rangée des chiffres
+   duration=0
+    EVENT_QWERTY=HTMLMESSAGE;0;msg_fre_fr7NumRow_1_1_1qw.htm;La rangée des chiffres;0;left;0;0;0;0;0;0;0;0
+    EVENT_QWERTZ=HTMLMESSAGE;0;msg_fre_fr7NumRow_1_1_1qz.htm;La rangée des chiffres;0;left;0;0;0;0;0;0;0;0
+    EVENT_AZERTY=HTMLMESSAGE;0;msg_fre_fr7NumRow_1_1_1.htm;La rangée des chiffres;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ new keys=4567
+ begin exercise
+   type=Chiffres 4 5 6 7
+   duration=4
+    EVENT=KEYINTRO;0;file:fr7NumRow0011keyintro.txt;4567;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7NumRow0012keyintro.txt;45;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7NumRow0013keyintro.txt;67;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7NumRow01015keyintro.txt;4567;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=KEY2;4;file:fr7NumRow0012key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTZ=KEY2;4;file:fr7NumRow0012key2qz.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;4;file:fr7NumRow0012key2qz.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;4;file:fr7NumRow0012key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de mots
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7NumRow0021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ new keys=38
+ begin exercise
+   type=Chiffres 3 et 8
+   duration=2
+    EVENT=KEYINTRO;0;file:fr7NumRow0021keyintro.txt;38;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7NumRow1022keyintro.txt;38;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7NumRow01033keyintro.txt;38;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:fr7NumRow1023key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7NumRow1041sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fr7NumRow1051paragraph2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Chiffres 1, 2, 9 et 0
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=29
+ begin exercise
+   type=Chiffres 2 et 9
+   duration=2
+    EVENT=KEYINTRO;0;file:fr7NumRow2011keyintro5106.txt;29;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7NumRow2011keyintro.txt;29;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7NumRow02013keyintro.txt;29;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=KEY2;2;file:fr7NumRow2012key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTZ=KEY2;2;file:fr7NumRow2012key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:fr7NumRow2012key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:fr7NumRow2012key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ new keys=10
+ begin exercise
+   type=Chiffres 1 et 0
+   duration=2
+    EVENT=KEYINTRO;0;file:fr7NumRow2021keyintro.txt;10;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7NumRow2022keyintro.txt;10;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fr7NumRow02023keyintro.txt;newkeys;0;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=KEY2;2;file:fr7NumRow2023key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_QWERTZ=KEY2;2;file:fr7NumRow2023key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_SWISSGER=KEY2;2;file:fr7NumRow2023key2qw.txt;0;0;0;0;0;0;0;25;75;175;125;1
+    EVENT_AZERTY=KEY2;2;file:fr7NumRow2023key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Exercice de phrases
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7NumRow2031sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Exercice de paragraphes
+   duration=4
+    EVENT=PARAGRAPH2;4;file:fr7NumRow2041paragraph2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Exercice de texte
+   duration=4
+    EVENT=TEXT2;4;file:fr7NumRow2051text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter

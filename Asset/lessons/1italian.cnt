@@ -1,0 +1,768 @@
+$description=Corso completo
+$longdesc=Impara correttamente il sistema di dattilografia per computer iniziando dai principi fondamentali.
+$version=1.0
+$language=IT
+$chapters=12
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 14.12.2004 18:48
+
+newkeysloops=4
+wordloop=2
+wordmaxloop=0
+
+contents name=Corso completo
+keyboard=all
+default time=45
+wizardname=1ITALIAN
+simplewizard=1
+last free=2
+keyboardbase=QWERTY QWERTZ
+
+begin chapter
+ chapter name=1;Posizione base e tasti i e
+ picture=ch1.pic
+ durationpercent=87
+ extradescr=
+ new keys_qwerty=asdfjklò
+ new keys_qwertz=asdfjklö
+ begin exercise
+   type=Posizione base
+   duration=5
+    EVENT_QWERTY=MESSAGE;0;File:itbasi1.int;Fondamenta di dattilografia;basic1.bmp;left
+    EVENT_QWERTZ=MESSAGE;0;File:itbasi1qz.int;Fondamenta di dattilografia;basic1.bmp;left
+    EVENT=MESSAGE;0;File:itbas1b.int;Posizione dita;basic1.bmp;left
+    EVENT=MESSAGE;0;File:itbasi2.int;Posizione dita;basic1.bmp;left
+    EVENT_QWERTY=NEWKEYS;2;File:it0101.exc
+    EVENT_QWERTZ=NEWKEYS;2;File:it0101qz.exc
+ end exercise
+
+ begin exercise
+   type=Combinazioni
+   duration=5
+    EVENT=MESSAGE;0;File:itbasi3.int;Istruzioni;stdtip.bmp;left
+    EVENT_QWERTY=KEYBROW;2;File:it0102.exc
+    EVENT_QWERTZ=KEYBROW;2;File:it0102qz.exc
+ end exercise
+
+ begin exercise
+   type=Gioco delle Bollicine
+   duration=3
+    EVENT_QWERTY=BUBBLES;1;asdfjklò
+    EVENT_QWERTZ=BUBBLES;1;asdfjklö
+ end exercise
+
+ new keys=ie
+ begin exercise
+   type=Nuovi tasti: e i
+   duration=5
+    EVENT=MESSAGE;0;File:itbasi4.int;Fondamenta di dattilografia;stdtip.bmp;left
+    EVENT=NEWKEYS;1;keybuilder:ie
+    EVENT_QWERTY=NEWKEYS;2;File:it0104.exc
+    EVENT_QWERTZ=NEWKEYS;2;File:it0104qz.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=5
+    EVENT=WORD;0;File:it0105a.exc;space;2;4
+    EVENT_QWERTY=KEYBROW;2;File:it0105b.exc
+    EVENT_QWERTZ=KEYBROW;2;File:it0105bqz.exc
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=6
+    EVENT_QWERTY=KEYBSENTENCE;3;File:it0106.exc
+    EVENT_QWERTZ=KEYBSENTENCE;3;File:it0106qz.exc
+ end exercise
+
+ begin exercise
+   type=Gioco delle Nuvole
+   duration=4
+    EVENT_QWERTY=CLOUDS;2;it0107.exc
+    EVENT_QWERTZ=CLOUDS;2;it0107.exc
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=6
+    EVENT=MESSAGE;0;file:itergo1.int;Ergonomia;tip01.bmp;Left
+    EVENT=MESSAGE;0;file:itergo2.int;Ergonomia;tip01.bmp;Left
+    EVENT=MESSAGE;0;file:itergo3.int;Ergonomia;tip03.bmp;Left
+    EVENT_QWERTY=SENTENCE;3;File:it0108.exc;true
+    EVENT_QWERTZ=SENTENCE;3;File:it0108qz.exc;true
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuovi tasti: n r
+ picture=ch1.pic
+ durationpercent=92
+ extradescr=
+ new keys=nr
+ begin exercise
+   type=Nuovi tasti: n r
+   duration=6
+    EVENT=NEWKEYS;1;keybuilder:nr
+    EVENT_QWERTY=NEWKEYS;2;File:it0201.exc
+    EVENT_QWERTZ=NEWKEYS;2;File:it0201qz.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=6
+    EVENT=WORD;0;File:it0202a.exc;space;2;4
+    EVENT_QWERTY=KEYBROW;2;File:it0202b.exc
+    EVENT_QWERTZ=KEYBROW;2;File:it0202bqz.exc
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=6
+    EVENT_QWERTY=KEYBSENTENCE;3;File:it0204.exc
+    EVENT_QWERTZ=KEYBSENTENCE;3;File:it0204qz.exc
+ end exercise
+
+ begin exercise
+   type=Il gioco WordTris
+   duration=3
+    EVENT=WORDTRIS;3;it0205.exc
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=7
+    EVENT=MESSAGE;0;File:itbad.int;Posizione sbagliata;tip02.bmp;left
+    EVENT_QWERTY=SENTENCE;3;File:it0206.exc;true
+    EVENT_QWERTZ=SENTENCE;3;File:it0206qz.exc;true
+ end exercise
+
+ begin exercise
+   type=Gioco delle Bollicine
+   duration=4
+    EVENT_QWERTY=BUBBLES;2;nrieasdfjklò
+    EVENT_QWERTZ=BUBBLES;2;nrieasdfjklö
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=8
+    EVENT_QWERTY=TEXT;4;File:it0208.exc;true
+    EVENT_QWERTZ=TEXT;4;File:it0208qz.exc;true
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuovi tasti: c o '
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ new keys_qwerty=co
+ new keys_qwertz=co`ò
+ begin exercise
+   type=Nuovi tasti: c o
+   duration=5
+    EVENT_QWERTY=NEWKEYS;0;keybuilder:co
+    EVENT_QWERTZ=NEWKEYS;0;File:it0300qz.exc
+    EVENT_QWERTY=NEWKEYS;1;File:it0301.exc
+    EVENT_QWERTZ=NEWKEYS;1;File:it0301qz.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=5
+    EVENT=WORD;1;File:it0302a.exc;space;2;4
+    EVENT=KEYBROW;3;File:it0302b.exc
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=5
+    EVENT=SENTENCE;5;File:it0304.exc;true
+ end exercise
+
+ begin exercise
+   type=Ricapitolazione
+   duration=8
+    EVENT=BUILDER;8;asdf
+ end exercise
+
+ new keys='
+ begin exercise
+   type=Nuovo tasto: '
+   duration=4
+    EVENT=NEWKEYS;0;keybuilder:'
+    EVENT=NEWKEYS;3;File:it0305.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=6
+    EVENT=WORD;1;File:it0306a.exc;space;2;4
+    EVENT=KEYBROW;4;File:it0306b.exc
+ end exercise
+
+ begin exercise
+   type=Gioco delle Bollicine
+   duration=4
+    EVENT=BUBBLES;4;conrieasdfjklò
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=7
+    EVENT=TEXT;7;File:it0308.exc;true
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Maiuscole e punto 
+ picture=ch1.pic
+ durationpercent=92
+ extradescr=
+ new keys=CONRIEASDFJKL
+ begin exercise
+   type=Nuovo tasto: Shift
+   duration=5
+    EVENT=MESSAGE;0;File:itcapi.int;Usare le maiuscole;basic1.bmp;left
+    EVENT=NEWKEYS;5;File:it0401.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=5
+    EVENT=WORD;1;File:it0402a.exc;space;2;4
+    EVENT=KEYBROW;3;File:it0402b.exc
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=5
+    EVENT=SENTENCE;5;File:it0403.exc;true
+ end exercise
+
+ new keys=.
+ begin exercise
+   type=Nuovo tasto: .
+   duration=4
+    EVENT=NEWKEYS;0;keybuilder:.
+    EVENT=NEWKEYS;3;File:it0404.exc
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=5
+    EVENT=KEYBSENTENCE;5;File:it0405.exc
+ end exercise
+
+ begin exercise
+   type=Gioco delle Bollicine
+   duration=3
+    EVENT=BUBBLES;3;.'CcOoNnRrIiEeAaSsDdFfJjKkLlÒò
+ end exercise
+
+ begin exercise
+   type=Paragrafi
+   duration=7
+    EVENT=PARAGRAPH;7;File:it0407.exc;true
+ end exercise
+
+ begin exercise
+   type=Testi
+   duration=7
+    EVENT=TEXT;7;File:it0408.exc;true
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuovi tasti: t u é è
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ new keys=tTuU
+ begin exercise
+   type=Nuovi tasti: t u
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:tu
+    EVENT=NEWKEYS;2;File:it0501.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=5
+    EVENT=WORD;1;File:it0502a.exc;space;2;4
+    EVENT=KEYBROW;3;File:it0502b.exc
+ end exercise
+
+ begin exercise
+   type=Il gioco WordTris
+   duration=4
+    EVENT=WORDTRIS;4;wordbuilder:tTuU
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=6
+    EVENT=SENTENCE;6;File:it0504.exc;true
+ end exercise
+
+ new keys=éè
+ begin exercise
+   type=Nuovi tasti: é è
+   duration=5
+    EVENT_QWERTY=NEWKEYS;2;File:it0505a.exc
+    EVENT_QWERTZ=NEWKEYS;2;File:it0505aqz.exc
+    EVENT=WORD;0;File:it0505b.exc;space;2;4
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=6
+    EVENT=KEYBSENTENCE;6;File:it0506.exc
+ end exercise
+
+ begin exercise
+   type=Paragrafi
+   duration=7
+    EVENT=PARAGRAPH;7;File:it0507.exc;true
+ end exercise
+
+ begin exercise
+   type=Ricapitolazione
+   duration=8
+    EVENT=BUILDER;8;asdf
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuovi tasti: v m à ì ù
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ new keys=vVmM
+ begin exercise
+   type=Nuovi tasti: v m
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:vm
+    EVENT=NEWKEYS;2;File:it0601.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=5
+    EVENT=WORD;1;File:it0602a.exc;space;2;4
+    EVENT=KEYBROW;3;File:it0602b.exc
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=5
+    EVENT=SENTENCE;5;File:it0603.exc;true
+ end exercise
+
+ new keys=àìù
+ begin exercise
+   type=Nuovi tasti: à ì ù
+   duration=5
+    EVENT_QWERTY=NEWKEYS;2;File:it0604a.exc
+    EVENT_QWERTZ=NEWKEYS;2;File:it0604aqz.exc
+    EVENT=WORD;0;File:it0604b.exc;space;2;4
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=5
+    EVENT=KEYBSENTENCE;5;File:it0605.exc
+ end exercise
+
+ begin exercise
+   type=Paragrafi
+   duration=8
+    EVENT=PARAGRAPH;8;File:it0606.exc;true
+ end exercise
+
+ begin exercise
+   type=Gioco delle Nuvole
+   duration=5
+    EVENT=CLOUDS;5;wordbuilder:éèvVmM
+ end exercise
+
+ begin exercise
+   type=Testi
+   duration=8
+    EVENT=TEXT;8;File:it0608.exc;true
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuovi tasti: g h , :
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ new keys=gGhH
+ begin exercise
+   type=Nuovi tasti: g h
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:gh
+    EVENT=NEWKEYS;2;File:it0701.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=4
+    EVENT=WORD;0;File:it0702a.exc;space;2;4
+    EVENT=KEYBROW;3;File:it0702b.exc
+ end exercise
+
+ new keys=,:
+ begin exercise
+   type=Nuovi tasti: , :
+   duration=4
+    EVENT=NEWKEYS;3;File:it0703a.exc
+    EVENT=WORD;1;File:it0703b.exc;space;2;4
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=5
+    EVENT=KEYBSENTENCE;5;File:it0704.exc;true
+ end exercise
+
+ begin exercise
+   type=Gioco delle Bollicine
+   duration=4
+    EVENT=BUBBLES;4;asdfjkl
+ end exercise
+
+ begin exercise
+   type=Paragrafi
+   duration=6
+    EVENT=PARAGRAPH;6;File:it0706.exc;true
+ end exercise
+
+ begin exercise
+   type=Testi
+   duration=8
+    EVENT=TEXT;8;File:it0707.exc;true
+ end exercise
+
+ begin exercise
+   type=Ricapitolazione
+   duration=7
+    EVENT=BUILDER;7;asdf
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuovi tasti: p z " ?
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ new keys=pPZz
+ begin exercise
+   type=Nuovi tasti: p z
+   duration=4
+    EVENT=NEWKEYS;0;keybuilder:pz
+    EVENT_QWERTY=NEWKEYS;1;File:it0801.exc
+    EVENT_QWERTZ=NEWKEYS;1;File:it0801qz.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=4
+    EVENT=WORD;0;File:it0802a.exc;space;2;4
+    EVENT=KEYBROW;3;File:it0802b.exc
+ end exercise
+
+ new keys="?
+ begin exercise
+   type=Nuovi tasti: " ?
+   duration=4
+    EVENT_QWERTY=NEWKEYS;1;File:it0803a.exc
+    EVENT_QWERTZ=NEWKEYS;1;File:it0803aqz.exc
+    EVENT=WORD;0;File:it0803b.exc;space;2;4
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=6
+    EVENT=KEYBSENTENCE;2;File:it0804a.exc
+    EVENT=SENTENCE;3;File:it0804b.exc;true
+ end exercise
+
+ begin exercise
+   type=Gioco delle Nuvole
+   duration=4
+    EVENT=CLOUDS;4;it0805.exc
+ end exercise
+
+ begin exercise
+   type=Paragrafi
+   duration=6
+    EVENT=PARAGRAPH;6;File:it0806.exc;true
+ end exercise
+
+ begin exercise
+   type=Testi
+   duration=8
+    EVENT=TEXT;8;File:it0807.exc;true
+ end exercise
+
+ begin exercise
+   type=Ricapitolazione
+   duration=7
+    EVENT=BUILDER;7;asdf
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuovi tasti: b q %; !
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ new keys=bBqQ
+ begin exercise
+   type=Nuovi tasti: b q
+   duration=4
+    EVENT=NEWKEYS;1;keybuilder:bq
+    EVENT=NEWKEYS;2;File:it0901.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=5
+    EVENT=WORD;1;File:it0902a.exc;space;2;4
+    EVENT=KEYBROW;3;File:it0902b.exc
+ end exercise
+
+ new keys=%;!
+ begin exercise
+   type=Nuovi tasti: %; !
+   duration=3
+    EVENT_QWERTY=NEWKEYS;1;File:it0903a.exc
+    EVENT_QWERTZ=NEWKEYS;1;File:it0903aqz.exc
+    EVENT=WORD;0;File:it0903b.exc;space;2;4
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=6
+    EVENT=KEYBSENTENCE;2;File:it0904a.exc
+    EVENT=SENTENCE;3;File:it0904b.exc;true
+ end exercise
+
+ begin exercise
+   type=Gioco delle Bollicine
+   duration=5
+    EVENT=BUBBLES;5;asdfjkl
+ end exercise
+
+ begin exercise
+   type=Paragrafi
+   duration=6
+    EVENT=PARAGRAPH;6;File:it0906.exc;true
+ end exercise
+
+ begin exercise
+   type=Testi
+   duration=8
+    EVENT=TEXT;8;File:it0907.exc;true
+ end exercise
+
+ begin exercise
+   type=Ricapitolazione
+   duration=8
+    EVENT=BUILDER;8;asdf
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuovi tasti: x y w ( ) &&
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ new keys=xXyYwW
+ begin exercise
+   type=Nuovi tasti: x y w
+   duration=4
+    EVENT_QWERTY=NEWKEYS;2;File:it1001.exc
+    EVENT_QWERTZ=NEWKEYS;2;File:it1001qz.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=4
+    EVENT=WORD;0;File:it1002a.exc;space;2;4
+    EVENT=KEYBROW;3;File:it1002b.exc
+ end exercise
+
+ new keys=()%&
+ begin exercise
+   type=Nuovi tasti: ( ) &
+   duration=4
+    EVENT=NEWKEYS;3;File:it1003a.exc
+    EVENT=WORD;0;File:it1003b.exc;space;2;4
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=6
+    EVENT=KEYBSENTENCE;2;File:it1004.exc
+    EVENT=SENTENCE;3;File:it1004b.exc;true
+ end exercise
+
+ begin exercise
+   type=Il gioco WordTris
+   duration=4
+    EVENT=WORDTRIS;4;it1005.exc
+ end exercise
+
+ begin exercise
+   type=Paragrafi
+   duration=6
+    EVENT=PARAGRAPH;6;File:it1006.exc;true
+ end exercise
+
+ begin exercise
+   type=Testi
+   duration=8
+    EVENT=TEXT;8;File:it1007.exc;true
+ end exercise
+
+ begin exercise
+   type=Ricapitolazione
+   duration=7
+    EVENT=BUILDER;7;asdf
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Numeri
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ new keys=12345
+ begin exercise
+   type=Nuovi tasti: 1 2 3 4 5
+   duration=4
+    EVENT=NEWKEYS;3;File:it1101a.exc
+    EVENT=WORD;1;File:it1101b.exc;space;2;4
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=4
+    EVENT=KEYBROW;4;File:it1102.exc
+ end exercise
+
+ new keys=67890
+ begin exercise
+   type=Nuovi tasti: 6 7 8 9 0
+   duration=4
+    EVENT=NEWKEYS;2;File:it1103a.exc
+    EVENT=WORD;1;File:it1103b.exc;space;2;4
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=6
+    EVENT=KEYBSENTENCE;2;File:it1104a.exc
+    EVENT=SENTENCE;3;File:it1104b.exc;true
+ end exercise
+
+ begin exercise
+   type=Gioco delle Bollicine
+   duration=5
+    EVENT=BUBBLES;5;1234567890
+ end exercise
+
+ begin exercise
+   type=Testi
+   duration=8
+    EVENT=TEXT;8;File:it1106.exc;true
+ end exercise
+
+ begin exercise
+   type=Testi
+   duration=8
+    EVENT=TEXT;8;file:it1107.exc;true
+ end exercise
+
+ begin exercise
+   type=Ricapitolazione
+   duration=6
+    EVENT=BUILDER;6;asdf
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Segni speciali
+ picture=ch1.pic
+ durationpercent=98
+ extradescr=
+ new keys=+-=
+ begin exercise
+   type=Nuovi tasti: + - =
+   duration=3
+    EVENT_QWERTY=NEWKEYS;1;File:it1201.exc
+    EVENT_QWERTZ=NEWKEYS;1;File:it1201qz.exc
+ end exercise
+
+ begin exercise
+   type=Parole
+   duration=3
+    EVENT=KEYBROW;3;File:it1202b.exc
+ end exercise
+
+ new keys=*/%
+ begin exercise
+   type=Nuovi tasti: * / %
+   duration=3
+    EVENT_QWERTY=NEWKEYS;1;File:it1203.exc
+    EVENT_QWERTZ=NEWKEYS;1;File:it1203qz.exc
+ end exercise
+
+ begin exercise
+   type=Frasi
+   duration=5
+    EVENT=KEYBSENTENCE;2;File:it1204a.exc
+    EVENT=SENTENCE;2;File:it1204b.exc;true
+ end exercise
+
+ begin exercise
+   type=Gioco delle Bollicine
+   duration=6
+    EVENT=BUBBLES;6;asdf
+ end exercise
+
+ begin exercise
+   type=Testi
+   duration=6
+    EVENT=TEXT;6;File:it1206.exc;true
+ end exercise
+
+ begin exercise
+   type=Ricapitolazione
+   duration=5
+    EVENT=BUILDER;5;asdf
+ end exercise
+
+ begin exercise
+   type=Testi
+   duration=11
+    EVENT=TEXT;11;file:it1208.exc;true
+    EVENT=MESSAGE;0;file:itprotr.int;ProTrainer;stdtip.bmp;left
+ end exercise
+
+end chapter

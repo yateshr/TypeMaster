@@ -1,0 +1,206 @@
+$description=Erikoismerkit
+$longdesc=Opi kirjoittamaan sujuvasti harvinaisemmat välimerkit, matemaattiset symbolit ja sulkeet. Huom! Suorita ensin Numerorivi-kurssi.
+$version=7.0
+$language=fin
+$chapters=4
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 19.10.2006 14:15
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=85,90,95
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Erikoismerkit
+alternatekeyboards=1
+keyboard=finnish.kbd
+nosemicolonreplacement=1
+wizardname=fi7qwert
+simplewizard=1
+last free=1
+
+begin chapter
+ chapter name=1;Näppäimet %; : / ?  
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTOÖÄÅ
+ new keys=cC,
+ new keys=gGhH
+ new keys=nNvV
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=1234567890
+ new keys=.
+ new keys=asdfjklöäåei
+ new keys=:%;
+ begin exercise
+   type=Näppäimet %; :
+   duration=2
+    EVENT=KEY2;2;file:finspeci01011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=2
+    EVENT=WORD2;2;file:finspeci01021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Näppäimet ? /
+   duration=2
+    EVENT=KEY2;2;file:finspeci01031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:finspeci01041word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:finspeci01051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:finspeci01061text2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Näppäimet ' " + - %=
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys='"
+ begin exercise
+   type=Näppäimet ' "
+   duration=2
+    EVENT=KEY2;2;file:finspeci02011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=2
+    EVENT=WORD2;2;file:finspeci02021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:finspeci02031sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=+-%=
+ begin exercise
+   type=Näppäimet + - %=
+   duration=2
+    EVENT=KEY2;2;file:finspeci02041key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:finspeci02051word2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:finspeci02061text2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Näppäimet ( ) % &&
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=()
+ begin exercise
+   type=Näppäimet ( )
+   duration=2
+    EVENT=KEY2;2;file:finspeci03011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ new keys=%&&
+ begin exercise
+   type=Näppäimet  % &
+   duration=2
+    EVENT=KEY2;2;file:finspeci03031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:finspeci03041word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:finspeci03051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=4
+    EVENT=TEXT2;4;file:finspeci03061text2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Näppäimet ! *
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=!*
+ begin exercise
+   type=Näppäimet ! *
+   duration=2
+    EVENT=KEY2;2;file:finspeci04011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=2
+    EVENT=WORD2;2;file:finspeci04021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:finspeci04041sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus I
+   duration=4
+    EVENT=TEXT2;4;file:finspeci04051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus II
+   duration=4
+    EVENT=TEXT2;4;file:finspeci04061text2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+end chapter

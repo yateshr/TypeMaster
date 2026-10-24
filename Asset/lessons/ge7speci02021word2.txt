@@ -1,0 +1,45 @@
+"Hallo" "Hallo" "Hallo" 
+
+(km) (km) (km) 
+
+"in Hochkommata" 
+"in Hochkommata" 
+
+Meilen (miles) 
+Meilen (miles) 
+
+(in Klammern) 
+(in Klammern) 
+
+"Meister" Müller 
+"Meister" Müller 
+
+km (Kilometer) 
+km (Kilometer) 
+
+"l" (Liter) 
+"l" (Liter) 
+
+brutto (incl. MwSt.) 
+brutto (incl. MwSt.) 
+
+"Hallo, world" (englisch) 
+"Hallo, world" (englisch) 
+
+Das ist eine "AG" (Aktiengesellschaft) 
+Das ist eine "AG" (Aktiengesellschaft) 
+
+km_pro_h (Geschwindigkeit) 
+km_pro_h (Geschwindigkeit) 
+
+"OTL" (Oberstleutnant) 
+"OTL" (Oberstleutnant) 
+
+Die Taste " (zwei Hochkommata) 
+Die Taste " (zwei Hochkommata) 
+
+(Ich dachte "oh je") 
+(Ich dachte "oh je") 
+
+Police (Polizei) 
+Police (Polizei) 

@@ -1,0 +1,699 @@
+$description=10-Finger Schreiben für Grundschulen
+$longdesc=Dieses Lernprogramm ist für Schülerinnen und Schüler an Grundschulen gemacht. Die Übungen sind kürzer und einfacher als in den anderen Kursen. Empfohlenes Alter: 8 - 11 Jahre. Tastatur: QWERTZ
+$version=7.0
+$language=ger
+$chapters=14
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 21.4.2010 14:40
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=
+short name=Junior-Kurs
+default time=10
+load icr=language-ger-jr-icr.icr
+
+contents name=10-Finger Schreiben für Grundschulen
+keyboard=all
+wizardname=gerjr
+simplewizard=1
+last free=2
+keyboardbase=QWERTY AZERTY QWERTZ SWISSGER
+
+begin chapter
+ chapter name=1;Die Grundreihe
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjklö
+ begin exercise
+   type=Grundlagen
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_1_1_1.htm;10-Finger Schreiben - was ist das?;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_1_1_2.htm;Die Position deiner Finger;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_1_1_3.htm;Tasten anschlagen;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_1_1_4.htm;Lerntipps;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_1_1_5.htm;Und los geht’s;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Die Grundreihe
+   duration=7
+    EVENT=KEYINTRO;0;file:gerjrqwz01021keyintro.txt;asdfjkl%F6;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz01022keyintro.txt;asdf;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz01023keyintro.txt;%20;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz01024keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz01025keyintro.txt;asdfjkl%F6;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz01026keyintro.txt;asdfjkl%F6;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz01027keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz01028keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;7;file:gerjrqwz01029key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=7
+    EVENT=WORD2;7;file:gerjrqwz01031word2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=7
+    EVENT=BUBBLES;7;none;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=7
+    EVENT=SENTENCE2;7;file:gerjrqwz01051sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=7
+    EVENT=EASYEXAM;7;file:gerjrqwz01061paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten E und I
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Die Oberreihe
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_2_1_1.htm;Die Oberreihe;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ new keys=ei
+ begin exercise
+   type=Neue Tasten: E I
+   duration=7
+    EVENT=KEYINTRO;0;file:gerjrqwz02021keyintro.txt;ei;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz02022keyintro.txt;ei;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz02023keyintro.txt;%20;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;7;file:gerjrqwz02024key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=7
+    EVENT=WORD2;7;file:gerjrqwz02031word2.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=WordTris
+   duration=7
+    EVENT=WORDTRIS;7;gerjrqwz02041clouds.txt;false;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=7
+    EVENT=SENTENCE2;7;file:gerjrqwz02051sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=7
+    EVENT=EASYEXAM;7;file:gerjrqwz02061paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten R und U
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=ru
+ begin exercise
+   type=Neue Tasten: R U
+   duration=7
+    EVENT=KEYINTRO;0;file:gerjrqwz03011keyintro.txt;ru;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz03012keyintro.txt;ru;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz03013keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;7;file:gerjrqwz03014key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=7
+    EVENT=WORD2;7;file:gerjrqwz03021word2.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=WortTris
+   duration=7
+    EVENT=WORDTRIS;7;gerjrqwz03031wordtris.txt;false;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=So sitzt du richtig am PC
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_3_4_1.htm;Setz dich richtig hin;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=7
+    EVENT=SENTENCE2;7;file:gerjrqwz03051sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=7
+    EVENT=EASYEXAM;7;file:gerjrqwz03061paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Großbuchstaben linke Hand
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=ASDFER
+ begin exercise
+   type=Schreiben von Großbuchstaben
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_4_1_1.htm;Großbuchstaben linke Hand;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Großbuchstaben linke Hand
+   duration=7
+    EVENT=KEYINTRO;0;file:gerjrqwz04021keyintro.txt;ASDFER;PRESS;right;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz04022keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;7;file:gerjrqwz04023key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=7
+    EVENT=WORD2;7;file:gerjrqwz04031word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=7
+    EVENT=BUBBLES;7;none;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=7
+    EVENT=SENTENCE2;7;file:gerjrqwz04051sentence2.txt;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=7
+    EVENT=EASYEXAM;7;file:gerjrqwz04061paragraph2.txt;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Großbuchstaben rechte Hand und Punkt
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=JKLÖIU
+ begin exercise
+   type=Großbuchstaben rechte Hand
+   duration=6
+    EVENT=KEYINTRO;0;file:gerjrqwz05011keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz05012keyintro.txt;JKLÖUI;PRESS;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz05013keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;6;file:gerjrqwz05013key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=6
+    EVENT=WORD2;6;file:gerjrqwz05021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=.
+ begin exercise
+   type=Neue Taste: Der Punkt
+   duration=4
+    EVENT=KEYINTRO;0;file:gerjrqwz05031keyintro.txt;%2E;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz05032keyintro.txt;%2E;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz05033keyintro.txt;%2E;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;4;file:gerjrqwz05034key2.txt;0;0;0;0;0;0;0;0;0;0;0;1
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=4
+    EVENT=BUBBLES;4;none;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=6
+    EVENT=SENTENCE2;6;file:gerjrqwz05051sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=6
+    EVENT=EASYEXAM;6;file:gerjrqwz05061paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten B N und der Bindestrich
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=bnBN
+ new keys=-
+ begin exercise
+   type=Die Unterreihe
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_6_1_1.htm;Die Unterreihe;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Neue Tasten: B N
+   duration=6
+    EVENT=KEYINTRO;0;file:gerjrqwz06021keyintro.txt;bn;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz06022keyintro.txt;bn;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz06023keyintro.txt;bn%20;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;6;file:gerjrqwz06024key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=6
+    EVENT=WORD2;6;file:gerjrqwz06031word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Neue Taste: Der Bindestrich
+   duration=4
+    EVENT=KEYINTRO;0;file:gerjrqwz06041keyintro.txt;%2D;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz06042keyintro.txt;%2D;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz06043keyintro.txt;%2D%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;4;file:gerjrqwz06044key2.txt;0;0;0;0;0;0;0;0;0;0;0;2
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=6
+    EVENT=SENTENCE2;6;file:gerjrqwz06051sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=4
+    EVENT=BUBBLES;4;none;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=6
+    EVENT=EASYEXAM;6;file:gerjrqwz06071paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten G H und das Fragezeichen
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=gGhH
+ begin exercise
+   type=Neue Tasten: G H
+   duration=6
+    EVENT=KEYINTRO;0;file:gerjrqwz07011keyintro.txt;gh;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz07012keyintro.txt;gh;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz07013keyintro.txt;gh;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;6;file:gerjrqwz07014key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=6
+    EVENT=WORD2;6;file:gerjrqwz07021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=?
+ begin exercise
+   type=Das Fragezeichen
+   duration=4
+    EVENT=KEYINTRO;0;file:gerjrqwz07031keyintro.txt;%3F;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz07032keyintro.txt;%3F;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz07033keyintro.txt;newkeys;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;4;file:gerjrqwz07034key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=6
+    EVENT=SENTENCE2;6;file:gerjrqwz07041sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Tipp: Entspann dich mal
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_7_5_1.htm;Ab und zu eine kleine Pause;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=4
+    EVENT=BUBBLES;4;none;true;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=6
+    EVENT=EASYEXAM;6;file:gerjrqwz07071paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Taste C und das Komma
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=cC,
+ begin exercise
+   type=Neue Tasten: C und Komma
+   duration=7
+    EVENT=KEYINTRO;0;file:gerjrqwz08011keyintro.txt;c%2C;SHOW;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz08012keyintro.txt;c%2C;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz08013keyintro.txt;c%2C;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;7;file:gerjrqwz08014key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=7
+    EVENT=WORD2;7;file:gerjrqwz08021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Tipp: Achte auf deine Haltung
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_8_3_1.htm;Achte auf deine Haltung;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=7
+    EVENT=BUBBLES;7;none;false;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=7
+    EVENT=SENTENCE2;7;file:gerjrqwz08051sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=7
+    EVENT=EASYEXAM;7;file:gerjrqwz08061paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten T Z und ß
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=tTzZ
+ begin exercise
+   type=Neue Tasten: T Z
+   duration=6
+    EVENT=KEYINTRO;0;file:gerjrqwz09011keyintro.txt;tz;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz09012keyintro.txt;tz;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz09013keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;6;file:gerjrqwz09014key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=6
+    EVENT=WORD2;6;file:gerjrqwz09021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new keys=ß
+ begin exercise
+   type=Neue Taste: ß
+   duration=4
+    EVENT=KEYINTRO;0;file:gerjrqwz09031keyintro.txt;%DF;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz09032keyintro.txt;%DF;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz09033keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;4;file:gerjrqwz09034key2.txt;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=6
+    EVENT=SENTENCE2;6;file:gerjrqwz09041sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=WordTris
+   duration=4
+    EVENT=WORDTRIS;4;gerjrqwz09051clouds.txt;false;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Tipp:Gleichmäßiges Schreiben
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_9_6_1.htm;Gleichmäßiges Schreiben;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=6
+    EVENT=EASYEXAM;6;file:gerjrqwz09071paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten W und O
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=wWoO
+ begin exercise
+   type=Neue Tasten: W O
+   duration=7
+    EVENT=KEYINTRO;0;file:gerjrqwz010011keyintro.txt;wo;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz010012keyintro.txt;wo;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz010013keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;7;file:gerjrqwz010014key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=7
+    EVENT=WORD2;7;file:gerjrqwz010021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=7
+    EVENT=SENTENCE2;7;file:gerjrqwz010031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=7
+    EVENT=BUBBLES;7;none;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=7
+    EVENT=EASYEXAM;7;file:gerjrqwz010051paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten V und M
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=vVmM
+ begin exercise
+   type=Neue Tasten: V M
+   duration=7
+    EVENT=KEYINTRO;0;file:gerjrqwz011011keyintro.txt;vm;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz011012keyintro.txt;vm;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz011013keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;7;file:gerjrqwz011014key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=7
+    EVENT=WORD2;7;file:gerjrqwz011021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=7
+    EVENT=SENTENCE2;7;file:gerjrqwz011031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=WordTris
+   duration=7
+    EVENT=WORDTRIS;7;gerjrqwz011041wordtris.txt;false;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=7
+    EVENT=EASYEXAM;7;file:gerjrqwz011051paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten Q und P
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=qQpP
+ begin exercise
+   type=Neue Tasten: Q P
+   duration=7
+    EVENT=KEYINTRO;0;file:gerjrqwz012011keyintro.txt;qp;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz012012keyintro.txt;qp;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz012013keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;7;file:gerjrqwz012014key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=7
+    EVENT=WORD2;7;file:gerjrqwz012021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=7
+    EVENT=SENTENCE2;7;file:gerjrqwz012031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=WordTris
+   duration=7
+    EVENT=WORDTRIS;7;gerjrqwz012041clouds.txt;false;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=7
+    EVENT=EASYEXAM;7;file:gerjrqwz012051paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten X und Ä
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=xXäÄ
+ begin exercise
+   type=Neue Tasten: X Ä
+   duration=7
+    EVENT=KEYINTRO;0;file:gerjrqwz013011keyintro.txt;xä;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz013012keyintro.txt;xä;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz013013keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;7;file:gerjrqwz013014key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=7
+    EVENT=WORD2;7;file:gerjrqwz013021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=7
+    EVENT=SENTENCE2;7;file:gerjrqwz013031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Kugelspiel
+   duration=7
+    EVENT=BUBBLES;7;none;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=7
+    EVENT=EASYEXAM;7;file:gerjrqwz013051paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Tasten Y und Ü
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=yYüÜ
+ begin exercise
+   type=Neue Tasten: Y Ü
+   duration=7
+    EVENT=KEYINTRO;0;file:gerjrqwz014011keyintro.txt;yü;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz014012keyintro.txt;yü;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:gerjrqwz014013keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;7;file:gerjrqwz014014key2.txt;0;0;0;0;0;0;0;0;0;0;0;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=7
+    EVENT=WORD2;7;file:gerjrqwz014021word2.txt;0;0;0;0;0;0;0;0;0;0;0;2
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=7
+    EVENT=SENTENCE2;7;file:gerjrqwz014031sentence2.txt;0;0;0;0;0;0;0;0;0;0;0;3
+ end exercise
+
+ begin exercise
+   type=WordTris
+   duration=7
+    EVENT=WORDTRIS;7;gerjrqwz014041wordtris.txt;false;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Lektionstest
+   duration=7
+    EVENT=EASYEXAM;7;file:gerjrqwz014051paragraph2.txt;0;0;0;0;0;0;0;0;0;0;0;4
+ end exercise
+
+ begin exercise
+   type=Fertig - Herzlichen Glückwunsch!
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_gerjrqwz_14_6_1.htm;Vom Lernen zum Anwenden;0;left;0;0;0;0;0;0;0;0
+ end exercise
+end chapter
+

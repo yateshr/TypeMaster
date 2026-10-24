@@ -1,0 +1,1895 @@
+﻿/////////////////////////////////////////////////////////////
+// Typing Master 10 GUI Localization
+//
+// language.tr file for Typing Master 10 6.21 and higher
+// revision version 1.2 TR Turkish spell checked
+// date: 12/27/2002 TU
+////////////////////////////////////////////////////////////
+//
+// Miscellaneous instructions for translators:
+// *Do not translate these comment rows starting with //
+//
+// *Spaces in the beginning and end of rows are marked with 
+//  notation \+ for better visibility.
+//
+// *Hotkeys for menu items are marked with & 
+//  e.g. "202=&1 Dk. Kelime (dk./kelime)" 
+//  When user presses 'W' in the program this item is automatically selected
+//  If a row contains a hotkey character, also insert a similar hotkey character in your translation
+//  Double check that the hotkey characters for one screen/menu are unique.
+//
+// *the '&'-character is marked as &&
+//
+/////////////////////////////////////////////////////////////
+
+// Do not edit the IDs 0..10
+0=language.tr
+1=Typing Master
+2=Typing Master 12
+
+// TMPRO 7.00.722: required definition here. 5=home default course,6=school default course, 7=secondary course
+5=uk7qwert.cnt
+6=uk7school.cnt
+7=uk7speed.cnt
+
+
+11=UK
+12=abcçdefgğhıijklmnoöprsştuüvwxyzABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVWXYZ
+13=abcçdefgğhıijklmnoöprsştuüvwxyz
+14=ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVWXYZ
+15=SuMoTuWeThFrSa
+
+/// these are for games
+221=abcdefghijklmnopqrstuvwxyz
+222=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+223=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890
+
+///// Do not translate the following one(s)
+///// ********************
+90=qwertyuiopasdfghjklzxcvbnm
+///// ********************
+
+/////////////////////////////////////////////////////////////
+// Çeviri kolaylığı için burada toplanan genel, yaygın olarak kullanılan dize
+/////////////////////////////////////////////////////////////
+24=Kullanıcı
+439=Kullanıcı Adı
+462=Kullanıcı:\+
+469=Kullanıcı:\+
+471=Kullanıcı:\+
+118=Doğruluk
+584=Doğruluk
+622=Doğruluk
+116=Hız
+131=Hız
+121=Hız Birimi
+201=Hız Birimi
+571=Hız Birimi
+629=Hız Birimi
+367=Brüt Hız (
+587=Brüt Hız
+623=Brüt Hız
+368=Net Hız (
+586=Net Hız
+621=Net Hız
+
+/////////////////////////////////////////////////////////////
+// Gezinme ve diyalog butonları için metinler
+/////////////////////////////////////////////////////////////
+721=&Giriş
+734=&Giriş
+722=&İptal
+733=&İptal
+602=&İptal
+88=&İptal
+1174=&İptal
+603=&ileri
+87=&Evet
+1173=&Tamam
+413=&Başla
+
+/////////////////////////////////////////////////////////////
+//Program menüsü
+//Bu kısayol tuşları, menü görünür olduğunda geçerlidir
+//Burada tanımladığınız kısayol tuşları menü görünürken kullanılamaz
+/////////////////////////////////////////////////////////////
+643=Menü
+554=&Dersler
+555=ÖZEL DERSLER
+556=YAZMA TESTİ
+557=OYUNLAR
+558=TYPING METER
+559=İSTATİSTİKLER
+560=AYARLAR
+561=Program Hakkında
+
+/////////////////////////////////////////////////////////////
+//Programın farklı bölümleri için başlıklar
+/////////////////////////////////////////////////////////////
+562=Tekrar Çalışmaları
+563=Oyunlar
+564=Klavye Testi
+565=İstatistik
+566=Typing Meter
+567=Typing Meter
+568=Eğitim Ayarları
+569=Program Hakkında
+
+/////////////////////////////////////////////////////////////
+//Bilgi ekranı
+/////////////////////////////////////////////////////////////
+16=R
+17=Ziyaretçi
+18=www.TypingMaster.com
+19=Genel
+20=Sürüm
+21=Yapı
+22=Lisans Kimliği
+23=Güncellemeleri denetle
+44=lic.
+45=http://www.TypingMaster.com
+301=Telif Hakkı 2021 Typing Master Finland, İnç. Tüm hakları saklıdır.
+302=Sınırlı deneme sürümü
+303=Lisans Hizmetleri
+304=Yalnızca Typing Meter Kayıtları
+305=Typing Master:\+
+551=Lisans Sipariş Et
+552=Nasıl satın alınır
+553=Siparişimi Yönet
+713=Gelişmiş Çalışma Materyal Düzenleyicisini Başlatın
+714=Diğer bağlantılar
+570=tmeditor.exe
+
+/////////////////////////////////////////////////////////////
+//Kurs ve ders ekranları
+/////////////////////////////////////////////////////////////
+395=Kursa devam et
+145=Kurs Tamamlandı
+396=Ders\+
+124=Ders\+
+125=of\+
+// aşağıdaki "n dersinde n" kullanılır, önce ve sonra boşlukları not edin
+712=\+of\+
+
+397=Hoş geldiniz..
+398=Ilk derse girin >
+399=% tamamlandı
+710=Başlamak için ileri.
+711=Süreyi değiştir
+715=Egzersiz sonuçları
+
+105=Sonraki ders
+107=Typing Master'i 7 gün boyunca test ettiğiniz için teşekkür ederiz! Artık premium özelliklere erişiminizi kaybedeceksiniz ancak sınırlı deneme sürümünü kullanmaya devam edebilir ve ücretsiz kursları tamamlayabilirsiniz. Artık inceleme, yazma testi ve Yazma Ölçer bölümlerinde de sınırlamalar var.\n\n Typing Master'a dakikalar içinde tam erişim elde edebilirsiniz - çevrimiçi bir lisans satın almanız yeterlidir. Daha fazla bilgi için aşağıdaki düğmeleri tıklayın.
+108=
+109=Tam sürüm hakkında daha fazla bilgi ister misiniz?
+110=Üzgünüz, gerekli ders sınavını geçemediğiniz için ilerleyemezsiniz.
+111=Üzgünüz, tüm ders alıştırmalarını geçemediğiniz için ilerleyemezsiniz.
+112=Ders kilitli
+114=Egzersizler
+117=kpm
+119=BackSpace
+120=Verimlilik
+122=Çok kısa sürede yazdın -\+
+123=Performans puanlarınız hesaplanamıyor.
+127=Egzersiz tamamlandı.
+128=Devam etmek için ENTER' e başınız.
+129=Devam etmek için tüm alıştırma tamamlanmalıdır. Bu egzersizi iptal etmek istediğinizden emin misiniz?
+130=Zaman
+132=Ritim
+133=Puan
+134=Eksik
+136=Doğru
+137=Anonim
+138=Sonraki derse git
+139=\+dk.
+146=Typing Master'a hoş geldiniz.
+366=Kurs Başlatılmadı
+
+627=Hoş geldiniz
+631=&Ayarları değiştir
+632=&Daha fala bilgi
+633=Kurs istatistikleri
+634=Kurs Adı
+635=Çalışılan zaman
+636=Tamamlandı
+
+638=Tebrikler
+639=Artık bu kursu başarıyla tamamladınız. Yeni bir kursa başlamak için İleri'ye basın.\+
+640=Yeni kursa başla
+
+
+/////////////////////////////////////////////////////////////
+//tamamlanmış bir alıştırma/test hakkında bilgi görüntüleyen metinler
+/////////////////////////////////////////////////////////////
+46=Harika
+47=Profesyonel
+48=Orta Düzey
+49=Yeni başlayan
+50=Senin hızın\+
+51=Çok iyi\+
+52=İyi\+
+53=İyi sayılır\+
+54=O\+
+55=Yaptığınız hatalar verimliliğinizi azalttı.\+
+56=Net hızınızı artırmak için doğru yazmaya odaklanmaya çalışın.
+57=Doğruluk %'si\+
+58=Çok iyi\+
+59=İyi\+
+60=İyi sayılır\+
+61=Sen\+
+62=BackSpace'i çok kullandınız. BackSpace'e daha az kullanmayı deneyin\+
+63=sizi yavaşlattığı ve yazma akışını kesintiye uğrattığı için.
+64=Doğruluk %'si\+
+65=Çok iyi\+
+66=İyi\+
+67=İyi sayılır\+
+68=Sen\+
+69=bir veya daha fazla tuşu(harfi) zor buluyor gibi görünüyor - ek eğitim için İncelemeyi deneyebilirsiniz.
+70=As the other aspects of your typing are now in\+
+71=Çok iyi\+
+72=İyi\+
+73=Sen\+
+74=şimdi yazma hızınızı arttırmayı deneyebilirsiniz\+
+75=daha yüksek yazma verimliliği.
+76=Sen yazdın\+
+77=Çok iyi\+
+78=İyi\+
+79=Hızlı! Aferin!
+80=Senin doğruluğun\+
+81=Çok iyi\+
+82=İyi\+
+83=İyi. Daha fazla çalışmaya devam edin!
+
+
+/////////////////////////////////////////////////////////////
+//Yeni tuşları incelerken klavye ve el resmi için metinler
+/////////////////////////////////////////////////////////////
+147=Shift
+148=Alt Gr
+149=Enter
+150=Space
+151=Sol Shift
+152=Sağ Shift
+153=Alt Gr
+154=Sol küçük parmak
+155=Sol yüzük parmağı
+156=Sol orta parmak
+157=Sol işaret parmağı
+158=Sağ işaret parmağı
+159=Sağ orta parmak
+160=Sağ yüzük parmağı
+161=Sağ küçük parmak
+162=Baş parmak
+163=Tab
+164=Enter
+165=Back
+166=Space
+167=Shift
+
+
+/////////////////////////////////////////////////////////////
+//Ekran Ayarları
+/////////////////////////////////////////////////////////////
+182=&Sesler
+183=Açık
+184=Kapalı
+185=Ders süresi
+186=Ders süresi ne kadar olmalı?
+187=&25 dk
+188=&35 dk
+189=&45 dk
+190=&Zaman sınırı yok
+191=&Ekran boyutu
+192=Alıştırmalarda kullanılacak yazı boyutunu seçiniz?
+193=&Normal
+194=&Büyük
+195=Genel Ayarlar
+196=Klavye Düzeni
+197=Hangi klavye düzenini kullanmak istesiniz?
+198=&Varsayılan
+199=&Diğerleri
+200=& Oyun Süresi
+202=Kelime 1 dk.'da (dk/kelime)
+203=Vuruş 1 dk.'da (dk/vuruş)
+204=Ayarlar
+205=Şuan kullanılamıyor
+206=Bu kopyanın süresi doldu
+207=Sınırlı deneme sürümü
+208=Kelime 1 dk.'da
+209=Vuruş 1 dk.'da
+572=N&ormal
+573=Bu ayar, Typing Master'i bir sonraki başlatışınızda geçerli olacaktır.
+574=&Diğerleri:
+628=Klavyeler
+630=Sesler
+
+
+/////////////////////////////////////////////////////////////
+//Lisans ekleme
+/////////////////////////////////////////////////////////////
+211=Gerekli bilgiler eksik. Lütfen hem Lisans Kimliğini
+212=hem de lisans doğrulamasını tamamlamak için Lisans Anahtarını girin.
+213=Teşekkürler, lisans anahtarınız kabul edildi.
+214=Programınız artık tam sürüme yükseltilmiştir. Programlamamızı değerlendirebilirsiniz.\+
+215=Lisans Kimliği veya Anahtar yanlış girildi! Lütfen bu kodları dikkatlice yeniden girin.
+217=Lisans anahtarınızın süresi doldu. Bazı özellikler artık kullanılamaz.
+435=Girilen Anahtar yalnızca önceki program sürümleri içindir. Bir yükseltme satın almak için lütfen TM1150 kupon kodunu kullanın!
+436=Lütfen yükseltme fiyatlarına www.TypingMaster.com adresinden bakın.
+716=\+Mevcut lisanslar
+717=Lisans Anahtarını Girin
+718=Lisansınızı etkinleştirmek için lisans e-postanızda bulunan Lisans Kimliği ve Anahtarı girin (spam klasörünüzü kontrol edin). Lisans Kimliğiniz genellikle sipariş numaranızdır.
+719=Lisans Kimliği:
+720=Lisans Anahtarı:
+723=Typing Master deneme sürümü
+724=Bu sınırlı bir deneme sürü müdür - tam sürümle bir adım daha ileri gidin.
+725=&Tam sürüm sipariş verin
+1335=Typing Meter Lis.
+1336=Sınırsız/Okul Bölgesi Lis.
+1337=Eşzamanlı Lis.
+1338=işletme Lis.
+
+
+/////////////////////////////////////////////////////////////
+//İstatistikler
+/////////////////////////////////////////////////////////////
+244=İstatistikler
+245= kullanılmış
+246= % tamamlandı
+247=Tamamlanmış
+248= sol
+249=Sorunlu
+250=Zor
+251=Tamam
+252=Çalışma Raporu
+253=İlerlemek
+254=Öğrenci:
+255=Tamamlanan:
+256=Kullanılan süre:
+257=Kalan zaman:
+258=Kurs
+269=\+dk\+
+270=\+s\+
+271=? dk\+
+272=\+dk\+
+273=\+s\+
+369=% tamamlandı
+370=Okundu\+
+371=, sol\+
+372=\+dk.
+373=\+sn.
+374=\+dk.\+
+
+575=&Görünüm
+576=Yazma hızı
+577=Doğruluk %'si
+578=Ders
+579=Mevcut Dersler
+580=Çalışılan Süre
+581=Kullanım
+582=İlerleme Raporu
+583=&Eğitim
+637=İlerleme Raporu
+
+
+/////////////////////////////////////////////////////////////
+//TypingTest
+/////////////////////////////////////////////////////////////
+530=Yazma Testini kalıcı olarak silmek istediğinizden emin misiniz:\+
+531=Egzersiz Sonuçları:
+532=Yazılan Test Sonuçları
+533=Egzersiz Sonuçları
+534=günde \+ dakika
+535=haftada \+ saat
+536=bir yılda \+ gün
+537=Tipe dokunmayı öğrenin! net hızınızı artırabilirsiniz\+
+538=\+and save time:
+539=Çok iyi yazıyorsunuz - ve şimdi Typing Master, Typing Meter ile yazma becerilerinizi daha da geliştirebilirsiniz!
+540=\+Daha fazla bilgi edinmek için Bilgi'ye tıklayın.
+541=Yazma Testlerine eklenecek metin dosyasını seçin.
+261=Bu sınavı geçmek için doğruluğunuzun en az\+ olması gerekirdi
+262=Bu sınavı geçmek için yazma hızınızın en az\+ olması gerekirdi.
+263=Yazma ritminiz bu sınavı geçmek için yeterince iyi değildi. Ritim en az\+ olmalı
+264=Tebrikler, bu sınavı geçtiniz ve artık bir sonraki derse geçebilirsiniz\+
+265=Gerekli sınavı tam olarak tamamlamadınız.
+266=İstikrarlı
+267=Kararsız
+268=Dikkat et
+375=Bu yazı testini geçtiniz. İsterseniz bir test sertifikası yazdırabilirsiniz.
+614=Test sec
+615=Ekle
+616=Sil
+617=&Süre
+618=Test Li&stesi
+619=T&amamlanan Testler
+620=Sertifikayı Görüntüle && Yazdır
+624=Kullanılan Süre
+625=Yorum
+626=Sertifikayı Görüntüle && Yazdır
+
+/////////////////////////////////////////////////////////////
+//Oyunlar
+/////////////////////////////////////////////////////////////
+606=Baloncuklar
+607=Bulutlar
+608=Kelime Üçlemesi
+609=Başlat
+610=Başlat
+611=Başlat
+612=Talimatlar
+613=En Iyi On Puan
+1401=Baloncuklar
+1402=Bulutlar
+1403=Kelime Üçlemesi
+
+91=Bir tuşa başınız
+92=başlamak.
+
+93=Bir balonu patlatmak için içinde gösterilen harfi yazın
+94=Altı balonu kaçırdıktan sonra oyun biter
+95=Kırmızı ve yeşil baloncuklar mavi olanlardan daha hızlıdır ve daha iyi bir puan verir
+96=asdfjkl
+140=Işındaki kelimeyi yazın
+141=başlamak.
+142=Oyunu kaybettiniz
+143=Space tuşuna basın!
+144=Talimatlar
+
+276=İşini yakalamak için kelimeyi yazın ve Space tuşuna basın.
+277=Kutu kaçırılan kirişlerle dolduğunda oyun biter
+278=Mümkün olan en iyi puanı almak için kutunun altındaki kelime ekranına bakın.
+279=Bir bulutu yakalamak için altındaki kelimeyi yazın ve Space veya Enter tuşuna basın.
+280=Bulutlar arasında istediğiniz zaman hareket etmek için Enter/Space (sonrakini sil) veya Backspace (önceki sil) tuşuna basın.
+281=Fırtınalı bulutları kaçırmamaya çalışın - altı kaçırmadan sonra oyun biter
+282=Güneşli bulutlar size harika bir bonus verecek, bu yüzden mümkün olduğunca çoğunu yakalamaya çalışın.
+283=&Cık
+284=Sol
+285=Sağ
+286=Orta
+
+/////////////////////////////////////////////////////////////
+//Gözden geçir
+/////////////////////////////////////////////////////////////
+585=Zor Tuşlar
+589=İncelenecek Tuşlar
+590=&Zor Tuşlar
+591=Ça&lışılan Tuşlar
+592=T&uşları Seçin
+593=Egzersiz Turu
+594=&Harflerle Eğzersiz
+595=Ke&limelerle Eğzersiz
+596=Oy&un
+597=Tüm Zor Tuşlar
+598=Kilitli
+599=Deneme Sürümü
+600=Kapat
+601=Ders
+604=Ders Süresi
+605=Kurslar
+1400=Ders
+
+97=Oyun veya kelime alıştırmasıyla yalnızca harf tuşlarını inceleyebilirsiniz.\nSayıları veya özel işaretleri eğitmek için bunun yerine Klavye alıştırmasını seçin.
+98=Bunun yerine zor tuşlarınız gözden geçirilecek.
+99=Seçilen tuşlara henüz çalışılmamıştır ve gözden geçirilemez.
+100=Bunun yerine mevcut zor tuşlarınız gözden geçirilecek.
+101=Oyun oynamak için yeterli tuş yok.
+103=Sorunlu
+104=Zor
+218=Typing Meter Eğitimi
+219=Henüz çalışılan tuşlarla bir oyun oynayacak kadar çalışmadınız.
+220=Oyun iptal edilecek.
+224=Seçilen kurs, inceleme sihirbazı materyalini içermiyor
+229=&Süre
+231=& Tuşları ile
+234=&Kelime Bilgisi
+235=K&elime Bilgisi
+236=Çalışılmış Tuşlarla
+237=a-z
+238=a-z, A-Z
+239=a-z, A-Z, 0-9
+306=Eğitim Gerekli Değil
+307=Önerilen Eğitim
+308=Eğitim Şiddetle Tavsiye Edilir
+309=Acil Eğitim İhtiyacı!
+310=Henüz sorun bulunamadı
+311=Ciddi bir sorun tespit edilmedi
+312=Bazı sorunlar algılandı
+313=Bir takım sorunlar tespit edildi
+314=Bir çok sorun tespit edildi
+315=Eğitim Gerekli Değil
+316=Önerilen Eğitim
+317=Eğitim Şiddetle Tavsiye Edilir
+318=Acil Eğitim İhtiyacı!
+319=Henüz sorun bulunamadı
+320=Ciddi bir sorun tespit edilmedi
+321=Bazı sorunlar tespit edildi
+322=Bir takım sorunlar tespit edildi
+323=Bir çok sorun tespit edildi
+324=Baloncuk Oyunu
+325=Klavyenizden tuş(lar) girilmedi veya bulunamadı, antrenman yapılamıyor!
+326=#7878: Kelime(ler) girilmedi veya bulunamadı, antrenman yapılamıyor!
+327=#7879: Tuşlar için çılgın cümleler yok:\+
+328=İncelemeyi Bitir.
+329=Özelleştirilmiş Uygulama
+330=Seçilen klavye düzeni\+
+331=\+tarafından desteklenmiyor\+
+332=\+Kurs.
+333=Eğitim için klavye düzeninin değiştirilmesi veya Typing Meter'in kullanılması önerilir.
+334=Ders\+
+335=Kursu Bitir
+336=Sonraki Ders
+337=Deneme sürümünde bu egzersiz 30 saniye ile sınırlıdır.
+339=Önceki Ders
+340=İyi Şanslar!
+341=Başlamak için bir tuşa basın.
+
+/////////////////////////////////////////////////////////////
+//Karşılama Ekranı
+/////////////////////////////////////////////////////////////
+342=Typing Master ile profesyonel 10 Parmak yazmayı öğrenme dünyasına hoş geldiniz.
+343=Temel Kursta 6 - 10 saat içinde 10 Parmak yazmanın temellerini öğreneceksiniz. Daha sonra bu yeni beceriyi günlük yaşamınızda akıcı ve bilinçaltı hale getirmek için kullanmaya başlayabilirsiniz.
+344=Temel bilgileri öğrendikten sonra, özel işaretler, sayısal tuş takımı ve daha pek çok konuda uzmanlaşmak için ek kursları da tamamlayabilirsiniz.
+345=Tıkla\+
+346=Daha fazla bilgi
+347=\+Typing Master hakkında daha fazla bilgi edinmek için veya bir kursa başlamak için Ileri devam edin.
+348=\+ öğesini seçerek mevcut yazma becerilerinizi kolayca test edebilirsiniz.
+349=Yazma Testi
+350=\+ sağdaki menüden.
+351=10 Parmak yazmayı öğrendikten sonra sonuçları karşılaştırmak için aynı testi tekrar yapabilirsiniz.
+352=Kelime 1 dk.'da (dk./kelime)
+353=Vuruş 1 dk.'da  (dk./vuruş)
+354=Etkin
+355=Devre Dışı
+356=% egzersizlerin
+357=Genel Ayarlar
+641=İpucu: Becerilerinizi Test Edin
+642=Sağdaki menüden 'Yazma Testini seçerek mevcut yazma hızınızı kolayca test edebilirsiniz.
+
+/////////////////////////////////////////////////////////////
+// Giriş Ekranı
+/////////////////////////////////////////////////////////////
+726=Tüm Kullanıcılar
+727=Hoş geldiniz Powered By Cu
+728=Hoş geldin Yeni Kullanıcı!
+729=Yine de giriş yap?
+730=&Adınızı Giriniz
+731=&Parolanızı Giriniz
+732=&Parolanızı tekrar giriniz
+735=Yazma Yapılandırma Profili
+736=&Adınızı Giriniz
+737=&Yeni kullanıcı oluştur
+738=&Parolanızı Giriniz
+390=Oturum aç\+
+391=\+kullanıcı adınızı girip ENTER'e başınız.
+392=Typing Master On Parmak yazma öğreticisine hoş geldiniz! Lütfen aşağıya bir kullanıcı adı yazınız ve Giriş'e tıklayın.
+393=Yükleniyor..
+394=Seçilen kullanıcı oturum açamıyor
+400=Lütfen parolanızı giriniz
+401=Kullanıcı\+
+402=\+bulunamadı, yeni kullanıcı misiniz?
+403=Parola geçersiz
+404=Lütfen kullanıcı adınızı giriniz
+405=Parolanız farklı
+406=Lütfen parolanizi giriniz
+407=Kullanıcı\+
+408=\+zaten var!
+409=\+kullanıldı
+410=\+sol
+411=? dk. sol
+412=Özelleştirilmiş Uygulama
+414=Varsayılan olarak, Typing Meter artık\+ adlı kullanıcı için veri toplar.
+415=Lütfen kullanıcı adınızı giriniz
+416=Lütfen parolanizi giriniz
+417=\+ Olarak oturum açılamıyor
+418=, lütfen başka kullanıcı adı deneyin
+419=Parola yanlış yazılmış!
+420=Girilen kullanıcı adı bulunamadı. Yeni kullanıcılara izin verilmez.
+421=Kullanıcı\+
+422=\+bulunamadı, yeni bir kullanıcı misiniz?
+423=Iki şifreniz birbirleri ile uyuşmuyor, lütfen şifreleri tekrar yazın!
+424=Kullanıcı\+
+425=\+zaten var!
+426=Lütfen parolanizi giriniz.
+427=Kullanıcı\+
+428=\+bulunamadı, yeni bir kullanıcı misiniz?
+429=Parola geçersiz
+430=Lütfen Kullanıcı Adınızı giriniz.
+431=Parolalar farklı
+432=Lütfen parolanizi tekrar giriniz.
+433=Kullanıcı\+
+434=\+zaten var!
+
+/////////////////////////////////////////////////////////////
+//Typing Meter
+//
+//- sonraki bölümler
+//Typing Master 10'un Typing Meter bölümü
+/////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////
+//ilk giriş ekranı
+/////////////////////////////////////////////////////////////
+679=Giriş
+509=\+Typing Meter - kişisel, tamamen uyarlanabilir bir yazma eğitmeni. Typing Meter ile yazma sorunlarınıza odaklanabilir ve hızlı bir şekilde sonuç alabilirsiniz. Iki saat gibi kısa bir sürede!
+510=Typing Meter, kelime islemcinizi, e-posta programınızı veya başka bir Windows uygulamasını kullandığınızda yazınızı analiz eder ve en zor tuslarinizi)harflerinizi) ve kelimelerinizi algılar.
+511=\+Topladığı verilere dayanarak Typing Meter, mevcut ihtiyaclariniz için tamamen kişiselleştirilmiş egzersizler oluşturacaktır.
+512=Tıkla\+
+513=Daha fazla bilgi
+514=\+hakkında daha fazla bilgi edinmek için\+
+515=\+Typing Meter veya\+
+699=Adım 1: Typing Analizi
+700=Adım 2: özelleştirilmiş Eğitim
+701=Adım 3: Hızlı Sonuçlar
+702=Adım 4: Devamlı Destek
+703=Nasıl Çalışır
+704=Typing Meter, herhangi bir Windows uygulamasını kullanırken en zor tuslarinizi(harflerinizi) ve sozcuklerinizi algılar.\+
+705=Typing Meter, zorluklariniza göre alıştırma materyali oluşturur.\+
+706=Odaklanmış reçeteli matkaplar ile hızlı bir şekilde sonuç alırsınız.
+707=Typing Meter, değişen ihtiyaçlarınızı karşılamak için her zaman yeni materyal oluşturabilir.
+708=&Daha fazla bilgi
+709=Typing Meter
+
+/////////////////////////////////////////////////////////////
+//ikinci giriş ekranı
+/////////////////////////////////////////////////////////////
+519=Typing Master'in beceri izleme eklentisine Typing Meter adı verilir. Kursları tamamladıktan sonra, bilgisayarınızda çalışırken yazdıklarınızı takip ederek ve zor tuslarinizi(harflerinizi) ve kelimelerinize yönelik inceleme alıştırmaları sunarak becerilerinizi gelistirmenize yardımcı olur.
+520=Typing Meter ayrıca zaman içindeki ilerlemeyi kaydetmek için yazma hızınızla ilgili istatistikler toplar ve bunu, esnemek, rahatlamak ve konsantrasyonu yeniden kazanmak için kısa molalar vermenizi hatırlatacak şekilde ayarlayabilirsiniz.
+521=Typing Meter, yazmaya dokunmayı öğrendikten ve yeni yazma becerilerinizi günlük kullanıma soktuktan sonra en çok ise yarar. Ancak, nasıl çalıştığını görmek için daha önce kullanmaya başlayabilirsiniz.\n\nBir sonraki adım, Typing Meter'i başlatmaktır.
+
+516=&Oturum Aç
+517=Bu Windows kullanıcı adının tek kullanıcısıysanız (
+518=) ilk seçenek önerilir.
+522=Yüksek güvenlik modunda programları seçmeniz gerekir.
+523=Typing Meter Menüsünden manuel olarak izlenebilir.
+524=Ayrıca zor kelimeler izlenmediği için Typing Meter
+525=tam verimlilikle çalışmaz.
+526=Güvenlik hakkında daha fazla bilgi almak için lütfen Güvenlik Bilgileri'ne tıklayın.
+527=Typing Master'i kullanan sizin adınıza sahip bir kullanıcı zaten var
+456=Typing Meter' i şimdi kapatmak istiyor musunuz?
+457=Typing Meter' i şimdi başlatmak istiyor musunuz?
+680=The Typing Meter does not collect difficult words and monitors selected applications only. Recommended if high security iş required.
+683=Typing Meter' i Başlat
+684=Typing Meter' i Ş&imdi Başlatın
+685=Typing Meter' i Daha Sonra Başlatı&n
+686=Otomatik Başlatma
+687=Oturum açarken &kullanıcı listesini göster
+688=&Otamatik olarak oturum açma
+689=Güvenlik
+690=Hiçbir kelime toplama (gizlilik)
+691=Bilgi
+692=Typing Meter Nedir?
+458=Bekleyin...
+459=Kapatılıyor...
+460=Başlatılıyor...
+461=Typing Master Typing Meter kapatılamadı
+
+/////////////////////////////////////////////////////////////
+//İlk Typing Meter başlatıldıktan sonra gösterilen ekran
+/////////////////////////////////////////////////////////////
+693=Meter Başlatıldı!
+681=
+682=
+
+1405=
+694=
+695=
+696=
+697=
+698=
+
+/////////////////////////////////////////////////////////////
+//Main Typing Meter screen in Typing Master
+/////////////////////////////////////////////////////////////
+463=Başlatıldı
+464=Dur&dur
+465=Başlatılmadı
+466=&Başlat
+467=Başlat: Otomatik
+468=Başlat: El ile
+470=Typing Meter yalnızca " adlı kullanıcı için istatistikleri toplar.
+472=Versiyon\+
+473=Zorluklar henüz tespit edilmedi.
+474=Bunun yerine basit demo kursu kullanılacaktır.
+475=Hiçbir kelime girilmedi, antrenman yapılamaz!
+476=Klavyenizden tuş(lar) girilmedi veya bulunamadı, antrenman yapılamıyor!
+477=The Typing Master Typing Meter modülü bulunamadı
+478=Typing Master Typing Meter başlatılamadı
+671=Ö&zelleştirilmiş Eğitim
+672=& tuşları eğit
+673=& kelimeleri eğit
+674=Eğitime Başla
+675=Sorun Dizini
+676=Ayarlar
+677=Kapat
+
+/////////////////////////////////////////////////////////////
+//Typing Meter istatistikleri
+/////////////////////////////////////////////////////////////
+644=Genel Bakış
+645=Zor Tuşlar
+646=Zor Kelimeler
+647=Doğruluk & Ritim
+648=NOT: Typing Meter ayarlarından kelime analizi kapatılmıştır.
+649=Eğitmek istediğiniz yeni kelime(ler) ekleyin
+650=Eğitmek istemediğiniz kelime(ler)i gizleyin
+651=Yazım hataları içeren doğru kelime
+652=Yazma Süresi, (h)
+653=Sorun Dizesi (%)
+654=Yazılan Kelimeler
+655=Zorluk Dizesi
+656=Tuşlar
+657=Büyük Harfler
+658=Kelimeler
+659=Genel Dizin
+660=Genel Bilgi
+661=Son Uygulama
+662=Yazma Hızı
+663=Yazılan Kelimeler
+664=Yazma Süresi
+665=Zor Büyük Harfler
+666=Kelimeleri Düzenle
+667=Ekle
+668=Gizle
+669=Düzenle
+670=train
+
+479=Yazma Hızı (
+480=Normal
+481=Çok Yüksek
+482=Bugün:\+
+483=En Yüksek:\+
+484=Bugün:\+
+485=Ortalama:\+
+486=en Yüksek:\+
+487=Bugün\+
+488=, ortalama\+
+489=\+kelimeler
+490=\+kelimeler
+491=\+kelimeler
+492=Bugün:\+
+493=Ortalama:\+
+494=En Yüksek:\+
+495=Bugün\+
+496=, ortalama\+
+497=Bugün:\+
+498=Ortalama\+
+499=en Yüksek:\+
+500=Bugün\+
+501=, ortalama\+
+502=Özel eğitim kullanılmadı
+503=\+gün önce
+504=\+günler önce
+505=Bir veya daha fazla zor kelime girin (en az 4 harf)
+506=Zor kelimede değişiklikleri yapın (
+507=Seçili kelimeleri gizlemek istediğinizden emin misiniz?
+508=Hoş geldiniz\+
+
+/////////////////////////////////////////////////////////////
+//Typing Meter incelemesi
+/////////////////////////////////////////////////////////////
+437=Rapor
+438=Tanımsız
+440=Mevcut Kurs
+441=Çalıştı (h)
+442=Son Kullanma T/S
+443=Kullanım
+444=Oluşturuldu
+445=Grup Yok
+446=Yazma Testleri
+447=Egzersiz
+448=Tuşlarla Oyna
+449=Tuşlarla Metin
+451=Büyük Harfler:
+452=Büyük Harfler:
+453=Zor Kelimeler
+454=Kelimelerle Oyna
+455=train
+1404=%s times since %s
+1406=Bu nedenle istatistikleriniz boş veya güncelliğini yitirmiş olabilir. Kullanıcıyı Typing Meter Ayarlarından değiştirebilirsiniz.
+1407=Yüksek
+1408=Zaman sınırı yok
+1409=10 dakika
+1410=20 dakika
+1411=30 dakika
+1412=Sonuçlar
+1413=Antrenman öncesi ve sonrası zorluk dizinleri
+1414=Tuşlar
+1415=Büyük Harfler
+1416=Kelimler
+1417=Genel Dizin
+1418=Önce
+1419=Şimdi
+1420=Tuşlar:
+1424=Ayarlar
+1425=İncelemeden Önce
+1426=İncelemeden Sonra
+1427=Sonuçları İncele
+1428=Beni geri al..
+1429=(özel)
+
+
+/////////////////////////////////////////////////////////////
+// Typing Meter Typing Meter (KBOOST.EXE)
+// -here iş the text for the ındependent Typing Meter program
+// which sits in the task bar and monitors typing
+/////////////////////////////////////////////////////////////
+
+//Typing Meter menü (from the taskbar icon)
+1260=&Oturum Ac...
+1261=&Etkinleştirilmiş
+1262=\+Typing Meter zaten aktif!
+1263=You cannot start two instances of the Typing Meter.
+1264=Typing Meter
+1265=&İstatistik && Eğitim...
+1266=Hız Geçmişini G&öster
+1267=Ay&arlar...
+1268=&Kapat
+1269=&Eğitim...
+
+//Login
+1270=Typing Meter'i etkinleştirmeden önce Typing Master'i kapatmalısınız.
+1271=Typing Meter' i şimdi kapatmak istiyor musunuz?
+1272=Kapatılıyor..
+1273=\+günden beri
+1274=Versiyon
+1275=Yükleniyor..
+1276=\+kelimeler,
+1277=izleniyor
+1278=izlenemiyor
+1279=Typing Meter, eğitim için yeterli bilgi topladı.
+1280=Çıkış
+1281=Kullanıcı adınızı seçin ve Tamam'a tıklayın
+1282=Adınızı yazın ve yeni bir kullanıcı olarak oturum açmak için Tamar'ı tıklayın.
+1283=Kapat
+1284=İptal
+1285=, lütfen başka bir kullanıcı adı deneyin
+1286=\+ olarak oturum açılamıyor
+
+//Diğer genel Typing Meter dizeleri
+1329=&Bu pencereyi bir daha gösterme
+1330=&Eğitime Başla
+1331=&Kapat
+1332=Zorluk Dizesi
+1333=Typing Master Typing Meter, yazarken bazı zorluklar tespit etti. Hemen eğitime başlamak için buraya tıklayın!
+1334=Eğitim Önerilir
+1288=Typing Meter'i bilgisayar başlangıcında otomatik olarak başlat.
+1289=&Evet
+1290=&Hayır
+
+/////////////////////////////////////////////////////////////
+//Typing Meter ayarları
+/////////////////////////////////////////////////////////////
+1287=Typing Master Typing Meter
+1299=Telif Hakkı 2021 Typing Master Finland, İnç. Tüm hakları saklıdır.
+
+//Personel tab
+1300=Kişisel
+1291=Kişisel Ayarlar
+1292=Mola Ver
+1293=&Tüm yeni uygulamaları varsayılan olarak izle
+1294=&Manuel olarak izlenecek uygulamaları seçin
+1295=Eğitim Öner
+1325=Zorluklar tespit edilirse %d günde bir tavsiye et
+1296=Güvenlik
+1297=Zor kelimeleri & analiz etmeyin veya toplamayın
+1298=Yüksek güvenlik sağlamak için bu seçeneği seçin.
+
+//Uygulama Sekmeleri
+1301=Uygulamalar
+1302=izlenecek Uygulamalar
+1303=&Su anda algılanan uygulamaları görüntüle
+1304=&Algılanan tüm uygulamaları görüntüle
+1421=izlenecek Program Yok
+1305=İpucu: Gizli bilgiler içeren uygulamaların işaretini kaldırın
+
+//Typing Meter Genel Ayarlar Sekmesi
+1306=Genel
+1307=Genel Typing Meter Ayarları
+1326=Geçerli Windows kullanıcı adı için geçerlidir
+1308=Otomatik Başlatma
+1309=Typing Meter'i &Windows oturum açma sırasında &otomatik olarak başlatın
+1310=Typing Meter' in Windows kullanıcı adınızla oturum açtığınızda her zaman yazmanızı izlemesini sağlamak için otomatik başlatmayı kullanın.
+1311=Kullanıcı Kimliği
+1312=Seçili kullanıcıyı &kullan:
+1313=Başlangıçta kullanıcı listesini &göster
+1314=Oturum &kapalı modunda başla
+1315=Geçerli Windows kullanıcı adı için birden fazla kullanıcı varsa, yanlış istatistiklerden kaçınmak için ilk seçeneği seçmeyin.
+
+//Hakkında Sekmesi
+1316=Hakkında
+1317=Typing Meter Bilgileri
+1318=Meter Başlatma:
+1319=Mevcut Kullanıcı:
+1320=&Kullanıcıyı Değiştir..
+1321=Kullanıcı İstatistikleri
+1322=Kullanım:
+1422=Defa
+1423=%s tarihinden bu yana %s gün
+1323=Toplam Tuş Vuruşları:
+1324=Analiz edilen tuş vuruşları:
+1327=Otomatik
+1328=Manuel
+
+
+/////////////////////////////////////////////////////////////
+// Typing Master Manager
+// -texts for the manager program
+/////////////////////////////////////////////////////////////
+
+1108=Typing Master Kullanıcı Yöneticisi
+
+542=Hoş Geldiniz! Profil ayarları uygulandı.
+543=\+
+544=\+
+545=Rapor Özeti
+546=Lütfen bekleyin, kullanıcılar sıralanıyor
+547=Rapor Özeti
+548=Kullanıcı Listesi
+549=Son Eğzersizler
+550=Son Testler
+
+1006=TM Kullanıcı Dosyaları Klasörünü Seçin
+1007=Seçili Klasör\+
+1008=\+Typing Master Dosyalarınızı İçermez.
+1009=Typing Master\Database klasörünü seçmediğinizden emin olun. Başka bir dosya seçiniz.
+1012=Typing Master çok sayıda işletmeye yüklendi.
+1013=sadece\+ var
+1014=\+lisanslar. Lütfen Lisanslar menüsünden lisans ekleyin veya işletme kurulumlarını kaldırın.
+1015=Typing Master Lisans İhlali
+1016=Kullanıcılar Yükleniyor:\+
+1017=Yükleniyor..
+
+1001=Grup 
+1027=Yeni Grup
+1058=Hayır Grup
+1031=Yeni Kullanıcı
+1032=Yeni Kullanıcı
+
+
+/////////////////////////////////////////////////////////////
+// Manager menus
+/////////////////////////////////////////////////////////////
+
+// File topmenu
+1146=Genel &Ayarlar
+1147=Dizini &Değiştir
+1148=&Kullanıcıları İçe Aktar (CSV)
+1149=&Çıkış
+
+//About topmenu
+1150=Yardım
+1029=Telif Hakkı 2021 Typing Master Finland, Inc. Tüm hakları saklıdır.
+1030=En son belgeler için http://www.TypingMaster.com adresini ziyaret edin.
+
+/////////////////////////////////////////////////////////////
+//The menu titles
+//These menus are always visible in Manager, so the hotkeys defined here are always reserved
+/////////////////////////////////////////////////////////////
+1151=&Hakkında..
+1152=&Dosya
+1153=&Kullanıcılar
+1154=&Gruplar
+1155=&Yazma Testleri
+1156=&Lisanslar
+
+/////////////////////////////////////////////////////////////
+//Users menu
+/////////////////////////////////////////////////////////////
+1157=Kullanıcılar
+1159=Grubu S&eç
+1010=Tüm Gruplar
+
+1158=Raporları Görüntüle && Yazdır
+1204=Rapor T&amamlandı..
+1205=Son Eğzersizler
+1206=Son Testler..
+1207=Kullanıcı L&istesi..
+
+1160=Kullanıcı Görevleri
+1208=&Ayarları Değiştir..
+1209=Gru&bu Ayarla..
+1210=&Mesaj Gönder..
+1211=Yazma Testi Düzenle..
+
+1161=Kullanıcı(ları) Düzenle
+1212=Kullanıcıyı Ad&landır
+1213=&Kullanıcıyı Sil
+1214=&Kullanıcı Ekle
+1215=Tümünü S&eç
+
+//Headings for user list
+1162=Yeni Kullanıcılar
+1163=Kullanıcı Adı
+1164=Grup
+1165=Mevcut Kurs
+1166=Tamamlandı
+1167=Okudu (h)
+1168=Son Kullanılan
+1169=Kullanım
+1170=Oluştur
+1258=\+defa
+1259=\+[Lock]
+
+//Status indicator at the bottom of the screen
+1018=\+kullanıcılar,\+
+1019=\+seçildi
+1020=\+kullanıcılar
+
+/////////////////////////////////////////////////////////////
+//Groups menu
+/////////////////////////////////////////////////////////////
+1245=Gruplar
+1216=Raporları Görüntüle && Yazdır
+1217=Rapor T&amamlandı
+1218=Son Eğzersizler
+1219=Son Testler
+1220=Kullanıcı L&istesi
+
+1221=Grup Görevleri
+1222=&Ayarları Değiştir..
+1223=&Mesaj Gönder..
+1224=Yazma Testini D&üzenle..
+
+1225=Grubu Düzenle
+1226=Grubu Yeniden&adlandır.
+1227=&Grubu Sil
+1228=&Grup Ekle
+
+//Headings for groups list
+1255=Grup Adı
+1256=Kullanıcılar
+1257=Oluştur
+1011=\+ (Default)
+
+//Functional texts for groups menu
+1021=Kullanıcıyı silmek istediğinizden emin misiniz\+
+1022=Grup şunları içeriyor\+
+1023=\+kullanıcılar. Onları sil?
+1024=Do you want to remove\+
+1025=\+kullanıcı(lar)?
+1026=\+gruplar
+
+
+/////////////////////////////////////////////////////////////
+//Typing Tests menu 
+/////////////////////////////////////////////////////////////
+1244=Yazma Testi
+1229=Test Görevleri
+1230=&Ayarları Değiştir..
+1231=&Metni Düzenle..
+
+1232=Testi Düzenle
+1234=&Testi Sil
+1233=&Test Ekle
+
+//Headings for typing test list
+1252=Test Adı
+1253=Süre (dk.)
+1254=Telif Hakkı
+
+1047=Yazma Testini kalıcı olarak silmek istediğinizden emin misiniz:
+1049=#1551 #1551 Yazma testi dosyası zaten kullanımda (kilitli)
+
+//Status indicator at the bottom of the screen
+1051=\+testler
+
+
+/////////////////////////////////////////////////////////////
+//Licenses menu 
+/////////////////////////////////////////////////////////////
+1243=Lisanlar
+1235=Lisanları Düzenle
+1236=&Lisansları Düzenle/Ekle
+1237=&İşletme(leri) Kaldır
+
+1238=Lisans Bilgileri
+1239=Lisans Türü
+1240=Toplam
+1241=Kullanılmış
+1242=Ücretsiz
+
+//Headings for licenses list
+1246=İşletmei Adı
+1247=Yüklendi
+1248=Kullanışmış
+1249=Son Kullanılan
+1250=Platform
+1251=Tarafından yüklendi
+
+//Functional texts for Licenses menu
+1033=İşletmeyi silmek istediğinizden emin misiniz\+
+1034=\+İşletmeler
+1035=İşletme Lisansları
+1036=\+Lisanslar
+1037=\+Lisanslar
+1038=\+Lisanslar
+1039=Lisans ihlali: %d işletme(lerini) kaldırın
+1040=Lisans İhlali!
+1041=Tüm lisanslar şu anda kullanımda.
+1042=Ücretsiz Lisans Yok
+1043=\+ücretsiz lisanslar
+1044=Eşzamanlı Lisanslar
+1045=\+Lisanslar
+1046=\+eşzamanlı lisanslar
+
+
+/////////////////////////////////////////////////////////////
+//Send message window
+/////////////////////////////////////////////////////////////
+1052=İleti gönder\+
+1053=%d kullanıcıya mesaj gönder
+1054=Mesaj Gönder\+
+1171=Mesaj Gönder
+1172=&Mesajını Yaz
+
+/////////////////////////////////////////////////////////////
+//Arrange Typing Test window
+/////////////////////////////////////////////////////////////
+1055=\+ Testi için düzenleyin
+1056=\+ Testi için düzenleyin
+1057=%d kullanıcı için test düzenleyin
+1059=\+dk.
+1060=Seçili değil
+1175=Test Düzenle
+1176=1. Testi Etkinkeştir.
+1177=Test &Devre Dışı
+1178=Test &Aktif
+1179=2. &Testi Seçin
+1180=3. Süre Seçin
+1181=&Sınırsız Süre
+1182=S&üreyi Seçin......................
+1183=dk.
+1184=4. &Mesaj Girin
+
+/////////////////////////////////////////////////////////////
+//Set Group window
+/////////////////////////////////////////////////////////////
+1185=Seçilen kullanıcı(lar) için grup ayarlayın.
+1186=&Mevcut Grup
+1187=&Yeni Grup
+1188=Grubu Ayarla
+
+/////////////////////////////////////////////////////////////
+//View Report window
+/////////////////////////////////////////////////////////////
+1189=Rapor Görüntüle
+1190=Önceki Sayfa
+1191=Sonraki Sayfa
+1192=&Yazdır
+1193=&Kapat
+1002=Sayfa Genişliği
+1003=Tam Sayfa
+1004=Sayfa
+1005=Yüklü yazıcı yok - yazdırılamıyor.
+
+/////////////////////////////////////////////////////////////
+// Change Settings window
+//
+// Here are the user interface texts for settings windows
+// The actual settings for these windows can be found in
+// .tpl files in the Typing Master 10gram directory
+// (e.g. common settings = policy.tpl)
+// Be sure to also translate these files
+/////////////////////////////////////////////////////////////
+1194=Ayarları Değiştir
+1195=Ayarlar
+1196=Değer
+1197=Kilitli
+1198=Açıklama
+1199=Etkin
+1200=Grup\+
+1201=Kullanıcı\+
+1202=Genel Ayarlar
+1203=Yazma Testi Ayarları
+
+/////////////////////////////////////////////////////////////
+// Manager Change directory window
+/////////////////////////////////////////////////////////////
+1394=Typing Master &Dizini
+1395=&Göz At..
+
+//Import users window title
+1050=Kullanıcıları (ve grupları) içe aktarmak için Typing Master 98/99 klasörünü seçin
+
+
+/////////////////////////////////////////////////////////////
+// User Reports
+// Space for words is quite limited. Please check that your translations fit without problem.
+// If you cannot get some word to fit, please contact technical staff.
+/////////////////////////////////////////////////////////////
+1061=Sertifika
+1062=Typing Master
+1063=Typing Master Test Sertifikası,\+
+1064=Bugün bilgisayar tabanlı bir yazma testini başarıyla tamamladınız.
+1065=Typing Master, Yazma Testi ile yazılan test sonuçlarınız:
+1066=Test Süresi:
+1067=Brüt Hız:
+1068=Doğruluk yüzdesi:
+1069=Net Hız:
+1070=İmza:
+1071=Telif hakkı 1992-2022 Typing Master, Inc.'e aittir. Tüm hakları saklıdır.
+1072=Daha fazla bilgi için http://www.TypingMaster.com
+1073=Kullanıcı Raporu
+1074=Typing Master
+1076=Typing Master Kullanıcı Raporu,\+
+1077=Sayfa\+
+1078=Grup
+1079=Mevcut Kurs
+1080=Çalışılan Süre
+1081=Son Erişim
+1082=Oluşturma Tarihi
+1083=Kullan
+1084=Grup Yok
+1085=Yazma Testleri
+1086=Eğzersiz
+1087=Süre
+1088=Brüt Hız
+1089=Net Hız
+1090=Diğer
+1091=Typing Master Kullanıcı Raporu,\+
+1092=Sayfa\+
+1093=Grup Raporu
+1094=Typing Master
+1095=Typing Master Grup Raporu,\+
+1096=Sayfa\+
+1097=Kullanıcı Adı
+1098=Grup
+1099=Mevcut Kurs
+1100=Son Kullanma T/S
+1101=User name
+1102=Grup
+1103=Mevcut Kurs
+1104=Tamamlandı
+1105=Son Erişim
+1106=Kurs Başlamadı
+1107=Bilinmiyor
+1109=Rapor
+1110=Rapor Başlatılıyor
+1111=Rapor Başlatılıyor
+1112=Kullanıcı Adı
+1113=Mevcut Kurs
+1114=Tamamlandı
+1115=Okudu (s)
+1116=Son Kullanma T/S
+1117=Kurs:
+1118=Mevcut Kurs
+1119=Çalışılan Süre
+1120=Son Kullanma T/S
+1121=Kullanım
+1122=Oluşturma Tarihi
+1123=Yazma Testleri
+1124=n/a
+1125=Tamamlandı
+1126=% in
+1127=Eğzersiz
+1128=Tür
+1129=Metin
+1130=Süre
+1131=Brüt Hız
+1132=Doğruluk %'si
+1133=Net Hız
+1134=Tarih
+1135=Test
+1136=Metin
+1137=Oyun
+1138=Diğer
+1139=İpucu
+1140=Kurs Başlatılmadı
+1141=\+|\+
+1142=\+|\+
+1143=Sayfa\+
+1144=Grup
+
+//Complete & Test Reports: more info on typing tests
+1380=Tarih:
+1381=Brüt Hız:
+1382=Brüt Vuruşlar:
+1383=Süre:
+1384=Doğruluk %'si:
+1385=Hatalı Vuruşlar:
+1386=Tamamlandı:
+1387=Net Hız:
+1388=Net Vuruşlar:
+// misc:
+1390=dk.
+1392=Test Adı:
+1393=Hata
+
+
+/////////////////////////////////////////////////////////////
+//Typing Master Netsetup Strings
+/////////////////////////////////////////////////////////////
+1339=Typing Master Ağ Kurulumu
+1340=Lisans Sahibi:
+1341=Toplam Lisanslar.
+1342=Ücretsiz Lisanslar
+1343=Kurulum İlerlemesi
+1344=Dosya Kopyalanıyor:
+1345=Hedef:
+1346=Hedef:
+1347=Yükleyen:
+1348=Kurulum Başarısız!
+1349=Kurulum Tamamlandı!
+1350=Başlat menüsü kısayolu oluşturma
+1351=Oluştur
+1352=(Uyarı: Yönetici değilsiniz)
+1353=(İşletme Yöneticisi)
+1354=Bu işletmenin bir adı yok!
+1355=İşletme lisansları dışında. Kurulum iptal edildi.
+1356=Yüklü İşletmeleri kaldırmak için lütfen Typing Master Yöneticisini kullanın
+1357=(Yükseltme)
+1358=Deneme sürümü (10 demo lisansı)
+1359=Hata:
+1360=sunucudan bulunamadı. Kurulum iptal edildi.
+1361=Ağ kurulumu, işletmede dizin oluşturamadı. Kurulum iptal edildi.
+1362=sunucu/NETSETUP.INI'den geçersiz, bulunamadı. Kurulum iptal edildi.
+1363=sunucudan Hard Diske yazamıyor. Kurulum iptal edildi.
+1364=Kopyalanamıyor
+1365=Kullanıcı Adı
+
+/////////////////////////////////////////////////////////////
+// Misc strings:
+/////////////////////////////////////////////////////////////
+1366=Typing Meter Bilgisi
+1367=Sınırsız
+1368=dakikalar
+1369=Yazma Testi
+1370=Bu kısa yazma testi sadece bir dakika sürer. Lütfen üstte ne görüyorsanız onu yazın.
+1371=Süre:
+1372=Öğretmen Mesajı:
+1373=(Deneme Lisansları)
+1374=(Deneme)
+1375=Yönetici başlatılamadı. Yöneticinin halihazırda çalışmadığından ve Typing Master klasörüne tam erişiminiz olduğundan emin olun.
+1376=Girilen kullanıcı adı mevcut kullanıcı adı ile aynı
+1377=Girilen kullanıcı adı geçersiz
+1378=Typing Meter ağ sürücüsünden yürütülemez
+1379=Typing Meter, ağ bağlantısı kesildiğinden çalışmaz.
+1145=zaten var!
+
+
+/////////////////////////////////////////////////////////////
+//Error messages
+/////////////////////////////////////////////////////////////
+126=Özel yazma modu açılırken zaman aşımı\+
+
+168=Görüntüleme alanınız yalnızca 640x480 veya daha küçük
+169=olduğundan bu program ekrana sığamaz.
+170=Talimatları görüntülemek ister misiniz?
+171=Birçok multimedya programı gibi, Typing Master da en az 800x600 ekran alanına ihtiyaç duyar.\+
+172=Windows'ta Çözünürlük ayarını değiştirmek için bu talimatları izleyin.
+173=1. Görev çubuğunda Başlat menüsüne tıklayın
+174=2. Ayarlar'ı seçin.. Denetim Masası
+175=3. Ekran simgesine çift tıklayın
+176=4. Ayarlar sekmesini tıklayın
+177=5. Görüntüleme Alanı'nı en az 800x600 olarak ayarlayın
+178=6. Test düğmesine basın. Görüntü tatmin ediciyse OK düğmesine basın.
+
+259=Ağ, diğer kullanıcılar nedeniyle meşgul,\+
+260=tekrar denemek istiyor musunuz?
+274=Ağ şu anda diğer kullanıcılar nedeniyle meşgul,\+
+275=tekrar denemek istiyor musunuz?
+358=#7216 Ağ dizini bulunamadı.
+359=Lütfen programı yeniden yükleyin ve/veya ağ bağlantılarını doğrulayın.
+360=Typing Master Düzgün Kurulmamış
+361=#7217 Gerekli Kurulum dosyası eksik veya ağ hatası.\+
+362=Açılamıyor\+
+363=POLICY.DYN dosyası.
+364=Lütfen Yöneticinizle iletişime geçin veya programı yeniden yükleyin!
+376=Bu İşletmenin bir adı yok!
+377=Typing Master, bu işletmede kullanılmak üzere yüklenmedi.
+378=Lütfen yöneticinizden Typing Master'ı NETSETUP(Ağ Kurulumu) ile yüklemesini isteyin.
+379=Not: Ek yazılım lisansları gerekebilir.
+380=Typing Master Kurulu Değil
+381=Typing Master bu makinede zaten çalışıyor.
+382=#7921: TÜM EŞ ZAMANLI LİSANSLAR ŞU ANDA KULLANIMDADIR.\+
+383=Kurumunuz\+
+384=\+bu uygulama için eşzamanlı lisanslar.
+385=Eşzamanlı kullanıcıların maksimum miktarı zaten Typing Master kullanıyor.
+386=Contact your administrator for additional licenses.
+387=#7922: LİSANS İHLALİ HATASI.\+
+388=Bu program için yalnızca tek bir lisansınız var. Eşzamanlı kullanıcılara izin verilmez. Ek lisanslar için satıcınızla iletişime geçin.
+389=#7923: LİSANS İHLALİ HATASI.
+1389=Ekranınız yalnızca 256 renk veya daha az renk kullanıyor.\nDüzgün çalışması için Typing Master'ın daha fazlasına ihtiyacı var\n256 renkten fazla (yani yüksek renk modu).\n\nYüksek renk modunu şuradan açabilirsiniz:\nDenetim Masası'ndaki Ayarlardan.
+1391=Study information cannot be saved since the network connection is down.
+528=#1550 Kullanıcı veritabanı dosyası zaten kullanımda (kilitli)
+1028=#1550 Kullanıcı veritabanı dosyası zaten kullanımda (kilitli)
+
+/////////////////////////////////////////////////////////////
+//Miscellaneous user interface strings
+/////////////////////////////////////////////////////////////
+84=Yükleniyor, lütfen bekleyin...
+85=Adınızı Girin:
+89=http://www.TypingMaster.com
+1396=Zaman sınırı yok
+1397=25 dakika
+1398=35 dakika
+1399=45 dakika
+1430=Tarafından Eklendi
+1431=Yönetici Tarafından Eklendi
+
+// latest changes in ver 6.21
+1432=İlgili tuşlara basarak baloncukları saat yönünde patlatın.
+1433=Tüm baloncuklar patladığında oyun biter.
+1434=Başlat
+
+
+// latest changes in ver 6.30
+1435=&Dil
+
+1436=CSV Verilerini Dışa Akta&r
+1437=&Oyun Puanlarını Sil
+1438=&Kullanıcı Dizinini Yeniden Oluştur
+1439=Oyunlar için yüksek puanları temizlemek istediğinizden emin misiniz?
+1440=Bu işletme, manuel olarak güncellenmesi gereken eski 6.2x sürümüne sahip
+1441=Bu işletme bir kısayol aracılığıyla her zaman en son sürümü kullanıyor
+1442=Kısayol
+1443=Eksik anahtarlar
+1444=Seçilen kurs, mevcut Klavye düzeniniz için tasarlanmamıştır. Düzeni değiştirmeniz şiddetle tavsiye edilir, aksi takdirde bazı alıştırmalar çalışmayabilir.
+1445=ABD Uluslararası Düzenine Geç
+1446=İşletme(leri) Y&ükseltme
+1447=&Tümünü Yenile
+1448=Hiçbir işletme seçilmedi.\nLütfen iş letmenin adının yanındaki en az bir onay kutusunu işaretleyin
+1449=Bakım Görevleri
+
+
+// Typing Master 7.00 ChangeS:
+
+
+/////////////////////////////////////////////
+//Dynamic Comment system (1480 - 1599) 
+/////////////////////////////////////////////
+
+//Main title (1480 - 1489)
+1480=Eğzersiz Tamamlandı
+1481=Doğruluk Hedefine Neredeyse Ulaşıldı
+1482=Doğruluk Hedefine Ulaşılmadı
+1483=Eğzersiz Tamamlanamadı
+
+1599=İpucu Yok
+
+//Speed, accuracy & duration comments (1540 - 1549)
+1540=Hedef
+1541=Yavaş
+//1542=Yeterince hızlı, yeterli, tatmin edici, tamamne yeterli
+1542=Tamam
+1543=İyi
+1544=Çok İyi
+1545=Mükemmel
+1546=Kaydedildi
+
+//Goal tips (1550 - 1579)
+1550=Hızınızı biraz düşürürseniz isabet hedefine ulaşırsınız.
+1551=İyi isabet hızdan daha önemlidir! Doğruluk hedefine ulaşmak için yavaşlamalısınız.
+1552=İsabetiniz iyi. Şimdi biraz daha hızlı yazmayı deneyebilirsiniz.
+1553=İyi çalışmaya devam edin! İsabetinizin düşmesine izin vermezseniz ve akıcı bir şekilde yazmaya devam ederseniz, optimum süre modu size çok zaman kazandıracaktır.
+1554=İsabetinize biraz daha dikkat edin ve hedef seviyeye ulaşacaksınız.
+1555=Bir egzersiz size zor geliyorsa, becerilerinizi güçlendirmek için her zaman yeniden yapabilirsiniz.
+
+//Difficult keys tips (1490 - 1499)
+1490=Daha önce öğrenilen "%s" tuşlarıyla ilgili sorunlarınız var gibi görünüyor. Bu, öğrenmenizin dikkatini dağıtabilir ve bunları gözden geçirmenizi öneririz.
+1491=Daha önce öğrenilen "%s" tuşları sorunlu görünüyor ve öğrenmenizi dağıtabilir - hızlı bir gözden geçirme yardımcı olacaktır.
+1492="%s" tuşları sorunlu görünüyor - daha önceki bir eğzersizi yeniden yapabilir veya bir gözden geçirme alıştırmasını tamamlayabilirsiniz.
+1493="%s" tuşu sorunlu görünüyor - bir sonraki alıştırmada buna daha fazla dikkat edin veya isterseniz şimdi bir inceleme yapın.
+1494="%s" tuşları zor görünüyor - bunlara göz kulak olun ve sorun yaşamaya devam ederseniz gözden geçirin.
+1495="%s" ile ilgili bazı güçlükleriniz var gibi görünüyor - buna dikkat edin ve tekrar zorlanırsanız gözden geçirin.
+1499=İncelemeye başla
+
+//Goal level tips (1580 - 1598)
+1580=İsabet hedefini arttırmaya devam ediyorsun ve aynı zamanda çok hızlı yazıyorsun - bir sonraki eğzersizde hedef seviyeni çok iyi yükseltebilirsin!
+1581=İsabet hedefini artırmaya devam ederek - daha fazla zorluk istiyorsanız, bir sonraki eğzersizde hedef seviyesini yükseltebilirsiniz.
+1582=Mevcut isabet hedefi çok zor geliyorsa, bir sonraki eğzersizde hedef seviyesini düşürmeyi düşünebilirsiniz.
+1583=Oldukça zorlu bir isabet hedefi seçtiniz - bir sonraki eğzersizde bunu düşürme seçeneğiniz olduğunu unutmayın.
+1584=Daha iyi isabet için hızınızı düşürmek istemiyorsanız, bir sonraki eğzersizde doğruluk hedefini düşürmeyi de seçebilirsiniz.
+1585=Şu anki isabetlilik hedefi oldukça zor görünüyor - isterseniz bir sonraki eğzersizde hedef seviyesini düşürebilirsiniz.
+1588=Hedefleri ayarlayın
+
+//Goal Explanations (1500 - 1539)
+//1.1
+1500=İsabetiniz hedef seviyenin oldukça altındaydı ve biraz yavaş yazdınız.
+//1.2
+1501=Yazma hızınız sabitti ancak isabetliliğiniz hedef seviyeye ulaşmadı.
+//1.3
+1502=Odaklan. Yazma hızın iyiydi ama doğruluk hedefine ulaşamadın.
+//1.4
+1503=Yoğunlaşın. Yazma hızınız çok iyiydi ama isabetliliğiniz hedef seviyenin oldukça altındaydı.
+//1.5
+1504=Dikkat et! Yazma hızın mükemmeldi ama isabet hedefine ulaşamadın.
+//2.1
+1505=İsabetliliğiniz hedef seviyeye tam olarak ulaşmadı ve biraz yavaş yazdınız.
+//2.2
+1506=Neredeyse! Yazma hızın iyiydi ama isabet hedefine tam olarak ulaşamadın.
+//2.3
+1507=Biraz daha deneyin! Yazma hızınız iyiydi ancak isabetliliğiniz hedef seviyenin altında kaldı.
+//2.4
+1508=Dikkat et! Yazma hızınız çok iyiydi ancak isabetliliğiniz tam olarak hedef seviyeye ulaşmadı.
+//2.5
+1509=Dikkat et! Yazma hızınız mükemmeldi ancak isabet hedefine tam olarak ulaşamadınız.
+//3.1
+1510=İsabet hedefine ulaştınız ancak biraz yavaş yazdınız.
+//3.2
+1511=İsabet hedefine ulaştınız ve yazma hızınız yeterince iyiydi. Devam et!
+//3.3
+1512=Aferin! İsabet hedefine ulaştınız ve yazma hızınız iyiydi. İyi çalışmaya devam edin!
+//3.4
+1513=Aferin! İsabet hedefine ulaştınız ve yazma hızınız çok iyiydi.
+//3.5
+1514=İsabet hedefine ulaştınız ve yazma hızınız mükemmeldi. Harika!
+//4.1
+1515=İsabet hedefini aştınız ancak biraz yavaş yazdınız.
+//4.2
+1516=Harika! İsabet hedefini aştınız ve yazma hızınız normaldi. Devam et!
+//4.3
+1517=Aferin! İsabet hedefini aştınız ve yazma hızınız iyiydi. İyi çalışmaya devam edin!
+//4.4
+1518=Aferin! İsabet hedefini aştınız ve yazma hızınız da çok iyiydi. Harika!
+//4.5
+1519=Tebrikler, hem isabet oranınız hem de yazma hızınız mükemmeldi. Harika yazım!
+
+//Interrupted + goal reached
+1520=İsabet oranınız hedef seviyesindeydi ancak egzersiz tam olarak tamamlanmadı.
+//Interrupted + goal not reached
+1521=Egzersiz tam olarak tamamlanmadı ve isabet hedefine ulaşamadınız.
+//Interrupted early
+1522=Egzersiz erken bitirildi. Dolayısı ile sonuçlar eksik ve doğru olmayabilir.
+
+//END: Dynamic Comment system -----------------------
+
+1450=Sonuçları && Yazdır
+1451=Yazma Testi tamamlandı
+1452=TEST SONUÇLARI
+1453=YAZMA TESTİ
+1455=TEST METNİ
+1456=\+Test için seçmiş olduğun süre\+
+1457=Yazma Testi Ayrıntıları
+1458=Yazma Testi Sertifikası
+
+1459=Uyarı: Aynı anda yalnızca bir mesaj saklanabilir
+1460=Testi &Gizle/Göster
+1461=Metni &Yazdır
+
+// Typing Meter issues
+
+1462=Sonra ara vermenizi tavsiye ederim
+//1463=Şu anda %s saattir çalışıyorsun. Mola verme zamanı!\n
+1463=İpucu: 
+1464=Ellerinizi nazikçe kapalı gözlerin üzerine koyun ve gözlerinizi rahatlatmak için 30 saniye veya daha uzun süre tutun.
+1465=Kollarınızı önünüzde uzatın ve ellerinizin üst kısımlarını kendinize doğru çevirerek her iki bileğinizi hafifçe bükün. 5 saniye basılı tutun, rahatlayın ve tekrarlayın.
+1466=Kollarınızı yanlara doğru uzatın ve her iki yumruğunuzu da 5 saniye boyunca sıkın. Ardından parmaklarınızı birbirinden olabildiğince uzağa yayın ve 5 saniye basılı tutun. Tekrar et!
+1467=Dik durun ve sağ kulağınızı sağ elinizle nazikçe yardım ederek sağ omzunuza doğru bastırın. 5 saniye basılı tutun ve sol tarafla tekrarlayın.
+1468=Bilgisayarda çalışırken normalden çok daha az göz kırpma eğilimindeyiz ve kuru gözler rahatsızlığa ve bulanık görmeye neden olabilir. Göz kırp!
+1469=Kaslarınıza iyice esnetin. Ayağa kalkın ve ellerinizi kenetleyerek kollarınızı dümdüz yukarı kaldırın. Gerdirmeyi 5 saniye tutun ve rahatlayın. Birkaç kez tekrarlayın.
+1470=Gözlerinizi dinlendirin. 20 saniye boyunca yaklaşık 20 fit/6 metre uzaktaki bir nesneye bakın. Gözlerinizi rahatlatmak için bunu arada bir yapın.
+1471=Kollarınızı uzatın ve avucunuzu bileğinize doğru bastırarak sol bileği hafifçe esnetin. 5 saniye basılı tutun ve sağ elinizle tekrarlayın.
+1472=Düz durun ve omuzları kaldırın. 3 saniye bekleyin Rahatlayın ve tekrarlayın. 10 saniye boyunca hızlı omuz silkme hareketleriyle takip edin. Dolaşımı iyileştirmek için.
+1473=Ara ver!
+
+// Manager
+1474=Ayarlar kaydedildi.
+1475=Ayarlar geri yüklendi.
+1606=Varsayılan kursu devre dışı bırakamazsınız
+
+// Tutor changes
+1476=Parola seçin
+1477=Yöneticiniz sizden bu yazılımda kullanılacak şifreyi seçmenizi ister.
+
+1478=Ücretsiz Lisans Kazan
+1479=Tam &Yedekleme Yap
+
+// GOAL levels
+1600=Hedefte Değil
+1601=Kolay
+1602=Orta düzey
+1603=Gelişmiş
+1604=Uzman
+1605=Acemi
+
+
+1607=Amaç
+1608=İsabet Hedefi
+1609=Süre
+1610=%s dakika (ilerlemeye dayalı)
+1611=Başlamak için Space tuşuna basın.
+
+/// Objective list, max 40
+//1
+1620=Yeni tuşların konumlarını öğrenin ve ezberleyin ve doğru parmak tuşu erişimlerini geliştirin.
+//2
+1621=Yeni tuşları önceden öğrenilmiş tuşlarla entegre edin ve yazma işleminize akış katın.
+//3
+1622=Kas hafızasını daha da geliştirmek ve tekniği güçlendirmek için konsolidasyon egzersizi.
+//4
+1623=Pürüzsüz ve doğru tuş vuruşları ve hatta ritim geliştirmek için pekiştirme uygulaması.
+//5
+1624=Herhangi bir görsel ipucu olmadan bağımsız olarak yazın ve becerilerinizi kanıtlayın.
+//6
+1625=dersin beceri değerlendirilmesi için sınav
+
+//the following are for speed building course
+//7
+1626=Yüksek isabetliliği korurken yazma hızını artırmak için ekstra uygulama.
+//8
+1627=Daha önce öğrenilen tuşları gözden geçirin.
+//9
+1628=Belirli ana satır tuşlarına özel olarak odaklanarak tekniğinizi güçlendirin.
+//10
+1629=İşaret parmağı tuşlarına özel odaklanarak tekniğinizi güçlendirin.
+//11
+1630=Orta parmak tuşlarına özel odaklanarak tekniğinizi güçlendirin.
+//12
+1631=Yüzük parmağı tuşlarına özel odaklanarak tekniğinizi güçlendirin.
+//13
+1632=Küçük parmak tuşlarına özel odaklanarak tekniğinizi güçlendirin.
+//14
+1633=İngilizce'deki en yaygın kelimelerden bazılarını akıcı bir şekilde yazmayı öğrenin.(Türkçe Yakında)
+//15
+1634=Sıklıkla yanlış yazılan kelimeleri yazarak becerilerinizi güçlendirin.
+//16
+1660=xx
+
+//Result screen strings
+1661=Sonuçlar Hesaplanamıyor
+1662=Test geçildi
+1663=Bu yazı testini tamamladınız.
+1664=Test Geçilemedi
+1665=Daha fazla bilgi için lütfen ayrıntılara bakın.
+1666=Egzersiz Kısmen Tamamlandı
+1667=Egzersiz Tamamen Tamamlandı
+1668=Aşağıda sonuçlarınızı görün.
+1669=Bu Eğzersizdeki Zor Tuşlar
+1670=Zor tuş yok
+1671=Öğrenme İpuçları
+
+1672=GEÇTİ
+1673=GEÇİLMEDİ
+
+//Some new strings for Typing Meter login window
+1674=Ben yeni bir kullanıcıyım..
+1675=Typing Meter'i Başlat
+1676=Mevcut Kullanıcıları Görüntüle
+1677=Başlatma
+1678=Typing Meter'i başlatmak istiyorsanız, kullanıcı adınızı seçin ve "Başlat" düğmesini tıklayın, eğer başlatmak istemiyorsanız "Başlatma" düğmesine basın.
+1679=Bu pencereyi bir daha gösterme.
+
+1680=7 günlük Premium deneme süreniz sona erdi
+1681=Zor Tuşlarınız
+
+1682=Test Durduruldu
+1683=Süre dolmadan test kullanıcı tarafından bitirildi.
+
+// new ones added by Tuomas
+1684=Eğitim
+1685=Tam ekran (yakınlaştır)
+1686=Tam Ekran
+1687=Küçük Ekran
+1688=Hoş Geldin Yeni Kullanıcı
+1689="%s" kullanıcısı Windows'u başlattığında…
+1690=Typing Master'a Hoş Geldiniz
+1691= [eski]
+1692=Tamam
+1693= (duraklatıldı)
+1694=Hedefe Dayalı
+1695=Lisansınız doğrulanıyor…
+1696=Başlatılmadı
+1697=Kursa Devam Et
+1698=Derse Devam Et
+1699=Şimdi Başlat
+1700=Bütün Kursları Al
+1701= saat
+1702=\+ dersleri alacak
+1703= ilerlemenize bağlı olarak dakika
+1704=Kurs Süresi\+
+1706=Şimdi Başlat
+1707=Devam Etmekte
+1708=Tuş sıralarını yazın, vurgulanan tuşu takip edin
+1709=Gerektiğinde ipucu için ekran klavyesine ve ellere bakın
+1710=Cümlenin tamamını yazın ve Enter tuşuna basın
+1711=Devam etmek için boşluk tuşuna basın
+1712=\+ Basılı Tutun
+1713= \+ ile
+1714=\+ Basın
+1715= \+ ile tuş
+1716=Şimdi\+ tuşuna basmayı deneyin
+1717=1.\+
+1718=2. Basın\+
+1719=\+tuşu ile\+
+1720=İyi!
+1721=Mükemmel!
+1722=Harika!
+1723=Uups, tekrar deneyin..
+1724=Vurgulanan kelimeyi yazın ve boşluk tuşuna basın
+1725=Şimdi yazmayı deneyin\+
+1726=Kurs Tamamlandı!
+1727=Şimdi bu dersi tamamladınız ve aşağıdaki tuşları eğittiniz:
+1728=Ana Menü'ye geri dön
+1729=Tebrikler - şimdi yazma becerilerinizi geliştirdiniz! Yeni zorluklar için lütfen Başlat'a tıklayın.
+1730=HATA: Girilen lisans kullanımı aşıldı. Lütfen yazılımı bir veya daha fazla bilgisayardan kaldırın ve tekrar deneyin!
+1731=Typing Master Lite'yi satın aldığınız için teşekkür ederiz.
+1732=Bu sürüm Typing Meter' i içermez.
+1733=Typing Master Typing Meter kaldırıldı.
+1734=Üzgünüz, bu program sürümü ağ işlevselliğine izin vermiyor!
+1735=Tam ağ sürümü için lütfen satıcınızla iletişime geçin.
+1736=Paragraf
+1737=Tuşlar
+1738=Kelimeler
+1739=Cümle
+1740=Özet Raporu
+1741=Toplam Kullanıcılar
+1742=Hafta İçinde Aktif
+1743=Ay içinde aktif
+1744=Minimum
+1745=Ortalama
+1746=Maksimum
+1747=Çalışılan Süre
+1748=Kullanılan Süre
+1749=Son Kullanma T/S
+1750= Kullanıcılar
+1751= Süreler
+1752=Kurs
+1753=Kullanıcılar
+1754=Tamamlanan (Ortalama)
+1755=Tamamlanan 50% > 
+1756=Tamamlanan 90% >
+1757=Özet Raporu
+1758=Haftalık istatistikler
+1759=Zor Tuş(lar)
+1760=Bazı tuşlarla ilgili küçük sorunlar
+1761=Sorun bulunamadı
+1762=Zor Büyük Harf(ler)
+1763=Bazı büyük harflerle küçük sorunlar
+1764=Sorun bulunamadı
+1765=Zor Kelime(ler)
+1766=Bazı kelimelerle ilgili küçük sorunlar
+1767=Sorun bulunamadı
+1768=Typing Meter otomatik olarak başlatılacak ve "%s" için yazmayı analiz etmeye başlayacaktır. Bu, kişisel Windows hesabınızsa önerilir.
+1769=Windows başlatıldığında, Typing Meter onu çalıştırmak isteyip istemediğinizi soracaktır. Bu Windows hesabını birkaç kişi kullanıyorsa önerilir.
+1770=Typing Meter, Windows başlatıldığında otomatik olarak başlatılmaz. Typing Meter'i kullanmak için Typing Master'dan başlatmanız gerekir.
+1771=Typing Meter'ı otomatik olarak başlat
+1772=Başlatmadan önce sor
+1773=Typing Meter'i başlatma
+1774=Typing Meter'i Başlat
+1775=Typing Meter
+1776=Devre dışı modunda başlat
+1777=Etkinleştiriliyor..
+1778=Typing Meter etkinleştirildi. Yazma becerileriniz şu anda izleniyor.
+1779=Typing Meter
+1780=Typing Master çalışırken, Typing Meter devre dışı bırakılır. Typing Master'ı kapattıktan sonra yeniden deneyin.
+1781=Typing Meter
+1782=Hedefe Dayalı
+1783=Eğitim
+1784=Typing Meter'in zor bulduğu tuşları ve kelimeleri geliştirin.
+1785=Detaylı analiz
+1786=İncelemeye Başla
+1787=Eğzersize Başla (Space)
+1788=Senin ilerlemen
+1789=Başlama Bilgileri
+1790=Kaydet PD&F
+1791=Yazma Hızı
+1792=Doğruluk Oranı
+1793=Kursu değiştir
+1794=Optimum Süre
+1795=Bu kurs sırasında, her egzersizin süresi ilerlemenize bağlı olarak optimal olacaktır. Bu, iyi öğrenme sonuçlarını garanti ederken size zaman kazandıracaktır.
+1796=Ders
+1797=Optimum Süreyi Kapat
+1798=Course progress
+1799=Kurs içeriği
+1800=Kurs süresini ayarla
+1801=Tamamlandı
+1802=Ders Tamamlandı!
+1803=Sonraki Ders
+1804=Yalnızca Deneme Sürümü önizlemesinde
+1805=Bu sınırlı deneme sürümü ile 10 Parmak yazma kursunun ilk iki dersini tamamlayabilirsiniz. Derslerin geri kalanına erişmek için tam sürüm gereklidir.
+1806=Lisans Anahtarını Girin
+1807=Eğitim
+1808=Analiz
+1809=İstatistik
+1810=Typing Meter Durumu
+1811=Eğitim süresini seçin
+1812=Yazma İstatistikleri
+1813=Sorun Dizini
+1814=Typing Meter nedir?
+1815=Gün
+1816=Zaman
+1817=Hız
+1818=Hafta
+1819=Daha sonra başlat
+1820=Başlat
+1821=Bildirimleri Ayarla
+1822=Eğitim gerektiğinde bana haber ver
+1823=Her ara vermem gerektiğinde beni bilgilendir...
+1824=Typing Meter başlatıldı
+1825=Görev çubuğuna yerleştirilen simge
+1826=Diğer programlarda yazdıklarınız analiz edilecektir.
+1827=Typing Meter'e Erişim
+1828=Typing Master'ı açın ve menüde "Typing Meter"e tıklayın veya
+1829=Görev çubuğundaki Typing Meter simgesine tıklayın ve "Eğitimi başlat"ı seçin.
+1830=Eğitime Başlarken
+1831=Typing Meter, yazınızı analiz etmeye başlayacak ve eğitim gerektiren zor tuşlarınızı ve kelimeleri algıladığında sizi bilgilendirecektir. Bu genellikle 1-3 gün sürer.
+1832=Sıradaki ne?
+1833=Typing Meter'in özelliklerine aşina olmak için Devam'ı tıklayın.
+1834=Çalışmaya geri dönmek için menüdeki Kurs'a tıklayın
+1835=Kurslara dön
+1836=Testi başlat
+1837=Deneme Sürümünde Kilitlendi
+1838="Seçilen kurs, mevcut Klavye düzeniniz için tasarlanmadı. Düzeni değiştirmeniz şiddetle tavsiye edilir, aksi takdirde bazı egzersizler çalışmayabilir."
+1839=Düzen:
+1840=ABD Uluslararası düzenine geç
+1841=&Klavyeyi kendin seç
+1842=Egzersizler Deneme Sürümünde Kilitli
+1843=Bu egzersizler Deneme Sürümünde kilitlenmiştir. Tüm egzersizlere sınırsız erişim elde etmek için Typing Master'ın tam sürümünü satın alın!
+1844=Geri dön
+1845=Devam et
+1846=&Özet Raporu
+1847=&Tümünü Seç
+1848=Yukarıdaki metni buraya yazın
+1849=Son 7 gün
+1850=Geçen ay
+1851=Geçen yıl
+1852=Kurs Seç
+1853=Typing Meter hakkında daha fazla bilgi
+1854=Typing Meter, PC'nizi kullandığınızda yazdıklarınızı takip eder, analiz eder ve zor tuşlarınızı kullanarak hedefe yönelik eğitim sağlar. Typing Meter ayrıca yazma istatistiklerini toplar ve size mola vermenizi hatırlatacak şekilde ayarlanabilir.
+1855=Durum
+1856=Typing Meter' i Başlat
+1857= 
+1858= 
+1859= 
+1860= 
+1861=Süre
+1862=Ders
+1863=İlerleme
+1864=ABC Hız Yarışı
+1865=Durdur
+1866=ABC-Oyun
+1867=Typing Master'ı Kaldır
+1868=Bütün Kursları Al
+1869=Egzersiz Tamamlandı!
+1870=Şimdi bu egzersizi tamamen tamamladınız ve isabet hedefine ulaştınız - iyi iş!
+1871=Bu egzersizi tamamladınız ve isabet hedefine ulaştınız.
+1872=Bu egzersizi tamamladınız ve isabet hedefine ulaştınız.
+1873=Egzersiz Tamamlandı
+1874=Artık bu egzersizi tamamladınız.
+1875=saatler
+1876=Mükemmel İlerleme!
+1877=İsabet Oranınız ve yazma hızınız o kadar iyi ki zamandan kazanmak için bu alıştırmanın geri kalanını atlayabilirsiniz.
+1878=Sonuca geç (Enter)
+1879=Egzersize deam et (Space)
+1880=Özel Süre
+1881=Derslerin süresini seçin - egzersizlerin süresi buna göre ayarlanacaktır.
+1882=Ders Süresi:
+1883=Optimum Süre
+1884=Tekrar Aç
+1885=Sonuçları Görüntüle (Enter)
+1886=Tamamlanamadı
+1887=Grup dosyası açma Hatası:
+1888=Yönetici, bu durumu düzeltmek için Yönetici aracını başlatmalıdır.
+1889=Erişim Engellendi: Veritabanı klasörüne yazılamıyor.
+1890=Geçerli kullanıcı hesabı, sunucu DATABASE klasöründe gerekli Dosya Değiştirme İzinlerine sahip değil.
+1891=Kurulum Klasörü İzinlerinin nasıl ayarlanacağıyla ilgili ayrıntılı talimatlar için lütfen Kurulum Kılavuzuna bakın.
+1892=%s dk.
+1893=%s saat
+1894=Ekstra Kurslar: Klavye, Sayılar, Özel Dersler, 10lu NumPAD
+1895=Nasıl satın alınır…
+1896=&Ayarları değiştir..
+1897=Etkinleştir / Devre Dışı Bırak
+1898=Varsayılan Yap
+1899=Kurslar
+1900=Kurs Görevleri
+1901=Daha fazla bilgi
+1902=http://www.TypingMaster.com
+1904=Ders Süresi
+1905=Ders süresini seçin:
+1906=Yazma Analizi
+
+//language specific Image:
+1907=Trainer popup menu.bmp
+
+1908=Varsayılanı Kaldır
+1909=[Grup seçin]
+
+//Specific strings for ActiveX v7
+1910=Bu dersten çık
+
+1911=Bu, %S'ye kadar çalışacak tam işlevsel bir deneme sürümüdür.
+1912=Bu Kurstan Çık
+
+1913=Remembers mistyped words to build targeted practice.
+1914=No words are stored. You'll still see problem keys and keypairs.
+1915=Do not collect any words

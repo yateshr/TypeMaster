@@ -1,0 +1,155 @@
+$description=Zahlen
+$longdesc=In diesen zwei Lektionen lernen Sie, Zahlen auf der Ziffernreihe oben zu schreiben.
+$version=7.0
+$language=ger
+$chapters=2
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 28.2.2006 11:36
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Zahlen
+alternatekeyboards=1
+keyboard=ALL
+wizardname=GE7QWERT
+simplewizard=1
+last free=1
+keyboardbase=QWERTY AZERTY QWERTZ SWISSGER
+
+begin chapter
+ chapter name=1;Die Zahlen 4, 5, 6, 7, 8 und 9
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjklö
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTOÖ
+ new keys=gGhH
+ new keys=nNvV
+ new keys=?üÜäÄ
+ new keys_qwertz=ß
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.:
+ new keys=ei
+ new keys=cC,-
+
+ begin exercise
+   type=Die Zahlenreihe
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_ge7NumRow_1_1_1.htm;Die Zahlenreihe;0;left;0;0;0;0;0;0;0;0
+ end exercise
+ new keys=5678
+ begin exercise
+   type=Die Zahlen 5, 6, 7 und 8
+   duration=4
+    EVENT=KEYINTRO;0;file:ge7NumRow0011keyintro.txt;5678;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7NumRow0012keyintro.txt;56;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7NumRow0013keyintro.txt;78;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7NumRow01015keyintro.txt;5678;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;4;file:ge7NumRow0012key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7NumRow0021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7NumRow0021word2sw.txt;0;0;0;0;0;0;0;25;75;175;125;2
+    EVENT_QWERTY=SENTENCE2;3;file:ge7NumRow0021word2sw.txt;0;0;0;0;0;0;0;25;75;175;125;2
+    EVENT_AZERTY=SENTENCE2;3;file:ge7NumRow0021word2sw.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ new keys=49
+ begin exercise
+   type=Die Zahlen 4 und 9
+   duration=2
+    EVENT=KEYINTRO;0;file:ge7NumRow0021keyintro.txt;49;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7NumRow1022keyintro.txt;49;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7NumRow01033keyintro.txt;49;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:ge7NumRow1023key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7NumRow1041sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7NumRow1041sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_QWERTY=SENTENCE2;3;file:ge7NumRow1041sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+    EVENT_AZERTY=SENTENCE2;3;file:ge7NumRow1041sentence2sw.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Abschnittsübung
+   duration=3
+    EVENT_QWERTZ=PARAGRAPH2;3;file:ge7NumRow1051paragraph2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_SWISSGER=PARAGRAPH2;3;file:ge7NumRow1051paragraph2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_QWERTY=PARAGRAPH2;3;file:ge7NumRow1051paragraph2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_AZERTY=PARAGRAPH2;3;file:ge7NumRow1051paragraph2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die Zahlen 1, 2, 3 und 0
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=30
+ begin exercise
+   type=Die Zahlen 3 und 0
+   duration=2
+    EVENT=KEYINTRO;0;file:ge7NumRow2011keyintro5106.txt;30;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7NumRow2011keyintro.txt;30;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7NumRow02013keyintro.txt;30;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:ge7NumRow2012key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ new keys=12
+ begin exercise
+   type=Die Zahlen 1 und 2
+   duration=2
+    EVENT=KEYINTRO;0;file:ge7NumRow2021keyintro.txt;12;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7NumRow2022keyintro.txt;12;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7NumRow02023keyintro.txt;newkeys;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:ge7NumRow2023key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT=SENTENCE2;3;file:ge7NumRow2031sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Abschnittsübung
+   duration=4
+    EVENT_QWERTZ=PARAGRAPH2;4;file:ge7NumRow2041paragraph2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+    EVENT_SWISSGER=PARAGRAPH2;4;file:ge7NumRow2041paragraph2sw.txt;0;0;0;0;0;0;0;25;75;175;125;4
+    EVENT_QWERTY=PARAGRAPH2;4;file:ge7NumRow2041paragraph2sw.txt;0;0;0;0;0;0;0;25;75;175;125;4
+    EVENT_AZERTY=PARAGRAPH2;4;file:ge7NumRow2041paragraph2sw.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=4
+    EVENT_QWERTZ=TEXT2;4;file:ge7NumRow2051text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_SWISSGER=TEXT2;4;file:ge7NumRow2051text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_QWERTY=TEXT2;4;file:ge7NumRow2051text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+    EVENT_AZERTY=TEXT2;4;file:ge7NumRow2051text2sw.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter

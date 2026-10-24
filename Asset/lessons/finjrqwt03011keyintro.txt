@@ -1,0 +1,2 @@
+Seuraavaksi siis kirjaimet T ja N.
+T löytyy yläriviltä ja N alariviltä.

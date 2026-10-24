@@ -1,0 +1,657 @@
+$description=Kymmensormijärjestelmän peruskurssi
+$longdesc=Peruskurssin aikana opit kirjoittamaan virheettömästi ja näppäimistöön vilkuilematta kymmensormitekniikan avulla. Kurssi kattaa isot ja pienet kirjaimet sekä yleisimmät välimerkit.
+$version=7.0
+$language=fin
+$chapters=12
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 10.10.2006 14:20
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=auttaako tama
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=85,90,95
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Kymmensormijärjestelmän peruskurssi
+alternatekeyboards=1
+keyboard=finnish.kbd
+wizardname=fi7qwert
+simplewizard=1
+last free=2
+
+begin chapter
+ chapter name=1;Perusrivi ASDF JKLÖ
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=asdfjklö
+ begin exercise
+   type=Johdanto
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_fin_fi7qwert_1_1_1.htm;Kymmensormitekniikan hyödyt;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_1_2.htm;Perusrivi ja kotinäppäimet;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_1_3.htm;Näppäinten painaminen;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_1_4.htm;Opiskeluvinkkejä 1;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_1_5.htm;Opiskeluvinkkejä 2;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Perusrivi
+   duration=3
+    EVENT=KEYINTRO;0;file:fi7qwert01021keyintro.txt;asdfjkl%F6;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert01022keyintro.txt;asdf;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert01023keyintro.txt;jkl%F6;SHOW;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert01024keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert01025keyintro.txt;asdfjkl%F6;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert01026keyintro.txt;asdfjkl%F6;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert01028keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert01029keyintro.txt;asdfjkl%F6;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert01013key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Näin luet harjoitustuloksia
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_fin_fi7qwert_1_2_1.htm;Harjoitusten tulokset;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_2_3.htm;Bruttonopeus;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_2_4.htm;Nettonopeus;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_2_2.htm;Kirjoitustarkkuus;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_2_5.htm;Vaikeat merkit;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Näppäinharjoitus
+   duration=3
+    EVENT=KEY2;3;file:fi7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Vinkki: testaa taitosi
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_6_1.htm;Testaa nykyiset taitosi;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert01031word2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_7_1.htm;Tietoa kappaleharjoituksesta;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=PARAGRAPH2;3;file:fi7qwert01052text2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Kirjaimet E ja I
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=ei
+ begin exercise
+   type=Kirjaimet E I
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_2_1_1.htm;Kirjaimet E ja I;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert02012keyintro.txt;ei;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert02013keyintro.txt;ei;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert02017keyintro.txt;ei;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert02012key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Mukautuva kesto
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_fin_fi7qwert_2_2_1.htm;Mukautuva kesto tehostaa opiskelua;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_2_2_2.htm;Edistymisen seuraaminen;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_2_2_3.htm;Mukautuvan keston kytkeminen pois;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert02021word2.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert02041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Vinkki: tutustu Satelliittiin
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_2_3_1.htm;Tutustu Satelliitin toimintaan;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert02051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Kirjaimet T ja N
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=nt
+ begin exercise
+   type=Kirjaimet T N
+   duration=3
+    EVENT=KEYINTRO;0;file:fi7qwert03011keyintro.txt;tn;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert03012keyintro.txt;tn;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert03013keyintro.txt;tn;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert03012key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert03021word2.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Tietoa ergonomiasta
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_fin_fi7qwert_1_4_1.htm;Ergonomian merkitys;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_4_2.htm;Työtuoli ja työpöytä;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_4_3.htm;Näyttö ja näppäimistö;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_4_4.htm;Hyvä työasento;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_4_5.htm;Vinkkejä kehon virkistämiseksi;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert03031key2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert03041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Vinkki: harjoitusta peleillä
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_1_5_1.htm;Harjoitusta näppäilypeleillä;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7qwert03051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Kirjaimet R ja U
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=ru
+ begin exercise
+   type=Kirjaimet R U
+   duration=3
+    EVENT=KEYINTRO;0;file:fi7qwert04011keyintro.txt;ru;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert04012keyintro.txt;ru;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert04013keyintro.txt;ru;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert04012key28449.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert04021word23455.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert04031sentence25312.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Vinkki: seuraa tilastoja
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_4_5_1.htm;Seuraa edistymistäsi tilastoista;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert04041paragraph21934.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7qwert04051text230.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Isot kirjaimet ja piste
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=ASDFJKLÖEINTRU
+ begin exercise
+   type=Vaihtonäppäin
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_5_1_1.htm;Vaihtonäppäinten käyttö;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert05011keyintro.txt;FJ;PRESS;left
+    EVENT=KEYINTRO;0;file:fi7qwert05013keyintro.txt;FJ;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert05012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert05021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new Keys=.
+ begin exercise
+   type=Piste
+   duration=1
+    EVENT=KEYINTRO;0;file:fi7qwert05032keyintro.txt;%2E;0;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert05041keyintro.txt;%2E;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert05033keyintro.txt;%2E;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:fi7qwert05042key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert05031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Vinkki: kirjoitusrytmi
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_6_5_1.htm;Rytmikäs kirjoittaminen;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert05041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7qwert05051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Kirjaimet V Ä ja pilkku
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=vVäÄ
+ begin exercise
+   type=Kirjaimet V Ä
+   duration=3
+    EVENT=KEYINTRO;0;file:fi7qwert06011message.txt;vä;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert06011keyintro.txt;vä;PRESS;left
+    EVENT=KEYINTRO;0;file:fi7qwert06013keyintro.txt;vä;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert06012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ new Keys=,
+ begin exercise
+   type=Pilkku
+   duration=1
+    EVENT=KEYINTRO;0;file:fi7qwert06021message.txt;%2C;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert06022keyintro.txt;%2C;PRESS;left
+    EVENT=KEYINTRO;0;file:fi7qwert06023keyintro.txt;%2C;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:fi7qwert06061key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert06021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert06031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert06041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Vinkki: tarkista työasento
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_5_5_1.htm;Tarkista hyvä työasento;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7qwert06051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Kirjaimet O H ja kysymysmerkki
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=oOhH
+ begin exercise
+   type=Kirjaimet O H
+   duration=3
+    EVENT=KEYINTRO;0;file:fi7qwert07011keyintro.txt;oh;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert07013keyintro.txt;oh;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert07014keyintro.txt;oh;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert07012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+  begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert07021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new Keys=?
+ begin exercise
+   type=Kysymysmerkki
+   duration=1
+    EVENT=KEYINTRO;0;file:fi7qwert07021keyintro.txt;%3F;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert07023keyintro.txt;%3F;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert07024keyintro.txt;%3F;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:fi7qwert07023key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert07031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Vinkki: pidä taukoja
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_7_5_1.htm;Lyhyet tauot virkistävät;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert07041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7qwert07051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Kirjaimet P M ja kaksoispiste
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=pPmM
+ begin exercise
+   type=Kirjaimet P M
+   duration=3
+    EVENT=KEYINTRO;0;file:fi7qwert08011keyintro.txt;pm;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert08012keyintro.txt;pm;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert08013keyintro.txt;pm;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert08012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert08021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new Keys=:
+ begin exercise
+   type=Kaksoispiste
+   duration=1
+    EVENT=KEYINTRO;0;file:fi7qwert08020keyintro.txt;%3A;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert08021keyintro.txt;%3A;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert08023keyintro.txt;%3A;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:fi7qwert08022key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert08031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert08041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7qwert08051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Kirjaimet Y G ja yhdysviiva
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=yYgG
+ begin exercise
+   type=Kirjaimet Y G
+   duration=3
+    EVENT=KEYINTRO;0;file:fi7qwert09010keyintro.txt;yg;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert09011keyintro.txt;yg;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert09013keyintro.txt;yg;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert09012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert09021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new Keys=-
+ begin exercise
+   type=Yhdysviiva
+   duration=1
+    EVENT=KEYINTRO;0;file:fi7qwert09061keyintro.txt;%2D;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert09062keyintro.txt;%2D;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert09063keyintro.txt;%2D;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:fi7qwert09022key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert09031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert09041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7qwert09051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Kirjaimet C ja W
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=cCwW
+ begin exercise
+   type=Kirjaimet C W
+   duration=3
+    EVENT=KEYINTRO;0;file:fi7qwert010011keyintro7697.txt;cw;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert010011keyintro.txt;cw;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert010013keyintro.txt;cw;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert010012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert010021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert010031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert010041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7qwert010051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Kirjaimet B ja Z
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=bBzZ
+ begin exercise
+   type=Kirjaimet B Z
+   duration=3
+    EVENT=KEYINTRO;0;file:fi7qwert011011test.txt;bz;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert011011key2.txt;bz;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert011013keyintro.txt;bz;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert011012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert011021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert011031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert011041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7qwert011051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Kirjaimet Q X ja Å
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=qQxXåÅ
+ begin exercise
+   type=Kirjaimet Q X Å
+   duration=3
+    EVENT=KEYINTRO;0;file:fi7qwert012011keyintro.txt;qxå;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert012012keyintro.txt;qxå;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:fi7qwert012013keyintro.txt;qxå;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:fi7qwert012012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Sanaharjoitus
+   duration=3
+    EVENT=WORD2;3;file:fi7qwert012021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Lauseharjoitus
+   duration=3
+    EVENT=SENTENCE2;3;file:fi7qwert012031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Kappaleharjoitus
+   duration=3
+    EVENT=PARAGRAPH2;3;file:fi7qwert012041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Vinkki: loppukoe
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_12_5_1.htm;Testaa edistymistäsi kirjoituskokeella;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Tekstiharjoitus
+   duration=3
+    EVENT=TEXT2;3;file:fi7qwert012051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+ begin exercise
+   type=Mitä seuraavaksi?
+   duration=2
+    EVENT=HTMLMESSAGE;2;msg_fin_fi7qwert_12_1_1.htm;Uudet taidot käyttöön;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_12_1_2.htm;Hio taitojasi Satelliitilla;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_fin_fi7qwert_12_1_3.htm;Lisää oppia lisäkursseilla;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter

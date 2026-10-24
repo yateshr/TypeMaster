@@ -1,0 +1,1430 @@
+/////////////////////////////////////////////////////////////
+// TypingMaster Pro GUI Localization
+//
+// language.eng file for TypingMaster 6 6.21 and higher
+// revision version 1.2 US English spell checked
+// date: 12/27/2002 TU
+////////////////////////////////////////////////////////////
+//
+// Miscellaneous instructions for translators:
+// *Do not translate these comment rows starting with //
+//
+// *Spaces in the beginning and end of rows are marked with 
+//  notation \+ for better visibility.
+//
+// *Hotkeys for menu items are marked with & 
+//  e.g. "202=&WPM (words/min)" 
+//  When user presses 'W' in the program this item is automatically selected
+//  If a row contains a hotkey character, also insert a similar hotkey character in your translation
+//  Double check that the hotkey characters for one screen/menu are unique.
+//
+// *the '&'-character is marked as &&
+//
+/////////////////////////////////////////////////////////////
+
+// Do not edit the IDs 0..10
+0=language.pt
+1=Typing Master
+2=Typing Master 12
+11=PT
+12=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZãõêôâáéíóúàÃÕÊÔÂÁÉÍÓÚÀÇç
+13=abcdefghijklmnopqrstuvwxyzãõêôâáéíóúàç
+14=ABCDEFGHIJKLMNOPQRSTUVWXYZãõêôâáéíóúàÃÕÊÔÂÁÉÍÓÚÀÇç
+15=SuMoTuWeThFrSa
+
+/// these are for games
+221=abcdefghijklmnopqrstuvwxyzãõêôâáéíóúàç
+222=abcdefghijklmnopqrstuvwxyzãõêôâáéíóúàABCDEFGHIJKLMNOPQRSTUVWXYZÃÕÊÔÂÁÉÍÓÚÀÇç
+223=abcdefghijklmnopqrstuvwxyzãõêôâáéíóúàABCDEFGHIJKLMNOPQRSTUVWXYZÃÕÊÔÂÁÉÍÓÚÀÇç1234567890
+
+///// Do not translate the following one(s)
+///// ********************
+90=qwertyuiopasdfghjklzxcvbnm
+///// ********************
+
+/////////////////////////////////////////////////////////////
+// General, widely used string gathered here for ease of translation
+/////////////////////////////////////////////////////////////
+24=Utilizador
+439=Nome do Utilizador
+462=Utilizador:\+
+469=Utilizador:\+
+471=Utilizador:\+
+118=Precisão
+584=Precisão
+622=Precisão
+116=Velocidade
+131=Velocidade
+201=Velocidade
+121=A Velocidade é
+629=Velocidade
+367=Velocidade Bruta (
+587=Velocidade Bruta
+623=Vel. Bruta
+368=Velocidade Líquida (
+586=Velocidade Líquida
+621=Vel. Líquida
+
+////////////////////////////////////////////////////////////
+// Texts for navigation and dialogue buttons
+/////////////////////////////////////////////////////////////
+721=&Entrar
+734=&Entrar
+722=&Cancelar
+733=&Cancelar
+602=&Cancelar
+88=&Cancelar
+1174=&Cancelar
+603=Se&guinte
+87=&Sim
+1173=&OK
+413=C&omeçar
+
+/////////////////////////////////////////////////////////////
+//Program menu
+//These hotkeys apply when the menu is visible
+//The hotkeys you define here, cannot be used when the menu is visible
+/////////////////////////////////////////////////////////////
+643=Menu
+554=&Estudar
+555=&Rever
+556=&Testes
+557=&Jogos
+558=&ProTrainer
+559=E&statísticas
+560=&Definições
+561=&Informação
+
+/////////////////////////////////////////////////////////////
+//Titles for different sections of the program
+/////////////////////////////////////////////////////////////
+562=Revisão
+563=Jogos
+564=Testes
+565=Estatísticas
+566=ProTrainer
+567=ProTrainer
+568=Definições
+569=Informação
+
+/////////////////////////////////////////////////////////////
+//Info screen
+/////////////////////////////////////////////////////////////
+16=R
+17=Visitante
+18=http://www.typingmaster.com/pt
+19=General
+20=Versão
+21=Estrutura
+22=ID da Licença
+23=Procurar por Actualizações
+44=lic.
+45=http://www.TypingMaster.com/pt
+301=Copyright 2005 TypingMaster, Inc. Todos os Direitos Reservados.
+302=Versão de Demonstração Limitada
+303=Serviços de licença
+304=Só o ProTrainer está registado.
+305=TypingMaster:\+
+551=Encomendar licenças
+552=Como encomendar
+553=Gerir a minha encomenda
+//553=Escolas e Empresas
+713=Suporte Técnico
+714=Internet
+570=http://www.TypingMaster.com/pt/index.asp?go=support
+
+/////////////////////////////////////////////////////////////
+//Course and lesson screens
+/////////////////////////////////////////////////////////////
+395=Continuar o curso
+145=Curso Completo
+396=Lição\+
+124=Lição\+
+125=de\+
+// the following one is used in "lesson n of n", note spaces before and after
+712=\+de\+
+
+397=Bem-vindo a ...
+398=Entre para a 1ª lição >
+399=% concluído
+710=Carregue em Seguinte para começar.
+711=&Mudar de Curso
+715=resultado dos exercícios
+
+105=Próxima Lição
+107=Esta versão do TypingMaster 6 é uma demonstração limitada.\n\nNesta versão de demonstração pode completar as primeiras lições de cada curso. Nas últimas lições, os exercícios serão interrompidos depois de 10 segundos.
+108=Com a versão completa, poderá acabar todos os cursos sem limitações e aperfeiçoar a sua técnica.
+109=Quer mais informações sobre a versão completa?
+110=Desculpe, mas uma vez que não passou a um dos exames das aulas, não pode continuar a estudar.
+111=Desculpe, mas uma vez que não passou a todos os exercícios da lição, não pode continuar a estudar.
+112=Lição Bloqueada
+114=Exercícios
+117=cpm
+//Very hard to translate backspace
+119=Apagar 
+120=Eficiência
+122=Escreveu durante muito pouco tempo,\+
+123=os seus resultados não podem ser calculados.
+127=Exercício completo.
+128=Carregue em Enter para continuar.
+129=Para continuar, todo o exercício deverá estar completo.\nTem a certeza que quer cancelar este exercício?
+130=Tempo
+132=Rítmo
+133=Pontuação
+134=Falhou
+136=Correcto
+137=Anónimo
+138=Ir para a Próxima Lição
+139=\+min.
+146=Bem-vindo ao TypingMaster
+366=Nenhum curso iniciado
+
+627=bem-vindo
+631=&Alterar Definições
+632=&Mais Informação
+633=Estatísticas do Curso
+634=Nome do curso
+635=Duração do estudo
+636=Completo
+
+638=parabéns
+639=Completou com sucesso este curso. Para começar um novo curso, carregue em Seguinte.\+
+640=Começar um novo curso
+
+
+/////////////////////////////////////////////////////////////
+//texts that display information on a completed exercise/test
+/////////////////////////////////////////////////////////////
+46=Experiente
+47=Avançado
+48=Intermédio
+49=Principiante
+50=A sua velocidade foi\+
+51=muito\+
+52=bastante\+
+53=boa, mas os\+
+54=Os\+
+55=erros fizeram decrescer a sua eficiência.\+
+56=A sua precisão poderá aumentar imenso.
+57=A sua precisão foi\+
+58=muito\+
+59=bastante\+
+60=boa, mas usou
+61=Usou
+62=demasiado a tecla para apagar. Deveria usá-la menos\+
+63=para aumentar a sua eficiência a escrever.
+64=A sua precisão foi\+
+65=muito\+
+66=bastante\+
+67=boa, mas parece\+
+68=Parece\+
+69=ter dificuldade com uma tecla. Uma revisão podê-lo-á ajudar.
+70=Como as outras áreas da sua escrita estão\+
+71=muito\+
+72=boas, deveria\+
+73=Deveria\+
+74=aumentar a sua velocidade de escrita para alcançar\+
+75=níveis de eficiência mais elevados.
+76=Escreveu\+
+77=muito\+
+78=bastante\+
+79=rápido! Óptimo!
+80=A sua precisão foi\+
+81=muito\+
+82=bastante\+
+83=boa. Óptimo!
+
+
+/////////////////////////////////////////////////////////////
+//Texts for keyboard and hand image when studying new keys
+/////////////////////////////////////////////////////////////
+147=Shift
+148=Alt Gr
+149=Enter
+150=Espaço
+151=Shift Esquerdo
+152=Shift Direito
+153=Alt Gr
+154=mindinho esquerdo
+155=anelar esquerdo
+156=médio esquerdo
+157=indicador esquerdo
+158=indicador direito
+159=médio direito
+160=anelar direito
+161=mindinho direito
+162=polegar
+163=Tab
+164=Enter
+165=Apagar
+166=Espaço
+167=Shift
+
+
+/////////////////////////////////////////////////////////////
+//Settings screen
+/////////////////////////////////////////////////////////////
+182=So&ns
+183=Ligar Som
+184=Desligar Som
+604=Duração da &Lição
+186=Quanto tempo deverá demorar uma lição?
+187=25 minutos
+188=35 minutos
+189=45 minutos
+190=Sem limite de tempo
+191=Ta&manho das Letras
+192=Qual o tamanho das letras nos exercícios?
+193=Normal
+194=Grande
+195=Definições Gerais
+196=Formato do Teclado
+197=Que formato de teclado utiliza?
+198=Pré-definid&o:
+199=O&utro:
+200=To&car tema 
+571=&Velocidade
+202=PPM (palavras/min)
+203=CPM (carácteres/min)
+204=Definições
+205=Não disponível
+206=Esta cópia expirou
+207=Demonstração limitada
+208=ppm
+209=cpm
+572=N&ormal
+573=Nos exercícios
+574=O&utro:
+628=Teclado
+630=Som
+
+
+/////////////////////////////////////////////////////////////
+//Inserting licenses
+/////////////////////////////////////////////////////////////
+211=Falta informação necessária. Por favor, introduza o ID de licença
+212=e a chave de licença para concluir a verificação da licença.
+213=Obrigado, a chave da sua licença foi aceite.
+214=Pode avaliar todo o programa! A sua cópia já lhe permite usufruir de todos os componentes do programa.\+
+215=ID de licença ou chave introduzidos incorrectamente! Por favor, introduza estes códigos cuidadosamente de novo.
+217=O prazo de validade da sua chave de licença expirou. Algumas características estão agora limitadas.
+435=O Código introduzido diz respeito a versões do programa anteriores, por favor, contacte a nossa assistência técnica para mais informações!
+436=Por favor, veja os preços das actualizações em www.TypingMaster.com.
+716=\+Licença(s) Actual(ais)
+717=Introduzir chave de licença
+718=Por favor, introduza o ID de licença e a chave encontrados no seu e-mail de licença (verifique a pasta de spam) para activar a sua licença. O seu ID de licença é geralmente o seu número de encomenda.
+719=ID de licença:
+720=Chave de licença:
+723=TypingMaster Demo 
+724=Esta é uma demonstração limitada. Encomende a Versão Completa agora.
+725=&Como encomendar
+1335=Lic. ProTrainer
+1336=Lic. Ilimitadas/Escolas
+1337=Lic. Concorrentes
+1338=Lic. Posto de Trabalho
+
+
+/////////////////////////////////////////////////////////////
+//Statistics
+/////////////////////////////////////////////////////////////
+244=Estatísticas
+245=utilizou
+246= % completou
+247=Completou
+248=por fazer
+249=Problemático
+250=Difícil
+251=Bom
+252=Relatório de Estudo
+253=Progresso
+254=Utilizador:
+255=Completou:
+256=Tempo usado:
+257=Tempo disponível:
+258=Curso
+269=\+min\+
+270=\+h\+
+271=? min\+
+272=\+min\+
+273=\+h\+
+369=% completo
+370=Estudou\+
+371=, por fazer\+
+372=\+min.
+373=\+seg.
+374=\+min.\+
+
+575=&Ver
+576=Velocidade Bruta e Líquida
+577=Precisão e Letras Difíceis
+578=Cursos
+579=Curso Actual
+580=Tempo de Estudo
+581=Utilização
+582=Relatório &Completo
+583=C&urso
+637=&Ver relatório completo
+
+
+/////////////////////////////////////////////////////////////
+//TypingTest
+/////////////////////////////////////////////////////////////
+530=Tem a certeza que quer apagar definitivamente o Teste de Dactilografia:\+
+531=Resultados do Exercício:
+532=Resultados sobre o Teste de Dactilografia concluído:
+533=Resultados do exercício\+
+534=\+minutos por dia de semana
+535=\+horas por semana
+536=\+dias de trabalho por ano
+537=Aprenda a dactilografar! Pode aumentar a sua velocidade líquida até\+
+538=\+e poupar:
+539=Está a escrever muito bem - agora pode ainda melhor as suas capacidades com o TypingMaster ProTrainer!
+540=\+Carregue em Informações para saber mais.
+541=Escolha o ficheiro de texto para se adicionar aos testes
+261=A sua precisão não é suficiente para passar a este exame. A sua precisão deveria ser no mínimo de\+
+262=A sua velocidade de escrita não foi suficiente para passar a este exame. A sua velocidade deveria ser de pelo menos\+
+263=O seu ritmo de escrita não foi suficiente para passar a este exame. O ritmo deveria ser de, pelo menos,\+
+264=Parabéns, passou ao exame e pode agora avançar para a próxima lição\+
+265=Não concluiu o exame necessário.
+266=Constante
+267=Inconstante
+268=Cuidado
+375=Passou a este teste de dactilografia. Carregue no "Imprimir..." para imprimir um diploma.
+614=escolha o texto
+615=&Acrescente
+616=A&pague
+617=&Duração
+618=Te&xto de Teste
+619=Testes C&oncluídos 
+620=&Ver/Imprimir o Diploma
+624=Duração
+625=Comentário
+626=I&mprimir...
+
+/////////////////////////////////////////////////////////////
+//Games
+/////////////////////////////////////////////////////////////
+606=bolhas
+607=nuvens
+608=wordtris
+609=Jogar &Wordtris
+610=Jogar &Nuvens
+611=Jogar &Bolhas
+612=Instruções
+613=Melhores Jogadores
+1401=Bolhas
+1402=Nuvens
+1403=WordTris
+
+91=Carregue numa tecla qualquer
+92=para começar.
+
+93=Para rebentar uma bolha, carregue na letra correspondente
+94=Quando falhar seis bolhas, o jogo termina
+95=As bolhas vermelhas e azuis são mais rápidas do que as verdes, e dão mais pontos
+96=asdfjklç
+140=Escreva a palavra na barra
+141=para começar.
+142=Jogo Terminado.
+143=Carregue no Espaço!
+144=Instruções
+
+276=Para apanhar a trave, escreva a palavra que ela tem escrita e carregue no Espaço
+277=Quando a caixa fica cheia de traves, o jogo termina
+278=Para conseguir melhores resultados, olhe para a palavra que aparece abaixo da caixa
+279=Para apanhar uma nuvem, escreva a palavra abaixo dela e carregue no Espaço ou no Enter
+280=Para se deslocar entre nuvens em qualquer altura, carregue em Enter/Espaço (seguinte) ou Apagar (anterior)
+281=Tente não falhar as nuvens tempestuosas - ao falhar seis o jogo termina
+282=As nuvens solarengas dão bónus, tente apanhar o maior número possível
+283=&Sair
+284=Esquerda
+285=Direita
+286=Centro
+
+
+/////////////////////////////////////////////////////////////
+//Review
+/////////////////////////////////////////////////////////////
+585=Teclas Difíceis
+588=opções da revisão
+589=Teclas a serem revistas
+590=&Difíceis
+591=Est&udadas 
+592=Escol&her
+593=Método para a revisão
+594=Exercícios de Tec&lado
+595=Exercícios de Te&xto
+596=J&ogos
+597=Teclas Difíceis
+598=Bloqueado
+599=Demonstração
+600=&Fechar
+601=Estudar
+185=Duração da Lição
+605=cursos
+1400=lições
+
+97=Com a revisão de jogo ou de texto, pode apenas praticar o alfabeto.\nPara praticar carácteres especiais, escolha o Exercício de Teclado
+98=As suas teclas difíceis serão revistas.
+99=As teclas escolhidas ainda não foram estudadas e por isso não podem ser revistas.
+100=As suas teclas difíceis serão revistas em vez das outras.
+101=Não tem teclas suficientes para jogar ao jogo.
+103=Problemático
+104=Difícil
+218=Rever
+219=Ainda não estudou o suficiente para jogar a um jogo com as teclas estudadas.
+220=O jogo será cancelado.
+224=O curso escolhido não incluí material para revisão.
+229=&Duração
+231=Co&m Teclas
+234=&Vocabulário
+235=V&ocabulário
+236=Teclas Estudadas
+237=a-z
+238=a-z, A-Z
+239=a-z, A-Z, 0-9
+306=Não necessita revisão
+307=Recomendamos-lhe uma revisão
+308=É muito recomendada uma revisão
+309=Precisa urgentemente de uma revisão!
+310=Ainda não foram encontradas dificuldades
+311=O seu nível de dificuldade é muito bom
+312=O seu nível de dificuldade é normal
+313=O seu nível de dificuldade é alto
+314=O seu nível de dificuldade é muito alto
+315=Não recomendamos que pratique
+316=Recomendamos-lhe que pratique
+317=É muito recomendado que pratique
+318=É urgente que pratique!
+319=Ainda não foram encontradas dificuldades
+320=O seu nível de dificuldade é normal
+321=O seu nível de dificuldade é relativamente alto
+322=O seu nível de dificuldade é alto
+323=O seu nível de dificuldade é muito alto
+324=Jogo das Bolhas
+325=Tecla(s) não foi(ram) introduzida(s) ou não a(s) encontramos no seu teclado, não pode praticar!
+326=#7878: Palavra(s) não foi(ram) introduzida(s) ou encontrada(s), não pode praticar!
+327=#7879: No crazy sentences available for chars:\+
+328=Terminar Revisão
+329=Estudo Parametrizável
+330=O tipo de teclado escolhido\+
+331=\+não é suportado\+
+332=\+curso.
+333=Recomendamos-lhe que troque de tipo de teclado ou utilize o ProTrainer para praticar.
+334=Lição\+
+335=Curso Terminado
+336=Próxima Lição
+337=Nesta versão de demonstração limitada, os exercícios são interrompidos após 10 segundos.
+339=Lição Anterior
+340=para começar. Boa Sorte!
+341=Carregue numa tecla
+
+/////////////////////////////////////////////////////////////
+//Welcome screen
+/////////////////////////////////////////////////////////////
+342=Bem-vindo ao universo da dactilografia profissional, com TypingMaster 6.
+343=Com o nosso Curso Completo aprenderá os conceitos da dactilografia, em cerca de 8 horas. Poderá então, utilizar esta nova capacidade, para tornar a sua escrita fluente.
+344=Depois de aprender os princípios básicos, pode fazer outros cursos, para desenvolver capacidades adicionais, como a utilização do teclado numérico.
+345=Carregue em\+
+346=Mais Informação
+347=\+para saber mais ou Seguinte para começar.
+348=Pode facilmente avaliar as suas capacidades de dactilografia actuais, escolhendo\+
+349=Testes,
+350=\+no menu localizado do lado direito.
+351=Quando acabar o curso, poderá repetir o teste e analisar a sua evolução.
+352=PPM (palav/min)
+353=CPM (carac/min)
+354=Ligado
+355=Desligado
+356=% dos exercícios
+357=Definições Gerais
+641=Teste As Suas Capacidades
+642=\Teste a sua capacidade como dactilógrafo escolhendo 'Teste' do menu da direita.
+
+/////////////////////////////////////////////////////////////
+// Login screen
+/////////////////////////////////////////////////////////////
+726=Todos os utilizadores
+727=bem-vindo
+728=novo utilizador 
+729=Entrar de qualquer modo?
+730=Introduza o seu &Nome
+731=&Palavra Chave pretendida
+732=Repetir P&alavra Chave
+735=Perfil de configuração de escrita
+736=Introduza o seu &Nome
+737=&Sou um novo utilizador...
+738=&Palavra Chave
+390=Ligue-se a\+
+391=\+introduzindo o seu nome de utilizador e carregando no Enter
+392=Bem-vindo ao TypingMaster! Por favor, escreva o seu nome e carregue em 'Enter' para continuar.
+393=Carregando...
+394=O utilizador escolhido não se pode ligar
+400=Por favor introduza a sua palavra chave
+401=Utilizador\+
+402=\+não encontrado, é um novo utilizador?
+403=Palavra Chave inválida
+404=Por favor introduza o seu nome de utilizador
+405=As Palavras Chave são diferentes
+406=Por favor introduza a sua Palavra Chave
+407=O utilizador\+
+408=\+já existe!
+409=\+utilizou
+410=\+restante
+411=? min restantes
+412=Estudo Parametrizável
+414=O ProTrainer Satélite recolhe informação, por defeito, de outro utilizador com o nome\+
+415=Por favor introduza o seu nome de utilizador
+416=Por favor introduza a sua palavra chave
+417=Não consegue se ligar como\+
+418=, por favor, tente outro nome de utilizador
+419=A palavra chave foi mal introduzida!
+420=O nome de utilizador introduzido não foi encontrado. Não são permitidos novos utilizadores.
+421=O utilizador\+
+422=\+não foi encontrado, é um novo utilizador?
+423=As suas palavras chave não são iguais, por favor escreva a palavra chave de novo!
+424=O utilizador\+
+425=\+já existe!
+426=Por favor introduza a sua palavra chave
+427=O utilizador\+
+428=\+não foi encontrado, é um novo utilizador?
+429=A palavra chave é inválida
+430=Por favor introduza o seu nome de utilizador
+431=As palavras chave são diferentes
+432=Por favor introduza a sua palavra chave
+433=O utilizador\+
+434=\+Já existe!
+
+/////////////////////////////////////////////////////////////
+//ProTrainer
+//
+//- the subsequent sections contain text displayed in the
+//ProTrainer section of TypingMaster 6
+/////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////
+//first introduction screen
+/////////////////////////////////////////////////////////////
+679=Introdução
+509= ProTrainer - um programa de treino de dactilografia, adaptável e personalizado. Corrige os seus pontos fracos e permite-lhe obter resultados expantosos em duas horas.
+510=O ProTrainer analisa a sua escrita enquanto utiliza o processador de texto, o seu programa de correio ou outra aplicação Windows, detectando as teclas e palavras mais difíceis.
+511= Baseado nesta informação, cria exercícios personalizados para as suas necessidades.
+512=Carregue em\+
+513=Mais Informação
+514=\+para saber mais sobre o\+
+515=\+ProTrainer; \+
+699=1: Análise da Escrita
+700=2: Estudo Parametrizável
+701=3: Resultados Instantâneos
+702=4: Apoio Continuado
+703=Como Funciona
+704=O ProTrainer detecta teclas e palavras difíceis, enquanto usa o Windows.\+
+705=O ProTrainer cria material prático, baseado nas suas dificuldades.\+
+706=Com exercícios orientados conseguirá resultados em apenas 2 horas.
+707=O ProTrainer pode sempre criar material novo adaptando-se às suas necessidades.
+708=&Mais Informação
+709=protrainer
+
+/////////////////////////////////////////////////////////////
+//second introduction screen
+/////////////////////////////////////////////////////////////
+516=E&ntre como
+517=Se é o único utilizador do perfil -
+518=- do Windows, recomendamos-lhe a primeira opção.
+519=Para poder utilizar o ProTrainer de forma eficiente, necessita, em primeiro lugar, de ligar o Satélite.
+520=Depois de o ter iniciado, o Satélite analisará a forma como escreve nos programas Windows e recolherá informação sobre as suas dificuldades, enviando-a para o ProTrainer. Deste modo, o ProTrainer poderá fazer exercícios personalizados.
+521=O Satélite iniciará automaticamente de cada vez que o Windows iniciar e o seu ícone será colocado na barra de tarefas.
+522=Num modo de alta segurança tem de escolher manualmente os programas
+523=a serem monitorizados, a partir do Menu do Satélite.
+524=Além disso, como as palavras difíceis não podem ser monitorizadas, o ProTrainer não pode
+525=trabalhar no máximo da sua eficácia.
+526=Por favor carregue em Mais Informação, para ter acesso a mais informação sobre a segurança.
+527=Já existe um utilizador a usar o seu nome no TypingMaster
+456=Quer fechar o Satélite agora?
+457=Quer iniciar o Satélite agora?
+680=Não recolhe palavras difíceis, apenas controla aplicações seleccionadas. Para ambientes de alta segurança.
+683=Iniciar Satélite 
+684=Iniciar Satélite &Agora
+685=Iniciar Satélite &Mais Tarde
+686=Ligar ao Satélite
+687=Listar &utilizadores no início
+688=Não &ligar automaticamente
+689=Segurança
+690=Não recolher palavras (privacidade)
+691=Mais Informação
+692=Informação sobre o Satélite 
+458=Espere...
+459=A fechar...
+460=A arrancar...
+461=Não foi possível fechar o Satélite TypingMaster
+
+/////////////////////////////////////////////////////////////
+//screen shown after first Satélite launch
+/////////////////////////////////////////////////////////////
+693=Satélite a correr
+681=Satélite arrancou e o seu ícone está colocado na barra de tarefas.
+682=O Satélite está sempre desactivo quando o TypingMaster está a correr. Depois de fechar o TypingMaster, o Satélite activar-se-á sozinho e começará a analisar a sua escrita.
+
+1405=Menu do Satélite 
+694=Pode aceder, com facilidade, às diferentes capacidades do Satélite, através do seu menu.
+695=Para abrir o menu do Satélite, basta carregar no ícone do Satélite com o botão direito do rato.
+696=Escolha Praticar para iniciar um exercício costumizado
+697=Escolha Estatísticas de modo a poder ver diferentes estatísticas sobre as suas dificuldades e escrita.
+698=Carregue no ícone com o botão direito do rato para abrir o menu
+
+/////////////////////////////////////////////////////////////
+//Main ProTrainer screen in TypingMaster
+/////////////////////////////////////////////////////////////
+463=O Satélite Iniciou
+464=Remo&ver
+465=Satélite Desligado
+466=Arran&car
+467=Arranque: Automático
+468=Arranque: Manual
+470=O ProTrainer recolhe estatísticas, em exclusivo, do utilizador "
+472=Versão\+
+473=As suas dificuldades ainda não foram detectadas.
+474=O curso de demonstração simplificado vai ser utilizado em vez das suas dificuldades.
+475=Não foram introduzidas nenhumas palavras e, por isso, não pode praticar!
+476=Teclas não introduzidas ou encontradas no seu teclado, não pode praticar!
+477=O módulo Satélite do TypingMaster não foi encontrado
+478=O Satélite TypingMaster não conseguiu iniciar
+671=Est&udo Parametrizável
+672=Praticar tec&las
+673=Praticar pala&vras
+674=C&omeçar
+675=Índice de Problemas
+676=Defi&nições...
+677=&Fechar
+678=Estatísticas ProTr&ainer
+
+/////////////////////////////////////////////////////////////
+//ProTrainer statistics
+/////////////////////////////////////////////////////////////
+644=Resumo
+645=Teclas Difíceis
+646=Palavras Difíceis
+647=Precisão e Ritmo
+648=NOTA: A análise das palavras foi desligada a partir das Definições do Satélite
+649=Acrescentar palavra(s) que quer praticar
+650=Esconder palavra(s) que não quer praticar
+651=Palavra correcta que contém erros ortográficos
+652=Tempo de Escrita (h)
+653=Índice de Problemas (%)
+654=Palavras Escritas
+655=Índice de Dificuldade
+656=Índice de Teclas
+657=Índice de Maiúsculas
+658=Índice de Palavras
+659=Índice Geral
+660=Informação Geral
+661=Último Uso
+662=Vel. de Escrita
+663=Palavras Escritas
+664=Tempo de Escrita
+665=Maiúsculas com Dificuldade
+666=Editar palavras
+667=&Adicionar...
+668=Es&conder...
+669=E&ditar...
+670=Praticar
+
+479=Velocidade de Escrita (
+480=Normal
+481=Muito Elevado
+482=Hoje:\+
+483=Máximo:\+
+484=Hoje:\+
+485=Média:\+
+486=Máximo:\+
+487=Hoje\+
+488=, média\+
+489=\+palavras
+490=\+palavras
+491=\+palavras
+492=Hoje:\+
+493=Média:\+
+494=Máximo:\+
+495=Hoje\+
+496=, média\+
+497=Hoje:\+
+498=Média:\+
+499=Máximo:\+
+500=Hoje\+
+501=, média\+
+502=Estudo parametrizável ainda não utilizado
+503=\+dia atrás
+504=\+dias atrás
+505=Introduza uma ou mais palavras difíceis
+506=Altere a palavra difícil (
+507=Tem a certeza que quer ocultar a(s) palavra(s) escolhida(s)?
+508=Bem-vindo ao\+
+
+/////////////////////////////////////////////////////////////
+//ProTrainer review
+/////////////////////////////////////////////////////////////
+437=Relatório
+438=Indefinido
+440=Curso Actual
+441=Estudou (h)
+442=Usado há
+443=Utilização
+444=Criado
+445=Sem Grupo
+446=Testes de Dactilografia
+447=Exercícios
+448=Jogo com Teclas
+449=Texto com Teclas
+451=Maiúsculas: 
+452=Maiúsculas: 
+453=Palavras Difíceis
+454=Jogo com Palavras
+455=Praticar
+1404=%s vezes desde %s
+1406=Por esta razão as suas estatísticas podem estar vazias ou desactualizadas.
+1407=Elevado
+1408=Sem limite de tempo
+1409=Praticar 15 min
+1410=Praticar 30 min
+1411=Praticar 45 min
+1412=Resultados da revisão
+1413=Índices de dificuldade antes e depois da revisão
+1414=Teclas
+1415=Maiúsculas
+1416=Palavras
+1417=Índice Geral
+1418=Antes
+1419=Agora
+1420=Teclas:
+1424=Definições
+1425=Antes 
+1426=Depois
+1427=resultados da revisão
+1428=Quero voltar a...
+1429=(custom)
+
+
+/////////////////////////////////////////////////////////////
+// ProTrainer Satélite (KBOOST.EXE)
+// -here is the text for the independet Satélite program
+//  which sits in the task bar and monitors typing
+/////////////////////////////////////////////////////////////
+
+//Satélite menu (from the taskbar icon)
+1260=&Ligar...
+1261=&Activar
+1262=\+Satélite já está activo!
+1263=Não pode ter o Satélite aberto em duplicado.
+1264=ProTrainer
+1265=E&statísticas...
+1266=Mostr&ar Informação no Topo
+1267=Def&inições...
+1268=&Fechar
+1269=&Praticar...
+
+//Login
+1270=Tem de fechar o TypingMaster antes de poder activar o Satélite
+1271=Quer fechar o Satélite agora?
+1272=Fechando..
+1273=\+dias desde
+1274=Versão
+1275=Carregando..
+1276=\+palavras,
+1277=Monitorar
+1278=Não é possível monitorar
+1279=O Satélite recolheu informação suficiente para poder praticar.
+1280=Sair
+1281=Ligue-se ao Satélite introduzindo o seu nome e carregando no Enter
+1282=Introduza o seu nome e carregue em Enter para se ligar como um novo utilizador
+1283=&Fechar
+1284=Cancelar
+1285=, por favor tente outro nome de utilizador
+1286=Não se consegue ligar como\+
+
+//Other general Satélite strings
+1329=Não mostre mais este &ecrã
+1330=&Praticar
+1331=&Fechar
+1332=Índice de Dificuldades
+1333=O Satélite TypingMaster detectou algumas dificuldades quando escreve.
+1334=Recomenda-se que pratique
+1288=Iniciar automaticamente quando o Windows arranca
+1289=&Sim
+1290=&Não
+
+/////////////////////////////////////////////////////////////
+//Satélite settings
+/////////////////////////////////////////////////////////////
+1287=Satélite TypingMaster 
+1299=Copyright 2005 TypingMaster, Inc. Todos os direitos reservados.
+
+//Personal tab
+1300=&Pessoal
+1291=Definições Pessoais
+1292=Monitorar Aplicações
+1293=&Monitorar todas as novas aplicações por defeito
+1294=&Escolher quais as aplicações que quer monitorar manualmente
+1295=Recomenda-se que pratique
+1325=&Recomendar depois de detectar %d páginas de dificuldades
+1296=Segurança
+1297=&Não analisar ou recolher palavras difíceis
+1298=Escolha esta opção para garantir um máximo de segurança.
+
+//Applications tab
+1301=&Aplicações
+1302=Aplicações a ser monitorizadas
+1303=Ver as aplicações detectadas &neste momento
+1304=Ver &todas as aplicações detectadas
+1421=Não existem programas monitorizados
+1305=Conselho: Desactive as aplicações que contêm informação confidencial
+
+//Common Satélite Settings tab
+1306=&Comuns
+1307=Definições Comuns do Satélite
+1326=Utilizar o perfil do Windows em utilização
+1308=Iniciar Automaticamente
+1309=&Iniciar o Satélite automaticamente quando o Windows arranca
+1310=Utilize o início automático para garantir que o Satélite monitoriza toda a sua escrita quando está a utilizar o seu perfil Windows.
+1311=Identificação do Utilizador
+1312=&Utilizar o utilizador:
+1313=&Mostrar a lista de utilizadores quando arranca
+1314=Começar no modo &desactivado
+1315=Se existem vários utilizadores Windows neste perfil, não seleccione a primeira opção, para evitar estatísticas desajustadas.
+
+//About tab
+1316=A&cerca... 
+1317=Informação do Satélite
+1318=Arranque do Satélite:
+1319=Utilizador Actual:
+1320=&Mudar de Utilizador..
+1321=Estatísticas do Utilizador
+1322=Utilização:
+1422=vezes
+1423=%s dias desde %s
+1323=Total teclas premidas:
+1324=Teclas analisadas:
+1327=Automático
+1328=Manual
+
+
+/////////////////////////////////////////////////////////////
+// TypingMaster Manager
+// -texts for the manager program
+/////////////////////////////////////////////////////////////
+
+542=Bem-vindo! Definições de perfil aplicadas.
+543=\+
+544=\+
+545=Relatório completo
+546=Por favor espere, ordenando os utilizadores
+547=Relatório Completo
+548=Relatório da Lista de Utilizadores
+549=Relatório dos Exercícios Recentes
+550=Relatório dos Testes Recentes
+
+1006=Selecione a directoria para o ficheiro dos utilizadores TM
+1007=A directoria Seleccionada\+
+1008=\+não inclui os ficheiros TypingMaster.
+1009=Confirme que não escolheu a directoria TypingMaster\Base de Dados. Escolha outra directoria.
+1012=TypingMaster foi instalado em demasiados postos de trabalho.
+1013=Só tem\+
+1014=\+licenças. Por favor, adicione licenças ou remova instalações de postos de trabalho, no menu Licenças.
+1015=Violação da Licença TypingMaster
+1016=A carregar os utilizadores:\+
+1017=A carregar..
+
+1001=Grupo 
+1027=Novo Grupo
+1058=Nenhum Grupo
+1031=Novo Utilizador
+1032=Novo Utilizador
+
+
+/////////////////////////////////////////////////////////////
+// Manager menus
+/////////////////////////////////////////////////////////////
+
+// File topmenu
+1146=Definições Comuns
+1147=Mudar Directoria
+1148=Importar Utilizadores (CSV)
+1149=Sair
+
+//About topmenu
+1150=Ajuda
+1029=Copyright 1999-2005 TypingMaster, Inc.
+1030=Para a documentação mais recente, visite http://www.TypingMaster.com
+
+/////////////////////////////////////////////////////////////
+//The menu titles
+//These menus are always visible in Manager, so the hotkeys defined here are always reserved
+/////////////////////////////////////////////////////////////
+1151=Acerca...
+1152=&Ficheiro
+1153=&Utilizadores
+1154=&Grupos
+1155=&Testes de Dactilografia
+1156=&Licenças
+
+/////////////////////////////////////////////////////////////
+//Users menu
+/////////////////////////////////////////////////////////////
+1157=Utilizadores
+1159=Escol&her Grupo
+1010=Todos os Grupos
+
+1158=Ver e Imprimir Relatórios
+1204=Relatório &Completo..
+1205=E&xercícios Recentes..
+1206=Testes &Recentes..
+1207=L&ista Utilizadores..
+
+1160=Tarefas do Utilizador
+1208=&Mudar Definições..
+1209=&Definir Grupo..
+1210=&Enviar Mensagem..
+1211=Arran&jar Testes..
+
+1161=Editar Utilizador(es)
+1212=Re&nomear Utilizador
+1213=A&pagar Utilizador(es)
+1214=&Adicionar Utilizador
+1215=&Seleccionar Todos
+
+//Headings for user list
+1162=Novos Utilizadores
+1163=Nome do Utilizador
+1164=Grupo
+1165=Curso Actual
+1166=Concluído
+1167=Estudou (h)
+1168=Acedido em
+1169=Utilização
+1170=Criado
+1258=\+vezes
+1259=\+[Bloqueado]
+
+//Status indicator at the bottom of the screen
+1018=\+utilizadores,\+
+1019=\+escolhidos
+1020=\+utilizadores
+
+/////////////////////////////////////////////////////////////
+//Groups menu
+/////////////////////////////////////////////////////////////
+1245=Grupos
+1216=Ver e Imprimir Relatórios
+1217=Relatório &Completo
+1218=E&xercícios Recentes..
+1219=Te&stes Recentes
+1220=L&ista Utilizadores
+
+1221=Tarefas de Grupo
+1222=Mudar &Definições..
+1223=Enviar &Mensagem..
+1224=Arran&jar Testes ..
+
+1225=&Editar Grupo
+1226=&Renomear Grupo
+1227=A&pagar Grupo
+1228=&Adicionar Grupo
+
+//Headings for groups list
+1255=Nome do Grupo
+1256=Utilizadores
+1257=Criado
+1011=\+ (pré-definido)
+
+//Functional texts for groups menu
+1021=Tem a certeza que quer apagar o grupo\+
+1022=O grupo contém\+
+1023=\+utilizadores. Quer apagá-los?
+1024=Quer remover o(s)\+
+1025=\+utilizador(es)?
+1026=\+grupos
+
+
+/////////////////////////////////////////////////////////////
+//Typing Tests menu 
+/////////////////////////////////////////////////////////////
+1244=Testes de Dactilografia
+1229=Tarefas dos Testes
+1230=&Mudar Definições..
+1231=&Editar Texto..
+
+1232=Editar Teste
+1234=A&pagar Teste
+1233=&Adicionar Teste
+
+//Headings for typing test list
+1252=Nome do Teste
+1253=Tempo (min.)
+1254=Copyright
+
+1047=Tem a certeza que quer apagar definitivamente o Teste de Dactilografia:
+1049=#1551 O teste de dactilografia está em uso (bloqueado)
+
+//Status indicator at the bottom of the screen
+1051=\+testes
+
+
+/////////////////////////////////////////////////////////////
+//Licenses menu 
+/////////////////////////////////////////////////////////////
+1243=Licenças
+1235=Editar Licenças
+1236=&Ver/Adicionar Licenças
+1237=&Remover Postos de Trabalho
+
+1238=Informação da Licença
+1239=Tipo de Licença
+1240=Total
+1241=Utilizada(s)
+1242=Livre(s)
+
+//Headings for licenses list
+1246=Nome do Posto de Trabalho
+1247=Instalado
+1248=Utilizado
+1249=Acedido em 
+1250=Plataforma
+1251=Instalado por
+
+//Functional texts for Licenses menu
+1033=Tem a certeza que quer apagar o posto de trabalho\+
+1034=\+postos de trabalho
+1035=Licença de Postos de Trabalho
+1036=\+Licença(s)
+1037=\+Licença(s)
+1038=\+Licença(s)
+1039=Violação da Licença: remova %d posto(s) de trabalho
+1040=Violação da Licença!
+1041=Todas as licenças estão a ser usadas no momento.
+1042=Não há licenças disponíveis
+1043=\+licença(s) disponível(eis)
+1044=Licenças Concorrentes
+1045=\+Licença(s)
+1046=\+licenças concorrentes
+
+
+/////////////////////////////////////////////////////////////
+//Send message window
+/////////////////////////////////////////////////////////////
+1052=Enviar a mensagem a\+
+1053=Enviar a mensagem a %d utilizadores
+1054=Enviar a mensagem a\+
+1171=Enviar a Mensagem
+1172=Escreva a Sua Mensagem
+
+/////////////////////////////////////////////////////////////
+//Arrange Typing Test window
+/////////////////////////////////////////////////////////////
+1055=Arranjar teste para\+
+1056=Arranjar teste para\+
+1057=Arranjar teste para %d utilizadores
+1059=\+min.
+1060=Não seleccionado
+1175=Arranjar Teste
+1176=1. Activar Teste
+1177=Teste D&esactivado
+1178=Teste &Activado
+1179=2. Escolher &Teste
+1180=3. Escolher  Duração
+1181=&Duração Livre
+1182=Escolher D&uração......................
+1183=min.
+1184=4. Introduzir &Mensagem
+
+/////////////////////////////////////////////////////////////
+//Set Group window
+/////////////////////////////////////////////////////////////
+1185=Grupo para os utilizador(es) seleccionado(s).
+1186=Grupo &Existente
+1187=&Novo Grupo
+1188=Definir o Grupo
+
+/////////////////////////////////////////////////////////////
+//View Report window
+/////////////////////////////////////////////////////////////
+1189=Ver Relatório
+1190=Pág. Anterior
+1191=Pág. Seguinte
+1192=Im&primir
+1193=Fe&char
+1002=Largura da Página
+1003=Página Inteira
+1004=Página
+1005=Não tem impressoras instaladas - não pode imprimir.
+
+/////////////////////////////////////////////////////////////
+// Change Settings window
+//
+// Here are the user interface texts for settings windows
+// The actual settings for these windows can be found in
+// .tpl files in the TypingMaster program directory
+// (e.g. common settings = policy.tpl)
+// Be sure to also translate these files
+/////////////////////////////////////////////////////////////
+1194=Mudar Definições
+1195=Definição
+1196=Valor
+1197=Bloqueado
+1198=Descrição
+1199=Activo
+1200=Grupo 
+1201=Utilizador 
+1202=Definições Comuns
+1203=Definições do Teste de Dactilografia
+
+/////////////////////////////////////////////////////////////
+// Manager Change directory window
+/////////////////////////////////////////////////////////////
+1394=&Directoria TypingMaster 
+1395=&Procurar..
+
+//Import users window title
+1050=Escolha a directoria do TypingMaster 98/99
+
+
+/////////////////////////////////////////////////////////////
+// User Reports
+// Space for words is quite limited. Please check that your translations fit without problem.
+// If you cannot get some word to fit, please contact technical staff.
+/////////////////////////////////////////////////////////////
+1061=Diploma
+1062=TypingMaster
+1063=TypingMaster Diploma do Teste
+1064=conseguiu concluir um teste de dactilografia do TypingMaster,
+1065=feito em computador, com os seguintes resultados:
+1066=Duração do Teste:
+1067=Velocidade Bruta:
+1068=Precisão:
+1069=Velocidade Líquida:
+1070=Assinatura:
+1071=Copyright 2005 by TypingMaster, Inc. Todos os direitos reservados.
+1072=Mais informação em http://www.TypingMaster.com
+1073=Relatório do Utilizador
+1074=TypingMaster
+1076=Relatório do utilizador TypingMaster,\+
+1077=Página\+
+1078=Grupo
+1079=Curso Actual
+1080=Tempo de Estudo
+1081=Acedido em
+1082=Criado em
+1083=Utilização
+1084=Sem Grupo
+1085=Testes de Dactilografia
+1086=Exercícios
+1087=Duração
+1088=Vel. Bruta
+1089=Vel. Líquida
+1090=outro
+1091=Relatório de utilizador TypingMaster,\+
+1092=Página\+
+1093=Ralatório de Grupo
+1094=TypingMaster
+1095=Relatório de Grupo TypingMaster,\+
+1096=Página\+
+1097=Nome do utilizador
+1098=Grupo
+1099=Curso Actual
+1100=Acedido em
+1101=Nome do utilizador
+1102=Grupo
+1103=Curso actual
+1104=Completo
+1105=Acedido em
+1106=Nenhum curso iniciado
+1107=desconhecido
+1108=Gestor TypingMaster 6
+1109=Relatório
+1110=Inicializando Relatório
+1111=Criando Relatório
+1112=Nome do Utilizador
+1113=Curso Actual
+1114=Feito
+1115=Estudou (h)
+1116=Acedido em
+1117=Curso:
+1118=Curso Actual
+1119=Tempo de Estudo
+1120=Acedido em 
+1121=Utilizado
+1122=Criado em
+1123=Teste de Dactilografia
+1124=n/a
+1125=Concluído
+1126=% em
+1127=Exercícios
+1128=Tipo
+1129=Texto
+1130=Duração
+1131=Vel. Bruta
+1132=Precisão
+1133=Vel. Líquida
+1134=Data
+1135=Teste
+1136=Texto
+1137=Jogo
+1138=Outro
+1139=Conselho
+1140=Nenhum curso iniciado
+1141=, em\+
+1142=, desenvolvido por\+
+1143=Página\+
+1144=Grupo
+
+//Complete & Test Reports: more info on typing tests
+1380=Data:
+1381=Vel. Bruta:
+1382=Teclas premidas:
+1383=Tempo:
+1384=Precisão:
+1385=Teclas erradas:
+1386=Feito em:
+1387=Vel. Líquida:
+1388=Teclas correctas:
+// misc:
+1390=min.
+1392=Nome do teste:
+1393=erros
+
+
+/////////////////////////////////////////////////////////////
+//TypingMaster Netsetup Strings
+/////////////////////////////////////////////////////////////
+1339=Instalação Net TypingMaster
+1340=Proprietário da Licença:
+1341=Total de Licenças:
+1342=Licenças Disponíveis:
+1343=Progresso da Instalação
+1344=A copiar ficheiro:
+1345=Destino:
+1346=Alvo:
+1347=Instalado por:
+1348=Instalação Falhou!
+1349=Instalação Completa!
+1350=Criando o atalho no menu Iniciar
+1351=Criando
+1352=(Atenção: Não é o Administrador)
+1353=(Administrador do Posto de Trabalho)
+1354=Este Posto de Trabalho não tem um nome!
+1355=Já não tem licenças de Posto de Trabalho. Instalação interrompida.
+1356=Por favor utilize o Gestor TypingMaster para remover Postos de Trabalho utilizados
+1357=(Actualizando)
+1358=Versão de demonstração (10 licenças de demo)
+1359=Erro:
+1360=não encontrado no servidor. Instalação Interrompida.
+1361=A Instalação Net não conseguiu criar a directoria no posto de trabalho. Instalação Interrompida.
+1362=não encontra o servidor/NETSETUP.INI é inválido. Instalação Interrompida.
+1363=do servidor. Instalação Interrompida.
+1364=Não consegue copiar
+1365=Nome do Utilizador
+
+/////////////////////////////////////////////////////////////
+// Misc strings:
+/////////////////////////////////////////////////////////////
+1366=Informação Satélite
+1367=Sem limite
+1368=minutos
+1369=Teste de Dactilografia
+1370=O seu professor criou um teste de dactilografia para si.
+1371=Duração:
+1372=Mensagem do professor:
+1373=(Licenças de demonstração)
+1374=(demonstração)
+1375=Para utilizar o Gestor, tem de ter acesso completo à directoria TypingMaster, ou então o Gestor já está aberto.
+1376=O nome de utilizador introduzido é demasiado parecido com um nome existente
+1377=O nome de utilizador introduzido é inválido
+1378=O Satélite não pode funcionar a partir de uma directoria em rede.
+1379=O Satélite não pode funcionar quando a rede está em baixo.
+1145=já existe!
+
+
+/////////////////////////////////////////////////////////////
+//Error messages
+/////////////////////////////////////////////////////////////
+126=Encravou enquanto tenta abrir em modo de escrita esclusivamente\+
+
+168=Este programa não cabe no seu ecrã, uma vez que a sua área 
+169=de trabalho é de apenas 640x480 ou menor. Quer ver as 
+170=intruções?
+171=Tal como outros programas multimédia, o TypingMaster precisa de uma resolução de pelo menos 800x600 display area.\+
+172=Siga estas instruções para alterar a resolução no Windows.
+173=1. Carregue no menu Iniciar que se encontra na barra de tarefas
+174=2. Escolha Definições..Painel de Control
+175=3. Faça duplo clique no ícone do Display
+176=4. Carregue no cartão Definições
+177=5. Escolha a resolução para, pelo menos 800x600
+178=6. Carregue no botão que diz Teste. Se a imagem for satisfatória carregue no botão que diz OK
+
+259=A rede está ocupada pelo outros utilizadores,\+
+260=quer tentar de novo?
+274=A rede está ocupada pelo outros utilizadores,\+
+275=quer tentar de novo?
+358=#7216 A directoria da rede não foi encontrada.
+359=Por favor reinstale o programa e/ou verifique as ligações de rede.
+360=O TypingMaster não está bem instalado
+361=#7217 Um ficheiro necessário não se consegue encontrar ou há um erro na rede.\+
+362=Não consegue abrir o\+
+363=ficheiro POLICY.DYN.
+364=Por favor contacte o seu Administrador, ou volte a instalar o programa!
+376=Este Posto de Trabalho não tem um nome!
+377=O TypingMaster não foi instalado para utilização neste Posto de Trabalho.
+378=Por favor, peça ao seu administrador para instalar o TypingMaster com o programa NETSETUP.
+379=Nota: Poderá necessitar de licenças de software adicionais.
+380=O TypingMaster Não Está Instalado
+381=O TypingMaster já está a correr nesta máquina.
+382=#7921: TODAS AS LICENÇAS CONCORRENTES ESTÃO EM USO.\+
+383=A sua empresa tem\+
+384=\+licenças concorrentes para esta aplicação.
+385=O número máximo de utilizadores simultâneos já estão a usar o TypingMaster.
+386=Contacte o seu administrador para licenças adicionais.
+387=#7922: ERRO DE VIOLAÇÃO DE LICENÇA.\+
+388=Só tem uma licença para usar este programa. Utilizadores simultâneos não são permitidos. Contacte o seu revendedor para obter licenças adicionais.
+389=#7923: ERRO DE VIOLAÇÃO DE LICENÇA.
+1389=A sua placa gráfica está a utilizar 256 cores ou menos.\nPara funcionar, o TypingMaster precisa de mais\ndo que 256 cores (ex: modo de alta cor).\n\nPode mudar para alta cor desde o menu\nDisplay Settings no Painel de Control.
+1391=A informação do estudo não pode ser gravada uma vez que a ligação de rede está em baixo.
+528=#1550 A base de dados do utilizador já está em uso (bloqueada)
+1028=#1550 A base de dados do utilizador já está em uso (bloqueada)
+
+/////////////////////////////////////////////////////////////
+//Miscellaneous user interface strings
+/////////////////////////////////////////////////////////////
+84=A carregar, por favor espere...
+85=Introduza o seu nome:
+89=http://www.TypingMaster.com
+1396=Sem limite
+1397=25 minutos
+1398=35 minutos
+1399=45 minutos
+1430=Adicionado pelo
+1431=Adicionado pelo Administrador
+
+// latest changes in ver 6.21
+1432=Rebente os planetas, no sentido dos ponteiros do relógio, carregando na tecla correspondente.
+1433=O jogo termina quando todos os alfabetos forem acertados.
+1434=Jogar &ABC
+
+// latest changes in ver 6.30
+1435=Lí&ngua
+
+1436=Expor&tar Informação CSV
+1437=Apagar Resultados dos Jogos
+1438=Reconstruir o Índice do Utilizador
+1439=Tem a certeza que quer apagar os resultados dos jogos?
+1440=Este posto de trabalho tem uma versão antiga 6.2x que precisa de ser actualizada manualmente.
+1441=Este posto de trabalho utiliza a última versão disponível, através de um atalho.
+1442=Atalho
+1443=As letras que faltam
+1444=O curso seleccionado não foi desenhado para o tipo de teclado definido. Recomendamos que altere o tipo de teclado, de outro modo alguns dos exercícios poderão não trabalhar.
+1445=Mudar para o teclado "US Internacional"
+1446=Actualizar Postos de Trabalho
+1447=Actualizar Tudo
+1448=Não seleccionou nenhum posto de trabalho.\nPor favor seleccione uma das caixas antes do nome do posto de trabalho pretendido.
+1449=Tarefas de Manutenção
+
+// Added from language.icr
+1478=Ganhar licenças gratuitas
+1806=Introduzir chave de licença

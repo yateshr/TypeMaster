@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>TypeMaster</AssemblyName>
+    <RootNamespace>TypeMaster.Native</RootNamespace>
+    <Version>1.10.2</Version>
+    <Product>TypeMaster</Product>
+    <Title>TypeMaster</Title>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>TypeMaster.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyMetadata Include="Build" Value="2026.10.24.1" />
+    <Content Include="..\UI\Screenshot 2026-10-24 010206.png"><Link>Assets\ReferenceUI\review-new-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="..\UI\Screenshot 2026-10-24 010215.png"><Link>Assets\ReferenceUI\key-drill-new-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="..\UI\Screenshot 2026-10-23 114304.png"><Link>Assets\ReferenceUI\tests-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="..\UI\Screenshot 2026-10-23 114346.png"><Link>Assets\ReferenceUI\statistics-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="..\UI\Screenshot 2026-10-23 114429.png"><Link>Assets\ReferenceUI\about-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="..\UI\Screenshot 2026-10-23 113501.png"><Link>Assets\ReferenceUI\new-user-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="..\UI\Screenshot 2026-10-23 113530.png"><Link>Assets\ReferenceUI\course-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="..\UI\Screenshot 2026-10-23 114422.png"><Link>Assets\ReferenceUI\settings-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="..\UI\Screenshot 2026-10-23 114338.png"><Link>Assets\ReferenceUI\games-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="..\UI\Screenshot 2026-10-23 113515.png"><Link>Assets\ReferenceUI\meter-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
+    <Content Include="..\Asset\**\*" Exclude="..\Asset\**\*.exe;..\Asset\**\*.dll;..\Asset\**\*.manifest;..\Asset\**\*.NET;..\Asset\**\*.usr;..\Asset\**\*.DTA;..\Asset\**\*.SET;..\Asset\**\*.dyn;..\Asset\**\*.wks;..\Asset\**\*.Grp;..\Asset\tmnpath.ini">
+      <Link>Assets\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

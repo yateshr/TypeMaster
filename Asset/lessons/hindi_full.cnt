@@ -1,0 +1,612 @@
+﻿$encode=utf8
+$description=हिंदी इनस्क्रिप्ट टच टाइपिंग
+$longdesc=हिंदी इनस्क्रिप्ट टच टाइपिंग को अध्यायों और अभ्यासों के साथ सीखें। यह पाठ्यक्रम होम रो, निचली व ऊपरी पंक्ति, शिफ्ट अक्षर और संयुक्त चिह्न सिखाता है। बीच-बीच में बबल्स और क्लाउड्स खेल भी हैं।
+$version=7.0
+$language=hin
+$chapters=14
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2026, all rights reserved.
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=hindi_full
+alternatekeyboards=1
+keyboard=devanagari.kbd
+wizardname=HINDI
+simplewizard=0
+last free=2
+
+begin chapter
+ chapter name=1;होम रो - मात्रा, हलन्त और मूल अक्षर
+ picture=none
+ durationpercent=101
+ new keys=ोे्िरकतच
+ begin exercise
+   type=परिचय और उँगली स्थिति
+   duration=1
+    EVENT=MESSAGE;0;इस अध्याय में आप हिंदी इनस्क्रिप्ट की होम रो सीखेंगे। यहाँ %0D%0A A=ो, S=े, D=्, F=ि, %0D%0A J=र, K=क, L=त और %;=च है।;शुरुआत;keyboard_home_row.gif;left
+    EVENT=MESSAGE;0;बायाँ हाथ A S D F पर और दायाँ हाथ J K L %; %0D%0Aपर रखें। F और J की उभरी हुई निशानियाँ होम रो पहचानने में मदद करती हैं।;उँगली स्थिति;keyboard_home_row.gif;left
+    EVENT=MESSAGE;0;ध्यान रखें: ि व्यंजन के बाद टाइप होती है, भले ही स्क्रीन पर पहले दिखे। हलन्त ् आधे अक्षर बनाने के लिए काम आता है।;मुख्य नियम;typing.jpg;left
+    EVENT=KEYINTRO;0;यह होम रो के मुख्य हिंदी अक्षर और चिह्न हैं।;ोे्िरकतच;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;इन होम रो कुंजियों को एक बार दबाकर पहचानें।;ोे्िरकतच;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=नए अक्षर और मात्रा-समूह
+   duration=4    
+	EVENT=KEY2;3;िि रर िि रर ्् कक कक ेे तत ति तत ति ोो चच चि चच चि कि के कि के को ति को ति ते चि ते चि तो रि रो रि रो कक तत रर चच कि के को ति ते तो चि चे चो रि रे रो;0;3;6;0;0;0;0;35;60;140;100;1
+	EVENT=WORD2;1;िि रर िि रर ्् कक कक ेे तत ति तत ति ोो चच चि चच चि कि के कि के को ति को ति ते चि ते चि तो रि रो रि रो कक तत रर चच कि के को ति ते तो चि चे चो रि रे रो;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=ि मात्रा अभ्यास
+   duration=3    
+	EVENT=KEY2;2;कि रि कि रि कि रि ति चि ति चि ति चि रि कि रि कि रि चि ति चि ति कि रि कि रि चि ति चि;0;3;6;0;0;0;0;35;60;140;100;1
+	EVENT=WORD2;1;कि रि कि रि कि रि ति चि ति चि ति चि रि कि रि कि रि चि ति चि ति कि रि कि रि चि ति चि;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=े और ो मात्रा अभ्यास
+   duration=3
+    EVENT=KEY2;2;के के के के के के को को को को को को ते ते ते ते तो तो तो तो रे रे रे रे रो रो रो रो चे चे चे चो चो चो;0;3;6;0;0;0;0;35;60;140;100;3
+	EVENT=WORD2;1;के के के के के के को को को को को को ते ते ते ते तो तो तो तो रे रे रे रे रो रो रो रो चे चे चे चो चो चो;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=हलन्त अभ्यास
+   duration=2
+    EVENT=KEY2;2;क् क् क् क् क् क् त् त् त् त् त् त् र् र् र् र् र् र् च् च् च् च् च् च्;0;3;7;0;0;0;0;30;55;125;90;3
+	EVENT=WORD2;1;क् क् क् क् क् क् त् त् त् त् त् त् र् र् र् र् र् र् च् च् च् च् च् च्;0;3;7;0;0;0;0;30;55;125;90;3
+ end exercise
+ begin exercise
+   type=बबल्स खेल
+   duration=1
+    EVENT=BUBBLES;1;none
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;रति चित चिर रचित चरित चेतक चोर रोक कोरे तेरे रति चित चिर रचित चरित चेतक चोर रोक कोरे तेरे;0;3;6;0;0;0;0;35;60;140;100;2
+ end exercise
+ begin exercise
+   type=छोटे वाक्य अभ्यास
+   duration=3
+    EVENT=SENTENCE2;3;चोर को रोक%0D%0Aतेरे चरित को रचो%0D%0Aकोरे चरित को रचो%0D%0Aचेतक को रोक%0D%0Aचोर को रोक%0D%0Aतेरे चरित को रचो%0D%0Aचोर को रोक%0D%0Aतेरे चरित को रचो%0D%0Aकोरे चरित को रचो%0D%0Aचेतक को रोक%0D%0Aचोर को रोक%0D%0Aतेरे चरित को रचो;0;3;6;0;0;0;0;35;60;140;100;4
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=2;होम रो विस्तार - ु और प
+ picture=none
+ durationpercent=101
+ extradescr=FGFG JHJH
+ new keys=ुप
+ begin exercise
+   type=नई कुंजियाँ: ु और प
+   duration=1
+    EVENT=MESSAGE;0;G=ु: बायाँ तर्जनी F से G तक खिंचे - FGFG।%0D%0AH=प: दायाँ तर्जनी J से H तक खिंचे - JHJH।%0D%0A हर बार टाइप के बाद उँगली होम रो पर लौटे।;नई कुंजियाँ FGFG JHJH;typing.jpg;left
+    EVENT=KEYINTRO;0;यहाँ ु और प की स्थिति दिखाई गई है।;ुप;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;इन दोनों नई कुंजियों को दबाकर पहचानें।;ुप;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=नए अक्षर-समूह
+   duration=4
+    EVENT=KEY2;4;रप रप रप रप रप रप पर पर पर पर पर पर िु िु िु िु िु िु ुि ुि ुि ुि ुि ुि;0;3;6;0;0;0;0;35;60;140;100;1
+    EVENT=WORD2;1;रप रप रप रप रप रप पर पर पर पर पर पर िु िु िु िु िु िु ुि ुि ुि ुि ुि ुि;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=होम रो और नई कुंजियाँ
+   duration=4
+    EVENT=KEY2;2;कप कप कप तप तप तप चप चप चप पक पक पक पत पत पत पच पच पच कु कु कु तु तु तु रु रु रु पि पि पि पु पु;0;3;6;0;0;0;0;35;60;140;100;1
+	EVENT=WORD2;3;कप कप कप तप तप तप चप चप चप पक पक पक पत पत पत पच पच पच कु कु कु तु तु तु रु रु रु पि पि पि पु पु पु;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=4
+    EVENT=WORD2;3;पुर पुत चुप रुक रिपु कुप तुप पेर पोर पितर पकते रचित पुरे पुरित तुरित कुरु पित चरित;0;3;6;0;0;0;0;35;60;140;100;2
+ end exercise
+ begin exercise
+   type=बबल्स खेल
+   duration=2
+    EVENT=BUBBLES;2;none
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=3
+    EVENT=SENTENCE2;3;पुर को रोको%0D%0Aकुपित रिपु को रोको%0D%0Aरुक कर पितर को रोको%0D%0Aपुरे चरित को रोको%0D%0Aपितर पर रुको;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=TypingMaster कोर्स फीडबैक (Online)
+   duration=1
+    EVENT=HTMLMESSAGE;0;http://www.TypingMaster.com/typing-tutor/12/hindievent1.htm;Feedback Survey;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=अंतिम अनुच्छेद
+   duration=4
+    EVENT=PARAGRAPH2;4;चुप रुको%0D%0Aरचित पुर%0D%0Aचोर चतुर%0D%0Aचतुर रुक%0D%0Aकुपित पति%0D%0Aरचित चतुर%0D%0Aचोर पुर%0D%0Aरुक रुके%0D%0Aचेतक रुके%0D%0Aचरित चतुर%0D%0Aचुप चेत%0D%0Aचतुर रुचि%0D%0Aचेत रुको%0D%0Aचतुर रुको%0D%0Aचुप रुक%0D%0Aपुर रोक%0D%0Aतोप रुके%0D%0Aपोत रुको%0D%0Aकोप कुपित%0D%0Aतरु चतुर%0D%0Aचुपके रुको%0D%0Aकरे रुचि%0D%0Aपके पुर%0D%0Aचोर रुक%0D%0Aचुप रुको;0;0;0;0;0;0;0;30;50;120;90;4
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=3;ऊपरी पंक्ति - ी और ह
+ picture=none
+ durationpercent=101
+ extradescr=FRFR JUJU
+ new keys=ीह।
+ begin exercise
+   type=नई कुंजियाँ: ी और ह
+   duration=1
+    EVENT=MESSAGE;0;R=ी: बायाँ तर्जनी F से R ऊपर जाए।%0D%0AU=ह: दायाँ तर्जनी J से U ऊपर जाए।%0D%0Aहर बार उँगली होम रो F/J पर लौटे।;नई कुंजियाँ FRFR JUJU;keyboard_u.jpg;left
+    EVENT=MESSAGE;0;। (पूर्ण विराम) - हिंदी वाक्य इसी चिह्न से समाप्त होते हैं। यह . (डॉट) कुंजी से टाइप होता है।;पूर्ण विराम;typing.jpg;left
+    EVENT=KEYINTRO;0;यहाँ ी और ह की स्थिति दिखाई गई है।;ीह;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;ी और ह को दबाकर पहचानें।;ीह;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=नए अक्षर-समूह
+   duration=4
+    EVENT=KEY2;4;िी िी िी िी िी िी ीि ीि ीि ीि ीि ीि रह रह रह रह रह रह हर हर हर हर हर हर;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=बबल्स खेल
+   duration=1
+    EVENT=BUBBLES;2;none
+ end exercise
+ begin exercise
+   type=होम रो और नई कुंजियाँ
+   duration=4
+    EVENT=KEY2;2;की की की ती ती ती री री री ची ची ची पी पी पी हि हि हि हे हे हे हो हो हो हु हु हु ही ही ही;0;3;6;0;0;0;0;35;60;140;100;1
+	EVENT=WORD2;4;की की की ती ती ती री री री ची ची ची पी पी पी हि हि हि हे हे हे हो हो हो हु हु हु ही ही ही;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;तीर रीत पीर हरि हरे पुरी रहित रोहित होरी कही हरित पीत कीर तेरी हरित पुरी रहित रोहित;0;3;6;0;0;0;0;35;60;140;100;2
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=3
+    EVENT=SENTENCE2;3;पीर को रोको।%0D%0Aहरित तीर को रोको।%0D%0Aरहित कही हरि पुरी।%0D%0Aहरि को रोहित कहो।%0D%0Aतीर रहित पुरी हरित। पीर को रोको।%0D%0Aहरित तीर को रोको।%0D%0Aरहित कही हरि पुरी।%0D%0Aहरि को रोहित कहो।%0D%0Aतीर रहित पुरी हरित।;0;3;6;0;0;0;0;35;60;140;100;4
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=4;ऊपरी पंक्ति - ू और ब
+ picture=none
+ durationpercent=101
+ extradescr=TGTG HYHY
+ new keys=ूब
+ begin exercise
+   type=नई कुंजियाँ: ू और ब
+   duration=1
+    EVENT=MESSAGE;0;T=ू: बायाँ तर्जनी G से T ऊपर जाए - TGTG।%0D%0AY=ब: दायाँ तर्जनी H से Y ऊपर जाए - HYHY।%0D%0Aहर बार उँगली होम रो G/H पर लौटे।;नई कुंजियाँ TGTG HYHY;typing.jpg;left
+    EVENT=KEYINTRO;0;यहाँ ू और ब की स्थिति दिखाई गई है।;ूब;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;ू और ब को दबाकर पहचानें।;ूब;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=नए अक्षर-समूह
+   duration=4
+    EVENT=KEY2;4;ुू ुू ुू ुू ुू ुू ूु ूु ूु ूु ूु ूु पब पब पब पब पब पब बप बप बप बप बप बप;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=होम रो और नई कुंजियाँ
+   duration=3
+    EVENT=KEY2;2;कू कू कू तू तू तू पू पू पू रू रू रू हू हू हू बि बि बि बे बे बे बो बो बो बी बी बी बु बु बु;0;3;6;0;0;0;0;35;60;140;100;1
+	EVENT=WORD2;3;कू कू कू तू तू तू पू पू पू रू रू रू हू हू हू बि बि बि बे बे बे बो बो बो बी बी बी बु बु बु;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;पूर रूप पूरी बहुत बहू बीती बूरी बीर पूरे तेरी रूहे बूरे पुरी तूर कूप बहुत पूर रूप बहू;0;3;6;0;0;0;0;35;60;140;100;2
+ end exercise
+ begin exercise
+   type=बबल्स खेल
+   duration=2
+    EVENT=BUBBLES;2;none
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=3
+    EVENT=SENTENCE2;3;पूरी तीर रोको। बहू को रोको। बीती पूरी रोको। पूरे रूप पर रोको। बहुत बूरी पुरी। पूरी तीर रोको। बहू को रोको। बीती पूरी रोको। पूरे रूप पर रोको। बहुत बूरी पुरी।;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=5;ऊपरी पंक्ति - ा और ग
+ picture=none
+ durationpercent=101
+ extradescr=DEDE KIKI
+ new keys=ाग
+ begin exercise
+   type=नई कुंजियाँ: ा और ग
+   duration=1
+    EVENT=MESSAGE;0;E=ा: बायाँ मध्यमा D से E ऊपर जाए - DEDE।%0D%0AI=ग: दायाँ मध्यमा K से I ऊपर जाए - KIKI।%0D%0Aहर बार उँगली होम रो D/K पर लौटे।;नई कुंजियाँ DEDE KIKI;typing.jpg;left
+    EVENT=KEYINTRO;0;यहाँ ा और ग की स्थिति दिखाई गई है।;ाग;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;ा और ग को दबाकर पहचानें।;ाग;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=नए अक्षर-समूह
+   duration=4
+    EVENT=KEY2;4;का का का का का का ता ता ता ता ता ता पा पा पा पा पा पा रा रा रा रा रा रा कग कग कग तग तग तग पग पग पग रग रग रग;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=होम रो और नई कुंजियाँ
+   duration=3
+    EVENT=KEY2;2;हा हा हा बा बा बा गा गा गा गि गि गि गे गे गे गो गो गो गु गु गु गी गी गी गू गू;0;3;6;0;0;0;0;35;60;140;100;1
+	EVENT=WORD2;3;हा हा हा बा बा बा गा गा गा गि गि गि गे गे गे गो गो गो गु गु गु गी गी गी गू गू गू;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;राग पार तार तारा हार बात बाग गाती राही पाती बाहर राहत बागी रागी पारी बाती गाते रागिता;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=4
+    EVENT=SENTENCE2;4;बाहर रोको। तारा बहुत राही। बात पूरी करो। राहत पाती हूर। बाग गाती हूर। तीर पार करो। बाहर रोको। तारा बहुत राही। बात पूरी करो। राहत पाती हूर। बाग गाती हूर। तीर पार करो।;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=6;ऊपरी पंक्ति - ै ौ द ज
+ picture=none
+ durationpercent=101
+ extradescr=SWSW AQAQ LOLO ;P;P
+ new keys=ैौदज
+ begin exercise
+   type=नई कुंजियाँ: ै, ौ, द, ज
+   duration=1
+    EVENT=MESSAGE;0;W=ै: बायाँ अनामिका S से W ऊपर - SWSW।%0D%0AQ=ौ: बायाँ कनिष्ठा A से Q ऊपर - AQAQ।%0D%0AO=द: दायाँ अनामिका L से O ऊपर - LOLO।%0D%0AP=ज: दायाँ कनिष्ठा  से P ऊपर ;नई कुंजियाँ;typing.jpg;left
+    EVENT=KEYINTRO;0;यहाँ ै, ौ, द और ज की स्थिति दिखाई गई है।;ैौदज;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;इन चारों नई कुंजियों को दबाकर पहचानें।;ैौदज;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=नए अक्षर-समूह
+   duration=4
+    EVENT=KEY2;4;ेै ेै ेै ेै ेै ेै ैे ैे ैे ैे ैे ैे ोौ ोौ ोौ ोौ ोौ ोौ ौो ौो ौो ौो ौो ौो तद तद तद तद तद तद चज चज चज चज चज चज;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=होम रो और नई कुंजियाँ
+   duration=3
+    EVENT=KEY2;2;दा दा दा दि दि दि दे दे दे दो दो दो जा जा जा जि जि जि जे जे जे जो जो जो जू जू जू जी जी जी;0;3;6;0;0;0;0;35;60;140;100;1
+	EVENT=WORD2;3;दा दा दा दि दि दि दे दे दे दो दो दो जा जा जा जि जि जि जे जे जे जो जो जो जू जू जू जी जी जी;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;जाग दाग जागो दादा जहाज बैर जाती दाता जाहिर दादी दाता जोर जागो दाग जहाज जाती दादा जाहिर;0;3;6;0;0;0;0;35;60;140;100;2
+ end exercise
+ begin exercise
+   type=बबल्स खेल
+   duration=2
+    EVENT=BUBBLES;2;none
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=4
+    EVENT=SENTENCE2;4;दाग पर जागो। जहाज पर जाती है। दादा जागो। जाग कर बाहर रोको। दाग बाहर है। दाग पर जागो। जहाज पर जाती है। दादा जागो। जाग कर बाहर रोको। दाग बाहर है।;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=7;ऊपरी पंक्ति - ड और ़
+ picture=none
+ durationpercent=101
+ new keys=ड़
+ begin exercise
+   type=नई कुंजियाँ: ड और ़
+   duration=1
+    EVENT=MESSAGE;0;[=ड: दायाँ कनिष्ठा  से [ ऊपर दाईं तरफ।%0D%0A]=़: और एक कदम दाईं तरफ।%0D%0A़ स्वयं में पूर्ण अक्षर नहीं है, बल्कि ड के साथ मिलकर ड़ बनाता है।;नई कुंजियाँ;typing.jpg;left
+    EVENT=KEYINTRO;0;यहाँ ड और ़ की स्थिति दिखाई गई है।;ड़;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;ड और ़ को दबाकर पहचानें।;ड़;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=ड और ड़ अक्षर-समूह
+   duration=4
+    EVENT=KEY2;2;डा डा डा डा डा डा डि डि डि डे डे डे डो डो डो डी डी डी डू डू डू ड़ा ड़ा ड़ा ड़ि ड़ि ड़ि ड़े ड़े ड़े;0;3;6;0;0;0;0;35;60;140;100;1
+	EVENT=WORD2;4;डा डा डा डा डा डा डि डि डि डे डे डे डो डो डो डी डी डी डू डू डू ड़ा ड़ा ड़ा ड़ि ड़ि ड़ि ड़े ड़े ड़े;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=बबल्स खेल
+   duration=1
+    EVENT=BUBBLES;2;none
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;बड़ा बड़ी बड़े गाड़ी जड़ पड़ी दौड़ डगर डाकू पड़ी बड़ा बड़ी गाड़ी जड़ पड़ी दौड़ डगर डाकू;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=क्लाउड्स खेल
+   duration=2
+    EVENT=CLOUDS;2;hin_ch09_top.vcb;true
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=4
+    EVENT=SENTENCE2;4;बड़ी गाड़ी रोको। गाड़ी जरा रोको। दौड़ पर रोको। बड़ा दाग पड़ा। गाड़ी पड़ी है। बड़ी गाड़ी रोको। गाड़ी जरा रोको। दौड़ पर रोको। बड़ा दाग पड़ा। गाड़ी पड़ी है।;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=8;निचली पंक्ति - न और ल
+ picture=none
+ durationpercent=101
+ extradescr=FVFV JNJN
+ new keys=नल
+ begin exercise
+   type=नई कुंजियाँ: न और ल
+   duration=1
+    EVENT=MESSAGE;0;V=न: बायाँ तर्जनी F से V नीचे जाए - FVFV।%0D%0AN=ल: दायाँ तर्जनी J से N नीचे जाए - JNJN।%0D%0Aहर बार उँगली होम रो F/J पर लौटे।;नई कुंजियाँ FVFV JNJN;typing.jpg;left
+    EVENT=KEYINTRO;0;यहाँ न और ल की स्थिति दिखाई गई है।;नल;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;न और ल को दबाकर पहचानें।;नल;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=नए अक्षर-समूह
+   duration=4
+    EVENT=KEY2;4;िन िन िन िन िन िन नि नि नि नि नि नि रल रल रल रल रल रल लर लर लर लर लर लर नल नल नल नल नल नल लन लन लन लन लन लन;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=होम रो और नई कुंजियाँ
+   duration=3
+    EVENT=KEY2;2;ना ना ना नि नि नि ने ने ने नो नो नो नी नी नी नू नू नू ला ला ला लि लि लि ले ले ले लो लो लो ली ली;0;3;6;0;0;0;0;35;60;140;100;1
+	EVENT=WORD2;3;ना ना ना नि नि नि ने ने ने नो नो नो नी नी नी नू नू नू ला ला ला लि लि लि ले ले ले लो लो लो ली ली ली;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;नाला बाल नाग नाड़ जाल नदी नीला ताली बहन जनता नारी नाली लाल जल नौकर नाना लाना जाना;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=क्लाउड्स खेल
+   duration=2
+    EVENT=CLOUDS;2;hin_ch04_bottom1.vcb;true
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=4
+    EVENT=SENTENCE2;4;नाला बड़ा है। बहन नीला पाती है। ताली बजाती है। नाग जाल है। जल तीर रोको। नाना जाना। नाला बड़ा है। बहन नीला पाती है। ताली बजाती है। नाग जाल है। जल तीर रोको। नाना जाना।;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=9;निचली पंक्ति - व और स
+ picture=none
+ durationpercent=101
+ extradescr=GBGB HMHM
+ new keys=वस
+ begin exercise
+   type=नई कुंजियाँ: व और स
+   duration=1
+    EVENT=MESSAGE;0;B=व: बायाँ तर्जनी G से B नीचे जाए - GBGB।%0D%0AM=स: दायाँ तर्जनी H से M नीचे जाए - HMHM।%0D%0Aहर बार उँगली होम रो G/H पर लौटे।;नई कुंजियाँ GBGB HMHM;typing.jpg;left
+    EVENT=KEYINTRO;0;यहाँ व और स की स्थिति दिखाई गई है।;वस;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;व और स को दबाकर पहचानें।;वस;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=नए अक्षर-समूह
+   duration=4
+    EVENT=KEY2;4;ुव ुव ुव ुव ुव ुव वु वु वु वु वु वु पस पस पस पस पस पस सप सप सप सप सप सप वन वन वन वन वन वन नव नव नव नव नव नव;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=होम रो और नई कुंजियाँ
+   duration=3
+    EVENT=KEY2;2;वा वा वा वि वि वि वे वे वे वो वो वो वी वी वी सा सा सा सि सि सि से से से सो सो सो सी सी सी;0;3;6;0;0;0;0;35;60;140;100;1
+	EVENT=WORD2;3;वा वा वा वि वि वि वे वे वे वो वो वो वी वी वी सा सा सा सि सि सि से से से सो सो सो सी सी सी;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;नाव वन सवाल सहारा वाहन वार नवाब वाली सागर बसाना नारा सवार वापस जहाज नाव सवाल वाहन;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=बबल्स खेल
+   duration=2
+    EVENT=BUBBLES;2;none
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=4
+    EVENT=SENTENCE2;4;नाव वन है। वाहन रोको। सवाल करो। सहारा लो। नारा बोलो। सागर पार करो। वापस जाना। नाव वन है। वाहन रोको। सवाल करो। सहारा लो। नारा बोलो। सागर पार करो। वापस जाना।;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=10;निचली पंक्ति - म ं और य
+ picture=none
+ durationpercent=101
+ extradescr=DCDC SXSX
+ new keys=मंय
+ begin exercise
+   type=नई कुंजियाँ: म, ं और य
+   duration=1
+    EVENT=MESSAGE;0;C=म: बायाँ मध्यमा D से C नीचे - DCDC।%0D%0AX=ं: बायाँ अनामिका S से X नीचे - SXSX।%0D%0A/=य: दायाँ कनिष्ठा   से / नीचे दाईं तरफ।;नई कुंजियाँ;typing.jpg;left
+    EVENT=KEYINTRO;0;यहाँ म, ं और य की स्थिति दिखाई गई है।;मंय;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;म, ं और य को दबाकर पहचानें।;मंय;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=नए अक्षर-समूह
+   duration=4
+    EVENT=KEY2;4;्म ्म ्म ्म ्म ्म म् म् म् म् म् म् ें ें ें ें ें ें ंे ंे ंे ंे ंे ंे चय चय चय चय चय चय यच यच यच यच यच यच;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=होम रो और नई कुंजियाँ
+   duration=3
+    EVENT=KEY2;2;मा मा मा मि मि मि मे मे मे मो मो मो मी मी मी मू मू मू या या या यि यि यि ये ये ये यो यो यो यू यू;0;3;6;0;0;0;0;35;60;140;100;3
+	EVENT=WORD2;3;मा मा मा मि मि मि मे मे मे मो मो मो मी मी मी मू मू मू या या या यि यि यि ये ये ये यो यो यो यू यू यू;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=बबल्स खेल
+   duration=2
+    EVENT=BUBBLES;2;none
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;काम नाम समय संयम नमन मान यान गाना माना जमाना गाड़ी काम नाम समय संयम नमन मान यान गाना;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=क्लाउड्स खेल
+   duration=2
+    EVENT=CLOUDS;2;hin_ch05_bottom2.vcb;true
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=4
+    EVENT=SENTENCE2;4;काम करो। समय पर चलो। मान नाम लो। नमन करो। संयम से गाना बनाना। गाड़ी में जाना। काम करो। समय पर चलो। मान नाम लो। नमन करो। संयम से गाना बनाना। गाड़ी में जाना।;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=11;शिफ्ट होम रो - ओ ए अ इ उ फ ऱ ख थ छ ठ
+ picture=none
+ durationpercent=101
+ new keys=ओएअइउफऱखथछठट
+ begin exercise
+   type=शिफ्ट होम रो परिचय
+   duration=1
+    EVENT=MESSAGE;0;अब शिफ्ट के साथ होम रो के अक्षर सीखें: ओ, ए, अ, इ, उ, फ, ऱ, ख, थ, छ, ठ।%0D%0Aयहाँ सटीक उँगली और शिफ्ट संयोजन महत्वपूर्ण है।;शिफ्ट होम रो;typing.jpg;left
+    EVENT=MESSAGE;0;ट: बिना शिफ्ट की कुंजी, ठ की अनासपिरेट जोड़ी। ट+ठ एक साथ सीखें जैसे क+ख, त+थ।;नई कुंजी ट;typing.jpg;left
+    EVENT=KEYINTRO;0;यह शिफ्ट होम रो के अक्षर हैं।;ओएअइउफऱखथछठ;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;इन नई शिफ्ट कुंजियों को दबाकर पहचानें।;ओएअइउफऱखथछठ;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;यहाँ ट की स्थिति दिखाई गई है।;ट;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;ट को दबाकर पहचानें।;ट;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=शिफ्ट अक्षर-समूह
+   duration=4
+    EVENT=KEY2;4;अब अब अब अब अब अब इस इस इस इस इस इस उन उन उन उन उन उन ओर ओर ओर ओर ओर ओर फन फन फन फन फन फन खत खत खत खत खत खत थल थल थल थल थल थल छल छल छल छल छल छल ठग ठग ठग ठग ठग ठग टक टक टक टक टक टक कट कट कट कट कट कट;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;फल थाली खतरा छत इतर उतर ओस एड़ी अखरोट फाटक ठहरो फसल थरथर फल थाली खतरा छत इतर उतर ओस एड़ी;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=मिश्रित अभ्यास
+   duration=3
+    EVENT=WORD2;3;अखबार इतर उतर थकान फहरा खतरा ठहराव फाटक एतराज ठिकाना छतरी अखबार इतर उतर थकान फहरा खतरा ठहराव;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=4
+    EVENT=SENTENCE2;4;इस ओर ठीक टाइप करो। फल अखरोट खाओ। फाटक पर मत ठहरो। खतरा है। इस ओर ठीक टाइप करो। फल अखरोट खाओ। फाटक पर मत ठहरो। खतरा है।;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=12;शिफ्ट ऊपरी पंक्ति - औ ऐ आ ई ऊ भ ङ घ ध झ ढ ञ ऑ
+ picture=none
+ durationpercent=101
+ new keys=औऐआईऊभङघधझढञऑ
+ begin exercise
+   type=शिफ्ट ऊपरी पंक्ति परिचय
+   duration=1
+    EVENT=MESSAGE;0;अब शिफ्ट के साथ ऊपरी पंक्ति के अक्षर सीखें: औ, ऐ, आ, ई, ऊ, भ, ङ, घ, ध, झ, ढ, ञ, ऑ।%0D%0Aइनमें कुछ अक्षर कम उपयोगी हैं, इसलिए पहले अक्षर-समूह पर और फिर शब्दों पर जाएँ।;शिफ्ट ऊपरी पंक्ति;typing.jpg;left
+    EVENT=KEYINTRO;0;यह शिफ्ट ऊपरी पंक्ति के अक्षर हैं।;औऐआईऊभङघधझढञऑ;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;इन नई शिफ्ट कुंजियों को दबाकर पहचानें।;औऐआईऊभङघधझढञऑ;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+ begin exercise
+   type=शिफ्ट ऊपरी अक्षर-समूह
+   duration=4
+    EVENT=WORD2;4;भा भा भा घा घा घा धा धा धा झा झा झा ढा ढा ढा भि भि भि घि घि घि धि धि धि भे भे भे घे घे घे;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;आकार ईमान भावना धागा घड़ी झाड़ी औजार ऐनक ऊन ऑटो आकार ईमान भावना धागा घड़ी झाड़ी औजार ऐनक ऊन ऑटो;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=क्लाउड्स खेल
+   duration=2
+    EVENT=CLOUDS;2;hin_ch11_shift_top.vcb;true
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=4
+    EVENT=SENTENCE2;4;आकार बड़ा है। ईमान और भावना साथ रखो। धागा और घड़ी मेज पर हैं। ऑटो आगे खड़ा है। आकार बड़ा है। ईमान और भावना साथ रखो। धागा और घड़ी मेज पर हैं। ऑटो आगे खड़ा है।;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=13;शिफ्ट निचली पंक्ति और विशेष कुंजियाँ
+ picture=none
+ durationpercent=101
+ new keys=ँणळशष।य़ऍॅ्रज्ञत्रक्षश्रःऋ
+ begin exercise
+   type=शिफ्ट निचली पंक्ति और संयुक्त अक्षर परिचय
+   duration=1
+	EVENT=MESSAGE;0;शिफ्ट निचली पंक्ति: ँ, ण, ळ, श, ष, ।, य़। इनमें श और ष सबसे उपयोगी हैं।;शिफ्ट निचली + विशेष;typing.jpg;left
+    EVENT=KEYINTRO;0;यह शिफ्ट निचली पंक्ति के अक्षर और चिह्न हैं।;ँणळशष।य़;SHOW
+    EVENT=KEYINTRO;1;इन शिफ्ट कुंजियों को दबाकर पहचानें।;ँणळशष।य़;PRESS
+ end exercise
+ begin exercise
+   type=श और ष अक्षर-समूह
+   duration=4
+    EVENT=WORD2;4;शा शा शा शि शि शि शे शे शे शो शो शो षा षा षा षि षि षि षे षे षे षो षो षो शु शु शु षु षु षु;0;3;6;0;0;0;0;35;60;140;100;1
+ end exercise
+ begin exercise
+   type=संयुक्त अक्षर अभ्यास
+   duration=3
+    EVENT=WORD2;3;त्र त्र त्र त्र त्र त्र क्ष क्ष क्ष क्ष क्ष क्ष ज्ञ ज्ञ ज्ञ ज्ञ ज्ञ ज्ञ श्र श्र श्र श्र श्र श्र;0;3;7;0;0;0;0;30;55;125;90;3
+ end exercise
+ begin exercise
+   type=बबल्स खेल
+   duration=2
+    EVENT=BUBBLES;2;none
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=3
+    EVENT=WORD2;3;शक्ति भाषा शरण निष्कर्ष भूषण क्षेत्र ज्ञान श्रद्धा त्रय ऋतु शक्ति भाषा शरण निष्कर्ष भूषण क्षेत्र ज्ञान श्रद्धा;0;3;6;0;0;0;0;35;60;140;100;3
+ end exercise
+ begin exercise
+   type=वाक्य अभ्यास
+   duration=4
+    EVENT=SENTENCE2;4;शक्ति और शरण दोनों लिखो। भाषा का सही प्रशिक्षण लो। क्षेत्र में श्रेष्ठ कार्य करो। ज्ञान और श्रद्धा साथ रखो। शक्ति और शरण दोनों लिखो। भाषा का सही प्रशिक्षण लो। क्षेत्र में श्रेष्ठ कार्य करो। ज्ञान और श्रद्धा साथ रखो।;0;3;6;0;0;0;0;35;60;140;100;4
+ end exercise
+end chapter
+
+begin chapter
+ chapter name=14;पूरा कीबोर्ड पुनरावृत्ति और गति
+ picture=none
+ durationpercent=101
+ begin exercise
+   type=पूर्ण पुनरावृत्ति
+   duration=1
+    EVENT=MESSAGE;0;अब आप पूरे हिंदी इनस्क्रिप्ट कीबोर्ड की पुनरावृत्ति करेंगे।%0D%0Aइस अध्याय में शुद्धता, लय और गति तीनों पर ध्यान दें।;अंतिम पुनरावृत्ति;typing.jpg;left
+    EVENT=MESSAGE;0;अब केवल उँगली स्थिति ही नहीं, बल्कि सही मात्रा, संयुक्त अक्षर और विराम चिह्न भी महत्वपूर्ण हैं।;ध्यान दें;ergo.gif;left
+ end exercise
+ begin exercise
+   type=मिश्रित अक्षर-समूह
+   duration=4
+    EVENT=WORD2;4;कमाल आकाश शक्ति क्षेत्र पानी भाषा नवल फल गाड़ी पढ़ाई श्रद्धा त्रय निष्कर्ष पूरा समय अखबार विचार;0;3;6;0;0;0;0;40;65;150;110;1
+ end exercise
+ begin exercise
+   type=बबल्स खेल
+   duration=2
+    EVENT=BUBBLES;2;none
+ end exercise
+ begin exercise
+   type=शब्द अभ्यास
+   duration=4
+    EVENT=WORD2;4;आकाश कमाल शक्ति क्षेत्र पानी भाषा गाड़ी पढ़ाई श्रद्धा निष्कर्ष अखबार प्रशिक्षण प्रार्थना संयम कमाल आकाश शक्ति क्षेत्र पानी भाषा गाड़ी पढ़ाई श्रद्धा निष्कर्ष;0;3;6;0;0;0;0;40;65;150;110;3
+ end exercise
+ begin exercise
+   type=क्लाउड्स खेल
+   duration=2
+    EVENT=CLOUDS;2;hin_ch14_review.vcb;true
+ end exercise
+ begin exercise
+   type=अंतिम वाक्य अभ्यास
+   duration=2
+    EVENT=SENTENCE2;2;संयम और अभ्यास से गति बढ़ती है। आकाश साफ है और भाषा स्पष्ट है। क्षेत्र में श्रेष्ठ कार्य के लिए निरंतर अभ्यास करो। पढ़ाई, प्रार्थना और श्रम साथ रखो।;0;3;6;0;0;0;0;40;65;150;110;4
+ end exercise
+ begin exercise
+   type=अंतिम अनुच्छेद
+   duration=5
+    EVENT=TEXT2;5;हिंदी इनस्क्रिप्ट टाइपिंग सीखने का सबसे अच्छा तरीका क्रमबद्ध अभ्यास है। पहले उँगलियों की सही स्थिति सीखो, फिर मात्राएँ, फिर शब्द और वाक्य। जब शुद्धता स्थिर हो जाए तब गति अपने आप बढ़ने लगती है। नियमित अभ्यास, संयम और सही तकनीक तुम्हें तेज और विश्वसनीय टाइपिस्ट बनाएगी।;0;3;6;0;0;0;0;40;65;150;110;5
+ end exercise
+end chapter

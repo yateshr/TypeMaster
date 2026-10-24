@@ -1,0 +1,97 @@
+$description=Französische Texte (Schweizer Tastatur)
+$longdesc=Die Schweizer-Deutsche Tastatur ist so gestaltet, dass auch französische Texte einfach geschrieben werden können. In diesem Kurs können Sie diese Eigenschaften der Tastatur einüben, indem Sie französische Texte schreiben.
+$version=7.0
+$language=ger
+$chapters=1
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 23.8.2007 16:12
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=auttaako tama
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Französische Texte (Schweizer Tastatur)
+alternatekeyboards=1
+keyboard=ALL
+wizardname=ge7xfrench
+simplewizard=1
+last free=2
+keyboardbase=QWERTY AZERTY QWERTZ SWISSGER
+
+begin chapter
+ chapter name=1;Französische Texte
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjklö
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTOÖ
+ new keys=gGhH
+ new keys=nNvV
+ new keys=?üÜäÄ
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.:
+ new keys=ei
+ new keys=cC,-
+ begin exercise
+   type=Französische Texte
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_ge7qwert_14_1_1sw.htm;Französische Texte;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ new keys=éè
+ begin exercise
+   type=Neue Tasten: é è
+   duration=3
+    EVENT=KEYINTRO;0;file:ge7qwert014011keyintro.txt;éè;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7qwert014012keyintro.txt;éè;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7qwert014013keyintro.txt;éè;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:ge7qwert014012key2sw.txt;0;0;0;0;0;0;0;0;0;0;0;1
+ end exercise
+
+ new keys=çà
+ begin exercise
+   type=Neue Tasten: ç à
+   duration=3
+    EVENT=KEYINTRO;0;file:ge7qwert014030keyintro.txt;%E7%E0;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7qwert014031keyintro.txt;çà;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7qwert014032keyintro.txt;%E7%E0;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:ge7qwert014033key2sw.txt;0;0;0;0;0;0;0;0;0;0;0;1
+ end exercise
+ new keys=`^¨
+ new keys='ùâêîôûëïü
+ begin exercise
+   type=Akzent und Apostroph
+   duration=3
+    EVENT=KEYINTRO;0;file:ge7qwert014050keyintro.txt;%27%60%5E%A8;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7qwert014051keyintro.txt;%E2%EB%F9%27;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:ge7qwert014052keyintro.txt;%27%60%5E%A8;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:ge7qwert014051key2sw.txt;0;0;0;0;0;0;0;0;0;0;0;1
+ end exercise
+
+ begin exercise
+   type=Wortübung
+   duration=3
+    EVENT=WORD2;3;file:ge7qwert014061swiss.txt;0;0;0;0;0;0;0;0;0;0;0;2
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=3
+    EVENT=TEXT2;3;file:ge7qwert014071text2.txt;0;0;0;0;0;0;0;0;0;0;0;6
+ end exercise
+
+end chapter

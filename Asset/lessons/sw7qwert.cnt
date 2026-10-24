@@ -1,0 +1,656 @@
+$description=Touch Typing Kurs
+$longdesc=På den här kursen kommer du att lära dig bokstavstangenternas postioner och vanlig interpunktion utantill. Efter att du har slutfört kursen kommer du att kunna skriva med alla tio fingrar utan att titta.
+$version=7.0
+$language=swe
+$chapters=12
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 1.11.2006 8:27
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=auttaako tama
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=85,90,95
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Touch Typing Kurs
+alternatekeyboards=1
+keyboard=finnish.kbd
+wizardname=SW7QWERT
+simplewizard=1
+last free=2
+
+begin chapter
+ chapter name=1;Hemraden ASDF JKLÖ
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=asdfjklö
+ begin exercise
+   type=Grunderna för Touch typing
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_swe_sw7qwert_1_1_1.htm;Vad är Touch Typing?;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_1_2.htm;Fingerpositioner;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_1_3.htm;Trycka på Tangenter;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_1_4.htm;Inlärningstips;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_1_5.htm;Färdig att Starta;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Hemraden
+   duration=3
+    EVENT=KEYINTRO;0;file:sw7qwert01021keyintro.txt;asdfjkl%F6;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert01022keyintro.txt;asdf;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert01023keyintro.txt;jkl%F6;SHOW;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert01024keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert01025keyintro.txt;asdfjkl%F6;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert01026keyintro.txt;asdfjkl%F6;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert01028keyintro.txt;%20;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert01029keyintro.txt;asdfjkl%F6;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert01013key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Hur man tolkar resultaten
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_swe_sw7qwert_1_2_1.htm;Skrivresultat;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_2_4.htm;Brutto- och nettohastighet;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_2_2.htm;Precisionsprocent;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_2_5.htm;Svåra tangenter;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Tangentövning
+   duration=3
+    EVENT=KEY2;3;file:sw7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Tips: Skrivprov
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_6_1.htm;Gör förprovet!;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert01031word2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_7_1.htm;Backstegstangent och Enter;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=PARAGRAPH2;3;file:sw7qwert01052text2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bokstäverna E och I
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=ei
+ begin exercise
+   type=Bokstäverna E I
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_2_1_1.htm;Extensionsrad;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert02012keyintro.txt;ei;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert02013keyintro.txt;ei;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert02017keyintro.txt;ei;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert02012key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Optimerad längd
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_swe_sw7qwert_2_2_1.htm;Vad är Optimerad Längd?;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_2_2_2.htm;Följ Dina Framsteg;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_2_2_3.htm;Stäng Av Optimerad Längd;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert02021word2.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert02041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Tips: Prova Satelliten
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_2_3_1.htm;Prova på Satelliten;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert02051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bokstäverna R och Ä
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=rä
+ begin exercise
+   type=Bokstäverna R Ä
+   duration=3
+    EVENT=KEYINTRO;0;file:sw7qwert03011keyintro.txt;rä;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert03012keyintro.txt;rä;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert03013keyintro.txt;rä;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert03012key2.txt;0;0;0;0;0;0;0;40;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert03021word2.txt;0;0;0;0;0;0;0;40;75;175;125;2
+ end exercise
+
+ begin exercise
+   type=Om ergonomi
+   duration=3
+    EVENT=HTMLMESSAGE;3;msg_swe_sw7qwert_1_4_1.htm;God ergonomi;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_4_2.htm;Stol och bord;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_4_3.htm;Skärm och tangentbord;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_4_4.htm;Bra hållning;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_4_5.htm;Hälsosamma övningar;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert03031key2.txt;0;0;0;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert03041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Tips: Skrivspel
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_1_5_1.htm;TypingMaster Spel;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7qwert03051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bokstäverna T och N
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=tn
+ begin exercise
+   type=Bokstäverna T N
+   duration=3
+    EVENT=KEYINTRO;0;file:sw7qwert04011keyintro.txt;tn;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert04012keyintro.txt;tn;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert04013keyintro.txt;tn;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert04012key28449.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert04021word23455.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert04031sentence25312.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Tips: Rapporter över framsteg
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_4_5_1.htm;Långtidsstatistik;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert04041paragraph21934.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7qwert04051text230.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Stora bokstäver och punkt
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=ASDFJKLÖEIRÄTN
+ begin exercise
+   type=Shifttangenter
+   duration=3
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_5_1_1.htm;Användning av Shifttangenter;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert05011keyintro.txt;FJ;PRESS;left
+    EVENT=KEYINTRO;0;file:sw7qwert05013keyintro.txt;FJ;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert05012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert05021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new Keys=.
+ begin exercise
+   type=Punkt
+   duration=1
+    EVENT=KEYINTRO;0;file:sw7qwert05032keyintro.txt;%2E;0;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert05041keyintro.txt;%2E;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert05033keyintro.txt;%2E;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:sw7qwert05042key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert05031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Tips: Skrivrytm
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_6_5_1.htm;Hur man hittar rytmen;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert05041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7qwert05051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bokstäverna G M och komma
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=gGmM
+ begin exercise
+   type=Bokstäverna G M
+   duration=3
+    EVENT=KEYINTRO;0;file:sw7qwert06011message.txt;gm;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert06011keyintro.txt;gm;PRESS;left
+    EVENT=KEYINTRO;0;file:sw7qwert06013keyintro.txt;gm;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert06012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ new Keys=,
+ begin exercise
+   type=Komma
+   duration=1
+    EVENT=KEYINTRO;0;file:sw7qwert06021message.txt;%2C;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert06022keyintro.txt;%2C;PRESS;left
+    EVENT=KEYINTRO;0;file:sw7qwert06023keyintro.txt;%2C;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:sw7qwert06061key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert06021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert06031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert06041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Tips: Kontrollera din hållning
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_5_5_1.htm;Kontrollera hållning;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7qwert06051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bokstäverna V O och frågetecken
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=oOvV
+ begin exercise
+   type=Bokstäverna V O
+   duration=3
+    EVENT=KEYINTRO;0;file:sw7qwert07011keyintro.txt;vo;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert07013keyintro.txt;vo;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert07014keyintro.txt;vo;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert07012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert07021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new Keys=?
+ begin exercise
+   type=Frågetecken
+   duration=1
+    EVENT=KEYINTRO;0;file:sw7qwert07021keyintro.txt;%3F;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert07023keyintro.txt;%3F;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert07024keyintro.txt;%3F;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:sw7qwert07023key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert07031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Tips: Ta pauser
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_7_5_1.htm;Ta en paus;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert07041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7qwert07051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bokstäverna B H och kolon
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=bBhH
+ begin exercise
+   type=Bokstäverna B H
+   duration=3
+    EVENT=KEYINTRO;0;file:sw7qwert08011keyintro.txt;bh;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert08012keyintro.txt;bh;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert08013keyintro.txt;bh;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert08012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert08021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new Keys=:
+ begin exercise
+   type=Kolon
+   duration=1
+    EVENT=KEYINTRO;0;file:sw7qwert08020keyintro.txt;%3A;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert08021keyintro.txt;%3A;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert08023keyintro.txt;%3A;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:sw7qwert08022key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert08031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert08041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7qwert08051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bokstäverna U Å och bindestreck
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=uUåÅ
+ begin exercise
+   type=Bokstäverna U Å
+   duration=3
+    EVENT=KEYINTRO;0;file:sw7qwert09010keyintro.txt;uå;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert09011keyintro.txt;uå;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert09013keyintro.txt;uå;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert09012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert09021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ new Keys=-
+ begin exercise
+   type=Bindestreck
+   duration=1
+    EVENT=KEYINTRO;0;file:sw7qwert09061keyintro.txt;%2D;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert09062keyintro.txt;%2D;PRESS;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert09063keyintro.txt;%2D;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;1;file:sw7qwert09022key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert09031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert09041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7qwert09051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bokstäverna C och P
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=cCpP
+ begin exercise
+   type=Bokstäverna C P
+   duration=3
+    EVENT=KEYINTRO;0;file:sw7qwert010011keyintro7697.txt;cp;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert010011keyintro.txt;cp;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert010013keyintro.txt;cp;SHOW;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert010012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert010021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert010031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert010041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7qwert010051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bokstäverna X och Y
+ picture=none
+ durationpercent=101
+ extradescr=
+ new Keys=xXyY
+ begin exercise
+   type=Bokstäverna X Y
+   duration=3
+    EVENT=KEYINTRO;0;file:sw7qwert011011test.txt;xy;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert011011key2.txt;xy;PRESS;left;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert011013keyintro.txt;xy;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert011012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert011021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert011031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert011041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7qwert011051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bokstäverna Q W och Z
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=qQwWzZ
+ begin exercise
+   type=Bokstäverna Q W Z
+   duration=3
+    EVENT=KEYINTRO;0;file:sw7qwert012011keyintro.txt;qwz;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert012012keyintro.txt;qwz;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sw7qwert012013keyintro.txt;qwz;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;3;file:sw7qwert012012key2.txt;0;0;0;0;0;0;3.1;3.1;3.1;3.1;3.1;1
+ end exercise
+
+ begin exercise
+   type=Ordövning
+   duration=3
+    EVENT=WORD2;3;file:sw7qwert012021word2.txt;0;0;0;0;0;0;3.2;3.2;3.2;3.2;3.2;2
+ end exercise
+
+ begin exercise
+   type=Meningar
+   duration=3
+    EVENT=SENTENCE2;3;file:sw7qwert012031sentence2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;3
+ end exercise
+
+ begin exercise
+   type=Paragrafer
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sw7qwert012041paragraph2.txt;0;0;0;0;0;0;3.4;3.4;3.4;3.4;3.4;4
+ end exercise
+
+ begin exercise
+   type=Tips: Skrivprov
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_12_5_1.htm;Gör Skrivprovet;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Textövning
+   duration=3
+    EVENT=TEXT2;3;file:sw7qwert012051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+ begin exercise
+   type=Färdig - vad härnäst?
+   duration=2
+    EVENT=HTMLMESSAGE;2;msg_swe_sw7qwert_12_1_1.htm;Tillämpa Dina Färdigheter i Praktiken;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_12_1_2.htm;Användning av Satelliten;0;left;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_swe_sw7qwert_12_1_3.htm;Extrakurser;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter

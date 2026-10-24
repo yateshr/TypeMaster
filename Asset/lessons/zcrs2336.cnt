@@ -1,0 +1,572 @@
+$description=eBook Robin Hood
+$longdesc=Read and Write the Merry Adventures of Robin Hood
+$version=7.0
+$language=eng
+$chapters=11
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 01.10.2021 10.49
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+load icr=
+goalinfo=
+short name=
+default time=0
+
+contents name=eBook Robin Hood
+keyboard=all
+wizardname=
+simplewizard=1
+last free=0
+
+begin chapter
+ chapter name=1;How R.H. Came to Be an Outlaw
+ picture=none
+ durationpercent=98
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys='"
+ new keys=nNvV
+ new keys=?
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.!1234567890()_:-[]
+ new keys=asdfjklgh
+ begin exercise
+   type=How Robin Hood Came to Be an Outlaw
+   duration=5
+    EVENT=HTMLMESSAGE;0;robinhood.htm;The Merry Adventures of Robin Hood;0;left;0;0;0;0;0;0;0;0
+    EVENT=EXAM;5;file:zcrs233601011text.txt;true;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 2
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601011text2.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 3
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601011text3.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 4
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601011text.txt4;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 5
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601011text.txt5;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 6
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601011text.txt6;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 7
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601011text.txt7;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Robin Hood and the Tinker
+ picture=none
+ durationpercent=98
+ extradescr=
+ begin exercise
+   type=Robin Hood and Tinker
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601021text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 2
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601021text2.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 3
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601021text3.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 4
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601021text4.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 5
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601021text5.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 6
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601021text6.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Part 7
+   duration=5
+    EVENT=EXAM;5;file:zcrs233601021text7.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;The Shooting Match
+ picture=none
+ durationpercent=98
+ extradescr=
+ begin exercise
+   type=The Shooting Match at Nottingham Town
+   duration=5
+    EVENT=EXAM;5;file:zcrs233603011text_0.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233603011text_1.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233603011text_2.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233603011text_3.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233603011text_4.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233603011text_5.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233603011text_6.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Will Rescued
+ picture=none
+ durationpercent=98
+ extradescr=
+ begin exercise
+   type=Will Stutely Rescued by His Companions
+   duration=5
+    EVENT=EXAM;5;file:zcrs233604011text_0.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233604011text_1.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233604011text_2.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233604011text_3.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233604011text_4.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233604011text_5.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233604011text_6.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Robin Hood Turns Butcher
+ picture=none
+ durationpercent=98
+ extradescr=
+ begin exercise
+   type=Robin Hood Turns Butcher
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605011text_0.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605011text_1.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605011text_2.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605011text_3.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605011text_4.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605011text_5.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605011text_6.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Little John Goes to Nottingham
+ picture=none
+ durationpercent=98
+ extradescr=
+ begin exercise
+   type=Little John Goes to Nottingham Fair
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605012text_0.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605012text_1.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605012text_2.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605012text_3.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605012text_4.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605012text_5.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605012text_6.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;How Little John Lived ...
+ picture=none
+ durationpercent=98
+ extradescr=
+ begin exercise
+   type=How Little John Lived at the Sheriff's
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605013text_0.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605013text_1.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605013text_2.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605013text_3.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605013text_4.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605013text_5.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605013text_6.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;The Tanner of Blyth
+ picture=none
+ durationpercent=98
+ extradescr=
+ begin exercise
+   type=Little John and the Tanner of Blyth
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605018text_0.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605018text_1.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605018text_2.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605018text_3.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605018text_4.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605018text_5.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605018text_6.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Robin Hood and Will Scarlett
+ picture=none
+ durationpercent=98
+ extradescr=
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605019text_0.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605019text_1.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605019text_2.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605019text_3.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605019text_4.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605019text_5.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=R.H. Chapter
+   duration=5
+    EVENT=EXAM;5;file:zcrs233605019text_6.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Chapters 10-15
+ picture=none
+ durationpercent=98
+ extradescr=
+ begin exercise
+   type=The Adventure with Midge the Miller's Son
+   duration=6
+    EVENT=EXAM;6;file:zcrs2336050110text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Robin Hood and Allan a Dale
+   duration=6
+    EVENT=EXAM;6;file:zcrs2336050111text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Robin Hood Seeks the Curtal Friar
+   duration=6
+    EVENT=EXAM;6;file:zcrs2336050112text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Robin Hood Compasses a Marriage
+   duration=6
+    EVENT=EXAM;6;file:zcrs2336050113text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Robin Hood Aids a Sorrowful Knight
+   duration=6
+    EVENT=EXAM;6;file:zcrs2336050114text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=How Sir Richard of the Lea Paid His Debt
+   duration=6
+    EVENT=EXAM;6;file:zcrs2336050115text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Chapters 16-22
+ picture=none
+ durationpercent=98
+ extradescr=
+ begin exercise
+   type=Little John Turns Barefoot Friar
+   duration=5
+    EVENT=EXAM;5;file:zcrs2336050116text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Robin Hood Turns Beggar
+   duration=5
+    EVENT=EXAM;5;file:zcrs2336050117text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Robin Hood Shoots Before Queen Eleanor
+   duration=5
+    EVENT=EXAM;5;file:zcrs2336050118text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=The Chase of Robin Hood
+   duration=5
+    EVENT=EXAM;5;file:zcrs2336050119text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Robin Hood and Guy of Gisbourne
+   duration=5
+    EVENT=EXAM;5;file:zcrs2336050120text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=King Richard Comes to Sherwood Forest
+   duration=5
+    EVENT=EXAM;5;file:zcrs2336050121text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Epilogue
+   duration=5
+    EVENT=EXAM;5;file:zcrs2336050122text.txt;true;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+end chapter

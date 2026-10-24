@@ -1,0 +1,135 @@
+$description=Curso de Números 
+$longdesc=Este curso de dos lecciones le enseñará a escribir los números de la fila de números.
+$version=7.0
+$language=spa
+$chapters=2
+$durationlist=15,20,25
+$copyright=TypingMaster inc, all rights reserved.
+'Created by TMEditor v2.0 @ 25.7.2006 12:20
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Curso de Números
+alternatekeyboards=1
+keyboard=all
+wizardname=SP7QWERT
+simplewizard=1
+last free=1
+keyboardbase=QWERTY QWERTZ AZERTY SWISSGER
+
+
+begin chapter
+ chapter name=1;Números 3, 4, 5, 6, 7 y 8
+ durationpercent=101
+ extradescr=
+ new keys=asdfjkl
+ new keys=SEMICOLON
+ new keys=eirnoctuqñ
+ new keys=ASDFJKLÑEIRNOCTUQ
+ new keys=,´~
+ new keys=áéíóúÁÉÍÓÚü
+ new keys=¡!?¿
+ new keys=pPgGmMbB
+ new keys=yYvVhHzZxXwW
+ new keys=%;:
+ new keys=.
+ begin exercise
+   type=La fila de números
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_spa_sp7NumRow_1_1_1.htm;La fila de números;0;left;0;0;0;0;0;0;0;0
+ end exercise
+
+ new keys=4567
+ begin exercise
+   type=Números 4 5 6 7
+   duration=4
+    EVENT=KEYINTRO;0;file:sp7NumRow0011keyintro.txt;4567;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7NumRow0012keyintro.txt;45;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7NumRow0013keyintro.txt;67;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7NumRow01015keyintro.txt;4567;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;4;file:sp7NumRow0012key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7NumRow0021word2.txt;0;0;0;0;0;0;0;25;75;175;125;2
+ end exercise
+
+ new keys=38
+ begin exercise
+   type=Números 3 8
+   duration=2
+    EVENT=KEYINTRO;0;file:sp7NumRow0021keyintro.txt;38;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7NumRow1022keyintro.txt;38;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7NumRow01033keyintro.txt;38;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:sp7NumRow1023key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7NumRow1041sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7NumRow1051paragraph2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Números 1 2 9 y 0
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=29
+ begin exercise
+   type=Números 2 9
+   duration=2
+    EVENT=KEYINTRO;0;file:sp7NumRow2011keyintro5106.txt;29;SHOW;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7NumRow2011keyintro.txt;29;PRESS;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7NumRow02013keyintro.txt;29;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:sp7NumRow2012key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ new keys=10
+ begin exercise
+   type=Números 1 0
+   duration=2
+    EVENT=KEYINTRO;0;file:sp7NumRow2021keyintro.txt;10;SHOW;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7NumRow2022keyintro.txt;10;PRESS;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;0;file:sp7NumRow02023keyintro.txt;newkeys;0;0;0;0;0;0;0;0;0;0
+    EVENT=KEY2;2;file:sp7NumRow2023key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7NumRow2031sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=4
+    EVENT=PARAGRAPH2;4;file:sp7NumRow2041paragraph2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=4
+    EVENT=TEXT2;4;file:sp7NumRow2051text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter

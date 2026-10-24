@@ -1,0 +1,7 @@
+Today, you can't go anywhere without running into people with cell phones plastered to their ears. It used to be that to make and receive phone calls, you had to depend on a "land line," a unit hard-wired into the wall socket. Now, with a device smaller than your calculator, you can store numbers, make and receive calls, connect to the Internet, send text messages, and save and view pictures, among many other things.
+
+The new phones are called "cell" phones because the basic geographical unit for mobile telephone services is a single "cell" in a multi-cellular system. Each of these cells contains a low-powered radio transmitter and receiver, usually in a metal tower. The cells can vary in size depending upon terrain, informational capacity, and a number of other factors. By controlling the power of the transmission, the radio frequencies assigned to one cell can be limited to the physical boundaries of that cell.
+
+When you're on a cellular phone and move from one cell to another, a computer at the Switching Office monitors that movement and transfers the phone call to the new cell and its mandated radio frequency. The transfer usually goes unnoticed by the caller or receiver. Sometimes, though, the system will "drop" a call and disconnect the speaker.
+
+The Cellular Telecommunications Industry Association, the agency that regulates such transmissions, is located in Washington, D.C.

@@ -1,0 +1,130 @@
+$description=Quick Typing Boost
+$longdesc=Increase your typing speed and confidence within one hour. You will focus on the most common words, then you will type longer texts and receive focused training on the areas you find difficult.
+$version=7.0
+$language=eng
+$chapters=6
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 28.2.2006 11:36
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=jotain
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Quick Typing Boost
+alternatekeyboards=1
+keyboard=us.kbd
+wizardname=UK7QWERT
+simplewizard=1
+last free=1
+
+begin chapter
+ chapter name=1;Common words
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjkl
+ new keys=ei
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTO
+ new keys=cC,
+ new keys=gGhH
+ new keys=A
+ new keys=nNvV
+ new keys=A
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=asdfjkl
+  begin exercise
+    type=Warm up with Bubbles game
+    duration=1
+    Event=bubbles;1;keyxs;keyxs;keyxs
+  end exercise
+
+ begin exercise
+   type=1-50 most common words
+   duration=3
+    EVENT=WORD2;3;file:uk7speed06011word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=More common words
+   duration=3
+    EVENT=WORD2;3;file:uk7speed06051word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Sentence drill
+   duration=3
+    EVENT=SENTENCE2;3;file:uk7speed06021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+   begin exercise
+    type=Typing analysis (article)
+    duration=2
+    Event=EASYEXAM;1;file:article1.txt;false;
+  end exercise
+
+ begin exercise
+    type=Review and analysis 
+    duration=2
+    Event=builder;5;gh
+  end exercise
+
+  
+end chapter
+
+
+
+
+
+begin chapter
+ chapter name=1;Focus on difficulties
+ picture=none
+ durationpercent=101
+ extradescr=
+  
+begin exercise
+    type=Warm up with WordTris
+    duration=1
+    Event=wordtris;3;animals.vcb.eng
+ end exercise
+  
+ begin exercise
+   type=Often misspelled words
+   duration=3
+    EVENT=WORD2;3;file:uk7speed06021word2.txt;0;0;0;0;0;0;0;40;75;175;125;15
+ end exercise
+
+ begin exercise
+   type=Text drill
+   duration=3
+    EVENT=TEXT2;3;file:uk7speed06031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+ begin exercise
+    type=Review and analysis 
+    duration=5
+    Event=builder;5;gh
+  end exercise
+
+ begin exercise
+   type=Difficult fingers
+   duration=2
+    Event=WORD2;3;keybuilder:qwaszxpo
+ end exercise
+
+ 
+ 
+end chapter

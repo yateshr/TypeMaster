@@ -1,0 +1,139 @@
+$description=Corso intensivo
+$longdesc=Migliora le tue capacità attuali di dattilografia per computer provando i vari test del corso.
+$version=1.10
+$copyright=TMProductions 1998, all rights reserved.
+$language=it
+
+; TypingMaster contents file
+; excercises version 1.00
+;****
+; All rights reserved. (c) 1998 TMProductions
+;****
+
+wordloop=0
+wordmaxloop=0
+sentenceloop=0
+sentencemaxloop=0
+
+contents name=Typing Training
+keyboard=all
+default time=45
+wizardname=1italian
+simplewizard=1
+last free=1
+
+begin chapter
+  chapter name=1;Pratica dattilografica I
+  picture=ch1.pic
+  durationpercent=99
+  new keys=asdfjklò
+  new keys=ei
+  new keys=nr
+  new keys=co
+  new keys='
+  new keys=ASDFJKLEIRNCO
+  new keys=.
+  new keys=tTuU
+  new keys=éè
+  new keys=mMvV
+  new keys=àìù
+  new keys=gGhH
+  new keys=,:
+  new keys=pPzZ
+  new keys="?
+  new keys=bBqQ
+  new keys=%;!
+  new keys=pqzPQZ
+  new keys=xXyYwW
+  new keys=()%&
+  new keys=12345
+  new keys=67890
+  new keys=+-%=
+  new keys=*/%
+
+;  begin exercise
+;    type=About this contents
+;    duration=3
+;    Event=message;0;file:ukdif01.int;About this contents;stdtip.bmp;left
+;  end exercise
+
+  begin exercise
+    type=Il gioco WordTris
+    duration=3
+    Event=wordtris;3;wordbuilder:asdfjlkòqwertyuiopzxcvbnm;true
+  end exercise
+
+begin exercise
+  type=Paragrafi I
+  duration=10
+  Event=Text;30;File:it1006.exc;true
+end exercise
+
+  begin exercise
+    type=Analisi
+    duration=15
+    Event=Test;0;ask:*.exm;false;
+  end exercise
+
+begin exercise
+  type=Paragrafi II
+  duration=10
+  Event=Text;30;File:it1007.exc;true
+end exercise
+
+  begin exercise
+    type=Analisi
+    duration=15
+    Event=Test;0;ask:*.exm;false;
+  end exercise
+
+  begin exercise
+    type=Ricapitolazione
+    duration=5
+    Event=builder;5;gh
+  end exercise
+
+end chapter
+
+
+begin chapter
+  chapter name=1;Pratica dattilografica II
+  picture=ch1.pic
+  durationpercent=99
+
+
+  begin exercise
+    type=Gioco delle Nuvole
+    duration=3
+    Event=Clouds;3;wordbuilder:asdfjlkòqwertyuiopzxcvbnm;true
+  end exercise
+
+begin exercise
+  type=Paragrafi I
+  duration=10
+  Event=Text;30;File:it1107.exc;true
+end exercise
+
+  begin exercise
+    type=Analisi
+    duration=15
+    Event=Test;0;ask:*.exm;false;
+  end exercise
+
+begin exercise
+  type=Paragrafi II
+  duration=10
+  Event=Text;30;File:it1208.exc;true
+end exercise
+
+
+  begin exercise
+    type=Ricapitolazione
+    duration=5
+    Event=builder;5;gh
+  end exercise
+
+end chapter
+
+
+end contents

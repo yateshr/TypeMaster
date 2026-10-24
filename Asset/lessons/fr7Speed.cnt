@@ -1,0 +1,330 @@
+$description=Améliorer votre vitesse
+$longdesc=Ce cours est conçu pour augmenter votre vitesse et votre facilité à taper. Vous taperez des textes plus longs et vous vous exercerez avec des mots courants.
+$version=7.0
+$language=fr
+$chapters=6
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 20.2.2007 8:49
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=jotain
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Améliorer votre vitesse
+keyboard=ALL
+wizardname=FR7AZERT
+simplewizard=1
+last free=0
+keyboardbase=QWERTY QWERTZ AZERTY SWISSGER
+
+begin chapter
+ chapter name=1;Centrer sur la rangée de base
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=qsdfjklm
+ new keys=SEMICOLON
+ new keys=ie
+ new keys=tu
+ new keys=ao
+ new keys=nc
+ new keys=QSDFJKLMIETUAONC
+ new keys=gGhH
+ new keys='
+ new keys=éè
+ new keys=pPrR
+ new keys=,
+ new keys=çÇà
+ new keys=!?
+ new keys=xXyY
+ new keys=":
+ new keys=vVbB
+ new keys=ùwWzZ
+ new keys=âêîôûëïü
+ new keys=.
+ begin exercise
+   type=Description du cours
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_fre_fr7Speed_1_1_1.htm;Améliorer votre Vitesse;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Réviser la rangée de base
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_QWERTZ=KEY2;2;file:fr7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_SWISSGER=KEY2;2;file:fr7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_AZERTY=KEY2;2;file:fr7azert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Phrases avec F J
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7speed01021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Phrases avec D K
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7speed01031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Phrases avec S L
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7speed01041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Phrases avec Q M
+   duration=3
+    EVENT_QWERTY=KEYINTRO;0;file:fr7speed01060sentence2qw.txt;asdfjkl%3B;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTZ=KEYINTRO;0;file:fr7speed01060sentence2qz.txt;asdfjkl%3B;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_SWISSGER=KEYINTRO;0;file:fr7speed01060sentence2qz.txt;asdfjkl%3B;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=SENTENCE2;3;file:fr7speed01061sentence2qw.txt;0;0;0;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTZ=SENTENCE2;3;file:fr7speed01061sentence2qw.txt;0;0;0;0;0;0;0;0;0;0;0;0
+    EVENT_SWISSGER=SENTENCE2;3;file:fr7speed01061sentence2qw.txt;0;0;0;0;0;0;0;0;0;0;0;0
+    EVENT_AZERTY=SENTENCE2;3;file:fr7speed01061sentence2.txt;0;0;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Exercise de texte
+   duration=4
+    EVENT=TEXT2;4;file:fr7speed01051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Centrer sur les touches des index
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Réviser les touches
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7speed02011key2qw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_QWERTZ=KEY2;2;file:fr7speed02011key2qz.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_SWISSGER=KEY2;2;file:fr7speed02011key2qz.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_AZERTY=KEY2;2;file:fr7speed02011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Phrases avec R T Y U
+   duration=3
+    EVENT_QWERTZ=KEYINTRO;0;file:fr7speed02030sentence2qz.txt;z;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_SWISSGER=KEYINTRO;0;file:fr7speed02030sentence2qz.txt;z;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTZ=SENTENCE2;3;file:fr7speed02031sentence2qz.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_SWISSGER=SENTENCE2;3;file:fr7speed02031sentence2qz.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_QWERTY=SENTENCE2;3;file:fr7speed02031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_AZERTY=SENTENCE2;3;file:fr7speed02031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Phrases avec G H
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7speed02041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Phrases avec V B N
+   duration=3
+    EVENT_QWERTY=KEYINTRO;0;file:fr7speed01050sentence2qw.txt;m;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTZ=KEYINTRO;0;file:fr7speed01050sentence2qz.txt;m;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_SWISSGER=KEYINTRO;0;file:fr7speed01050sentence2qz.txt;m;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=SENTENCE2;3;file:fr7speed02051sentence2qw.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_QWERTZ=SENTENCE2;3;file:fr7speed02051sentence2qw.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_SWISSGER=SENTENCE2;3;file:fr7speed02051sentence2qw.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_AZERTY=SENTENCE2;3;file:fr7speed02051sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Exercise de texte
+   duration=4
+    EVENT=TEXT2;4;file:fr7speed02021key2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Centrer sur les touches des majeurs
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Réviser les touches
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7speed03011keyintroqw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_QWERTZ=KEY2;2;file:fr7speed03011keyintroqw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_SWISSGER=KEY2;2;file:fr7speed03011keyintroqw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_AZERTY=KEY2;2;file:fr7speed03011keyintro.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Phrases avec E I
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7speed03021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;11
+ end exercise
+
+ begin exercise
+   type=Phrases avec C
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7speed03031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;11
+ end exercise
+
+ begin exercise
+   type=Exercise de paragraphes
+   duration=4
+    EVENT=PARAGRAPH2;4;file:fr7speed03041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Exercise de texte
+   duration=4
+    EVENT=TEXT2;4;file:fr7speed03051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Centrer sur les touches des annulaires
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Réviser les touches
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7speed04011key2qw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_QWERTZ=KEY2;2;file:fr7speed04011key2qw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_SWISSGER=KEY2;2;file:fr7speed04011key2qw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_AZERTY=KEY2;2;file:fr7speed04011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Phrases avec Z O
+   duration=3
+    EVENT_QWERTY=KEYINTRO;0;file:fr7speed04020sentence2qw.txt;w;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTZ=KEYINTRO;0;file:fr7speed04020sentence2qz.txt;w;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_SWISSGER=KEYINTRO;0;file:fr7speed04020sentence2qz.txt;w;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=SENTENCE2;3;file:fr7speed04021sentence2qw.txt;0;0;0;0;0;0;0;40;75;175;125;12
+    EVENT_QWERTZ=SENTENCE2;3;file:fr7speed04021sentence2qw.txt;0;0;0;0;0;0;0;40;75;175;125;12
+    EVENT_SWISSGER=SENTENCE2;3;file:fr7speed04021sentence2qw.txt;0;0;0;0;0;0;0;40;75;175;125;12
+    EVENT_AZERTY=SENTENCE2;3;file:fr7speed04021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;12
+ end exercise
+
+ begin exercise
+   type=Phrases avec X
+   duration=2
+    EVENT=SENTENCE2;2;file:fr7speed04031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;12
+ end exercise
+
+ begin exercise
+   type=Exercise de paragraphes
+   duration=4
+    EVENT=PARAGRAPH2;4;file:fr7speed04041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Exercise de texte
+   duration=4
+    EVENT=TEXT2;4;file:fr7speed04051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Centrer sur les touches des auriculaires
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Réviser les touches
+   duration=2
+    EVENT_QWERTY=KEY2;2;file:fr7speed05011key2qw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_QWERTZ=KEY2;2;file:fr7speed05011key2qz.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_SWISSGER=KEY2;2;file:fr7speed05011key2qz.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_AZERTY=KEY2;2;file:fr7speed05011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Phrases avec A P
+   duration=3
+    EVENT_QWERTY=KEYINTRO;0;file:fr7speed05020sentence2qw.txt;q;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTZ=KEYINTRO;0;file:fr7speed05020sentence2qz.txt;q;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_SWISSGER=KEYINTRO;0;file:fr7speed05020sentence2qz.txt;q;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=SENTENCE2;3;file:fr7speed05021sentence2qw.txt;0;0;0;0;0;0;0;40;75;175;125;13
+    EVENT_QWERTZ=SENTENCE2;3;file:fr7speed05021sentence2qw.txt;0;0;0;0;0;0;0;40;75;175;125;13
+    EVENT_SWISSGER=SENTENCE2;3;file:fr7speed05021sentence2qw.txt;0;0;0;0;0;0;0;40;75;175;125;13
+    EVENT_AZERTY=SENTENCE2;3;file:fr7speed05021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;13
+ end exercise
+
+ begin exercise
+   type=Phrases avec W
+   duration=2
+    EVENT_QWERTY=KEYINTRO;0;file:fr7speed05030sentence2qw.txt;z;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTZ=KEYINTRO;0;file:fr7speed05030sentence2qz.txt;y;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_SWISSGER=KEYINTRO;0;file:fr7speed05030sentence2qz.txt;y;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=SENTENCE2;2;file:fr7speed05031sentence2qw.txt;0;0;0;0;0;0;0;40;75;175;125;13
+    EVENT_QWERTZ=SENTENCE2;2;file:fr7speed05031sentence2qz.txt;0;0;0;0;0;0;0;40;75;175;125;13
+    EVENT_SWISSGER=SENTENCE2;2;file:fr7speed05031sentence2qz.txt;0;0;0;0;0;0;0;40;75;175;125;13
+    EVENT_AZERTY=SENTENCE2;2;file:fr7speed05031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;13
+ end exercise
+
+ begin exercise
+   type=Exercise de paragraphes
+   duration=4
+    EVENT=PARAGRAPH2;4;file:fr7speed05041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Exercise de texte
+   duration=4
+    EVENT=TEXT2;4;file:fr7speed05051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Entraînement supplémentaire
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Mots courants
+   duration=3
+    EVENT=WORD2;3;file:fr7speed06011word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=D'autres mots courants
+   duration=3
+    EVENT=WORD2;3;file:fr7speed06051word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Exercise de phrases
+   duration=3
+    EVENT=SENTENCE2;3;file:fr7speed06021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Accents et apostrophe
+   duration=3
+    EVENT=WORD2;3;file:fr7speed06021word2.txt;0;0;0;0;0;0;0;40;75;175;125;15
+ end exercise
+
+ begin exercise
+   type=Exercise de texte
+   duration=3
+    EVENT=TEXT2;3;file:fr7speed06031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter

@@ -1,0 +1,73 @@
+// TMPRO 7.00: required definition here. 5=home default course,6=school default course, 
+50=Dein Tempo war\+
+53=gut, aber deine\+
+55=Fehler reduzierten deine Leistung.\+
+56=Bemühe dich, weniger Fehler zu machen, um deine Netto-Geschwindigkeit zu erhöhen.
+60=gut, aber du\+
+61=Du\+
+62=hast sehr häufig die Rücktaste genutzt. Versuche, die Rücktaste seltener zu nutzen,\+
+63=weil ihre zu häufige Nutzung deine Geschwindigkeit verringert und den Schreibfluss stört.
+64=Deine Genauigkeit, gemessen in Prozent, war\+
+67=gut, aber du\+
+68=Du\+
+69=scheinst eine oder mehrere Tasten noch nicht ganz zu beherrschen - eine kleine Wiederholung wäre gut.
+70=Im Großen und Ganzen schreibst du\+
+72=gut, du\+
+73=Du\+
+74=solltest jetzt versuchen, deine Schreibgeschwindigkeit zu steigern, um eine\+
+76=Du schriebst\+
+80=Deine Genauigkeit war\+
+83=gut. Mache weiter so!
+93=Damit die Kugel verschwindet, musst du den Buchstaben schreiben, der in ihr steht.
+97=Mit den Wiederholungsmethoden Wortübung und Spiel können nur Buchstaben wiederholt werden. \nUm Ziffern und Sonderzeichen zu üben, wähle die Buchstabenübung.
+98=Stattdessen werden die Tasten geübt, die dir noch Schwierigkeiten bereiten. 
+100=Stattdessen werden die Tasten wiederholt, die dir noch Schwierigkeiten bereiten.
+101=Für das Spiel brauchst du noch mehr Tasten.
+110=Schade, du hast die Abschlussübung dieser Lektion nicht bestanden \nund kannst noch nicht weitermachen.
+111=Schade, du hast nicht alle Übungen dieser Lektion bestanden\nund kannst noch nicht weitermachen.
+121=Dein Tempo ist
+122=Du hast eine recht kurze Zeit geschrieben -\+ 
+123=deine Leistung kann nicht ausgerechnet werden.
+128=Drücke die Eingabetaste.
+129=Um weitermachen zu können, muss diese Übung vollständig bearbeitet sein.\nBist du sicher, dass du jetzt abbrechen willst?
+140=Schreibe das Wort im Balken
+261=Um diesen Test zu bestehen, benötigst du eine Genauigkeit von mindestens\+
+262=Um diesen Test zu bestehen, benötigst du eine Schreibgeschwindigkeit von mindestens\+
+263=Du tippst zu ungleichmäßig, um diesen Test zu bestehen. Dein Schreib-Rhythmus sollte mindestens\+
+264=Prüfung bestanden, herzlichen Glückwunsch! Du kannst jetzt die nächste Lektion beginnen\+
+265=Du hast den Test nicht zu Ende gemacht\+
+276=Schreibe das Wort im Balken ab und drücke die Leertaste, um den Balken aufzufangen.
+278=Tipp: Leichter wird es, wenn du auf die Anzeige unter der Kiste schaust.
+279=Die Wolke gehört dir, wenn du das Wort unter der Wolke tippst und die Eingabe- oder Leertaste drückst.
+280=Du kannst von Wolke zu Wolke springen, indem du die Eingabe-/Leertaste oder die Rücktaste drückst.
+281=Achte auf die Sturmwolken! Verpasst du 6 davon, ist das Spiel vorbei.
+282=Schönwetter-Wolken bedeuten Bonuspunkte - von ihnen solltest du möglichst viele fangen. 
+325=Du hast keine Buchstaben eingegeben. Übung kann nicht gestartet werden!
+326=#7878: Du hast keine Wörter eingegeben. Übung kann nicht gestartet werden.
+
+
+//Result screen strings
+1663=Du hast diesen Schreibtest abgeschlossen.
+1665=Schaue dir die Details an, um weitere Informationen zu erhalten.
+1668=Sieh dir deine Ergebnisse an.
+
+1708=Schreibe die Buchstaben ab und folge dabei der blauen Markierung
+1709=Wenn nötig, schaue auf die Tastatur und die Hände auf dem Bildschirm
+1710=Schreibe den ganzen Satz und drücke die Eingabetaste
+1711=Drücke die Leertaste, um fortzufahren
+1712=Halte die Taste\+
+1713= mit\+
+1714=Drücke gleichzeitig die\+
+1715= Taste mit\+
+1716=Drücke jetzt\+
+1717=1.\+
+1718=2. Drücke die Taste\+
+1719=\+mit\+
+1724=Schreibe das markierte Wort und drücke die Leertaste
+1725=Jetzt versuche einmal\+
+1727=Du hast diese Lektion jetzt abgeschlossen. Dabei hast du die folgenden Tasten gelernt:
+1729=Glückwunsch! Du hast jetzt den gesamten Kurs bearbeitet und alle Tasten gelernt, die in diesem Kurs vermittelt wurden. Klicke unten, um einen neuen Kurs zu beginnen.
+1848=Schreib den Text oben ab
+
+//Interrupted early
+1522=Du hast die Übung sehr früh abgebrochen. Die Ergebnisse sind daher eventuell nicht aussagekräftig.

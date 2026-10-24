@@ -1,0 +1,343 @@
+$description=Geschwindigkeitskurs
+$longdesc=Dieser Kurs verbessert Ihre Schreibgeschwindigkeit und Sicherheit. Sie üben die Tasten jeweils eines Fingers und schreiben längere Texte. Die wichtigsten deutschen Wörter runden den Kurs ab.
+$version=7.0
+$language=ger
+$chapters=6
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 28.2.2006 11:36
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=jotain
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Geschwindigkeitskurs
+alternatekeyboards=1
+keyboard=all
+wizardname=GE7QWERT
+simplewizard=1
+last free=1
+keyboardbase=QWERTY AZERTY QWERTZ SWISSGER
+
+begin chapter
+ chapter name=1;Im Mittelpunkt: Die Grundreihe
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=SEMICOLON
+ new keys=asdfjklö
+ new keys=ru
+ new keys=to
+ new keys=ASDFJKLEIRUTOÖ
+ new keys=gGhH
+ new keys=nNvV
+ new keys=?üÜäÄ
+ new keys=wWmM
+ new keys=qQpP
+ new keys=bByY
+ new keys=zZxX
+ new keys=.:
+ new keys_qwertz=ß
+ new keys=ei
+ new keys=cC,-
+ begin exercise
+   type=Beschreibung
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_ger_ge7Speed_1_1_1.htm;Geschwindigkeits-Kurs;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Wiederholung Grundreihe
+   duration=2
+    EVENT=KEY2;2;file:ge7qwert01031key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Sätze mit A und Ö
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speed01021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speed01021sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speed01021sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_AZERTY=SENTENCE2;3;file:ge7speed01021sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Sätze mit S und L
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speed01031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speed01031sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speed01031sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speed01031sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Sätze mit D und K
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speed01041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speed01041sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speed01041sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_AZERTY=SENTENCE2;3;file:ge7speed01041sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Sätze mit F und J
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speed01061sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speed01061sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speed01061sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+    EVENT_AZERTY=SENTENCE2;3;file:ge7speed01061sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;9
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=4
+    EVENT_QWERTZ=TEXT2;4;file:ge7speed01051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_SWISSGER=TEXT2;4;file:ge7speed01051paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_QWERTY=TEXT2;4;file:ge7speed01051paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_AZERTY=TEXT2;4;file:ge7speed01051paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Im Mittelpunkt: Der Zeigefinger
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Wiederholung der Tasten
+   duration=3
+    EVENT=KEY2;3;file:ge7speed02011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Sätze mit R T Z U
+   duration=3
+    EVENT=SENTENCE2;3;file:ge7speed02031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Sätze mit G und H
+   duration=2
+    EVENT_QWERTZ=SENTENCE2;2;file:ge7speed02041sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_SWISSGER=SENTENCE2;2;file:ge7speed02041sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_QWERTY=SENTENCE2;2;file:ge7speed02041sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_AZERTY=SENTENCE2;2;file:ge7speed02041sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Sätze mit V B N M
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speed02051sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speed02051sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speed02051sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;10
+    EVENT_AZERTY=SENTENCE2;3;file:ge7speed02051sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;10
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=4
+    EVENT_QWERTZ=TEXT2;4;file:ge7speed02021key2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_SWISSGER=TEXT2;4;file:ge7speed02021key2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_QWERTY=TEXT2;4;file:ge7speed02021key2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_AZERTY=TEXT2;4;file:ge7speed02021key2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Im Mittelpunkt: Der Mittelfinger
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Wiederholung E C I ,
+   duration=2
+    EVENT=KEY2;2;file:ge7speed03011keyintro.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Sätze mit E und I
+   duration=3
+    EVENT=SENTENCE2;3;file:ge7speed03021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;11
+ end exercise
+
+ begin exercise
+   type=Sätze mit C
+   duration=2
+    EVENT=SENTENCE2;2;file:ge7speed03031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;11
+ end exercise
+
+ begin exercise
+   type=Abschnittsübung
+   duration=4
+    EVENT_QWERTZ=PARAGRAPH2;4;file:ge7speed03041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+    EVENT_SWISSGER=PARAGRAPH2;4;file:ge7speed03041paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;7
+    EVENT_QWERTY=PARAGRAPH2;4;file:ge7speed03041paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;7
+    EVENT_AZERTY=PARAGRAPH2;4;file:ge7speed03041paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=4
+    EVENT_QWERTZ=TEXT2;4;file:ge7speed03051paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_SWISSGER=TEXT2;4;file:ge7speed03051paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_QWERTY=TEXT2;4;file:ge7speed03051paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_AZERTY=TEXT2;4;file:ge7speed03051paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Im Mittelpunkt: Der Ringfinger
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Wiederholung W X O .
+   duration=2
+    EVENT=KEY2;2;file:ge7speed04011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Sätze mit W und O
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speed04021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;12
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speed04021sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;12
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speed04021sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;12
+    EVENT_AZERTY=SENTENCE2;3;file:ge7speed04021sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;12
+ end exercise
+
+ begin exercise
+   type=Sätze mit X
+   duration=2
+    EVENT=SENTENCE2;2;file:ge7speed04031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;12
+ end exercise
+
+ begin exercise
+   type=Abschnittsübung
+   duration=4
+    EVENT_QWERTZ=PARAGRAPH2;4;file:ge7speed04041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+    EVENT_SWISSGER=PARAGRAPH2;4;file:ge7speed04041paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;7
+    EVENT_QWERTY=PARAGRAPH2;4;file:ge7speed04041paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;7
+    EVENT_AZERTY=PARAGRAPH2;4;file:ge7speed04041paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=4
+    EVENT_QWERTZ=TEXT2;4;file:ge7speed04051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_SWISSGER=TEXT2;4;file:ge7speed04051text2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_QWERTY=TEXT2;4;file:ge7speed04051text2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_AZERTY=TEXT2;4;file:ge7speed04051text2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Im Mittelpunkt: Der kleine Finger
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Wiederholung Q Y P Ä Ü ß
+   duration=2
+    EVENT_QWERTZ=KEY2;2;file:ge7speed05011key2.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_SWISSGER=HTMLMESSAGE;0;msg_ger_ge7speed_5_1_1sw.htm;Buchstabe ß nicht eingeschlossen;0;left;0;0;0;0;0;0;0;0;0
+    EVENT_SWISSGER=KEY2;2;file:ge7speed05011key2sw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_QWERTY=HTMLMESSAGE;0;msg_ger_ge7speed_5_1_1sw.htm;Buchstabe ß nicht eingeschlossen;0;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=KEY2;2;file:ge7speed05011key2sw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+    EVENT_AZERTY=HTMLMESSAGE;0;msg_ger_ge7speed_5_1_1sw.htm;Buchstabe ß nicht eingeschlossen;0;left;0;0;0;0;0;0;0;0;0
+    EVENT_AZERTY=KEY2;2;file:ge7speed05011key2sw.txt;0;0;0;0;0;0;0;40;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Sätze mit Q, Ä und Y
+   duration=3
+    EVENT=SENTENCE2;3;file:ge7speed05021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;13
+ end exercise
+
+ begin exercise
+   type=Sätze mit P, Ü und ß
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speed05031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;13
+    EVENT_SWISSGER=HTMLMESSAGE;0;msg_ger_ge7speed_5_1_1sw.htm;Buchstabe ß nicht eingeschlossen;0;left;0;0;0;0;0;0;0;0;0
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speed05031sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;13
+    EVENT_QWERTY=HTMLMESSAGE;0;msg_ger_ge7speed_5_1_1sw.htm;Buchstabe ß nicht eingeschlossen;0;left;0;0;0;0;0;0;0;0;0
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speed05031sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;13
+    EVENT_AZERTY=HTMLMESSAGE;0;msg_ger_ge7speed_5_1_1sw.htm;Buchstabe ß nicht eingeschlossen;0;left;0;0;0;0;0;0;0;0;0
+    EVENT_AZERTY=SENTENCE2;3;file:ge7speed05031sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;13
+ end exercise
+
+ begin exercise
+   type=Abschnittsübung
+   duration=3
+    EVENT_QWERTZ=PARAGRAPH2;3;file:ge7speed05041paragraph2.txt;0;0;0;0;0;0;0;40;75;175;125;7
+    EVENT_SWISSGER=PARAGRAPH2;3;file:ge7speed05041paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;7
+    EVENT_QWERTY=PARAGRAPH2;3;file:ge7speed05041paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;7
+    EVENT_AZERTY=PARAGRAPH2;3;file:ge7speed05041paragraph2sw.txt;0;0;0;0;0;0;0;40;75;175;125;7
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=4
+    EVENT_QWERTZ=TEXT2;4;file:ge7speed05051text2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_SWISSGER=TEXT2;4;file:ge7speed05051text2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_QWERTY=TEXT2;4;file:ge7speed05051text2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_AZERTY=TEXT2;4;file:ge7speed05051text2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Die wichtigsten deutschen Wörter
+ picture=none
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Die häufigsten 50 Wörter
+   duration=3
+    EVENT=WORD2;3;file:ge7speed06011word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Noch mehr häufige Wörter
+   duration=3
+    EVENT=WORD2;3;file:ge7speed06051word2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Satzübung
+   duration=3
+    EVENT_QWERTZ=SENTENCE2;3;file:ge7speed06021sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;14
+    EVENT_SWISSGER=SENTENCE2;3;file:ge7speed06021sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;14
+    EVENT_QWERTY=SENTENCE2;3;file:ge7speed06021sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;14
+    EVENT_AZERTY=SENTENCE2;3;file:ge7speed06021sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;14
+ end exercise
+
+ begin exercise
+   type=Oft falsch geschrieben
+   duration=3
+    EVENT_QWERTZ=WORD2;3;file:ge7speed06021word2.txt;0;0;0;0;0;0;0;40;75;175;125;15
+    EVENT_SWISSGER=WORD2;3;file:ge7speed06021word2sw.txt;0;0;0;0;0;0;0;40;75;175;125;15
+    EVENT_QWERTY=WORD2;3;file:ge7speed06021word2sw.txt;0;0;0;0;0;0;0;40;75;175;125;15
+    EVENT_AZERTY=WORD2;3;file:ge7speed06021word2sw.txt;0;0;0;0;0;0;0;40;75;175;125;15
+ end exercise
+
+ begin exercise
+   type=Textübung
+   duration=3
+    EVENT_QWERTZ=TEXT2;3;file:ge7speed06031sentence2.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_SWISSGER=TEXT2;3;file:ge7speed06031sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_QWERTY=TEXT2;3;file:ge7speed06031sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+    EVENT_AZERTY=TEXT2;3;file:ge7speed06031sentence2sw.txt;0;0;0;0;0;0;0;40;75;175;125;5
+ end exercise
+
+end chapter

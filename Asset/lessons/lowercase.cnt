@@ -1,0 +1,738 @@
+$description=Lowercase Touch Typing Mastery
+$longdesc=Learn touch typing systematically through finger zones. Start with lowercase letters, then advance to uppercase. Build accuracy and confidence! QWERTY.
+$version=7.0
+$language=eng
+$chapters=15
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 01/10/2025 14.38
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+load icr=
+goalinfo=
+short name=
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Complete Touch Typing Mastery: Zone-Based Progressive Learning
+alternatekeyboards=1
+keyboard=us.kbd
+wizardname=LOWERCASE
+simplewizard=1
+last free=2
+
+begin chapter
+ chapter name=1;Home Row - Index Fingers (D F J K)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=dfjk
+ begin exercise
+   type=Touch Typing Introduction
+   duration=1
+    EVENT=MESSAGE;0;Welcome to zone-based touch typing! You will learn the keyboard systematically by finger zones. Each zone pairs left and right fingers that mirror each other. Start with your index fingers on the home row.;Getting Started;typing.jpg;left
+    EVENT=MESSAGE;0;Place your left index finger on F and right index finger on J. These keys have small bumps to help you find them without looking. Keep your other fingers resting on the home row.;Finger Position;typing.jpg;left
+    EVENT=MESSAGE;0;Press each key with a quick tap and return to home position. Keep your wrists straight and fingers curved. Type without looking at the keyboard.;Proper Technique;ergo.gif;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letters D F J K on your keyboard.;dfjk;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;jfdk;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: D F J K
+   duration=4
+    EVENT=KEY2;4;jfjf jjff jffj fjjf kkdd ddkk kdkd kdkd dfjk fdjk jfkd kfdj fjdk dfkj kfjd jdjk fdjf jkdf dfkj kfdj fjkd jdjk fdjk kfjd fjdk jfkd kfdj dfjk fdjk jfkd kfdj fjdk dfkj kfjd jdjk fdjf jkdf dfkj kfdj fjkd jdjk fdjk kfjd dfjk fdjk jfkd kfdj fjdk;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Two-key patterns
+   duration=4
+    EVENT=KEY2;4;jf jf dk dk df df fj fj jk jk kd kd fd fd jk jk dj dj fk fk jf jf dk dk df df fj fj jk jk kd kd fd fd jk jk dj dj fk fk jf jf dk dk df df fj fj jk jk kd kd fd fd jk jk dj dj fk fk jf jf dk dk df df fj fj jk jk kd kd fd fd jk jk dj dj fk fk;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Alternating patterns
+   duration=4
+    EVENT=KEY2;4;djdj fjfj dkdk fkfk jdjd jfjf kdkd kfkf dfjk jkfd fdkj kjdf dkfj fjkd jfdk kdfj djdj fjfj dkdk fkfk jdjd jfjf kdkd kfkf dfjk jkfd fdkj kjdf dkfj fjkd jfdk kdfj djdj fjfj dkdk fkfk jdjd jfjf kdkd kfkf dfjk jkfd fdkj kjdf dkfj fjkd jfdk kdfj;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Four-key combinations
+   duration=4
+    EVENT=KEY2;4;dfjk jkfd fdkj kjdf dkfj fjkd jfdk kdfj fjdk dkjf jkdf fdkj kfjd dfkj jdfk dfjk dfjk jkfd fdkj kjdf dkfj fjkd jfdk kdfj fjdk dkjf jkdf fdkj kfjd dfkj jdfk dfjk dfjk jkfd fdkj kjdf dkfj fjkd jfdk kdfj fjdk dkjf jkdf fdkj kfjd dfkj jdfk dfjk;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Speed drill
+   duration=4
+    EVENT=KEY2;4;ffjj ddkk fjdk dkfj jkfd fdkj kjdf dfjk dfkj kfjd jdfk fjkd dkfj jfdk kdfj dfjk ffjj ddkk fjdk dkfj jkfd fdkj kjdf dfjk dfkj kfjd jdfk fjkd dkfj jfdk kdfj dfjk ffjj ddkk fjdk dkfj jkfd fdkj kjdf dfjk dfkj kfjd jdfk fjkd dkfj jfdk kdfj dfjk;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+
+end chapter
+
+begin chapter
+ chapter name=1;Home Row - Ring and Pinky (A S L %;)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=asl%;
+ begin exercise
+   type=Introduction
+   duration=1
+    EVENT=MESSAGE;0;Now add your ring and pinky fingers to the home row. Left ring finger on S, left pinky on A. Right ring finger on L, right pinky on semicolon.;New Finger Positions;typing.jpg;left
+    EVENT=MESSAGE;0;The semicolon is typed with your right pinky finger. Keep all previously learned fingers on their home positions while practicing these new keys.;Semicolon Key;hand.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letters A S L and semicolon on your keyboard.;asl%;;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;asl%;;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: A S L %;
+   duration=4
+    EVENT=KEY2;4;asl%; l%;sa sal%; %;las asas l%;l%; asl%; %;lsa sal%; %;las l%;as asl%; sal%; l%;as asl%; l%;sa sal%; %;las asas l%;l%; asl%; %;lsa sal%; %;las l%;as asl%; sal%; l%;as asl%; l%;sa sal%; %;las asas l%;l%; asl%; %;lsa sal%; %;las l%;as asas;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Combining with Zone 1
+   duration=4
+    EVENT=KEY2;4;asdf jkl%; fdsa %;lkj asdf jkl%; fdsa %;lkj asdf jkl%; %;lkj fdsa asdf jkl%; fdsa %;lkj asdf jkl%; fdsa %;lkj asdf jkl%; fdsa %;lkj asdf jkl%; fdsa %;lkj asdf jkl%; %;lkj fdsa asdf jkl%; fdsa %;lkj asdf jkl%; fdsa %;lkj asdf jkl%; fdsa %;lkj;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Letter patterns
+   duration=4
+    EVENT=KEY2;4;sad lad fad ask lass sadd ladd fadd asks lass sadd ladd fadd asks sad lad fad ask lass sadd ladd fadd asks lass sadd ladd fadd asks sad lad fad ask lass sadd ladd fadd asks lass sadd ladd fadd asks sad lad fad ask lass sadd ladd fadd asks lass;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=All home row keys
+   duration=4
+    EVENT=KEY2;4;asdf jkl%; fdsa %;lkj asdf jkl%; %;lkj fdsa asdf jkl%; fdsa %;lkj asdf jkl%; %;lkj fdsa asdf jkl%; fdsa %;lkj asdf jkl%; fdsa %;lkj asdf jkl%; %;lkj fdsa asdf jkl%; fdsa %;lkj asdf jkl%; %;lkj fdsa asdf jkl%; fdsa %;lkj asdf jkl%; fdsa %;lkj asdf asdf;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Word drill
+   duration=4
+    EVENT=WORD2;4;sad lad fad dad ask lass fall salad flask alls fall adds fall ask sad lad fad dad ask lass fall salad flask alls fall adds fall ask sad lad fad dad ask lass fall salad flask alls fall adds fall ask sad lad fad dad ask lass fall salad flask;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Home Row - Middle Keys (G H)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=gh
+ begin exercise
+   type=Introduction
+   duration=1
+    EVENT=MESSAGE;0;Complete the home row with your fore fingers. Left fore finger reaches to G, right fore finger to H. These keys are in the center of the keyboard.;Middle Finger Position;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letters G and H on your keyboard.;gh;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;gh;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: G H
+   duration=4
+    EVENT=KEY2;4;fgfg fgfg jhjh fgfg jhjh ghgh ghgh hghg hghg fghj jhgf gfhj hjfg ghgh hghg fghj jhgf gfhj hjfg ghgh hghg gh gh hg hg fghj jhgf gfhj hjfg ghgh hghg fghj jhgf gfhj hjfg ghgh hghg gh gh hg hg fghj jhgf gfhj hjfg ghgh hghg fghj jhgf gfhj hjfg ghgh hghg gh gh hg hg fghj jhgf jhgf;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=G and H patterns
+   duration=3
+    EVENT=KEY2;3;gag hah gash hash shag gash glad shad gag hah gash hash shag gash glad shad gag hah gash hash shag gash glad shad gag hah gash hash shag gash glad shad gag hah gash hash shag gash glad shad gag hah gash hash shag gash glad shad gag hah gash hah;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Complete home row
+   duration=4
+    EVENT=WORD2;4;asdfghjkl%; %;lkjhgfdsa asdfghjkl%; %;lkjhgfdsa asdfjkl%;gh ghasdfjkl%; asdfghjkl%; %;lkjhgfdsa asdfghjkl%; %;lkjhgfdsa asdfghjkl%; %;lkjhgfdsa asdfghjkl%; %;lkjhgfdsa asdfjkl%;gh ghasdfjkl%; asdfghjkl%; %;lkjhgfdsa asdfghjkl%; %;lkjhgfdsa;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Home row words
+   duration=5
+    EVENT=WORD2;5;ash gash hash dash lash glad shad halls salad glass shall flash flask lass fall fads gash hash dash lash glad shad halls salad glass shall flash flask lass fall fads gash hash dash lash glad shad halls salad glass shall flash flask lass;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Sentence practice
+   duration=4
+    EVENT=SENTENCE2;4;dad has a salad%; a lad had a salad%; all fall glass halls%; dad shall flash a glad flag%; dad has a salad%; a lad had a salad%; all fall glass halls%; dad shall flash a glad flag%; dad has a salad%; a lad had a salad%; all fall glass halls;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Top Row - Index Fingers (R T U Y)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=rtuy
+ begin exercise
+   type=Introduction
+   duration=1
+    EVENT=MESSAGE;0;Move to the top row with your index fingers. Left index reaches up to R and T. Right index reaches to U and Y. Return to home position after each key.;Top Row Index Fingers;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letters R T U Y on your keyboard.;rtuy;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;rtuy;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: R T U Y
+   duration=4
+    EVENT=KEY2;4;rtuy yutr rtuy yutr rtuy yutr rtuy yutr rfrf tftf ujuj yjyj rtuy yutr rtuy yutr rtuy yutr rtuy yutr rtuy yutr rfrf tftf ujuj yjyj rtuy yutr rtuy yutr rtuy yutr rtuy yutr rtuy yutr rfrf tftf ujuj yjyj rtuy yutr rtuy yutr rtuy yutr rtuy yutr;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Top and home rows
+   duration=4
+    EVENT=KEY2;4;frt juy frtf juyj trft yuuj rtfr uyju frt juy frtf juyj trft yuuj rtfr uyju frt juy frtf juyj trft yuuj rtfr uyju frt juy frtf juyj trft yuuj rtfr uyju frt juy frtf juyj trft yuuj rtfr uyju frt juy frtf juyj trft yuuj rtfr uyju frt juy frtf juy;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=New word patterns
+   duration=4
+    EVENT=WORD2;4;rat tar tart start stray dusty rusty just thrust trust hart gust hurt jury rust duty tray gray hart gust hurt jury rust duty tray gray rat tar tart start stray dusty rusty just thrust trust hart gust hurt jury rust duty tray gray hart gust;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Combined practice
+   duration=4
+    EVENT=WORD2;4;just rust trust dusty gusty july gray tray halt salt jars rats tars judy hart jury hard dart arts starts trays grays half just rust trust dusty gusty july gray tray halt salt jars rats tars judy hart jury hard dart arts starts;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Sentences
+   duration=4
+    EVENT=SENTENCE2;4;try a rusty tray%; start thursday%; just stay at day%; a dusty jug%; judy has a gray dart%; harry shall trust a july start%; try a rusty tray%; start thursday%; just stay at day%; a dusty jug%; judy has a gray dart%; harry shall trust a july start;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Top Row - Middle Fingers (E I)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=ei
+ begin exercise
+   type=Introduction
+   duration=1
+    EVENT=MESSAGE;0;Add middle fingers to the top row. Left middle finger reaches to E, right middle finger to I. These are two of the most common letters in English.;Middle Fingers Top Row;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letters E and I on your keyboard.;ei;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;ei;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: E I
+   duration=4
+    EVENT=KEY2;4;ei ei ie ie eded ikik eiei ieie eded ikik eiei ieie eded ikik ei ei ie ie eded ikik eiei ieie eded ikik eiei ieie eded ikik ei ei ie ie eded ikik eiei ieie eded ikik eiei ieie eded ikik ei ei ie ie eded ikik eiei ieie eded ikik eiei ieie;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=E and I patterns
+   duration=4
+    EVENT=KEY2;4;red fed led kid hid did fill hill ride side tire fire rite like idle kite led red kid hid did fill hill ride side tire fire rite like idle kite led red kid hid did fill hill ride side tire fire rite like idle kite led red kid hid did fill did fill;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Common words
+   duration=4
+    EVENT=WORD2;4;like file hide side ride tide true kite life fire title felt silk lite risk diet list risk ties dirt kids lies test jest hired till like file hide side ride tide true kite life fire title felt silk lite risk diet list risk ties dirt kids;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Practice sentences
+   duration=4
+    EVENT=SENTENCE2;4;the true title is here%; she likes the red kite%; his life is great%; she hired three girls%; kids ride a kite%; she likes the true test%; the true title is here%; she likes the red kite%; his life is great%; she hired three girls%;;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Paragraph drill
+   duration=4
+    EVENT=PARAGRAPH2;4;the girl has a red kite%; she likes the true tide%; his fire is high%; jake asked the kid%; she shall ride a grey tray%; three kids like the hill%; iris hired eight girls%; the tall lad felt the heat%; the girl has a red kite%;;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Top Row - Ring Fingers (W O)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=wo
+ begin exercise
+   type=Introduction
+   duration=1
+    EVENT=MESSAGE;0;Ring fingers move to the top row. Left ring finger reaches to W, right ring finger to O. Keep proper finger curl and return to home position.;Ring Fingers Top Row;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letters W and O on your keyboard.;wo;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;wo;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: W O
+   duration=4
+    EVENT=KEY2;4;wo wo ow ow swsw lolo wowo owow swsw lolo wowo owow swsw lolo wowo owow wo wo ow ow swsw lolo wowo owow swsw lolo wowo owow swsw lolo wowo owow wo wo ow ow swsw lolo wowo owow swsw lolo wowo owow swsw lolo wowo owow wo wo ow ow swsw lolo;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=W and O words
+   duration=4
+    EVENT=WORD2;4;who two how low row slow flow show word work wife owls oils toil wore wool soil wish wise with roll four hood golf wolf door load toad goat road who two how low row slow flow show word work wife owls oils toil wore wool soil wish wise with;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Common patterns
+   duration=4
+    EVENT=WORD2;4;will well wall while white wrote whole would worst soil oils fowl toll glow grow word ford look hood fool food tool kohl ohio slow also ohio kohl tool food fool hood look ford word grow glow toll fowl oils soil worst would whole wrote white;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Sentence practice
+   duration=4
+    EVENT=SENTENCE2;4;she will write the whole story%; his work is well worth it%; we would like good wool%; they threw two old toads%; the host told four good jokes%; she will write the whole story%; his work is well worth it%; we would like good wool%;;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Text drill
+   duration=4
+    EVENT=TEXT2;4;we will write the words while he works outside%; she wrote a whole story%; the wife works well with the old tools%; his world is good%; two owls hoot well outside%; the whole house would look good%; they sold four loads today%;;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Top Row - Pinky Fingers (Q P)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=qp
+ begin exercise
+   type=Introduction
+   duration=1
+    EVENT=MESSAGE;0;Complete the top row with your pinky fingers. Left pinky reaches to Q, right pinky to P. The Q is less common but P is frequently used.;Pinky Fingers Top Row;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letters Q and P on your keyboard.;qp;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;qp;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: Q P
+   duration=4
+    EVENT=KEY2;4;qp qp pq pq qaqa p%;p%; ququ upup qpqp pqpq qaqa p%;p%; ququ upup qp qp pq pq qaqa p%;p%; ququ upup qpqp pqpq qaqa p%;p%; ququ upup qp qp pq pq qaqa p%;p%; ququ upup qpqp pqpq qaqa p%;p%; ququ upup qp qp pq pq qaqa p%;p%; ququ upup qpqp pqpq;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Q and P words
+   duration=4
+    EVENT=WORD2;4;quit quest quit keep help hope type skip trip plot pose port quit quad quip poor quid shop step stop drops trips keeps helps hopes types skips plots poses ports props quit quest quit keep help hope type skip trip plot pose port quit quad;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Complete top row
+   duration=4
+    EVENT=WORD2;4;qwertyuiop poiuytrewq paper pear equip quilt pupil pure pops pups square quit pest plot post trip peat pelt pest port peel peso purr pulp pier quit pest plot post trip peat pelt pest port peel peso purr pulp pier qwertyuiop poiuytrewq paper;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Sentences
+   duration=4
+    EVENT=SENTENCE2;4;quite a quality paper%; help with the paper%; proper paper is required%; a quit trip to the post%; the pilot keeps the pear%; quite a quality paper%; help with the paper%; proper paper is required%; a quit trip to the post%;;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Full practice
+   duration=4
+    EVENT=TEXT2;4;keep the proper quality paper ready for the test%; the pilot would help the squad with their papers%; prepare a quit report after the trip to the post%; she prefers to write quotes with good poise%; the quiet people keep their word%;;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bottom Row - Index Fingers (V B N)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=vnb
+ begin exercise
+   type=Introduction
+   duration=1
+    EVENT=MESSAGE;0;Start the bottom row with your index fingers. Left index reaches down to V, right index to N. These require a larger reach than the top row.;Bottom Row Index;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letters V and N on your keyboard.;vn;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;vbn;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: V N B
+   duration=4
+    EVENT=KEY2;4;vn vn nv nv fvfv jnjn vanv nvna fvfv fvfv fvvf fvvf vfvf njnj vn vn nv nv fvfv jnjn vn vn nv nv fvfv jnjn vanv nvna vfvf njnj vn vn nv nv fvfv jnjn vbvb vbvb vbbv vbbv vn vn nv nv fvfv jnjn fbfb fbfb fbbf fbbf vanv nvna vfvf njnj vn vn nv nv fvfv jnjn vn vn nv nv fvfv jnjn vanv nvna vfvf njnj vn vn;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=V and N patterns
+   duration=4
+    EVENT=WORD2;4;van vain vine visit never seven given haven oven even none noon nine nins vans vein vent never none noon nine vans vein vent never seven given haven oven even none noon nine nins vans vein vent never van vain vine visit never seven given;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Combined practice
+   duration=4
+    EVENT=WORD2;4;very nerve vans oven vein vent over river driven novel nobel novel nuns runs vans vine very nerve vents novels river vein veins vent vents over oven driven nuns runs novel nins vans vine very nerve vans oven vein vent over river driven novel nuns runs;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Sentences
+   duration=4
+    EVENT=SENTENCE2;4;seven nuns drove over the river%; never visit vine sites alone%; steven gives van rides%; the oven is hot%; seven nuns drove over the river%; never visit vine sites alone%; steven gives van rides%; the oven is hot%; even nine vans drove over%;;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Text drill
+   duration=4
+    EVENT=TEXT2;4;we drove the van over seven rivers%; the novel was never in vain%; the nuns live near the oven%; steven loves seven vines%; we drove the van over seven rivers%; the novel was never in vain%; the nuns live near the oven%; steven loves seven vines%;;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bottom Row - Middle Fingers (C M)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=cm
+ begin exercise
+   type=Introduction
+   duration=1
+    EVENT=MESSAGE;0;Middle fingers reach to the bottom row. Left middle finger to C, right middle finger to M. Maintain your home row anchor positions.;Middle Fingers Bottom;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letters C and M on your keyboard.;cm;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;cm;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: C M
+   duration=4
+    EVENT=KEY2;4;cm cm mc mc dcdc kmkm cmcm mcmc dcdc kmkm cmcm mcmc dcdc kmkm cm cm mc mc dcdc kmkm cmcm mcmc dcdc kmkm cmcm mcmc dcdc kmkm cm cm mc mc dcdc kmkm cmcm mcmc dcdc kmkm cmcm mcmc dcdc kmkm cm cm mc mc dcdc kmkm cmcm mcmc dcdc kmkm cmcm mcmc;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=C and M words
+   duration=4
+    EVENT=WORD2;4;come came claim music cream crime made much mice camp clam cram mice dime dame same come came claim music cream crime made much mice camp clam cram mice dime dame same come came claim music cream crime made much mice camp clam cram mice;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Common patterns
+   duration=4
+    EVENT=WORD2;4;much march clams camps moist cram comes came came clam cram mice dime dame same camp made mush cram came came clam cram mice dime dame same camp made much march clams camps moist cram comes came came clam cram mice dime dame same camp made;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Sentences
+   duration=4
+    EVENT=SENTENCE2;4;the music came from the camp%; much cream in the moist mist%; she claims the mice came home%; march came with much mist%; the music came from the camp%; much cream in the moist mist%; she claims the mice came home%; march came with much mist;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Practice text
+   duration=4
+    EVENT=TEXT2;4;the mice came to the camp with much cream%; she made claims that the music came in march%; the moist clams came from the cove%; much cream makes the mice come%; the mice came to the camp with much cream%;;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bottom Row - Ring Fingers (X . ,)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=x.,
+ begin exercise
+   type=Introduction
+   duration=1
+    EVENT=MESSAGE;0;Ring fingers to the bottom row. Left ring finger reaches to X, right ring finger to period and comma. The period ends sentences while the comma separates items in lists.;Ring Fingers Bottom;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letter X, period and comma on your keyboard.;x.,;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;x.,;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: X . ,
+   duration=4
+	EVENT=KEY2;4;sxsx sxsx sxsx sxxs l.l. l.l. l.l. l.l. x.x. x.x. x.x. x.x. k,k, k,k, k,k, k,k, x.x. x.x. x.x. x.x. k,k, k,k, k,k, k,k, x.x. x.x. x.x. x.x. k,k, k,k, k,k, k,k, x.x. x.x. x.x. x.x. k,k, k,k, k,k, k,k, x.x. x.x. x.x. x.x. k,k, k,k, k,k, k,k,;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Comma practice
+   duration=4
+    EVENT=SENTENCE2;4;one, two, four, five, nine. red, gold, blue. first, third, fifth, sixth, seven, nine. dogs, cats, owls, fish. stop, look, drop, shop. pens, pots, pins, cups. one, two, four, five, nine. red, gold, blue. first, third, fifth, sixth, seven, nine.;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+ 
+ begin exercise
+   type=X and punctuation words
+   duration=4
+    EVENT=WORD2;4;fix. mix. six. text, taxi, exit, oxen, next. vexs, waxs, jinx. oxen. next. text. taxi. exit. foxs. soxs. oxen. next. text. taxi. exit. fix. mix. six. text, taxi, exit, oxen, next. vexs, waxs, jinx. oxen. next. text. taxi. exit. foxs. soxs;0;2;4;0;0;0;0;40;75;175;125;3
+	end exercise
+
+ begin exercise
+   type=Full sentences
+   duration=4
+   EVENT=SENTENCE2;4;exit the taxi, stop, or trot. fix six, seven, or eight oxen. the next text is on the exit. six or seven oxen trot. exit the taxi, stop, or trot. fix six, seven, or eight oxen. the next text is on the exit. six or seven oxen trot. exit;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Paragraph practice
+   duration=4
+    EVENT=PARAGRAPH2;4;the next text is on the sixth, seventh, or eighth oxen. exit the taxi or trot. fix six oxen with the new text. the next text is on the sixth, seventh, or eighth oxen. exit the taxi or trot. fix six oxen with the new text. the next text;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Bottom Row - Pinky Fingers (Z /)
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=z/
+ begin exercise
+   type=Introduction
+   duration=1
+    EVENT=MESSAGE;0;Complete the bottom row with pinky fingers. Left pinky to Z, right pinky to forward slash. The slash is used for web addresses and fractions.;Pinky Fingers Bottom;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of letter Z and forward slash on your keyboard.;z/;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;z/;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: Z /
+   duration=4
+    EVENT=KEY2;4;z/ z/ /z /z azaz %;/%;/ zooz z/z/ /z/z azaz %;/%;/ zooz z/z/ /z/z z/ z/ /z /z azaz %;/%;/ zooz z/z/ /z/z azaz %;/%;/ zooz z/z/ /z/z z/ z/ /z /z azaz %;/%;/ zooz z/z/ /z/z azaz %;/%;/ zooz z/z/ /z/z z/ z/ /z /z azaz %;/%;/ zooz z/z/ /z/z azaz;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Z and slash patterns
+   duration=4
+    EVENT=WORD2;4;zoo zip size zone zest doze zips size zoos zinc zones doze zest zips doze zest zone zips size zoos zinc zones doze zest zoo zip size zone zest doze zips size zoos zinc zones doze zest zips doze zest zone zips size zoos zinc zones doze zest;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Complete keyboard practice
+   duration=4
+    EVENT=WORD2;4;zone size doze zest zips zoos zinc zips doze zone size zest zinc size zoos zips zone doze zest zinc zone size doze zest zips zoos zinc zips doze zone size zest zinc size zoos zips zone doze zest zinc zone size doze zest zips zoos zinc zips;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=All letter keys
+   duration=4
+    EVENT=TEXT2;4;the quick fox jumps over the doze pups now we cover the text with size zone dots the zinc zips with the zest from the zoo the quick fox jumps over the doze pups now we cover the text with size zone dots the zinc zips with the zest from the;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Full text drill
+   duration=4
+    EVENT=TEXT2;4;the size zips over the zone with zest the zoo dots doze with zinc the size zips over the zone with zest the zoo dots doze with zinc the size zips over the zone with zest the zoo dots doze with zinc the size zips over the zone with zest the zoo;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Shift - Right Hand Capitals
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=JKLH
+ begin exercise
+   type=Shift Key Introduction
+   duration=1
+    EVENT=MESSAGE;0;Now you'll learn to type capital letters using the Shift key. To capitalize a letter, hold down the Shift key with the opposite hand's pinky finger, then press the letter. Release Shift after typing.;Using the Shift Key;typing.jpg;left
+    EVENT=MESSAGE;0;For right-hand letters (J K L H), use your LEFT pinky to hold the left Shift key. Keep the typing finger on its home position until you're ready to strike the key.;Left Shift for Right Hand;hand.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of capital letters J K L H on your keyboard.;JKLH;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;JKLH;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: Shift + J K L H
+   duration=3
+    EVENT=KEY2;3;Jj Kk Ll Hh Jj Kk Ll Hh Jjj Kkk Lll Hhh Jj Kk Ll Hh Jjj Kkk Lll Hhh Jj Kk Ll Hh Jjj Kkk Lll Hhh Jj Kk Ll Hh Jjj Kkk Lll Hhh Jj Kk Ll Hh Jjj Kkk Lll Hhh Jj Kk Ll Hh Jjj Kkk Lll Hhh Jj Kk Ll Hh Jjj Kkk Lll Hhh Jj Kk Ll Hh Jjj Kkk Lll Hhh Jj Hhh;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Capital practice
+   duration=3
+    EVENT=WORD2;3;Jake Kate Luke Hall Josh Joel Jill Kirk Lisa Hans Hope Huds Joel Jill Kirk Lisa Hans Hope Huds Jake Kate Luke Hall Josh Joel Jill Kirk Lisa Hans Hope Huds Joel Jill Kirk Lisa Hans Hope Huds Jake Kate Luke Hall Josh Joel Jill Kirk Lisa Hans;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Mixed case patterns
+   duration=3
+    EVENT=WORD2;3;just Just hall Hall like Like home Home joke Joke keep Keep hull Hull hope Hope jolt Jolt held Held hike Hike hill Hill just Just hall Hall like Like home Home joke Joke keep Keep hull Hull hope Hope jolt Jolt held Held hike Hike hill Hill;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Sentence practice
+   duration=3
+    EVENT=SENTENCE2;3;Jake and Kate live near Lake Hall. John helps Hans at home. Joel and Jill hike the hill. Kirk likes Hope Lake. Jake and Kate live near Lake Hall. John helps Hans at home. Joel and Jill hike the hill. Kirk likes Hope Lake. Jake and Kate;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Text with capitals
+   duration=3
+    EVENT=TEXT2;3;Joel and Jill walk to Hill Lake. Hans likes the Hall. Jake helps John with the joke. Kate keeps the house. Kirk and Lisa hike the hill. Hope holds the kite. Joel and Jill walk to Hill Lake. Hans likes the Hall. Jake helps John with the joke;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Shift - Left Hand Capitals
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=FDSAG
+ begin exercise
+   type=Right Shift Introduction
+   duration=1
+    EVENT=MESSAGE;0;For left-hand letters (F D S A G), use your RIGHT pinky to hold the right Shift key. This is the mirror of what you learned in the previous lesson.;Right Shift for Left Hand;typing.jpg;left
+    EVENT=MESSAGE;0;Keep your right hand anchored on the home row. Reach your right pinky down to the right Shift key, hold it, then press the left-hand letter. Release Shift immediately after.;Shift Technique;hand.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows the positions of capital letters F D S A G on your keyboard.;FDSAG;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;FDSAG;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: Shift + F D S A G
+   duration=3
+    EVENT=KEY2;3;Ff Dd Ss Aa Gg Ff Dd Ss Aa Gg Fff Ddd Sss Aaa Ggg Ff Dd Ss Aa Gg Fff Ddd Sss Aaa Ggg Ff Dd Ss Aa Gg Fff Ddd Sss Aaa Ggg Ff Dd Ss Aa Gg Fff Ddd Sss Aaa Ggg Ff Dd Ss Aa Gg Fff Ddd Sss Aaa Ggg Ff Dd Ss Aa Gg Fff Ddd Sss Aaa Ggg Ff Dd Ss Aa Gg;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Capital practice
+   duration=3
+    EVENT=WORD2;3;Fred Dave Sara Gail Faye Dirk Alan Shad Gage Ford Dana Seth Gale Fred Dave Sara Gail Faye Dirk Alan Shad Gage Ford Dana Seth Gale Fred Dave Sara Gail Faye Dirk Alan Shad Gage Ford Dana Seth Gale Fred Dave Sara Gail Faye Dirk Alan Shad Gage;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Mixed case patterns
+   duration=3
+    EVENT=WORD2;3;fast Fast dark Dark safe Safe glad Glad good Good dish Dish fade Fade gash Gash dado Dado fall Fall silk Silk fast Fast dark Dark safe Safe glad Glad good Good dish Dish fade Fade gash Gash dado Dado fall Fall silk Silk fast Fast dark Dark;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Combining both shifts
+   duration=3
+    EVENT=SENTENCE2;3;Fred and Sara drive to Lake Hall. Dave helps Gage and Kate. Gail and Alan hike with Dirk. Shad likes the Faye Lake. Fred and Sara drive to Lake Hall. Dave helps Gage and Kate. Gail and Alan hike with Dirk. Shad likes the Faye Lake. Fred;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Text with capitals
+   duration=3
+    EVENT=TEXT2;3;Gail and Gage live near the lake. Fred drives Sara to the Hall. Faye and Dirk work with Dave. Dana helps Shad at his shop. Alan and Seth hike to Lake Hall. Gail and Gage live near the lake. Fred drives Sara to the Hall. Faye and Dirk work;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Shift - Top Row Capitals
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=QWERTYUIOP
+ begin exercise
+   type=Top Row Introduction
+   duration=1
+    EVENT=MESSAGE;0;Apply your Shift key skills to the entire top row. Remember: left Shift for right-hand letters (Y U I O P), right Shift for left-hand letters (Q W E R T).;Top Row Capitals;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows all capital letters on the top row.;QWERTYUIOP;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;QWERTYUIOP;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: Top row capitals
+   duration=3
+    EVENT=KEY2;3;Qq Ww Ee Rr Tt Yy Uu Ii Oo Pp Qq Ww Ee Rr Tt Yy Uu Ii Oo Pp Qq Ww Ee Rr Tt Yy Uu Ii Oo Pp Qq Ww Ee Rr Tt Yy Uu Ii Oo Pp Qq Ww Ee Rr Tt Yy Uu Ii Oo Pp Qq Ww Ee Rr Tt Yy Uu Ii Oo Pp Qq Ww Ee Rr Tt Yy Uu Ii Oo Pp Qq Ww Ee Rr Tt Yy Uu Ii Oo Pp;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Top row names
+   duration=3
+    EVENT=WORD2;3;Pete Wilt Erin Ruth Tori Yuri Ulys Igor Otto Paul Opie Quin Troy Trey Irwi Pete Wilt Erin Ruth Tori Yuri Ulys Igor Otto Paul Opie Quin Troy Trey Irwi Pete Wilt Erin Ruth Tori Yuri Ulys Igor Otto Paul Opie Quin Troy Trey Irwi Pete Wilt Erin;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Mixed case words
+   duration=3
+    EVENT=WORD2;3;Type Your Word Pity Quit Pier Ripe Writ Trip Pure Tory Quit Type Your Word Pity Quit Pier Ripe Writ Trip Pure Tory Quit Type Your Word Pity Quit Pier Ripe Writ Trip Pure Tory Quit Type Your Word Pity Quit Pier Ripe Writ Trip Pure Tory Quit;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Sentence practice
+   duration=3
+    EVENT=SENTENCE2;3;Pete and Yuri work in the shop. Wilt types the word. Quin writes the order for Otto and Igor. Erin helps Tori with the trip. Pete and Yuri work in the shop. Wilt types the word. Quin writes the order for Otto and Igor. Erin helps Tori;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Full text practice
+   duration=3
+    EVENT=TEXT2;3;Erin writes the word for Troy. Ulys and Paul read the work. Ruth does the trip. Quin helps Igor and Otto with their word. Tori types the word with Yuri. Erin writes the word for Troy. Ulys and Paul read the work. Ruth does the trip. Quin;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Shift - Bottom Row Capitals
+ picture=none
+ durationpercent=101
+ extradescr=
+ new keys=ZXCVBNM'
+ begin exercise
+   type=Bottom Row Introduction
+   duration=1
+    EVENT=MESSAGE;0;Complete your capital letter training with the bottom row. Use left Shift for right-hand letters (N M), and right Shift for left-hand letters (Z X C V B).;Bottom Row Capitals;typing.jpg;left
+    EVENT=KEYINTRO;0;The picture below shows all capital letters on the bottom row.;ZXCVBNM;SHOW;left;0;0;0;0;0;0;0;0;0
+    EVENT=KEYINTRO;1;Type;ZXCVBNM;PRESS;0;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=New keys: Bottom row
+   duration=3
+    EVENT=KEY2;3;Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc Vv Bb Nn Mm Zz Xx Cc;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Bottom row names
+   duration=3
+    EVENT=WORD2;3;Zoe Max Carl Vida Bert Nora Milo Zach Xavi Cora Vern Bess Noel Mike Mara Bret Zoe Max Carl Vida Bert Nora Milo Zach Xavi Cora Vern Bess Noel Mike Mara Bret Zoe Max Carl Vida Bert Nora Milo Zach Xavi Cora Vern Bess Noel Mike Mara Bret Zoe;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Mixed case words
+   duration=3
+    EVENT=WORD2;3;Zero Zinc Maze Oxen Cave Cove Vein Verb Bent Bone Nine Noun Mint Mist More Maze Zero Zinc Maze Oxen Cave Cove Vein Verb Bent Bone Nine Noun Mint Mist More Maze Zero Zinc Maze Oxen Cave Cove Vein Verb Bent Bone Nine Noun Mint Mist More Maze;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Sentence practice
+   duration=3
+    EVENT=SENTENCE2;3;Mara and Bert visit the zoo. Carl works with Vida on the mix. Zach helps Noel and Max with their cave. Nora likes the zinc mine. Mara and Bert visit the zoo. Carl works with Vida on the mix. Zach helps Noel and Max with their cave. Nora;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Full text practice
+   duration=3
+    EVENT=TEXT2;3;Cora and Nora make the maze for the zoo. Vern and Bess cook the corn. Xavi helps Milo with the oxen. Zoe gives Max the zinc. Mike and Bret work on the vein. Cora and Nora make the maze for the zoo. Vern and Bess cook the corn. Xavi helps them.;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Paragraph with all capitals
+   duration=3
+    EVENT=MESSAGE;0;Congratulations! You've learned all the capital letters. This final lesson combines everything you've practiced. Focus on proper Shift key technique and smooth transitions.;Complete Review;typing.jpg;left
+    EVENT=MESSAGE;0;Remember: always use the opposite hand's Shift key. Left Shift for right-hand letters, right Shift for left-hand letters. Type smoothly and maintain good posture.;Final Tips;hand.jpg;left
+    EVENT=PARAGRAPH2;4;Vida and Ruth work at the shop. They make the word list with care. Mr. Carl and Ms. Nora read the text with care. Most folks like their good work. Vida and Ruth work at the shop. They make the word list with care.;0;2;4;0;0;0;0;40;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Final comprehensive text
+   duration=6
+    EVENT=TEXT2;3;file:uk7qwert012051text2.txt;0;0;0;0;0;0;3.5;3.5;3.5;3.5;3.5;5
+ end exercise
+
+end chapter

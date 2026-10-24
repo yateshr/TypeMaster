@@ -1,0 +1,166 @@
+$description=Cursus numeriek toetsenbord
+$longdesc=Leer met deze cursus effectief gebruik te maken van het numerieke toetsenbord.
+$version=7.0
+$language=nl
+$chapters=3
+$copyright=TypingMaster inc 2009, all rights reserved.
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=jotain
+default time=25
+
+contents name=Cursus numeriek toetsenbord
+keyboard=numpad.kbd
+wizardname=
+simplewizard=1
+last free=1
+
+begin chapter
+ chapter name=1;Cijfers
+ picture=ch1.pic
+ durationpercent=101
+ extradescr=
+ new keys=456789
+ begin exercise
+   type=Numeriek Toetsenbord
+   duration=0
+    EVENT=HTMLMESSAGE;0;msg_nls_numpad_1_1_1.htm;Numeriek Toetsenbord;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_nls_numpad_1_1_2.htm;Finger Positions;0;left;0;0;0;0;0;0;0;0;0
+    EVENT=HTMLMESSAGE;0;msg_nls_numpad_1_1_3.htm;Num Lock;0;left;0;0;0;0;0;0;0;0;0
+ end exercise
+
+ begin exercise
+   type=Cijfers 4-9
+   duration=5
+    EVENT=KEY2;5;file:num0101.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Reeksen oefenen
+   duration=5
+    EVENT=SENTENCE2;5;File:num0102.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=1230
+ begin exercise
+   type=Cijfers 1-3 en 0
+   duration=5
+    EVENT=KEY2;5;file:num0103a.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Reeksen oefenen
+   duration=5
+    EVENT=SENTENCE2;5;File:num0104.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Rijen oefenen
+   duration=7
+    EVENT=SENTENCE2;7;File:num0105.exc;true;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Bubbles spel
+   duration=2
+    EVENT=BUBBLES;2;456789
+ end exercise
+
+ begin exercise
+   type=Examen
+   duration=7
+    EVENT=EXAM2;7;File:num0107.exc;true;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Speciale Tekens
+ picture=ch1.pic
+ durationpercent=101
+ extradescr=
+ new keys=+.,
+ begin exercise
+   type=Toetsen: + .
+   duration=5
+    EVENT=KEY2;5;file:num0201.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Reeksen oefenen
+   duration=5
+    EVENT=SENTENCE2;5;File:num0202.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=/*-
+ begin exercise
+   type=Toetsen: / * -
+   duration=5
+    EVENT=KEY2;5;file:num0203.exc;ENTER;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Reeksen oefenen
+   duration=5
+    EVENT=SENTENCE2;5;File:num0204.exc;ENTER;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Rijen oefenen
+   duration=7
+    EVENT=SENTENCE2;7;File:num0205.exc;true;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Bubbles spel
+   duration=2
+    EVENT=BUBBLES;2;asdfjklei
+ end exercise
+
+ begin exercise
+   type=Examen
+   duration=7
+    EVENT=EXAM2;7;File:num0207.exc;true;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Herhalen
+ picture=ch1.pic
+ durationpercent=101
+ extradescr=
+ begin exercise
+   type=Cijfers en ,
+   duration=7
+    EVENT=SENTENCE2;7;file:num0301.exc;true;0;0;0;0;0;0;25;75;175;125;8
+ end exercise
+
+
+ begin exercise
+   type=Bubbles spel
+   duration=5
+    EVENT=BUBBLES;5;none
+ end exercise
+
+ begin exercise
+   type=Speciale tekens
+   duration=9
+    EVENT=SENTENCE2;9;file:num0302.exc;true;0;0;0;0;0;0;25;75;175;125;8
+ end exercise
+
+ begin exercise
+   type=Wolkenspel
+   duration=5
+    EVENT=CLOUDS;5;cijfers.vcb.nl;true
+ end exercise
+
+ begin exercise
+   type=Examen
+   duration=9
+    EVENT=EXAM2;9;File:num0304.exc;true;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter

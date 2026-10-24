@@ -1,0 +1,8 @@
+#
+#-22.3.2006
+version=1.00
+name=Typetest Numeriek toetsenbord, alleen met cijfers
+copyright=
+author=
+description=Typetest voor het numerieke toetsenbord waarbij alleen de cijfers worden gebruikt
+language=nl

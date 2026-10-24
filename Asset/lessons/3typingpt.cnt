@@ -1,0 +1,138 @@
+$description=Curso Intensivo
+$longdesc=Melhore a sua tÈcnica de dactilografia escrevendo variados textos.
+$version=1.10
+$copyright=TMProductions 1998, all rights reserved.
+$language=pt
+
+; TypingMaster contents file
+; excercises version 1.00
+;****
+; All rights reserved. (c) 1998 TMProductions
+;****
+
+wordloop=0
+wordmaxloop=0
+sentenceloop=0
+sentencemaxloop=0
+
+contents name=Typing Training for Typists
+keyboard=all
+default time=45
+wizardname=1portuguese
+simplewizard=1
+last free=1
+
+begin chapter
+  chapter name=1;Treinar dactilografia
+  picture=ch1.pic
+  durationpercent=99
+  new keys=asdfjklÁ
+  new keys=ei
+  new keys=ru
+  new keys=ASDFJKL«EIRU
+  new keys=.
+  new keys=tTnN
+  new keys=,
+  new keys=cCoO
+  new keys=„ıÍÙ‚·ÈÌÛ˙Ë‡
+  new keys=mMvV
+  new keys=-
+  new keys=pPqQ
+  new keys=()
+  new keys=gGhH
+  new keys=!?
+  new keys=bBxX
+  new keys=zZ"
+  new keys=wWyY
+  new keys=%;:
+  new keys=12345
+  new keys=67890
+  new keys=+%=
+  new keys=*/%
+
+;  begin exercise
+;    type=About this contents
+;    duration=3
+;    Event=message;0;file:ukdif01.int;About this contents;stdtip.bmp;left
+;  end exercise
+
+  begin exercise
+    type=Jogo WordTris
+    duration=3
+    Event=wordtris;3;carros.vcb.pt
+  end exercise
+
+begin exercise
+  type=Par·grafos
+  duration=8
+  Event=Text;30;File:pt0906.exc;true
+end exercise
+
+  begin exercise
+    type=Analisar dactilografia
+    duration=15
+    Event=Test;0;ask:*.exm;false;
+  end exercise
+
+begin exercise
+  type=Par·grafos
+  duration=8
+  Event=Text;30;File:pt0908.exc;true
+end exercise
+
+  begin exercise
+    type=Analisar dactilografia
+    duration=15
+    Event=Test;0;ask:*.exm;false;
+  end exercise
+
+  begin exercise
+    type=Revis„o
+    duration=14
+    Event=builder;5;gh
+  end exercise
+
+end chapter
+
+
+begin chapter
+  chapter name=1;Treinar dactilografia
+  picture=ch1.pic
+  durationpercent=99
+
+
+  begin exercise
+    type=Jogo Nuvens
+    duration=3
+    Event=Clouds;3;animais.vcb.pt
+  end exercise
+
+begin exercise
+  type=Par·grafos
+  duration=8
+  Event=Text;30;File:pt1108.exc;true
+end exercise
+
+  begin exercise
+    type=Analisar dactilografia
+    duration=15
+    Event=Test;0;ask:*.exm;false;
+  end exercise
+
+begin exercise
+  type=Par·grafos
+  duration=8
+  Event=Text;30;File:pt1206.exc;true
+end exercise
+
+
+  begin exercise
+    type=Revis„o
+    duration=14
+    Event=builder;5;gh
+  end exercise
+
+end chapter
+
+
+end contents

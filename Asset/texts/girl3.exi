@@ -1,0 +1,13 @@
+#
+#2004/3/23
+category=beginner
+version=1.00
+name=A Typing Exam - Aiming High: Empowering Girls (10 minutes)
+copyright=An official typing test with Pass Limits
+author=Typing Master
+description=Aiming High: Empowering Girls (10 minutes)
+language=eng
+time=10
+mustTypeAll=1
+MinAccuracy=95
+MinSpeed=25

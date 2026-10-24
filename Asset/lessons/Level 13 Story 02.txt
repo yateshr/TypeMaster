@@ -1,0 +1,17 @@
+Over a century ago, scientists discovered a mysterious mechanical gadget in a 2,000-year-old shipwreck.
+
+Since that time, the shoe-box-size device known as the Antikythera mechanism has astonished historians and scientists both with its advanced technology. It is a precision assembly containing 30 bronze gears with as many as 224 presumably hand-cut teeth. 
+
+Essentially, it was the first-used astronomical computer, and researchers claim it's at least 1,000 years more advanced than any other known mechanical device of its era. The device is not fully intact, though; the remains contain more than 80 congealed fragments of disintegrating metal, all adorned with cryptic inscriptions and encrusted with corrosion. 
+
+To understand the structure and function of the device better, astronomer Michael G. Edmunds of Cardiff University in Wales and his colleagues applied two advanced imaging techniques to the shards. One was X-ray computer tomography, which records views of an object similar to those of a medical CT scanner. They penetrated the relic with a high-power X-ray source narrow enough to reveal fine details.
+
+The researchers also applied a computer-enhanced, optical-imaging technique to examine surface features. 
+
+The team, consisting of British, Greek, and American researchers, reported that its fresh look at the mechanism uncovered clear evidence of a previously suspected but unconfirmed function: computing lunar and solar eclipses.
+
+The new images also doubled the number of inscriptions that could be read on the device's parts; these inscriptions indicate the device's specific functions, not all of which had been known. 
+
+The researchers used their new data to come up with a revised form for the machine's clockwork; it used 29 of the 30 known gears plus five hypothetical ones, four of which had been proposed by other researchers before the study. 
+
+Among the many details uncovered is a spiral dial at the lower-back section of the device. Around this dial, the motion of a hand indicates the solar and lunar eclipses during a period of 18 years. The Antikythera mechanism probably also employed other, now long-lost ways to show the motions of planets.

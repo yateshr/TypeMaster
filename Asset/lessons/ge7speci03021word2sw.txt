@@ -1,0 +1,59 @@
+1 + 2 + 3 + 4 
+1 + 2 + 3 + 4 
+
+10 - 2 - 3 - 5 
+10 - 2 - 3 - 5 
+
+5 + 3 = 8 
+5 + 3 = 8 
+
+12 - 7 = 5 
+12 - 7 = 5 
+
+Gleich = Gleich = 
+Gleich = Gleich = 
+
+Plus + Plus + Plus 
+Plus + Plus + Plus 
+
+Minus - Minus -
+Minus - Minus -
+
+MwSt-Satz = 19 
+MwSt-Satz = 19 
+
+e = 1,71828 
+e = 1,71828 
+
+Pi = 3,14159 
+Pi = 3,14159 
+
+sin (x) = 0,5 
+sin (x) = 0,5 
+
++ heisst "Plus" 
++ heisst "Plus" 
+
+- heisst "Minus"
+- heisst "Minus" 
+
+= heisst "Gleich" 
+= heisst "Gleich" 
+
+Jürgen: 3+ 
+Jürgen: 3+ 
+
+Stephan: 2-
+Stephan: 2-
+
+Und: "+" 
+Und: "+" 
+
+Weniger: "-" 
+Weniger: "-" 
+
+Ergibt: "=" 
+Ergibt: "=" 
+
+Aix-en-Provence 
+Aix-en-Provence 

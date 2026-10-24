@@ -1,0 +1,216 @@
+$description=Curso de Signos Especiales
+$longdesc=Expanda sus habilidades y aprenda a mecanografiar signos especiales, incluyendo símbolos matemáticos y paréntesis. Asegúrese de estudiar el Curso de Números previamente.
+$version=7.0
+$language=spa
+$chapters=4
+$durationlist=15,20,25
+$copyright=TypingMaster inc 2005, all rights reserved.
+'Created by TMEditor v2.0 @ 25.7.2006 12:15
+
+newkeysloops=0
+wordloop=0
+wordmaxloop=0
+goalinfo=
+durationsystem=static
+defaultduration=0
+lessondurations=15,20,25
+accuracygoals=90,94,98
+eventdurationmargin=0
+dynamicdurationmargin=2
+
+contents name=Curso de Signos Especiales
+alternatekeyboards=1
+keyboard=all
+wizardname=SP7QWERT
+simplewizard=1
+last free=1
+keyboardbase=QWERTY QWERTZ AZERTY SWISSGER
+
+begin chapter
+ chapter name=1;Nuevas teclas %; : ¿ ?  
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=asdfjkl
+ new keys=SEMICOLON
+ new keys=eirnoctuqñ
+ new keys=ASDFJKLÑEIRNOCTUQ
+ new keys=.,´~
+ new keys=áéíóúÁÉÍÓÚü
+ new keys=pPgGmMbB
+ new keys=yYvVhHzZxXwW
+ new keys=1234567890
+ new keys=%;:
+ begin exercise
+   type=Teclas: %; :
+   duration=2
+   EVENT=KEY2;2;file:sp7speci01011key2.txt;0;0;NOSEMI;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=2
+    EVENT=WORD2;2;file:sp7speci01021word2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=?¿
+ begin exercise
+   type=Teclas: ¿ ?
+   duration=2
+    EVENT=KEY2;2;file:sp7speci01031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7speci01041word2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=SENTENCE2;3;file:sp7speci01051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7speci01061text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuevas teclas ¡ ! " && 
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=¡!
+ begin exercise
+   type=Teclas: ¡ !
+   duration=2
+    EVENT=KEY2;2;file:sp7speci02011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7speci02021word2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys="&
+ begin exercise
+   type=Teclas: " &
+   duration=2
+    EVENT=KEY2;2;file:sp7speci02041key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=3
+    EVENT=WORD2;3;file:sp7speci02051word2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7speci02031sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7speci02061text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuevas teclas + - / *
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=+-
+ begin exercise
+   type=Teclas: + - 
+   duration=2
+    EVENT=KEY2;2;file:sp7speci03011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=2
+    EVENT=WORD2;2;file:sp7speci03021word2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=/*
+ begin exercise
+   type=Teclas: / *
+   duration=2
+    EVENT=KEY2;2;file:sp7speci03031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Frases
+   duration=2
+    EVENT=SENTENCE2;2;file:sp7speci03041word2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7speci03051sentence2.txt;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7speci03061text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter
+
+begin chapter
+ chapter name=1;Nuevas teclas %= % ( )
+ picture=chapter.jpg
+ durationpercent=101
+ extradescr=
+ new keys=%=%
+ begin exercise
+   type=Teclas: %= %
+   duration=2
+    EVENT=KEY2;2;file:sp7speci04011key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=2
+    EVENT=WORD2;2;file:sp7speci04021word2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ new keys=()
+ begin exercise
+   type=Teclas: ( )
+   duration=2
+    EVENT=KEY2;2;file:sp7speci04031key2.txt;0;0;0;0;0;0;0;25;75;175;125;1
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Palabras
+   duration=2
+    EVENT=WORD2;2;file:sp7speci04041sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;3
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Párrafos
+   duration=3
+    EVENT=PARAGRAPH2;3;file:sp7speci04051sentence2.txt;0;0;0;0;0;0;0;25;75;175;125;4
+ end exercise
+
+ begin exercise
+   type=Ejercicio de Texto
+   duration=3
+    EVENT=TEXT2;3;file:sp7speci04061text2.txt;0;0;0;0;0;0;0;25;75;175;125;5
+ end exercise
+
+end chapter

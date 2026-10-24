@@ -1,0 +1,45 @@
+(parenthèses) (parenthèses) 
+
+elle(s) 
+elle(s) 
+
+(exemple) 
+(exemple) 
+
+(niche) 
+(niche) 
+
+(disponible) (disponible) 
+
+(pardon) 
+(pardon) 
+
+(500) 
+(500) 
+
+(1 + 2) * 2 
+(1 + 2) * 2 
+
+(a = 3) 
+(a = 3) 
+
+(Paris, France) 
+(Paris, France) 
+
+(sic) 
+(sic) 
+
+(enfin) 
+(enfin) 
+
+(HTML) 
+(HTML) 
+
+(&nbsp;) 
+(&nbsp;) 
+
+(changer) 
+(changer) 
+
+(x * 8) / y 
+(x * 8) / y 

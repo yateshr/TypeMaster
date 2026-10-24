@@ -1,0 +1,28 @@
+Preis (Wolljacke) < Preis (Baumwollhose). 
+
+Der Preis beträgt 6,20 $/Stück. 
+
+Die amerikanische Währung heißt Dollar (Zeichen: $). 
+
+Vergleichsoperatoren sind "=", ">" und "<". 
+
+Und statt "8 ist größer als 5" schreibt man: "8 > 5". 
+
+Statt "3 ist kleiner als 5" schreibt man: "3 < 5". 
+
+Bei einem 20%igen Anstieg auf 120 $ sollte ich verkaufen. 
+
+"Sind das wirklich 99 %?" 
+
+Meinen Sie, dass ein Nachlass von 10 % zu wenig ist? 
+
+Der gute Schnaps hatte 55 % Alkohol. 
+
+Mir ist eine Krawatte aus 100 % Seide lieber. 
+
+Die Auslastung beträgt leider nur 72 %. 
+
+99,9% 99,9% 
+
+$7905,00 
+$1,00 = 0,85 EUR 

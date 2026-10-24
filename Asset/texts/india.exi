@@ -1,0 +1,13 @@
+#
+#2004/3/23
+category=beginner
+version=1.00
+name=10 Min. SSC CHSL Typing Test English Practice (35 wpm pass limit)
+copyright=SSC CHSL sample test for practice
+author=TypingMaster
+description=Staff Selection Commission Example
+language=eng
+time=10
+mustTypeAll=0
+MinAccuracy=95
+MinSpeed=35

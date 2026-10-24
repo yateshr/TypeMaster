@@ -1,0 +1,1896 @@
+/////////////////////////////////////////////////////////////
+// Typing Master 10 GUI Localization
+//
+// language.it file for Typing Master 10 6.21 and higher
+// revision version 1.2 US English spell checked
+// date: 12/27/2002 TU, 3/1/2025 tfr
+////////////////////////////////////////////////////////////
+//
+// Miscellaneous instructions for translators:
+// *Do not translate these comment rows starting with //
+//
+// *Spaces in the beginning and end of rows are marked with
+//  notation \+ for better visibility.
+//
+// *Hotkeys for menu items are marked with &
+//  e.g. "202=&WPM (words/min)"
+//  When user presses 'W' in the program this item is automatically selected
+//  If a row contains a hotkey character, also insert a similar hotkey character in your translation
+//  Double check that the hotkey characters for one screen/menu are unique.
+//
+// *the '&'-character is marked as &&
+//
+/////////////////////////////////////////////////////////////
+
+// Do not edit the IDs 0..10
+0=language.it
+1=Typing Master
+2=Typing Master 12
+
+// TMPRO 7.00.722: required definition here. 5=home default course,6=school default course, 7=secondary course
+5=1italian.cnt
+6=uk7school.cnt
+7=3typingit.cnt
+
+
+11=IT
+12=aàbcdeéèfghiìjklmnoòpqrstuùvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+13=aàbcdeéèfghiìjklmnoòpqrstuùvwxy'
+14=ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+15=DoLuMaMeGiVeSa
+
+/// these are for games
+221=abcdefghijklmnopqrstuvwxyz
+222=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+223=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890
+
+///// Do not translate the following one(s)
+///// ********************
+90=qwertyuiopasdfghjklzxcvbnm
+///// ********************
+
+/////////////////////////////////////////////////////////////
+// General, widely used string gathered here for ease of translation
+/////////////////////////////////////////////////////////////
+24=Utente
+439=Nome utente
+462=Utente:\+
+469=Utente:\+
+471=Utente:\+
+118=Precisione
+584=Precisione
+622=Precisione
+116=Velocità
+131=Velocità
+121=L'unità di velocità è
+201=Unità di velocità
+571=Unità di velocità
+629=Unità di velocità
+367=Velocità lorda (
+587=Velocità lorda
+623=Velocità lorda
+368=Velocità netta (
+586=Velocità netta
+621=Velocità netta
+
+/////////////////////////////////////////////////////////////
+// Texts for navigation and dialogue buttons
+/////////////////////////////////////////////////////////////
+721=&Invio
+734=&Invio
+722=&Annulla
+733=&Annulla
+602=&Annulla
+88=&Annulla
+1174=&Annulla
+603=&Prosegui
+87=&Sì
+1173=&OK
+413=&Inizia
+
+/////////////////////////////////////////////////////////////
+//Program menu
+//These hotkeys apply when the menu is visible
+//The hotkeys you define here, cannot be used when the menu is visible
+/////////////////////////////////////////////////////////////
+643=Menu
+554=&Lezioni
+555=&Revisione utente
+556=&Prova digitazione
+557=&Giochi
+558=&Typing Meter
+559=&Statistiche
+560=&Opzioni
+561=&Info su...
+
+/////////////////////////////////////////////////////////////
+//Titles for different sections of the program
+/////////////////////////////////////////////////////////////
+562=Revisione
+563=Giochi
+564=Prova digitazione
+565=Statistiche
+566=Typing Meter
+567=Typing Meter
+568=Impostazioni allenamento
+569=Informazioni
+
+/////////////////////////////////////////////////////////////
+//Info screen
+/////////////////////////////////////////////////////////////
+16=R
+17=Visitatore
+18=www.TypingMaster.com
+19=Generale
+20=Versione
+21=Build
+22=ID licenza
+23=Controlla aggiornamenti
+44=lic.
+45=http://www.TypingMaster.com
+301=Copyright 2024 Cloud Kayak Labs, Inc. Tutti i diritti riservati.
+302=Versione di prova limitata
+303=Servizi di licenza
+304=È registrato solo Typing Meter.
+305=Typing Master:\+
+551=Ordina licenze
+552=Come ordinare
+553=Gestisci il mio ordine
+713=User Support and Manual
+714=Altri link
+570=http://www.typingmaster.com/typing-tutor/support.html
+
+/////////////////////////////////////////////////////////////
+//Course and lesson screens
+/////////////////////////////////////////////////////////////
+395=Continua il corso
+145=Corso completato
+396=Lezione\+
+124=Lezione\+
+125=di\+
+// the following one is used in "lesson n of n", note spaces before and after
+712=\+di\+
+
+397=Benvenuto a..
+398=Inserisci la prima lezione >
+399=% completata
+710=Avanti per iniziare.
+711=Modifica durata
+715=risultati esercizi
+
+105=Lezione successiva
+107=Con questa versione di prova limitata puoi completare le prime due lezioni del corso Touch Typing. Ci sono limitazioni anche nelle sezioni di revisione, prova di digitazione e Typing Meter.\n\nPuoi ottenere l'accesso completo a Typing Master 11 in pochi minuti: acquista una licenza online. Fai clic sui pulsanti sottostanti per maggiori informazioni.
+108=
+109=Vuoi maggiori informazioni sulla\nversione completa?
+110=Spiacenti, poiché non hai superato l'esame obbligatorio della lezione,\nnon puoi andare avanti.
+111=Spiacenti, poiché non hai superato tutti gli esercizi della lezione,\nnon puoi andare avanti.
+112=Lezione bloccata
+114=Esercizi
+117=kpm
+119=Indietro
+120=Efficienza
+122=Hai digitato per un tempo molto breve -\+
+123=i tuoi punteggi di prestazione non possono essere calcolati.
+127=Esercizio completato.
+128=Premi Invio per continuare.
+129=Per continuare, l'intero esercizio deve essere completato.\nSei sicuro di voler annullare questo esercizio?
+130=Tempo
+132=Ritmo
+133=Punteggio
+134=Sbagliato
+136=Corretto
+137=Anonimo
+138=Vai alla lezione successiva
+139=\+min.
+146=Benvenuto a Typing Master
+366=Nessun corso iniziato
+
+627=Benvenuto
+631=&Modifica impostazioni
+632=Altre informazioni
+633=Statistiche del corso
+634=Nome del corso
+635=Tempo studiato
+636=Completato
+
+638=Congratulazioni
+639=Hai completato con successo questo corso. Per iniziarne uno nuovo, premi Avanti.\+
+640=Inizia nuovo corso
+
+
+/////////////////////////////////////////////////////////////
+//texts that display information on a completed exercise/test
+/////////////////////////////////////////////////////////////
+46=Eccellente
+47=Avanzato
+48=Intermedio
+49=Principiante
+50=La tua velocità era\+
+51=molto\+
+52=abbastanza\+
+53=buona, ma gli\+
+54=Gli\+
+55=errori che hai commesso hanno ridotto la tua efficienza.\+
+56=Cerca di concentrarti sulla digitazione accurata per migliorare la tua velocità netta.
+57=La tua percentuale di precisione era\+
+58=molto\+
+59=abbastanza\+
+60=buona, ma hai\+
+61=Hai\+
+62=usato molto Indietro. Prova a fare meno affidamento su di lui\+
+63=perché ti rallenta e interrompe il flusso di digitazione.
+64=La tua percentuale di precisione era\+
+65=molto\+
+66=abbastanza\+
+67=buona, ma hai\+
+68=Sembra che tu\+
+69=trovi uno o più tasti difficili: potresti provare a rivedere per un allenamento aggiuntivo.
+70=Poiché gli altri aspetti della tua digitazione sono ora in\+
+71=molto\+
+72=buona forma, potresti\+
+73=Potresti\+
+74=ora provare ad aumentare la tua velocità di digitazione per raggiungere\+
+75=una maggiore efficienza.
+76=Hai digitato\+
+77=molto\+
+78=abbastanza\+
+79=veloce! Ottimo lavoro!
+80=La tua precisione è stata\+
+81=molto\+
+82=abbastanza\+
+83=buona. Continua così!
+
+
+/////////////////////////////////////////////////////////////
+//Texts for keyboard and hand image when studying new keys
+/////////////////////////////////////////////////////////////
+147=Maiusc
+148=Alt Gr
+149=Invio
+150=Spazio
+151=Maiusc sinistro
+152=Maiusc destro
+153=Alt Gr
+154=mignolo sinistro
+155=anulare sinistro
+156=medio sinistro
+157=indice sinistro
+158=indice destro
+159=medio destro
+160=anulare destro
+161=mignolo destro
+162=pollice
+163=Tab
+164=Invio
+165=Indietro
+166=Spazio
+167=Maiusc
+
+
+/////////////////////////////////////////////////////////////
+//Settings screen
+/////////////////////////////////////////////////////////////
+182=&Suoni
+183=Suoni attivati
+184=Suoni disattivati
+185=Durata della lezione
+186=Quanto dovrebbe durare una lezione singola?
+187=&25 minuti
+188=&35 minuti
+189=&45 minuti
+190=Nessun &limite di tempo
+191=&Dimensioni schermo
+192=Quale dimensione del carattere viene utilizzata negli esercizi?
+193=No&rmale
+194=&Grande
+195=Impostazioni generali
+196=Schema tastiera
+197=Quale schema di tastiera utilizzi?
+198=&Predefinita
+199=&Altro:
+200=Riproduci tema
+202=WPM (parole/min)
+203=KPM (battiture/min)
+204=Impostazioni
+205=Non disponibile
+206=Questa copia è scaduta
+207=Versione di prova limitata
+208=wpm
+209=kpm
+572=Normale
+573=Questa impostazione avrà effetto al prossimo avvio di Typing Master.
+574=&Altro:
+628=Tastiera
+630=Suoni
+
+
+/////////////////////////////////////////////////////////////
+//Inserting licenses
+/////////////////////////////////////////////////////////////
+211=Mancano le informazioni richieste. Inserisci sia l'ID licenza
+212=che la chiave di licenza per completare la verifica della licenza.
+213=Grazie, la tua chiave di licenza è stata accettata.
+214=Puoi valutare questo programma! La tua copia del programma è ora completa di tutte le funzionalità.\+
+215=L'ID licenza o la chiave sono stati digitati in modo errato! Digita di nuovo questi codici con attenzione.
+217=La tua chiave di licenza a tempo limitato è scaduta. Alcune funzionalità sono ora limitate.
+435=La chiave prodotto inserita è solo per le versioni precedenti del programma, contatta l'assistenza tecnica per le istruzioni!
+436=Consulta i prezzi di aggiornamento su www.TypingMaster.com.
+716=\+Licenze correnti
+//717=Inserisci la chiave di registrazione
+717=Inserisci chiave di licenza
+718=Inserisci l'ID licenza e la chiave trovati nella tua email di licenza (controlla la cartella spam) per attivare la licenza. Il tuo ID licenza è di solito il numero del tuo ordine.
+719=ID licenza:
+720=Chiave di licenza:
+723=Versione di prova di Typing Master
+724=Questa è una versione di prova limitata: fai un ulteriore passo avanti con la versione completa.
+725=&Ordina la versione completa
+1335=Lic. Typing Meter
+1336=Lic. Unlimited/School District
+1337=Lic. Concurrent
+1338=Lic. Workstation
+
+
+/////////////////////////////////////////////////////////////
+//Statistics
+/////////////////////////////////////////////////////////////
+244=Statistiche
+245= usate
+246= % completate
+247=Completate
+248= rimaste
+249=Problematiche
+250=Difficili
+251=OK
+252=Rapporto di studio
+253=Progressi
+254=Studente:
+255=Completate:
+256=Tempo utilizzato:
+257=Tempo rimanente:
+258=Studi
+269=\+min\+
+270=\+h\+
+271=? min\+
+272=\+min\+
+273=\+h\+
+369=% completate
+370=Studiate\+
+371=, rimanenti\+
+372=\+min.
+373=\+sec.
+374=\+min.\+
+
+575=&Visualizza
+576=Velocità digitazione
+577=Precisione
+578=Corsi
+579=Corso attuale
+580=Tempo di studio
+581=Utilizzo
+582=Rapporto sui progressi
+583=&Allenamento
+637=Rapporto sui progressi
+
+
+/////////////////////////////////////////////////////////////
+//TypingTest
+/////////////////////////////////////////////////////////////
+530=Sei sicuro di voler eliminare definitivamente la prova di digitazione:\+
+531=Risultati degli esercizi:
+532=Risultati prova di digitazione
+533=Risultati degli esercizi
+534=\+minuti al giorno
+535=\+ore alla settimana
+536=\+giorni lavorativi all'anno
+537=Impara a digitare al tocco! Potresti aumentare la tua velocità di rete fino a\+
+538=\+e risparmiare tempo:
+539=Stai digitando molto bene e ora puoi migliorare ulteriormente le tue capacità di digitazione con Typing Master Typing Meter!
+540=\+Clicca su Info per saperne di più.
+541=Scegli il file di testo da aggiungere alle prove di digitazione
+261=Per superare questo esame la tua precisione avrebbe dovuto essere almeno\+
+262=Per superare questo esame la tua velocità di digitazione avrebbe dovuto essere almeno\+
+263=Il tuo ritmo di digitazione non era abbastanza buono per superare questo esame. Il ritmo dovrebbe essere almeno\+
+264=Congratulazioni, hai superato questo esame e ora puoi passare alla lezione successiva\+
+265=Non hai completato l'esame richiesto per intero.
+266=Stabile
+267=Instabile
+268=Attenzione
+375=Hai superato questa prova di digitazione. Se vuoi, puoi stampare un certificato.
+614=scegli la prova
+615=Aggiungi
+616=Elimina
+617=&Durata
+618=Prova t&estuale
+619=Prove completate
+620=Visualizza e stampa certificato
+624=Tempo impiegato
+625=Commento
+626=Visualizza e stampa certificato
+
+/////////////////////////////////////////////////////////////
+//Games
+/////////////////////////////////////////////////////////////
+606=Bolle
+607=Nuvole
+608=WordTris
+609=Avvia
+610=Avvia
+611=Avvia
+612=Istruzioni
+613=Punteggi migliori
+1401=Bolle
+1402=Nuvole
+1403=WordTris
+
+91=Premi un tasto
+92=per iniziare.
+
+93=Per far scoppiare una bolla, digita la lettera mostrata al suo interno
+94=Dopo aver perso sei bolle, il gioco è finito
+95=Le bolle rosse e verdi sono più veloci di quelle blu e daranno un punteggio migliore
+96=asdfjkl
+140=Digita la parola nella trave
+141=per iniziare.
+142=Gioco finito
+143=Premi Spazio!
+144=Istruzioni
+
+276=Per catturare il raggio, digita la parola al suo interno e premi Spazio
+277=Quando la casella è piena di raggi mancati, il gioco è finito
+278=Per ottenere il punteggio migliore possibile, guarda la visualizzazione delle parole sotto la casella
+279=Per catturare una nuvola, digita la parola sotto di essa e premi Spazio o Invio
+280=Per spostarti tra le nuvole in qualsiasi momento, premi Invio/Spazio (successivo) o Indietro (precedente)
+281=Cerca di non perdere le nuvole tempestose: dopo sei mancate, il gioco è finito
+282=Le nuvole soleggiate ti daranno un grande bonus, quindi cerca di catturarne il maggior numero possibile
+283=&Esci
+284=Sinistra
+285=Destra
+286=Centro
+
+/////////////////////////////////////////////////////////////
+//Review
+/////////////////////////////////////////////////////////////
+585=Tasti difficili
+589=Tasti da rivedere
+590=&Tasti difficili
+591=Tasti st&udiati
+592=&Scegli tasti
+593=Tipo di esercizio
+594=&Esercitazione tastiera
+595=Ese&rcitazione parole
+596=&Gioco
+597=Tutti i tasti difficili
+598=Bloccato
+599=Versione di prova
+600=Chiudi
+601=Lezioni
+604=Durata della lezione
+605=corsi
+1400=lezioni
+
+97=Con il Gioco o Esercitazione parole, puoi rivedere solo i tasti delle lettere.\nPer addestrare numeri o segni speciali, scegli invece Esercizitazione tastiera.
+98=I tuoi tasti difficili saranno invece rivisti.
+99=I tasti scelti non sono ancora stati studiati e non possono essere rivisti.
+100=I tuoi tasti difficili attuali saranno invece rivisti.
+101=Non ci sono abbastanza tasti per giocare.
+103=Problematico
+104=Difficile
+218=Typing Meter allenamento
+219=Non hai ancora studiato abbastanza per giocare a un gioco con i tasti studiati.
+220=Il gioco verrà annullato.
+224=Il corso selezionato non include materiale di revisione guidata
+229=&Durata
+231=Con &Tasti
+234=&Vocabolario
+235=Vocabolario
+236=Con Tasti studiati
+237=a-z
+238=a-z, A-Z
+239=a-z, A-Z, 0-9
+306=Allenamento non necessario
+307=Allenamento consigliato
+308=Allenamento altamente consigliato
+309=Urgente bisogno di allenamento!
+310=Nessun problema trovato ancora
+311=Non sono stati rilevati problemi seri
+312=Alcuni problemi rilevati
+313=Sono stati rilevati diversi problemi
+314=Sono stati rilevati molti problemi
+315=Allenamento non necessario
+316=Allenamento consigliato
+317=Allenamento altamente consigliato
+318=Urgente bisogno di allenamento!
+319=Nessun problema trovato
+320=Non sono stati rilevati problemi seri
+321=Sono stati rilevati alcuni problemi
+322=Sono stati rilevati diversi problemi
+323=Sono stati rilevati molti problemi
+324=Gioco delle bolle
+325=Il/i tasto/i non è/sono stato/i inserito/i o non è/sono stato/i trovato/i dalla tastiera, impossibile esercitarsi!
+326=#7878: La/le parola/e non è/sono stata/e inserita/e o non è/sono stato/i trovato/i, impossibile esercitarsi!
+327=#7879: Nessuna frase folle disponibile per i tasti:\+
+328=Termina revisione
+329=Esercitazione personalizzata
+330=Lo schema di tastiera selezionato\+
+331=\+non è supportato da\+
+332=\+corso.
+333=Si consiglia di cambiare lo schema di tastiera o di usare Typing Meter per l'allenamento.
+334=Lezione\+
+335=Termina corso
+336=Lezione successiva
+337=Nella versione di prova, questo esercizio è limitato a 30 secondi.
+339=Lezione precedente
+340=Buona fortuna!
+341=Premi un tasto per iniziare
+
+/////////////////////////////////////////////////////////////
+//Welcome screen
+/////////////////////////////////////////////////////////////
+342=Benvenuto/a nel mondo dell'apprendimento della digitazione professionale con Typing Master 10.
+343=Nel corso base imparerai le basi della digitazione in 6-10 ore. Quindi puoi iniziare a usare questa nuova abilità nella tua vita quotidiana per renderla fluida e subconscia.
+344=Dopo aver appreso le basi, puoi anche completare corsi aggiuntivi per padroneggiare segni speciali, tastierino numerico e altro.
+345=Fai clic su\+
+346=Altre informazioni
+347=\+per saperne di più su Typing Master 10 o Avanti per iniziare un corso.
+348=Puoi facilmente testare le tue attuali abilità di digitazione scegliendo\+
+349=Prova digitazione
+350=\+dal menu a destra.
+351=Dopo aver imparato a digitare al tocco, puoi ripetere la stessa prova per confrontare i risultati.
+352=WPM (parole/min.)
+353=KPM (battiture/min.)
+354=Abilitato
+355=Disabilitato
+356=% di esercizi
+357=Impostazioni generali
+641=Suggerimento: metti alla prova le tue abilità
+642=Puoi facilmente testare la tua attuale velocità di digitazione scegliendo "Prova digitazione" dal menu a destra.
+
+/////////////////////////////////////////////////////////////
+// Login screen
+/////////////////////////////////////////////////////////////
+726=Tutti gli utenti
+727=Benvenuto
+728=Benvenuto nuovo utente!
+729=Accedi comunque? Inserisci il tuo &nome
+730=&Inserisci la tua password
+731=Conferma la p&assword
+732=Scegli il tuo &gruppo
+735=Profilo di configurazione della digitazione
+736=&Sono un nuovo utente..
+737=&Inserisci la tua password
+738=Accedi a\+
+390=\+inserendo il tuo nome utente e premendo Invio
+391=Benvenuto
+392=Benvenuto a Typing Master 11 tutore di dattilografia! Inserisci un nome utente qui sotto e fai clic su Invio.
+393=Caricamento in corso...
+394=L'utente scelto non può effettuare l'accesso
+400=Inserisci la tua password
+401=Utente\+
+402=\+non trovato, sei un nuovo utente?
+403=La password non è valida
+404=Inserisci il tuo nome utente
+405=Le password sono diverse
+406=Inserisci la tua password
+407=L'utente\+
+408=\+esiste già!
+409=\+usato
+410=\+rimasto
+411=? min. rimanenti
+412=Esercizio personalizzato
+414=Per impostazione predefinita, Typing Meter ora raccoglie i dati per l'utente chiamato\+
+415=Inserisci il tuo nome utente
+416=Inserisci la tua password
+417=Impossibile effettuare l'accesso come\+
+418=, prova un altro nome utente
+419=La password è stata digitata in modo errato!
+420=Il nome utente inserito non è stato trovato. Non sono ammessi nuovi utenti.
+421=Utente\+
+422=\+non trovato, sei un nuovo utente?
+423=Le tue due password non corrispondono, digita di nuovo le password!
+424=L'utente\+
+425=\+esiste già!
+426=Inserisci la tua password
+427=Utente\+
+428=\+non trovato, sei un nuovo utente?
+429=La password non è valida
+430=Inserisci il tuo nome utente
+431=Le password sono diverse
+432=Inserisci la tua password
+433=L'utente\+
+434=\+esiste già!
+
+/////////////////////////////////////////////////////////////
+//Typing Meter
+//
+//- the subsequent sections contain text displayed in the
+//Typing Meter section of Typing Master 10
+/////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////
+//first introduction screen
+/////////////////////////////////////////////////////////////
+679=Introduzione
+509=\+Typing Meter: un personal trainer di digitazione completamente adattabile. Con Typing Meter puoi concentrarti sui tuoi problemi di digitazione e ottenere risultati rapidamente. In appena due ore!
+510=Typing Meter analizza la tua digitazione quando utilizzi il tuo word processor, il programma di posta elettronica o qualsiasi altra applicazione Windows e rileva i tasti e le parole più difficili.
+511=\+In base ai dati raccolti, Typing Meter creerà esercizi completamente personalizzati per le tue esigenze attuali.
+512=Fai clic su\+
+513=Altre informazioni
+514=\+per saperne di più su\+
+515=\+Typing Meter o\+
+699=Passaggio 1: analisi della digitazione
+700=Passaggio 2: allenamento personalizzato
+701=Passaggio 3: risultati rapidi
+702=Passaggio 4: supporto continuo
+703=Come funziona
+704=Typing Meter rileva i tasti e le parole più difficili quando utilizzi qualsiasi applicazione Windows.\+
+705=Typing Meter crea materiale di pratica in base alle tue difficoltà.\+
+706=Con gli esercizi di prescrizione mirati otterrai risultati rapidamente.
+707=Typing Meter può sempre creare nuovo materiale per soddisfare le tue mutevoli esigenze.
+708=&Altre informazioni
+709=Typing Meter
+
+/////////////////////////////////////////////////////////////
+//second introduction screen
+/////////////////////////////////////////////////////////////
+519=Il componente aggiuntivo di Typing Master's si chiama Typing Meter. Ti aiuta ad affinare le tue abilità dopo aver completato i corsi monitorando la tua digitazione quando lavori sul tuo PC e offrendo esercizi di revisione mirati.
+520=Typing Meter raccoglie anche statistiche sulla tua abilità e registra i progressi nel tempo e puoi impostarlo per ricordarti di fare brevi pause e rilassarti.
+521=Typing Meter è più utile dopo aver imparato a digitare al tocco e aver trasmesso le tue nuove abilità nell'uso quotidiano. Tuttavia, puoi iniziare a usarlo prima per vedere come funziona.\n\nIl passo successivo è avviare Typing Meter.
+
+516=&Accedi come
+517=Se sei l'unico utente di questo nome utente Windows (
+518=), è consigliata la prima opzione.
+522=In modalità di sicurezza elevata devi scegliere manualmente i programmi
+523=da monitorare dal menu Typing Meter.
+524=Inoltre, poiché le parole difficili non vengono monitorate, Typing Meter non può
+525=funzionare con piena efficienza.
+526=Fai clic su Informazioni sulla sicurezza per ottenere maggiori informazioni.
+527=Esiste già un utente con il tuo nome che utilizza Typing Master
+456=Vuoi chiudere Typing Meter ora?
+457=Vuoi avviare Typing Meter ora?
+680=Typing Meter non raccoglie parole difficili e monitora solo le applicazioni selezionate. Consigliato se è richiesta un'elevata sicurezza.
+683=Lancia Typing Meter
+684=Lancia Typing Meter &ora
+685=Lancia Typing Meter più &tardi
+686=Lancio automatico
+687=Mostra elenco utenti all'accesso
+688=Non effettuare l'accesso automaticamente
+689=Sicurezza
+690=Non raccogliere parole (privacy)
+691=Informazioni
+692=Cos'è Typing Meter?
+458=Attendi...
+459=Chiusura...
+460=Avvio...
+461=Chiusura Typing Master Typing Meter fallito
+
+/////////////////////////////////////////////////////////////
+//screen shown after first Typing Meter launch
+/////////////////////////////////////////////////////////////
+693=Meter avviato!
+681=
+682=
+
+1405=
+694=
+695=
+696=
+697=
+698=
+
+/////////////////////////////////////////////////////////////
+//Main Typing Meter screen in Typing Master
+/////////////////////////////////////////////////////////////
+463=Avviato
+464=Rimuo&vi
+465=Non avviato
+466=&Lancia
+467=Lancio: Automatico
+468=Lancio: Manuale
+470=Typing Meter raccoglie statistiche esclusivamente per l'utente denominato "
+472=Versione\+
+473=Non sono ancora state rilevate difficoltà.
+474=Verrà utilizzato il corso demo semplice.
+475=Nessuna parola inserita, impossibile allenarsi!
+476=Tasto/i non inserito/i o non trovato/i dalla tastiera, impossibile allenarsi!
+477=Il modulo Typing Master Typing Meter non trovato
+478=Avvio di Typing Master Typing Meter fallito
+671=A&llenamento personalizzato
+672=Addestra &tasti
+673=Addestra &parole
+674=Avvia allenamento
+675=Indice dei problemi
+676=Impostazioni
+677=Chiudi
+
+/////////////////////////////////////////////////////////////
+//Typing Meter statistics
+/////////////////////////////////////////////////////////////
+644=Panoramica
+645=Tasti difficili
+646=Parole difficili
+647=Precisione e ritmo
+648=NOTA: l'analisi delle parole è stata disattivata dalle impostazioni del Typing Meter
+649=Aggiungi nuove parole che vuoi allenare
+650=Nascondi parole che non vuoi allenare
+651=Correggi parola contenente errori di battitura
+652=Tempo di digitazione (o)
+653=Indice dei problemi (%)
+654=Parole digitate
+655=Indice di difficoltà
+656=Tasti
+657=Lettere maiusc.
+658=Parole
+659=Indice generale
+660=Informazioni generali
+661=Ultima pratica
+662=Velocità di digitazione
+663=Parole digitate
+664=Tempo di digitazione
+665=Lettere maiuscole difficili
+666=Modifica parole
+667=Aggiungi
+668=Nascondi
+669=Modifica
+670=addestra
+
+479=Velocità digitazione (
+480=Normale
+481=Molto alta
+482=Oggi:\+
+483=Più alta:\+
+484=Oggi:\+
+485=Media:\+
+486=Più alta:\+
+487=Oggi\+
+488=, media\+
+489=\+parole
+490=\+parole
+491=\+parole
+492=Oggi:\+
+493=Media:\+
+494=Più alta:\+
+495=Oggi\+
+496=, media\+
+497=Oggi:\+
+498=Media:\+
+499=Più alta:\+
+500=Oggi\+
+501=, media\+
+502=L'allenamento personalizzato non è stato usato
+503=\+giorno fa
+504=\+giorni fa
+505=Inserisci una o più parole difficili (min. 4 lettere)
+506=Apporta le modifiche alla parola difficile (
+507=Sei sicuro di voler nascondere le parole selezionate?
+508=Benvenuto su\+
+
+/////////////////////////////////////////////////////////////
+//Typing Meter review
+/////////////////////////////////////////////////////////////
+437=Segnala
+438=Non definito
+440=Corso attuale
+441=Studiato (o)
+442=Ultimo uso
+443=Utilizzo
+444=Creato
+445=Nessun gruppo
+446=Prova digitazione
+447=Esercizio
+448=Gioco con tasti
+449=Testo con tasti
+451=Lettere maiuscole: 
+452=Lettere maiuscole: 
+453=Parole difficili
+454=Gioco con parole
+455=addestra
+1404=%s volte da %s
+1406=Per questo motivo le tue statistiche potrebbero essere vuote o obsolete. Puoi cambiare l'utente dalle Impostazioni misuratore.
+1407=Alto
+1408=Nessun limite
+1409=10 minuti
+1410=20 minuti
+1411=30 minuti
+1412=Risultati
+1413=Indici di difficoltà prima e dopo l'allenamento
+1414=Tasti
+1415=Lettere maiusc.
+1416=Parole
+1417=Indice generale
+1418=Prima
+1419=Ora
+1420=Tasti:
+1424=Impostazioni
+1425=Prima della revisione
+1426=Dopo la revisione
+1427=Revisiona i risultati
+1428=Riportami indietro..
+1429=(personalizzato)
+
+
+/////////////////////////////////////////////////////////////
+// Typing Meter Typing Meter (KBOOST.EXE)
+// -here is the text for the independent Typing Meter program
+//  which sits in the task bar and monitors typing
+/////////////////////////////////////////////////////////////
+
+//Typing Meter menu (from the taskbar icon)
+1260=&Accesso...
+1261=&Abilitato
+1262=\+Typing Meter è già attivo!
+1263=Non puoi avviare due istanze di Typing Meter.
+1264=Typing Meter
+1265=&Statistiche e allenamento...
+1266=&Mostra cronologia velocità
+1267=Impos&tazioni...
+1268=&Chiudi
+1269=&Allenamento...
+
+//Login
+1270=Devi chiudere Typing Master prima di poter abilitare Typing Meter
+1271=Vuoi chiudere Typing Meter ora?
+1272=Chiusura..
+1273=\+giorni da
+1274=Versione
+1275=Caricamento..
+1276=\+parole,
+1277=Monitor
+1278=Impossibile monitorare
+1279=Typing Meter ha raccolto informazioni sufficienti per l'allenamento.
+1280=Esci
+1281=Scegli il tuo nome utente e fai clic su OK
+1282=Digita il tuo nome e fai clic su OK per accedere come nuovo utente
+1283=Chiudi
+1284=Annulla
+1285=, prova un altro nome utente
+1286=Impossibile accedere come\+
+
+//Other general Typing Meter strings
+1329=&Non mostrare questa finestra in futuro
+1330=&Avvia allenamento
+1331=&Chiudi
+1332=Indice di difficoltà
+1333=Typing Master Typing Meter ha rilevato alcune difficoltà nella digitazione. Fai clic qui per iniziare l'allenamento ora!
+1334=Allenamento consigliato
+1288=Lancia automaticamente Typing Meter all'avvio del computer.
+1289=&Sì
+1290=&No
+
+/////////////////////////////////////////////////////////////
+//Typing Meter settings
+/////////////////////////////////////////////////////////////
+1287=Typing Master Typing Meter
+1299=Copyright 2024 Cloud Kayak Labs, Inc. Tutti i diritti riservati.
+
+//Personal tab
+1300=Personale
+1291=Impostazioni personali
+1292=Fai una pausa
+1293=&Monitora tutte le nuove applicazioni per impostazione predefinita
+1294=&Scegli manualmente le applicazioni da monitorare
+1295=Consiglia allenamento
+1325=Consiglia ogni %d giorni se vengono rilevate &difficoltà
+1296=Sicurezza
+1297=Non analizzare o raccogliere le parole difficili
+1298=Seleziona questa opzione per garantire un'elevata sicurezza.
+
+//Applications tab
+1301=Applicazioni
+1302=Applicazioni da monitorare
+1303=Visualizza &le applicazioni attualmente rilevate
+1304=Visualizza &tutte le applicazioni rilevate
+1421=Nessun programma monitorato disponibile
+1305=Suggerimento: deseleziona le applicazioni contenenti informazioni riservate
+
+//Common Typing Meter Settings tab
+1306=Comune
+1307=Impostazioni comuni Typing Meter
+1326=Si applica al nome utente Windows corrente
+1308=Lancia automatico
+1309=Lancia Typing Meter &automaticamente all'accesso a Windows
+1310=Usa l'avvio automatico per assicurarti che Typing Meter monitori costantemente la tua digitazione quando accedi con il tuo nome utente Windows.
+1311=Identificazione utente
+1312=&Usa utente selezionato:
+1313=&Mostra elenco utenti all'avvio
+1314=Avvia in modalità &disconnesso
+1315=Se ci sono più utenti per il nome utente Windows corrente, non selezionare la prima opzione per evitare statistiche imprecise.
+
+//About tab
+1316=Informazioni
+1317=Informazioni su Typing Meter
+1318=Lancio misuratore: 
+1319=Utente corrente:
+1320=&Cambia utente..
+1321=Statistiche utente
+1322=Utilizzo:
+1422=volte
+1423=%s giorni da %s
+1323=Totale battiture:
+1324=Battiture analizzate:
+1327=Automatico
+1328=Manuale
+
+
+/////////////////////////////////////////////////////////////
+// Typing Master Manager
+// -texts for the manager program
+/////////////////////////////////////////////////////////////
+
+1108=Gestore utente Typing Master
+
+542=Benvenuto! Impostazioni del profilo applicate.
+543=\+
+544=\+
+545=Completa rapporto
+546=Attendi, ordinamento utenti
+547=Completa rapporto
+548=Elenco utenti
+549=Ultimi esercizi
+550=Ultime prove
+
+1006=Seleziona cartella file utente TM
+1007=La cartella selezionata\+
+1008=\+non include i file Typing Master.
+1009=Assicurati di non aver scelto la cartella Typing Master\Database. Scegli un'altra cartella.
+1012=Typing Master è stato installato in troppe postazioni.
+1013=Hai solo\+
+1014=\+licenze. Aggiungi licenze o rimuovi installazioni postazione dal menu Licenze.
+1015=Violazione licenza di Typing Master
+1016=Caricamento utenti:\+
+1017=Caricamento..
+
+1001=Gruppo
+1027=Nuovo gruppo
+1058=Nessun gruppo
+1031=Nuovo utente
+1032=Nuovo utente
+
+
+/////////////////////////////////////////////////////////////
+// Manager menus
+/////////////////////////////////////////////////////////////
+
+// File topmenu
+1146=Impostazioni comuni
+1147=Cambia &directory
+1148=&Importa utenti (CSV)
+1149=&Esci
+
+//About topmenu
+1150=Guida
+1029=Copyright 2024 Cloud Kayak Labs
+1030=Per la documentazione più recente, visita http://www.TypingMaster.com
+
+/////////////////////////////////////////////////////////////
+//The menu titles
+//These menus are always visible in Manager, so the hotkeys defined here are always reserved
+/////////////////////////////////////////////////////////////
+1151=&Informazioni...
+1152=&File
+1153=&Utenti
+1154=&Gruppi
+1155=&Prova digitazione
+1156=&Licenze
+
+/////////////////////////////////////////////////////////////
+//Users menu
+/////////////////////////////////////////////////////////////
+1157=Utenti
+1159=C&ogli gruppo
+1010=Tutti i gruppi
+
+1158=Visualizza e stampa rapporto
+1204=Rapporto c&ompleto..
+1205=Ultimi esercizi..
+1206=Ultime prove..
+1207=Elenco utenti..
+
+1160=Attività utente
+1208=&Cambia impostazioni..
+1209=Imposta gruppo..
+1210=Invia &messaggio..
+1211=Organizza prova digitazione..
+
+1161=Modifica utente/i
+1212=Ri&nomina utente
+1213=&Elimina utente
+1214=&Aggiungi utente
+1215=S&eleziona tutti
+
+//Headings for user list
+1162=Nuovi utenti
+1163=Nome utente
+1164=Gruppo
+1165=Corso corrente
+1166=Fatto
+1167=Studiato (o)
+1168=Ultimo uso
+1169=Utilizzo
+1170=Creato
+1258=\+volte
+1259=\+[Blocca]
+
+//Status indicator at the bottom of the screen
+1018=\+utenti,\+
+1019=\+selezionati
+1020=\+utenti
+
+/////////////////////////////////////////////////////////////
+//Groups menu
+/////////////////////////////////////////////////////////////
+1245=Gruppi
+1216=Visualizza e stampa rapporto
+1217=Rapporto completo
+1218=Ultimi esercizi
+1219=Ultime prove
+1220=Elenco utenti
+
+1221=Attività di gruppo
+1222=&Modifica impostazioni..
+1223=Invia &messaggio..
+1224=O&rganizza prova digitazione..
+
+1225=Modifica gruppo
+1226=Ri&nomina gruppo
+1227=&Elimina gruppo
+1228=&Aggiungi gruppo
+
+//Headings for groups list
+1255=Nome gruppo
+1256=Utenti
+1257=Creato
+1011=\+ (Predefinito)
+
+//Functional texts for groups menu
+1021=Sei sicuro di voler eliminare l'utente\+
+1022=Il gruppo contiene\+
+1023=\+utenti. Eliminarli?
+1024=Vuoi rimuovere\+
+1025=\+utente/i?
+1026=\+gruppi
+
+
+/////////////////////////////////////////////////////////////
+//Typing Tests menu
+/////////////////////////////////////////////////////////////
+1244=Prova digitazione
+1229=Attività di prova
+1230=&Modifica impostazioni..
+1231=&Modifica testo..
+
+1232=Modifica prova
+1234=&Elimina prova
+1233=&Aggiungi prova
+
+//Headings for typing test list
+1252=Nome prova
+1253=Durata (min.)
+1254=Copyright
+
+1047=Sei sicuro di voler eliminare definitivamente la prova di digitazione:
+1049=#1551 Il file della prova di digitazione è già in uso (bloccato)
+
+//Status indicator at the bottom of the screen
+1051=\+prova
+
+
+/////////////////////////////////////////////////////////////
+//Licenses menu
+/////////////////////////////////////////////////////////////
+1243=Licenze
+1235=Modifica licenze
+1236=&Visualizza/Aggiungi licenze
+1237=&Rimuovi postazione/i
+
+1238=Info sulla licenza
+1239=Tipo di licenza
+1240=Totale
+1241=Usato
+1242=Libero
+
+//Headings for licenses list
+1246=Nome postazione
+1247=Installato
+1248=Usato
+1249=Ultimo uso
+1250=Piattaforma
+1251=Installato da
+
+//Functional texts for Licenses menu
+1033=Sei sicuro di voler eliminare postazione\+
+1034=\+postazioni
+1035=Licenze postazione
+1036=\+Licenze
+1037=\+Licenze
+1038=\+Licenze
+1039=Violazione della licenza: rimuovi %d postazione/i
+1040=Violazione della licenza!
+1041=Tutte le licenze sono attualmente in uso.
+1042=Nessuna licenza libera
+1043=\+licenze libere
+1044=Licenze simultanee
+1045=\+Licenze
+1046=\+licenze simultanee
+
+
+/////////////////////////////////////////////////////////////
+//Send message window
+/////////////////////////////////////////////////////////////
+1052=Invia messaggio a\+
+1053=Invia messaggio a %d utenti
+1054=Invia messaggio a\+
+1171=Invia messaggio
+1172=&Digita il tuo messaggio
+
+/////////////////////////////////////////////////////////////
+//Arrange Typing Test window
+/////////////////////////////////////////////////////////////
+1055=Organizza prova per\+
+1056=Organizza prova per\+
+1057=Organizza prova per %d utenti
+1059=\+min.
+1060=Non selezionato
+1175=Organizza prova
+1176=1. Attiva prova
+1177=Prova &disattivata
+1178=Prova &attivata
+1179=2. Scegli &prova
+1180=3. Scegli durata
+1181=&Durata libera
+1182=Scegli d&urata......................
+1183=min.
+1184=4. Inserisci &messaggio
+
+/////////////////////////////////////////////////////////////
+//Set Group window
+/////////////////////////////////////////////////////////////
+1185=Imposta gruppo per utente/i selezionati.
+1186=&Gruppo esistente
+1187=&Nuovo gruppo
+1188=Imposta gruppo
+
+/////////////////////////////////////////////////////////////
+//View Report window
+/////////////////////////////////////////////////////////////
+1189=Visualizza rapporto
+1190=Pagina precedente
+1191=Pagina successiva
+1192=&Stampa
+1193=&Chiudi
+1002=Larghezza pagina
+1003=Pagina intera
+1004=Pagina
+1005=Nessuna stampante installata, impossibile stampare.
+
+/////////////////////////////////////////////////////////////
+// Change Settings window
+//
+// Here are the user interface texts for settings windows
+// The actual settings for these windows can be found in
+// .tpl files in the Typing Master 10gram directory
+// (e.g. common settings = policy.tpl)
+// Be sure to also translate these files
+/////////////////////////////////////////////////////////////
+1194=Modifica impostazioni
+1195=Impostazione
+1196=Valore
+1197=Blocca
+1198=Descrizione
+1199=Abilitato
+1200=Gruppo\+
+1201=Utente\+
+1202=Impostazioni comuni
+1203=Impostazioni prova digitazione
+
+/////////////////////////////////////////////////////////////
+// Manager Change directory window
+/////////////////////////////////////////////////////////////
+1394=&Directory Typing Master
+1395=&Sfoglia..
+
+//Import users window title
+1050=Scegli la cartella Typing Master 98/99 per importare utenti (e gruppi)
+
+
+/////////////////////////////////////////////////////////////
+// User Reports
+// Space for words is quite limited. Please check that your translations fit without problem.
+// If you cannot get some word to fit, please contact technical staff.
+/////////////////////////////////////////////////////////////
+1061=Certificato
+1062=Typing Master
+1063=Certificato di Typing Master,\+
+1064=ha completato oggi con successo una prova di digitazione Typing Master basata
+1065=su computer con i seguenti risultati:
+1066=Durata della prova:
+1067=Velocità lorda:
+1068=Precisione:
+1069=Velocità netta:
+1070=Firma:
+1071=Copyright 1992-2015 di Typing Master, Inc. Tutti i diritti riservati.
+1072=Altre informazioni su http://www.TypingMaster.com
+1073=Rapporto utente
+1074=Typing Master
+1076=Rapporto utente Typing Master,\+
+1077=Pagina\+
+1078=Gruppo
+1079=Corso attuale
+1080=Tempo di studio
+1081=Ultimo accesso
+1082=Creato
+1083=Utilizzo
+1084=Nessun gruppo
+1085=Prova di dattilografia
+1086=Esercizio
+1087=Durata
+1088=Vel. lorda
+1089=Vel. netta
+1090=Altro
+1091=Rapporto utente Typing Master,\+
+1092=Pagina\+
+1093=Rapporto gruppo
+1094=Typing Master
+1095=Rapporto gruppo Typing Master,\+
+1096=Pagina\+
+1097=Nome utente
+1098=Gruppo
+1099=Corso attuale
+1100=Ultimo uso
+1101=Nome utente
+1102=Gruppo
+1103=Corso attuale
+1104=Completato
+1105=Ultimo accesso
+1106=Nessun corso iniziato
+1107=sconosciuto
+1109=Rapporto
+1110=Inizializzazione rapporto
+1111=Creazione rapporto
+1112=Nome utente
+1113=Corso attuale
+1114=Fatto
+1115=Studiato (o)
+1116=Ultimo uso
+1117=Corso:
+1118=Corso attuale
+1119=Tempo di studio
+1120=Ultimo uso
+1121=Utilizzo
+1122=Creato
+1123=Prova di dattilografia
+1124=n/d
+1125=Completato
+1126=% in
+1127=Esercizio
+1128=Tipo
+1129=Testo
+1130=Durata
+1131=Vel. lorda
+1132=Precisione
+1133=Vel. netta
+1134=Data
+1135=Prova
+1136=Testo
+1137=Gioco
+1138=Altro
+1139=Suggerimento
+1140=Nessun corso iniziato
+1141=\+|\+
+1142=\+|\+
+1143=Pagina\+
+1144=Gruppo
+
+//Complete & Test Reports: more info on typing tests
+1380=Data:
+1381=Velocità lorda:
+1382=Colpi lordi:
+1383=Durata:
+1384=Precisione:
+1385=Errori:
+1386=Fatto:
+1387=Velocità netta:
+1388=Colpi netti:
+// misc:
+1390=min.
+1392=Nome prova:
+1393=errori
+
+
+/////////////////////////////////////////////////////////////
+//Typing Master Netsetup Strings
+/////////////////////////////////////////////////////////////
+1339=Typing Master configurazione rete
+1340=Proprietario licenza:
+1341=Licenze totali.
+1342=Licenze libere
+1343=Avanzamento installazione
+1344=Copia file:
+1345=Destinazione:
+1346=Destinazione:
+1347=Installato da:
+1348=Installazione fallita!
+1349=Installazione completata!
+1350=Creazione collegamento menu Start
+1351=Creazione
+1352=(Avviso: non sei amministratore)
+1353=(Amministratore postazione)
+1354=Questa postazione non ha un nome!
+1355=Licenze Postazione esaurite. Installazione interrotta.
+1356=Usare Typing Master Manager per rimuovere le postazioni installate
+1357=(Aggiornamento)
+1358=Versione di prova (10 licenze demo)
+1359=Errore:
+1360=non trovato dal server. Installazione interrotta.
+1361=Netsetup non è riuscito a creare una directory per la postazione. Installazione interrotta.
+1362=non trovato dal server/NETSETUP.INI non valido. Installazione interrotta.
+1363=dal server o impossibile scrivere sul disco rigido. Installazione interrotta.
+1364=Impossibile copiare
+1365=Nome utente
+
+/////////////////////////////////////////////////////////////
+// Misc strings:
+/////////////////////////////////////////////////////////////
+1366=Info su Typing Meter
+1367=Libera
+1368=minuti
+1369=Prova digitazione
+1370=Questa breve prova di digitazione richiede solo un minuto. Digitare ciò che si vede in alto.
+1371=Durata:
+1372=Messaggio dell'insegnante:
+1373=(Licenze di prova)
+1374=(Prova)
+1375=Impossibile inizializzare Manager. Assicurarsi che Manager non sia già in esecuzione e di avere accesso completo alla cartella Typing Master.
+1376=Il nome utente immesso è troppo simile al nome esistente
+1377=Il nome utente immesso non è valido
+1378=Impossibile eseguire Typing Meter dall'unità di rete
+1379=Impossibile eseguire Typing Meter perché la connessione di rete è inattiva.
+1145=esiste già!
+
+
+/////////////////////////////////////////////////////////////
+//Error messages
+/////////////////////////////////////////////////////////////
+126=Tempo scaduto durante l'apertura per la modalità di scrittura esclusiva\+
+
+168=Questo programma non può adattarsi allo schermo, poiché l'area
+169=di visualizzazione è solo 640x480 o inferiore. Vuoi
+170=vedere le istruzioni?
+171=Come molti programmi multimediali, Typing Master necessita di un'area di visualizzazione di almeno 800x600.\+
+172=Segui queste istruzioni per modificare l'impostazione Area di visualizzazione in Windows.
+173=1. Fai clic sul menu Start nella barra delle applicazioni
+174=2. Scegli Impostazioni..Pannello di controllo
+175=3. Fai doppio clic sull'icona Schermo
+176=4. Fai clic sulla scheda Impostazioni
+177=5. Imposta Area di visualizzazione almeno 800x600
+178=6. Premi il pulsante Prova. Se l'immagine è soddisfacente, premi OK
+
+259=La rete è occupata a causa di altri utenti,\+
+260=vuoi riprovare?
+274=La rete è attualmente occupata a causa di altri utenti,\+
+275=vuoi riprovare?
+358=#7216 Directory di rete non trovata.
+359=Reinstalla il programma e/o verifica le connessioni di rete.
+360=Typing Master non installato correttamente
+361=#7217 Il file di installazione richiesto è mancante o errore di rete.\+
+362=Impossibile aprire\+
+363=il file POLICY.DYN.
+364=Contattare l'amministratore o reinstallare il programma!
+376=Questa postazione non ha un nome!
+377=Typing Master non è stato installato per l'uso su questa postazione.
+378=Chiedere all'amministratore di installare Typing Master con NETSETUP.
+379=Nota: potrebbero essere necessarie licenze software aggiuntive.
+380=Typing Master non installato
+381=Typing Master è già in esecuzione su questa macchina.
+382=#7921: TUTTE LE LICENZE CONTEMPORANEE SONO ATTUALMENTE IN USO.\+
+383=La tua azienda ha\+
+384=\+licenze contemporanee per questa applicazione.
+385=Il numero massimo di utenti simultanei sta già utilizzando Typing Master.
+386=Contatta l'amministratore per licenze aggiuntive.
+387=#7922: ERRORE VIOLAZIONE DELLA LICENZA.\+
+388=Hai una sola licenza per questo programma. Non sono consentiti utenti simultanei. Contatta il tuo rivenditore per licenze aggiuntive.
+389=#7923: ERRORE DI VIOLAZIONE DELLA LICENZA.
+1389=Il tuo schermo utilizza solo 256 colori o meno.\nPer funzionare correttamente, Typing Master necessita di più\ndi 256 colori (ad esempio, modalità colori intensi).\n\nPuoi attivare la modalità colori intensi da\nImpostazioni schermo nel Pannello di controllo.
+1391=Le informazioni sullo studio non possono essere salvate perché la connessione di rete è inattiva.
+528=#1550 Il file del database utente è già in uso (bloccato)
+1028=#1550 Il file del database utente è già in uso (bloccato)
+
+/////////////////////////////////////////////////////////////
+//Miscellaneous user interface strings
+/////////////////////////////////////////////////////////////
+84=Caricamento in corso, attendere...
+85=Inserisci il tuo nome:
+89=http://www.TypingMaster.com
+1396=Nessun limite
+1397=25 minuti
+1398=35 minuti
+1399=45 minuti
+1430=Aggiunto da
+1431=Aggiunto dall'amministratore
+
+// latest changes in ver 6.21
+1432=Fai scoppiare le bolle in senso orario premendo i tasti corrispondenti.
+1433=Il gioco termina quando tutte le bolle sono scoppiate.
+1434=Avvia
+
+
+// latest changes in ver 6.30
+1435=&Lingua
+
+1436=Espor&ta dati CSV
+1437=&Cancella punteggi di gioco
+1438=&Ricostruisci indice utente
+1439=Sei sicuro di voler pulire i punteggi più alti per i giochi?
+1440=Questa postazione ha la vecchia versione 6.2x che deve essere aggiornata manualmente
+1441=Questa postazione usa sempre la versione più recente tramite una scorciatoia
+1442=Scorciatoia
+1443=I tasti mancanti
+1444=Il corso selezionato non è stato progettato per il tuo attuale schema di tastiera. Si consiglia vivamente di cambiarlo, altrimenti alcuni degli esercizi potrebbero non funzionare.
+1445=Passa allo schema internazionale USA
+1446=Aggiorna postazione/i
+1447=&Aggiorna tutto
+1448=Nessuna postazione di lavoro selezionata.\nSeleziona almeno una casella accanto al nome della postazione
+1449=Attività di manutenzione
+
+
+// Typing Master 7.00 ChangeS:
+
+
+/////////////////////////////////////////////
+//Dynamic Comment system (1480 - 1599)
+/////////////////////////////////////////////
+
+//Main title (1480 - 1489)
+1480=Esercizio completato
+1481=Obiettivo di precisione quasi raggiunto
+1482=Obiettivo di precisione non raggiunto
+1483=Esercizio interrotto
+
+1599=Nessun suggerimento
+
+//Speed, accuracy & duration comments (1540 - 1549)
+1540=Obiettivo
+1541=Lento
+//1542=Abbastanza veloce, sufficiente, soddisfacente, adeguato, tutto bene
+1542=OK
+1543=Buono
+1544=Molto buono
+1545=Eccellente
+1546=salvato
+
+//Goal tips (1550 - 1579)
+1550=Raggiungerai l'obiettivo di precisione se abbassi un po' la velocità.
+1551=Una buona precisione è più importante della velocità! Dovresti rallentare per raggiungere l'obiettivo di precisione.
+1552=La tua precisione è buona. Ora potresti provare a digitare un po' più velocemente.
+1553=Continua così! Se non lasci che la tua precisione scenda e continui a digitare fluentemente, la modalità di durata ottimale ti farà risparmiare un sacco di tempo.
+1554=Presta un po' più attenzione alla precisione e raggiungerai il livello obiettivo.
+1555=Se un esercizio ti sembra difficile, puoi sempre rifarlo per rafforzare le tue abilità.
+
+//Difficult keys tips (1490 - 1499)
+1490=Sembra che tu abbia problemi con i tasti "%s" appresi in precedenza. Questo potrebbe distrarre il tuo apprendimento e ti consigliamo di rivederli.
+1491=Il tasto "%s" appreso in precedenza sembra problematico e potrebbe distrarre il tuo apprendimento: una rapida revisione ti aiuterà.
+1492=I tasti "%s" sembrano problematici: potresti ripetere un esercizio precedente o completare un esercizio di revisione.
+1493=Il tasto "%s" sembra problematico: prestaci più attenzione nel prossimo esercizio o fai una revisione ora, se vuoi.
+1494=I tasti "%s" sembrano difficili: tienili d'occhio e rivedili se continui ad avere problemi.
+1495=Sembra che tu abbia qualche difficoltà con "%s": prestaci attenzione e rivedilo se la difficoltà ricompare.
+1499=Inizia revisione
+
+//Goal level tips (1580 - 1598)
+1580=Continui a superare l'obiettivo di precisione e scrivi anche molto velocemente: potresti benissimo aumentare il livello del tuo obiettivo nel prossimo esercizio!
+1581=Continui a superare l'obiettivo di precisione: se vuoi una sfida maggiore, potresti aumentare il livello dell'obiettivo nel prossimo esercizio.
+1582=Se l'attuale obiettivo di precisione sembra troppo impegnativo, considera di abbassare il livello dell'obiettivo nel prossimo esercizio.
+1583=Hai scelto un obiettivo di precisione piuttosto impegnativo: ricorda che hai la possibilità di abbassarlo nel prossimo esercizio.
+1584=Se non vuoi ridurre la velocità per una migliore precisione, puoi anche scegliere di abbassare l'obiettivo di precisione nel prossimo esercizio.
+1585=L'obiettivo attuale per la precisione sembra piuttosto impegnativo: puoi abbassare il livello obiettivo nel prossimo esercizio, se vuoi.
+1588=Regola gli obiettivi
+
+//Goal Explanations (1500 - 1539)
+//1.1
+1500=La tua precisione era ben al di sotto del livello obiettivo e hai digitato un po' lentamente.
+//1.2
+1501=La tua velocità di digitazione era costante, ma la tua precisione non ha raggiunto il livello obiettivo.
+//1.3
+1502=Focalizza. La tua velocità di digitazione era buona, ma non hai raggiunto l'obiettivo di precisione.
+//1.4
+1503=Concentrati. La tua velocità di digitazione era molto buona, ma la tua precisione era ben al di sotto del livello obiettivo.
+//1.5
+1504=Fai attenzione! La tua velocità di digitazione era eccellente, ma non hai raggiunto l'obiettivo di precisione.
+//2.1
+1505=La tua precisione non ha raggiunto del tutto il livello obiettivo e hai digitato un po' lentamente.
+//2.2
+1506=Ci siamo quasi! La tua velocità di digitazione era OK, ma non hai raggiunto del tutto l'obiettivo di precisione.
+//2.3
+1507=Prova solo un po' di più! La tua velocità di digitazione era buona, ma la tua precisione è rimasta al di sotto del livello obiettivo.
+//2.4
+1508=Fai attenzione! La tua velocità di digitazione è stata molto buona, ma la tua precisione non ha raggiunto il livello obiettivo.
+//2.5
+1509=Fai attenzione! La tua velocità di digitazione è stata eccellente, ma non hai raggiunto il livello obiettivo per la precisione.
+//3.1
+1510=Hai raggiunto il livello obiettivo per la precisione, ma hai digitato un po' lentamente.
+//3.2
+1511=Hai raggiunto il livello obiettivo per la precisione e la tua velocità di digitazione è stata abbastanza buona. Continua così!
+//3.3
+1512=Ottimo lavoro! Hai raggiunto il livello obiettivo per la precisione e la tua velocità di digitazione è stata buona. Continua così!
+//3.4
+1513=Ben fatto! Hai raggiunto il livello obiettivo per la precisione e la tua velocità di digitazione è stata molto buona.
+//3.5
+1514=Hai raggiunto il livello obiettivo per la precisione e la tua velocità di digitazione è stata eccellente. Ottimo!
+//4.1
+1515=Hai superato il livello obiettivo per la precisione, ma hai digitato un po' lentamente.
+//4.2
+1516=Ottimo! Hai superato il livello obiettivo per la precisione e la tua velocità di digitazione è stata OK. Continua così!
+//4.3
+1517=Ben fatto! Hai superato l'obiettivo di precisione e la tua velocità di digitazione è stata buona. Continua così!
+//4.4
+1518=Ottimo lavoro! Hai superato l'obiettivo di precisione e anche la tua velocità di digitazione è stata molto buona. Eccellente!
+//4.5
+1519=Congratulazioni, sia la tua precisione che la tua velocità di digitazione sono state eccellenti. Ottima digitazione!
+
+//Interrupted + goal reached
+1520=La tua precisione era al livello dell'obiettivo ma l'esercizio non è stato completato completamente.
+//Interrupted + goal not reached
+1521=L'esercizio non è stato completato completamente e non hai raggiunto l'obiettivo di precisione.
+//Interrupted early
+1522=L'esercizio è stato interrotto in anticipo. I risultati si basano su materiale incompleto e potrebbero non essere accurati.
+
+//END: Dynamic Comment system -----------------------
+
+1450=Visualizza e stampa i risultati
+1451=Prova di digitazione completata
+1452=RISULTATI DEL TEST
+1453=TEST DI DIGITAZIONE
+1455=TESTO DEL TEST
+1456=\+del totale\+
+1457=Dettagli prova di digitazione
+1458=Certificato prova di digitazione
+
+1459=Avviso: è possibile memorizzare un solo messaggio alla volta
+1460=&Mostra/Nascondi prova
+1461=&Stampa testo
+
+// Typing Meter issues
+
+1462=Si consiglia di fare una pausa dopo
+//1463=Hai lavorato per %s ore. È il momento di prendersi una pausa!\n
+1463=Consiglio: 
+1464=Metti delicatamente le mani a coppa sugli occhi chiusi e tieni la posizione per 30 secondi o più per rilassare gli occhi.
+1465=Allunga le braccia davanti a te e fletti delicatamente entrambi i polsi ruotando la parte superiore delle mani verso il corpo. Tieni la posizione per 5 secondi, rilassati e ripeti.
+1466=Allunga le braccia ai lati e stringi entrambi i pugni per 5 secondi. Quindi allarga le dita il più possibile e tieni la posizione per 5 secondi. Ripeti un paio di volte.
+1467=Stai dritto e premi l'orecchio destro verso la spalla destra aiutandoti delicatamente con la mano destra. Tieni la posizione per 5 secondi e ripeti con il lato sinistro.
+1468=Quando lavori al computer, tendiamo a sbattere le palpebre molto meno spesso del normale e gli occhi secchi possono causare disagio e visione offuscata. Ricorda di sbattere le palpebre spesso per mantenere gli occhi lubrificati.
+1469=Allunga bene i muscoli. Alzati e solleva le braccia dritte verso l'alto, stringendo le mani. Mantieni la posizione per 5 secondi e rilassati. Ripeti un paio di volte.
+1470=Fai riposare gli occhi. Fissa un oggetto a circa 20 piedi/6 metri di distanza per 20 secondi. Fai questo ogni tanto per rilassare gli occhi.
+1471=Estendi le braccia e fletti delicatamente il polso sinistro premendo il palmo della mano verso il polso con la mano destra. Mantieni la posizione per 5 secondi e ripeti con la mano destra.
+1472=Stai dritto e solleva le spalle verso le orecchie. Mantieni la posizione per 3 secondi. Rilassati e ripeti. Continua con rapidi scrollate di spalle per 10 secondi per migliorare la circolazione.
+1473=Fai una pausa!
+
+// Manager
+1474=Le impostazioni sono state salvate.
+1475=Le impostazioni sono state ripristinate.
+1606=Non puoi disattivare il corso predefinito
+
+// Tutor changes
+1476=Scegli password
+1477=L'amministratore ti chiede di scegliere la password da usare in questo software.
+
+1478=Guadagna licenze gratuite
+1479=Esegui backup completo
+
+// GOAL levels
+1600=Nessun obiettivo
+1601=Facile
+1602=Intermedio
+1603=Avanzato
+1604=Esperto
+1605=Principiante
+
+
+1607=Obiettivo
+1608=Obiettivo di precisione
+1609=Durata
+1610=% minuti (in base ai progressi)
+1611=Premi la Barra spaziatrice per iniziare.
+
+/// Objective list, max 40
+//1
+1620=Impara e memorizza le nuove posizioni dei tasti e sviluppa la corretta portata delle dita sui tasti.
+//2
+1621=Integra i nuovi tasti con i tasti già appresi e aggiungi fluidità alla tua digitazione.
+//3
+1622=Esercizio di consolidamento per sviluppare ulteriormente la memoria muscolare e rafforzare la tecnica.
+//4
+1623=Pratica di rinforzo per sviluppare battute fluide e precise e un ritmo uniforme.
+//5
+1624=Digita in modo indipendente senza alcun suggerimento visivo e dimostra le tue abilità.
+//6
+1625=Esame di lezione per la valutazione delle abilità.
+
+//the following are for speed building course
+//7
+1626=Pratica extra per aumentare la velocità di digitazione mantenendo un'elevata precisione.
+//8
+1627=Rivedi i tasti già appresi.
+//9
+1628=Rafforza la tecnica con particolare attenzione ai tasti della riga iniziale selezionati.
+//10
+1629=Rafforza la tecnica con particolare attenzione ai tasti dell'indice.
+//11
+1630=Rafforza la tecnica con particolare attenzione ai tasti del medio.
+//12
+1631=Rafforza la tecnica con particolare attenzione ai tasti dell'anulare.
+//13
+1632=Rafforza la tecnica con particolare attenzione ai tasti del mignolo.
+//14
+1633=Impara a digitare fluentemente alcune delle parole più comuni in inglese.
+//15
+1634=Rafforza le abilità digitando parole comunemente scritte in modo errato.
+//16
+1660=xx
+
+//Result screen strings
+1661=I risultati non possono essere calcolati
+1662=Prova superata
+1663=Hai completato questa prova di digitazione.
+1664=Prova non superata
+1665=Per maggiori informazioni, guarda i dettagli.
+1666=Esercizio parzialmente completato
+1667=Esercizio pienamente completato
+1668=Guarda i tuoi risultati qui sotto.
+1669=Tasti difficili in questo esercizio
+1670=Nessun tasto difficile
+1671=Suggerimenti per l'apprendimento
+
+1672=SUPERATO
+1673=NON SUPERATO
+
+//Some new strings for Typing Meter login window
+1674=Sono un nuovo utente..
+1675=Lancia Meter
+1676=Mostra utenti esistenti
+1677=Non lanciare
+1678=Se vuoi avviare Meter, scegli il tuo nome utente e clicca sul pulsante "Avvia", altrimenti scegli "Non avviare".
+1679=Non mostrare questa finestra in futuro.
+
+1680=Versione di prova limitata
+1681=I tuoi tasti difficili
+
+1682=Prova interrotta
+1683=La prova è stata interrotta prima che scadesse il tempo.
+
+// new ones added by Tuomas
+1684=Allenamento
+1685=Schermo intero (zoom)
+1686=Finestra ingrandita
+1687=Finestra piccola
+1688=Benvenuto nuovo utente
+1689=Quando l'utente "%s" avvia Windows...
+1690=Benvenuto a Typing Master
+1691= [vecchio]
+1692=OK
+1693= (in pausa)
+1694=Basato sugli obiettivi
+1695=Verifica della licenza...
+1696=Non iniziato
+1697=Continua il corso
+1698=Continua la lezione
+1699=Inizia ora
+1700=L'intero corso dura
+1701= ore
+1702=Ogni lezione durerà\+
+1703= minuti a seconda dei tuoi progressi
+1704=Durata del corso\+
+1706=Inizia ora
+1707=In corso
+1708=Digita le sequenze di tasti, segui il tasto evidenziato
+1709=Guarda la tastiera e le mani sullo schermo per suggerimenti, quando necessario
+1710=Digita l'intera frase e premi Invio
+1711=Premi Spazio per continuare
+1712=Tieni premuto\+
+1713= con\+
+1714=Premi\+
+1715= tasto con\+
+1716=Ora prova a premere\+
+1717=1.\+
+1718=2. Premi\+
+1719=\+tasto con\+
+1720=Bene!
+1721=Eccellente!
+1722=Ottimo!
+1723=Oops, riprova..
+1724=Digita la parola evidenziata e premi Spazio
+1725=Ora prova a digitare\+
+1726=Corso completato!
+1727=Ora hai completato questa lezione e allenato i seguenti tasti:
+1728=Torna al menu principale
+1729=Congratulazioni, ora hai potenziato le tue abilità di digitazione! Fai clic su Avvia per nuove sfide.
+1730=ERRORE: la licenza inserita è stata superata. Disinstallare il software da uno o più computer e riprovare!
+1731=Grazie per aver acquistato Typing Master 11 Lite
+1732=Questa versione non include Typing Meter.
+1733=Typing Master Typing Meter è stato rimosso.
+1734=Spiacenti, questa versione del programma non consente funzionalità di rete!
+1735=Contatta il tuo rivenditore per una versione di rete completa.
+1736=Paragrafo
+1737=Tasti
+1738=Parole
+1739=Frase
+1740=Rapporto riassuntivo
+1741=Utenti totali
+1742=Attivi nella settimana
+1743=Attivi nel mese
+1744=Minimo
+1745=Medio
+1746=Massimo
+1747=Tempo di studio
+1748=Tempi di utilizzo
+1749=Ultimo utilizzo
+1750= utenti
+1751= volte
+1752=Corso
+1753=Utenti
+1754=Fatto (media)
+1755=Fatto 50% >
+1756=Fatto 90% >
+1757=Rapporto riassuntivo
+1758=Statistiche settimanali
+1759=tasto/i difficili
+1760=Problemi minori con alcuni tasti
+1761=Nessun problema riscontrato
+1762=lettera/e maiuscole difficili
+1763=Problemi minori con alcune lettere maiuscole
+1764=Nessun problema riscontrato
+1765=parola/e difficili
+1766=Problemi minori con alcune parole
+1767=Nessun problema riscontrato
+1768=Typing Meter si avvierà automaticamente e inizierà ad analizzare la digitazione per "%s". Consigliato se questo è il tuo account Windows personale.
+1769=All'avvio di Windows, Typing Meter chiederà se desideri abilitarlo. Consigliato se più persone utilizzano questo account Windows.
+1770=Typing Meter non parte automaticamente all'avvio di Windows. Per usare Typing Meter, devi avviarlo manualmente.
+1771=Lancia Typing Meter automaticamente
+1772=Chiedi prima di lanciare
+1773=Non lanciare Typing Meter
+1774=Typing Meter è stato avviato.
+1775=Typing Meter
+1776=Avvia in modalità disabilitato
+1777=Abilitazione..
+1778=Typing Meter è stato attivato. Le tue capacità di digitazione sono ora monitorate.
+1779=Typing Meter
+1780=Typing Meter è disabilitato mentre Typing Master 11 è in esecuzione. Riprova dopo aver chiuso Typing Master
+1781=Typing Meter
+1782=Basato sugli obiettivi
+1783=Allenamento
+1784=Perfeziona i tasti e le parole che Typing Meter ha trovato difficili.
+1785=Analisi dettagliata
+1786=Inizia revisione
+1787=Inizia esercizio (Spazio)
+1788=I tuoi progressi
+1789=Informazioni sull'esercizio
+1790=Salva PD&F
+1791=Velocità digitazione
+1792=Precisione
+1793=Cambia corso
+1794=Durata ottimale
+1795=Durante questo corso la durata di ogni esercizio sarà ottimale in base ai tuoi progressi. Ciò ti farà risparmiare tempo garantendo buoni risultati di apprendimento.
+1796=Lezioni
+1797=Disattiva durata ottimale
+1798=Avanzamento del corso
+1799=Contenuti del corso
+1800=Regola durata del corso
+1801=Completato
+1802=Lezione completata!
+1803=Lezione successiva
+1804=Solo nell'anteprima della versione di prova
+1805=Puoi completare le prime due lezioni del corso di dattilografia con questa versione di prova limitata. È richiesta una versione completa per accedere al resto delle lezioni.
+1806=Inserisci chiave di licenza
+1807=Allenamento
+1808=Analisi
+1809=Statistiche
+1810=Stato Typing Meter
+1811=Scegli durata allenamento
+1812=Stat. digitazione
+1813=Indice problemi
+1814=Cos'è Typing Meter?
+1815=Giorno
+1816=Ora
+1817=Velocità
+1818=Settimana
+1819=Lancia più tardi
+1820=Lancia
+1821=Imposta notifiche
+1822=Avvisami quando serve allenamento
+1823=Avvisami di fare una pausa ogni...
+1824=Typing Meter avviato
+1825=Icona posizionata nella barra delle applicazioni
+1826=La tua digitazione in altri programmi verrà analizzata
+1827=Accesso a Typing Meter
+1828=Apri Typing Master e fai clic su "Typing Meter" nel menu, oppure
+1829=Fai clic sull'icona Typing Meter nella barra delle applicazioni e scegli "Avvia allenamento.."
+1830=Introduzione all'allenamento
+1831=Typing Meter inizierà ad analizzare la tua digitazione e ti avviserà quando rileva tasti e parole difficili che necessitano di allenamento. In genere, ciò richiede 1-3 giorni.
+1832=Cosa accadrà?
+1833=Fai clic su Continua per familiarizzare con le funzionalità di Typing Meter
+1834=Fai clic su Corso nel menu per tornare a studiare
+1835=Torna ai corsi
+1836=Inizia prova
+1837=Bloccato nella versione di prova
+1838="Il corso selezionato non è stato progettato per il tuo attuale schema di tastiera. Si consiglia vivamente di cambiarlo, altrimenti alcuni degli esercizi potrebbero non funzionare."
+1839=Schema:
+1840=Passa allo schema internazionale USA
+1841=&Scegli tu la tastiera
+1842=Esercizio bloccato nella versione di prova
+1843=Questo esercizio è bloccato in questa versione. Acquista la versione completa di Typing Master 11 per ottenere accesso illimitato!
+1844=Torna
+1845=Continua
+1846=&Rapporto riassuntivo
+1847=Seleziona &tutto
+1848=Digita qui il testo sopra
+1849=Ultimi 7 giorni
+1850=Ultimo mese
+1851=Ultimo anno
+1852=Scegli il corso
+1853=Altre informazioni su Typing Meter
+1854=Typing Meter tiene traccia della tua digitazione quando usi il PC, la analizza e fornisce un'allenamento mirato usando i tuoi tasti difficili. Meter raccoglie anche statistiche di digitazione e può essere impostato per ricordarti di fare delle pause.
+1855=Stato
+1856=Avvia Typing Meter
+1857= 
+1858= 
+1859= 
+1860= 
+1861=Durata
+1862=Lezioni
+1863=Progressi
+1864=Gara di velocità ABC
+1865=Pausa
+1866=Gioco ABC
+1867=Disinstallazione Typing Master
+1868=L'intero corso dura
+1869=Esercizio completato!
+1870=Hai completato pienamente questo esercizio e raggiunto l'obiettivo di precisione; buon lavoro!
+1871=Hai completato questo esercizio e raggiunto l'obiettivo di precisione.
+1872=Hai completato questo esercizio e raggiunto l'obiettivo di precisione.
+1873=Esercizio completato
+1874=Hai completato questo esercizio.
+1875=ore
+1876=Progressi eccellenti!
+1877=La tua precisione e velocità di digitazione sono così buone che puoi saltare il resto di questo esercizio per risparmiare tempo.
+1878=Vai ai risultati (Invio)
+1879=Continua l'esercizio (Spazio)
+1880=Durata personalizzata
+1881=Scegli la durata delle lezioni; la durata degli esercizi verrà regolata di conseguenza.
+1882=Durata della lezione:
+1883=Durata ottimale
+1884=Attiva
+1885=Mostra risultati (Invio)
+1886=Interrotto
+1887=Errore di apertura file di gruppo:
+1888=L'amministratore deve avviare lo strumento Manager per risolvere questa situazione.
+1889=Accesso negato: Impossibile scrivere nella cartella del database.
+1890=L'account utente corrente non ha i permessi di modifica file richiesti sulla cartella DATABASE del server.
+1891=Consulta la Guida all'installazione per istruzioni dettagliate su come impostare i permessi della cartella di installazione.
+1892=%s min.
+1893=%s ore
+1894=Corsi extra: Digitazione avanzata
+1895=Come acquistare...
+1896=&Modifica impostazioni..
+1897=Dis/Abilita
+1898=Rendi predefinito
+1899=Corsi
+1900=Attività del corso
+1901=Altre informazioni
+1902=http://www.TypingMaster.com
+1904=Durata della lezione
+1905=Scegli durata della lezione:
+1906=Analisi digitazione
+
+//language specific Image:
+1907=Trainer popup menu.bmp
+
+1908=Rimuovi predefinito
+1909=[Scegli gruppo]
+
+//Specific strings for ActiveX v7
+1910=Esci da questa lezione
+
+1911=Questa è una versione di prova completamente operativa che funzionerà fino a %S.
+1912=Esci da questo corso
+
+1913=Ricorda le parole digitate in modo errato per creare esercizi mirati.
+1914=Nessuna parola viene memorizzata. Vedrai comunque i tasti e le coppie di tasti problematici.
+1915=Non raccogliere alcuna parola

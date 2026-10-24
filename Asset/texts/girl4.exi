@@ -1,0 +1,13 @@
+#
+#2004/3/23
+category=beginner
+version=1.00
+name=A Typing Exam - Awakening to Girls' Rights (5 minute, 35 WPM)
+copyright=An official typing test with Pass Limits
+author=Typing Master
+description=A Typing Exam - Awakening to Girls' Rights (5 minute, 35 WPM)
+language=eng
+time=5
+mustTypeAll=1
+MinAccuracy=95
+MinSpeed=35
