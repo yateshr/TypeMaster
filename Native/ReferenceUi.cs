@@ -57,44 +57,18 @@ public partial class MainWindow
             button.Background = active ? new LinearGradientBrush(Color.FromRgb(193, 209, 247), Color.FromArgb(0, 244, 245, 248), 0) : Brushes.Transparent;
             if (active) { button.BorderBrush = Brushes.RoyalBlue; button.BorderThickness = new Thickness(5, 0, 0, 0); }
             var body = new Canvas { Width = 174, Height = 32 }; var icon = NavigationIcon(title, active, Current?.Dark == true); Position(body, icon, active ? 24 : 29, 8, 18, 18);
-            string? reference = !active ? title == "Studying" ? "settings-reference.png" : "course-reference.png" : title switch { "Studying" => "course-reference.png", "Typing Meter" => "meter-reference.png", "Custom Review" => "review-new-reference.png", "Typing Test" => "tests-reference.png", "Games" => "games-reference.png", "Statistics" => "statistics-reference.png", "Settings" => "settings-reference.png", "About" => "about-reference.png", _ => null };
-            if (Current?.Dark != true && Localization.Language == "eng" && reference != null)
-            {
-                button.BorderThickness = new Thickness(0); button.Background = Brushes.Transparent;
-                button.Content = ReferenceGraphic(reference, new Int32Rect(reference == "review-new-reference.png" ? 1164 : 924, (reference == "review-new-reference.png" ? 310 : 220) + i * 51, 174, 32));
-            }
-            else { var text = RefText(Localization.Translate(title).ToUpperInvariant(), active ? 12 : 11, active); text.Foreground = active ? Brushes.Gray : Current?.Dark == true ? Brushes.WhiteSmoke : new SolidColorBrush(Color.FromRgb(13, 22, 41)); Position(body, text, active ? 52 : 57, 9, 115, 23); button.Content = body; }
+            var text = RefText(Localization.Translate(title).ToUpperInvariant(), active ? 12 : 11, active); text.Foreground = Current?.Dark == true ? Brushes.WhiteSmoke : active ? new SolidColorBrush(Color.FromRgb(18,86,172)) : new SolidColorBrush(Color.FromRgb(13,22,41)); Position(body, text, active ? 52 : 57, 9, 115, 23); button.Content = body;
             System.Windows.Automation.AutomationProperties.SetName(button, title);
             Position(Navigation, button, 0, top, 174, 32);
         }
         var logo = new Image { Source = AssetBitmap("Branding/typemaster-wordmark.png"), Stretch = Stretch.Fill }; Position(Navigation, logo, 30, 486, 132, 27);
     }
-    static readonly Dictionary<string, BitmapSource> referenceGraphics = [];
-    static Image ReferenceGraphic(string file, Int32Rect rectangle)
-    {
-        string key = file + ":" + rectangle;
-        if (!referenceGraphics.TryGetValue(key, out var bitmap))
-        {
-            var source = new FormatConvertedBitmap(AssetBitmap("ReferenceUI/" + file), PixelFormats.Bgra32, null, 0); int stride = rectangle.Width * 4;
-            var pixels = new byte[stride * rectangle.Height]; source.CopyPixels(rectangle, pixels, stride, 0);
-            bitmap = BitmapSource.Create(rectangle.Width, rectangle.Height, 96, 96, PixelFormats.Bgra32, null, pixels, stride); bitmap.Freeze(); referenceGraphics[key] = bitmap;
-        }
-        return new Image { Source = bitmap, Stretch = Stretch.Fill, SnapsToDevicePixels = true, UseLayoutRounding = true };
-    }
     static void ReferenceClose(Canvas canvas, double x, double y, Action action)
     {
-        var button = RefButton("Close", action); button.Content = ReferenceGraphic("course-reference.png", new Int32Rect(1077, 185, 17, 17)); button.Padding = new Thickness(0); button.Tag = new CornerRadius(0); button.Background = Brushes.Transparent; System.Windows.Automation.AutomationProperties.SetName(button, "Close"); Position(canvas, button, x, y, 17, 17);
+        var button = RefButton("Close", action); button.Content = Picture("TypeMasterArtwork/close.png",17,17); button.Padding = new Thickness(0); button.Tag = new CornerRadius(0); button.Background = Brushes.Transparent; System.Windows.Automation.AutomationProperties.SetName(button, "Close"); Position(canvas, button, x, y, 17, 17);
     }
     static FrameworkElement NavigationIcon(string title, bool active, bool dark)
     {
-        if (!dark)
-        {
-            // Reuse the supplied icon pixels instead of approximating their silhouettes.
-            if (active) return ReferenceGraphic("course-reference.png", new Int32Rect(952, 228, 18, 18));
-            if (title == "Studying") return ReferenceGraphic("settings-reference.png", new Int32Rect(953, 228, 18, 18));
-            int row = Array.IndexOf(new[] { "Studying", "Typing Meter", "Custom Review", "Typing Test", "Games", "Statistics", "Settings", "About" }, title);
-            return ReferenceGraphic("course-reference.png", new Int32Rect(953, 228 + row * 51, 18, 18));
-        }
         var canvas = new Canvas { Width = 17, Height = 17 }; Brush ink = dark && !active ? Brushes.LightGray : new SolidColorBrush(Color.FromRgb(61, 67, 69));
         void Rectangle(double x, double y, double w, double h) => Position(canvas, new Rectangle { Fill = ink }, x, y, w, h);
         if (active) { Position(canvas, new Ellipse { Fill = ink }, 1, 1, 15, 15); Position(canvas, new TextBlock { Text = "‹", FontFamily = new FontFamily("Arial"), FontSize = 19, FontWeight = FontWeights.Bold, Foreground = Brushes.LightGray }, 4, -3, 12, 20); }

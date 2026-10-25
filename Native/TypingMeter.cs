@@ -90,7 +90,7 @@ public sealed class MeterWidget : Window
         Left = Math.Max(0, SystemParameters.WorkArea.Right - Width - 20); Top = Math.Max(0, SystemParameters.WorkArea.Bottom - Height - 20);
         var grid = new Grid(); grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(102) }); grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(48) });
         var body = new Grid { Width = 255, HorizontalAlignment = HorizontalAlignment.Left };
-        body.Children.Add(new Image { Source = new BitmapImage(new Uri(Path.Combine(Assets.Root, "spmeter1.bmp"))), Width = 255, Height = 102 });
+        body.Children.Add(new Image { Source = MainWindow.AssetBitmap("spmeter1.bmp"), Width = 255, Height = 102 });
         TextBlock Overlay(string value, double x, double y, double size)
         { var label = new TextBlock { Text = value, Foreground = Brushes.White, FontSize = size, FontWeight = FontWeights.Bold, HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top, Margin = new Thickness(x, y, 0, 0), Background = Brushes.Black }; body.Children.Add(label); return label; }
         speed = Overlay("0", 27, 62, 22); words = Overlay("0", 169, 26, 12); time = Overlay("00:00", 169, 43, 12); status = Overlay("0 WPM", 169, 62, 12);

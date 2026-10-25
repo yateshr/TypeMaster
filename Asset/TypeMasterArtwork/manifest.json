@@ -1,0 +1,710 @@
+{
+  "version": 1,
+  "author": "TypeMaster project",
+  "fingertips": [
+    [
+      129,
+      100
+    ],
+    [
+      33,
+      81
+    ],
+    [
+      62,
+      50
+    ],
+    [
+      83,
+      24
+    ],
+    [
+      97,
+      39
+    ],
+    [
+      243,
+      27
+    ],
+    [
+      271,
+      23
+    ],
+    [
+      299,
+      35
+    ],
+    [
+      327,
+      57
+    ],
+    [
+      225,
+      101
+    ]
+  ],
+  "legacy": {
+    "2progress_graph.gif": {
+      "file": "2progress_graph.gif.png",
+      "width": 160,
+      "height": 197,
+      "category": "legacy-sized original redraw"
+    },
+    "advanced_courses.gif": {
+      "file": "advanced_courses.gif.png",
+      "width": 300,
+      "height": 223,
+      "category": "legacy-sized original redraw"
+    },
+    "advanced_courses_de.gif": {
+      "file": "advanced_courses_de.gif.png",
+      "width": 3,
+      "height": 3,
+      "category": "legacy-sized original redraw"
+    },
+    "advanced_courses_es.gif": {
+      "file": "advanced_courses_es.gif.png",
+      "width": 190,
+      "height": 185,
+      "category": "legacy-sized original redraw"
+    },
+    "advanced_courses_fi.gif": {
+      "file": "advanced_courses_fi.gif.png",
+      "width": 190,
+      "height": 185,
+      "category": "legacy-sized original redraw"
+    },
+    "advanced_courses_fr.gif": {
+      "file": "advanced_courses_fr.gif.png",
+      "width": 3,
+      "height": 3,
+      "category": "legacy-sized original redraw"
+    },
+    "advanced_courses_se.gif": {
+      "file": "advanced_courses_se.gif.png",
+      "width": 190,
+      "height": 185,
+      "category": "legacy-sized original redraw"
+    },
+    "bubbles.gif": {
+      "file": "bubbles.gif.png",
+      "width": 170,
+      "height": 322,
+      "category": "legacy-sized original redraw"
+    },
+    "checkmark.gif": {
+      "file": "checkmark.gif.png",
+      "width": 16,
+      "height": 16,
+      "category": "legacy-sized original redraw"
+    },
+    "crs_icon_basic.gif": {
+      "file": "crs_icon_basic.gif.png",
+      "width": 70,
+      "height": 70,
+      "category": "legacy-sized original redraw"
+    },
+    "crs_icon_empty.gif": {
+      "file": "crs_icon_empty.gif.png",
+      "width": 70,
+      "height": 70,
+      "category": "legacy-sized original redraw"
+    },
+    "crs_icon_junior.gif": {
+      "file": "crs_icon_junior.gif.png",
+      "width": 70,
+      "height": 70,
+      "category": "legacy-sized original redraw"
+    },
+    "crs_icon_numbers.gif": {
+      "file": "crs_icon_numbers.gif.png",
+      "width": 70,
+      "height": 70,
+      "category": "legacy-sized original redraw"
+    },
+    "crs_icon_numpad.gif": {
+      "file": "crs_icon_numpad.gif.png",
+      "width": 70,
+      "height": 70,
+      "category": "legacy-sized original redraw"
+    },
+    "crs_icon_specials.gif": {
+      "file": "crs_icon_specials.gif.png",
+      "width": 70,
+      "height": 70,
+      "category": "legacy-sized original redraw"
+    },
+    "crs_icon_speed.gif": {
+      "file": "crs_icon_speed.gif.png",
+      "width": 70,
+      "height": 70,
+      "category": "legacy-sized original redraw"
+    },
+    "crs_icon_test.gif": {
+      "file": "crs_icon_test.gif.png",
+      "width": 70,
+      "height": 70,
+      "category": "legacy-sized original redraw"
+    },
+    "diffkeys.bmp": {
+      "file": "diffkeys.bmp.png",
+      "width": 161,
+      "height": 212,
+      "category": "legacy-sized original redraw"
+    },
+    "entersymbol.gif": {
+      "file": "entersymbol.gif.png",
+      "width": 18,
+      "height": 17,
+      "category": "legacy-sized original redraw"
+    },
+    "entersymbol2.gif": {
+      "file": "entersymbol2.gif.png",
+      "width": 18,
+      "height": 18,
+      "category": "legacy-sized original redraw"
+    },
+    "ergo.gif": {
+      "file": "ergo.gif.png",
+      "width": 200,
+      "height": 266,
+      "category": "legacy-sized original redraw"
+    },
+    "ergo_deskchair.gif": {
+      "file": "ergo_deskchair.gif.png",
+      "width": 200,
+      "height": 266,
+      "category": "legacy-sized original redraw"
+    },
+    "ergo_display.gif": {
+      "file": "ergo_display.gif.png",
+      "width": 200,
+      "height": 266,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_azerty_a.gif": {
+      "file": "keyboard_azerty_a.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_backspace.gif": {
+      "file": "keyboard_backspace.gif.png",
+      "width": 129,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_bn.gif": {
+      "file": "keyboard_bn.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_ei.gif": {
+      "file": "keyboard_ei.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_enter.gif": {
+      "file": "keyboard_enter.gif.png",
+      "width": 129,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_enter_jr.gif": {
+      "file": "keyboard_enter_jr.gif.png",
+      "width": 129,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_home_row.gif": {
+      "file": "keyboard_home_row.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_home_row_de.gif": {
+      "file": "keyboard_home_row_de.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_home_row_es.gif": {
+      "file": "keyboard_home_row_es.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_home_row_fi.gif": {
+      "file": "keyboard_home_row_fi.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_home_row_fr.gif": {
+      "file": "keyboard_home_row_fr.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_home_row_se.gif": {
+      "file": "keyboard_home_row_se.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_shift.gif": {
+      "file": "keyboard_shift.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_shift_f.gif": {
+      "file": "keyboard_shift_f.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_shiftkeys.gif": {
+      "file": "keyboard_shiftkeys.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_spacebar.gif": {
+      "file": "keyboard_spacebar.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_u.gif": {
+      "file": "keyboard_u.gif.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "keyboard_u.jpg": {
+      "file": "keyboard_u.jpg.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "logo_login.bmp": {
+      "file": "logo_login.bmp.png",
+      "width": 370,
+      "height": 75,
+      "category": "legacy-sized original redraw"
+    },
+    "logo_menu.bmp": {
+      "file": "logo_menu.bmp.png",
+      "width": 160,
+      "height": 53,
+      "category": "legacy-sized original redraw"
+    },
+    "menu_test.gif": {
+      "file": "menu_test.gif.png",
+      "width": 127,
+      "height": 360,
+      "category": "legacy-sized original redraw"
+    },
+    "menu_test_de.gif": {
+      "file": "menu_test_de.gif.png",
+      "width": 127,
+      "height": 360,
+      "category": "legacy-sized original redraw"
+    },
+    "menu_test_es.gif": {
+      "file": "menu_test_es.gif.png",
+      "width": 127,
+      "height": 360,
+      "category": "legacy-sized original redraw"
+    },
+    "menu_test_fi.gif": {
+      "file": "menu_test_fi.gif.png",
+      "width": 127,
+      "height": 360,
+      "category": "legacy-sized original redraw"
+    },
+    "menu_test_fr.gif": {
+      "file": "menu_test_fr.gif.png",
+      "width": 127,
+      "height": 360,
+      "category": "legacy-sized original redraw"
+    },
+    "menu_test_se.gif": {
+      "file": "menu_test_se.gif.png",
+      "width": 127,
+      "height": 360,
+      "category": "legacy-sized original redraw"
+    },
+    "metertip.jpg": {
+      "file": "metertip.jpg.png",
+      "width": 253,
+      "height": 226,
+      "category": "legacy-sized original redraw"
+    },
+    "metertip.png": {
+      "file": "metertip.png.png",
+      "width": 253,
+      "height": 226,
+      "category": "legacy-sized original redraw"
+    },
+    "msgbullet.gif": {
+      "file": "msgbullet.gif.png",
+      "width": 20,
+      "height": 14,
+      "category": "legacy-sized original redraw"
+    },
+    "pipe_tileset.bmp": {
+      "file": "pipe_tileset.bmp.png",
+      "width": 384,
+      "height": 320,
+      "category": "legacy-sized original redraw"
+    },
+    "progress_graph.gif": {
+      "file": "progress_graph.gif.png",
+      "width": 160,
+      "height": 197,
+      "category": "legacy-sized original redraw"
+    },
+    "progress_graph_de.gif": {
+      "file": "progress_graph_de.gif.png",
+      "width": 160,
+      "height": 197,
+      "category": "legacy-sized original redraw"
+    },
+    "progress_graph_es.gif": {
+      "file": "progress_graph_es.gif.png",
+      "width": 160,
+      "height": 197,
+      "category": "legacy-sized original redraw"
+    },
+    "progress_graph_fi.gif": {
+      "file": "progress_graph_fi.gif.png",
+      "width": 160,
+      "height": 197,
+      "category": "legacy-sized original redraw"
+    },
+    "progress_graph_fr.gif": {
+      "file": "progress_graph_fr.gif.png",
+      "width": 160,
+      "height": 197,
+      "category": "legacy-sized original redraw"
+    },
+    "progress_graph_se.gif": {
+      "file": "progress_graph_se.gif.png",
+      "width": 160,
+      "height": 197,
+      "category": "legacy-sized original redraw"
+    },
+    "qwerty.jpg": {
+      "file": "qwerty.jpg.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "results.gif": {
+      "file": "results.gif.png",
+      "width": 241,
+      "height": 219,
+      "category": "legacy-sized original redraw"
+    },
+    "results_de.gif": {
+      "file": "results_de.gif.png",
+      "width": 240,
+      "height": 219,
+      "category": "legacy-sized original redraw"
+    },
+    "results_es.gif": {
+      "file": "results_es.gif.png",
+      "width": 240,
+      "height": 219,
+      "category": "legacy-sized original redraw"
+    },
+    "results_fi.gif": {
+      "file": "results_fi.gif.png",
+      "width": 240,
+      "height": 219,
+      "category": "legacy-sized original redraw"
+    },
+    "results_fr.gif": {
+      "file": "results_fr.gif.png",
+      "width": 240,
+      "height": 219,
+      "category": "legacy-sized original redraw"
+    },
+    "results_ne.gif": {
+      "file": "results_ne.gif.png",
+      "width": 240,
+      "height": 193,
+      "category": "legacy-sized original redraw"
+    },
+    "results_school.gif": {
+      "file": "results_school.gif.png",
+      "width": 240,
+      "height": 219,
+      "category": "legacy-sized original redraw"
+    },
+    "results_school_de.gif": {
+      "file": "results_school_de.gif.png",
+      "width": 240,
+      "height": 219,
+      "category": "legacy-sized original redraw"
+    },
+    "results_se.gif": {
+      "file": "results_se.gif.png",
+      "width": 240,
+      "height": 219,
+      "category": "legacy-sized original redraw"
+    },
+    "robinhood.GIF": {
+      "file": "robinhood.GIF.png",
+      "width": 862,
+      "height": 369,
+      "category": "legacy-sized original redraw"
+    },
+    "spacer.gif": {
+      "file": "spacer.gif.png",
+      "width": 1,
+      "height": 1,
+      "category": "legacy-sized original redraw"
+    },
+    "splashtm.bmp": {
+      "file": "splashtm.bmp.png",
+      "width": 494,
+      "height": 313,
+      "category": "legacy-sized original redraw"
+    },
+    "spmeter1.bmp": {
+      "file": "spmeter1.bmp.png",
+      "width": 255,
+      "height": 102,
+      "category": "legacy-sized original redraw"
+    },
+    "spmeter2.bmp": {
+      "file": "spmeter2.bmp.png",
+      "width": 97,
+      "height": 102,
+      "category": "legacy-sized original redraw"
+    },
+    "spmeter_paused.bmp": {
+      "file": "spmeter_paused.bmp.png",
+      "width": 97,
+      "height": 102,
+      "category": "legacy-sized original redraw"
+    },
+    "spmeterfor.bmp": {
+      "file": "spmeterfor.bmp.png",
+      "width": 255,
+      "height": 102,
+      "category": "legacy-sized original redraw"
+    },
+    "statistics.gif": {
+      "file": "statistics.gif.png",
+      "width": 150,
+      "height": 349,
+      "category": "legacy-sized original redraw"
+    },
+    "statistics_de.gif": {
+      "file": "statistics_de.gif.png",
+      "width": 150,
+      "height": 349,
+      "category": "legacy-sized original redraw"
+    },
+    "statistics_es.gif": {
+      "file": "statistics_es.gif.png",
+      "width": 150,
+      "height": 349,
+      "category": "legacy-sized original redraw"
+    },
+    "statistics_fi.gif": {
+      "file": "statistics_fi.gif.png",
+      "width": 150,
+      "height": 349,
+      "category": "legacy-sized original redraw"
+    },
+    "statistics_fr.gif": {
+      "file": "statistics_fr.gif.png",
+      "width": 150,
+      "height": 349,
+      "category": "legacy-sized original redraw"
+    },
+    "statistics_se.gif": {
+      "file": "statistics_se.gif.png",
+      "width": 150,
+      "height": 349,
+      "category": "legacy-sized original redraw"
+    },
+    "stdtip.bmp": {
+      "file": "stdtip.bmp.png",
+      "width": 193,
+      "height": 289,
+      "category": "legacy-sized original redraw"
+    },
+    "step_satellite_de.gif": {
+      "file": "step_satellite_de.gif.png",
+      "width": 3,
+      "height": 3,
+      "category": "legacy-sized original redraw"
+    },
+    "step_satellite_fr.gif": {
+      "file": "step_satellite_fr.gif.png",
+      "width": 3,
+      "height": 3,
+      "category": "legacy-sized original redraw"
+    },
+    "tip01.bmp": {
+      "file": "tip01.bmp.png",
+      "width": 295,
+      "height": 333,
+      "category": "legacy-sized original redraw"
+    },
+    "tip02.bmp": {
+      "file": "tip02.bmp.png",
+      "width": 295,
+      "height": 333,
+      "category": "legacy-sized original redraw"
+    },
+    "tip03.bmp": {
+      "file": "tip03.bmp.png",
+      "width": 295,
+      "height": 333,
+      "category": "legacy-sized original redraw"
+    },
+    "typing.jpg": {
+      "file": "typing.jpg.png",
+      "width": 170,
+      "height": 326,
+      "category": "legacy-sized original redraw"
+    },
+    "typing_jr.jpg": {
+      "file": "typing_jr.jpg.png",
+      "width": 170,
+      "height": 326,
+      "category": "legacy-sized original redraw"
+    },
+    "universal.png": {
+      "file": "universal.png.png",
+      "width": 297,
+      "height": 204,
+      "category": "legacy-sized original redraw"
+    },
+    "wordtris.gif": {
+      "file": "wordtris.gif.png",
+      "width": 182,
+      "height": 232,
+      "category": "legacy-sized original redraw"
+    }
+  },
+  "extras": {
+    "hands": {
+      "file": "hands.png",
+      "width": 367,
+      "height": 143,
+      "category": "finger cue aligned illustration"
+    },
+    "finger-patch": {
+      "file": "finger-patch.png",
+      "width": 22,
+      "height": 22,
+      "category": "finger cue background"
+    },
+    "meter-launch": {
+      "file": "meter-launch.png",
+      "width": 236,
+      "height": 133,
+      "category": "meter introduction"
+    },
+    "close": {
+      "file": "close.png",
+      "width": 17,
+      "height": 17,
+      "category": "control"
+    },
+    "profile": {
+      "file": "profile.png",
+      "width": 22,
+      "height": 21,
+      "category": "control"
+    },
+    "training-profile": {
+      "file": "training-profile.png",
+      "width": 22,
+      "height": 21,
+      "category": "control"
+    },
+    "game-bubbles": {
+      "file": "game-bubbles.png",
+      "width": 200,
+      "height": 182,
+      "category": "game selector"
+    },
+    "game-wordtris": {
+      "file": "game-wordtris.png",
+      "width": 168,
+      "height": 171,
+      "category": "game selector"
+    },
+    "game-clouds": {
+      "file": "game-clouds.png",
+      "width": 190,
+      "height": 179,
+      "category": "game selector"
+    },
+    "game-abc-speed-race": {
+      "file": "game-abc-speed-race.png",
+      "width": 170,
+      "height": 173,
+      "category": "game selector"
+    },
+    "game-pipe-game": {
+      "file": "game-pipe-game.png",
+      "width": 168,
+      "height": 173,
+      "category": "game selector"
+    },
+    "game-cloud-race": {
+      "file": "game-cloud-race.png",
+      "width": 190,
+      "height": 173,
+      "category": "game selector"
+    },
+    "caption-bubbles": {
+      "file": "caption-bubbles.png",
+      "width": 110,
+      "height": 31,
+      "category": "game caption"
+    },
+    "caption-wordtris": {
+      "file": "caption-wordtris.png",
+      "width": 110,
+      "height": 31,
+      "category": "game caption"
+    },
+    "caption-clouds": {
+      "file": "caption-clouds.png",
+      "width": 110,
+      "height": 31,
+      "category": "game caption"
+    },
+    "caption-abc-speed-race": {
+      "file": "caption-abc-speed-race.png",
+      "width": 191,
+      "height": 32,
+      "category": "game caption"
+    },
+    "caption-pipe-game": {
+      "file": "caption-pipe-game.png",
+      "width": 170,
+      "height": 32,
+      "category": "game caption"
+    },
+    "caption-cloud-race": {
+      "file": "caption-cloud-race.png",
+      "width": 193,
+      "height": 32,
+      "category": "game caption"
+    }
+  }
+}

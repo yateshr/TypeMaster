@@ -42,34 +42,33 @@ public partial class MainWindow
     }
     void About()
     {
-        var canvas = ReferencePage("Information");
+        var canvas = ReferencePage("About TypeMaster");
         Position(canvas, RefTitle("TypeMaster"), 101, 61, 400, 32).FontSize = 23; Rule(canvas, 100, 87, 399);
-        foreach (var row in new[] { ("Version", "1.10.2 [2026]", 101d), ("Build", "Native Windows · C# / WPF", 124d), ("User", Current!.Name, 147d) }) { Position(canvas, RefText(row.Item1, 14, true, true), 103, row.Item3, 94, 22); Position(canvas, RefText(row.Item2, 13), 199, row.Item3, 300, 22); }
-        Rule(canvas, 100, 186, 399);
-        Position(canvas, RefText("Profile Services", 14, true, true), 103, 204, 390, 24);
+        foreach (var row in new[] { ("Version", AppInfo.Version, 101d), ("Build", AppInfo.Build, 124d), ("Developed by", AppInfo.Developer, 147d), ("Platform", "Native Windows · C# / WPF", 170d), ("User", Current!.Name, 193d) }) { Position(canvas, RefText(row.Item1, 14, true, true), 103, row.Item3, 118, 22); var value=Position(canvas, RefText(row.Item2, 13,row.Item1=="Developed by"), 228, row.Item3, 271, 22);if(row.Item1=="Developed by")value.Foreground=Brushes.DodgerBlue; }
+        Rule(canvas, 100, 230, 399);
+        Position(canvas, RefText("Profile Services", 14, true, true), 103, 246, 390, 24);
         void Link(string title, double y, Action action) { var link = RefButton("▸ " + title, action, true); link.BorderThickness = new Thickness(0); link.Tag = new CornerRadius(0); link.Foreground = Brushes.Blue; link.FontSize = 13; Position(canvas, link, 103, y, 390, 25); }
-        Link("Profile Backup & Restore", 228, MoreSettings); Link("Export My Results", 255, Export); Link("View My Progress Report", 282, PrintReport);
-        Position(canvas, RefText("Product Information", 14, true, true), 103, 334, 390, 24);
-        Link("Source Code & Build Information", 358, MoreAbout); Link("User Support and Manual", 385, () => { Heading("User Guide"); AddImage("ergo_deskchair.gif", 240); Add(Text("Start with Studying and follow the lessons in order. Use Typing Test to measure your speed and accuracy. Custom Review targets difficult keys. All progress is saved locally. Pause or stop the Typing Meter through its widget or tray icon.")); });
-        Rule(canvas, 100, 487, 399); Position(canvas, RefText("Native Windows build · Supplied assets retain their ownership.", 10), 103, 490, 400, 20);
+        Link("Profile Backup & Restore", 270, MoreSettings); Link("Export My Results", 297, Export); Link("View My Progress Report", 324, PrintReport);
+        Position(canvas, RefText("Product Information", 14, true, true), 103, 366, 390, 24);
+        Link("Source Code & Build Information", 390, MoreAbout); Link("User Support and Manual", 417, () => { Heading("User Guide"); AddImage("ergo_deskchair.gif", 240); Add(Text("Start with Studying and follow the lessons in order. Use Typing Test to measure your speed and accuracy. Custom Review targets difficult keys. All progress is saved locally. Pause or stop the Typing Meter through its widget or tray icon.")); });
+        Link("Updates & GitHub",444,Updates);
+        Rule(canvas, 100, 487, 399); Position(canvas, RefText("Developed by "+AppInfo.Developer+" · TypeMaster "+AppInfo.Version, 10), 103, 490, 400, 20);
     }
     void Games()
     {
         var canvas = ReferencePage(null); canvas.Background = new SolidColorBrush(Color.FromRgb(200, 205, 254));
-        // Pure illustration areas from the supplied reference; all labels, selectors and buttons below remain native controls.
-        var art = AssetBitmap("ReferenceUI/games-reference.png");
+        // Original game artwork retains the reference dimensions and placement.
+        string[] artwork = ["bubbles", "wordtris", "clouds", "abc-speed-race", "pipe-game", "cloud-race"];
         var images = new[] { new Int32Rect(331, 172, 200, 182), new Int32Rect(553, 173, 168, 171), new Int32Rect(731, 173, 190, 179), new Int32Rect(353, 449, 170, 173), new Int32Rect(553, 449, 168, 173), new Int32Rect(731, 449, 190, 173) };
         string[] names = TypingGameEngine.Names;
         for (int i = 0; i < names.Length; i++)
         {
             string mode = names[i]; int col = i % 3; bool lower = i >= 3; double x = col == 0 ? 0 : col == 1 ? 200 : 399;
-            var image = new Image { Source = new CroppedBitmap(art, images[i]), Stretch = Stretch.Fill }; Position(canvas, image, images[i].X - 331, images[i].Y - 172, images[i].Width, images[i].Height);
-            if (i == 2) Position(canvas, ReferenceGraphic("games-reference.png", new Int32Rect(779, 399, 145, 6)), 448, 227, 145, 6);
-            if (i == 5) Position(canvas, ReferenceGraphic("games-reference.png", new Int32Rect(731, 647, 190, 8)), 400, 475, 190, 8);
-            // These fixed game captions are part of the supplied selector artwork.
-            // Keep their exact lettering while exposing a text name to accessibility tools.
+            var image = new Image { Source = AssetBitmap("TypeMasterArtwork/game-"+artwork[i]+".png"), Stretch = Stretch.Fill }; Position(canvas, image, images[i].X - 331, images[i].Y - 172, images[i].Width, images[i].Height);
+            // TypeMaster captions are exported separately at their original canvas sizes.
+            // Expose the caption text to accessibility tools.
             var captionBounds = new[] { new Int32Rect(377, 344, 110, 31), new Int32Rect(577, 344, 110, 31), new Int32Rect(773, 344, 110, 31), new Int32Rect(335, 623, 191, 32), new Int32Rect(552, 623, 170, 32), new Int32Rect(731, 623, 193, 32) };
-            var captionRect = captionBounds[i]; var label = ReferenceGraphic("games-reference.png", captionRect); System.Windows.Automation.AutomationProperties.SetName(label, mode); Position(canvas, label, captionRect.X - 331, captionRect.Y - 172, captionRect.Width, captionRect.Height);
+            var captionRect = captionBounds[i]; var label = Picture("TypeMasterArtwork/caption-"+artwork[i]+".png",captionRect.Width,captionRect.Height); System.Windows.Automation.AutomationProperties.SetName(label, mode); Position(canvas, label, captionRect.X - 331, captionRect.Y - 172, captionRect.Width, captionRect.Height);
             string category = mode is "Bubbles" or "ABC Speed Race" or "Pipe Game" ? "a-z" : "Animals";
             if (i < 3 || i == 3) Position(canvas, RefChoice(i is 0 or 3 ? ["a-z", "A-Z", "0-9"] : ["Animals", "Common words", "Difficult words"], category, v => category = v), x + (col == 2 ? 19 : i == 3 ? 37 : 22), lower ? 422 : 203, i == 3 ? 139 : 169, 24);
             Position(canvas, RefButton("Start", () => { activeLesson = null; StartGame(mode, category); }), x + (col == 2 ? 43 : 46), lower ? 483 : 233, 110, 34);

@@ -43,6 +43,7 @@ public partial class MainWindow : Window
     internal MainWindow(ProfileStore store)
     {
         InitializeComponent();
+        Icon=AppInfo.WindowIcon;
         WindowFrame.Configure(this,WindowSurface,CaptionButtons);
         ReportBranding.Configure(store.DirectoryPath);
         Store = store; Library = Assets.Tests(); Chapters = Assets.Course();
@@ -248,9 +249,9 @@ public partial class MainWindow : Window
     }
     void AddImage(string filename, double width)
     {
-        string file = Path.Combine(Assets.Root, filename);
+        string file = Path.Combine(Assets.Root, RuntimeArtwork.Resolve(filename));
         if (!File.Exists(file)) return;
-        var bitmap = new BitmapImage(); bitmap.BeginInit(); bitmap.CacheOption = BitmapCacheOption.OnLoad; bitmap.UriSource = new Uri(file); bitmap.EndInit(); bitmap.Freeze();
+        var bitmap = AssetBitmap(filename);
         Add(new Image { Source = bitmap, MaxWidth = width, MaxHeight = 190, Stretch = Stretch.Uniform, HorizontalAlignment = HorizontalAlignment.Left, Margin = new Thickness(0, 10, 0, 10) });
     }
     internal void Capture(string file)

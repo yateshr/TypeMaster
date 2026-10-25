@@ -24,7 +24,7 @@ $shapes='<defs><linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-
 foreach($y in @(17,23)){foreach($x in @(13,19,25,31,37,43,49)){$shapes+='<rect x="'+$x+'" y="'+$y+'" width="4" height="4" rx="0.8" fill="white"/>'}}
 foreach($y in @(29,35,41,47)){foreach($x in @(28,34)){$shapes+='<rect x="'+$x+'" y="'+$y+'" width="4" height="4" rx="0.8" fill="white"/>'}}
 $icon='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TypeMaster icon">'+$shapes+'</svg>'
-$path=$outline.ToString([Globalization.CultureInfo]::InvariantCulture) -replace '^F[01]\s*',''
+$path=$outline.GetFlattenedPathGeometry().ToString([Globalization.CultureInfo]::InvariantCulture) -replace '^F[01]\s*',''
 $wordmark='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314 64" role="img" aria-label="TypeMaster">'+$shapes+'<path fill="#176DEA" d="'+$path+'"/></svg>'
 [IO.File]::WriteAllText((Join-Path $assets 'typemaster-icon.svg'),$icon)
 [IO.File]::WriteAllText((Join-Path $assets 'typemaster-wordmark.svg'),$wordmark)

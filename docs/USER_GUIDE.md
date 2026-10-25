@@ -35,3 +35,6 @@ Profiles are stored under `%LOCALAPPDATA%\TypeMasterNative`. Portable mode refer
 ## Typing Meter
 
 Typing Meter is optional. When enabled, it records typing-activity statistics through Windows keyboard events. Use its pause, stop or tray controls when it is not needed. Exit its tray icon before updating or uninstalling TypeMaster.
+## Updates
+
+Open **About → Updates & GitHub** to check for a newer stable release or change automatic checking. Download and installation require your action. Portable users can download and extract the release ZIP. See [the update guide](UPDATING.md).

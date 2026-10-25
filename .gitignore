@@ -17,3 +17,7 @@ Native/uninstall-files.nsh
 .env
 .env.*
 node_modules/
+
+# Local update preferences and recovery snapshots
+updates.json
+profiles.pre-update-*

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" viewBox="0 0 3 3" role="img" aria-label="step_satellite_de.gif"><defs>
+<linearGradient id="key" x2="0" y2="1"><stop stop-color="#f6f5ff"/><stop offset="1" stop-color="#c6c2ef"/></linearGradient>
+<linearGradient id="tile" x2=".8" y2="1"><stop stop-color="#eeeaff"/><stop offset=".45" stop-color="#a59ae9"/><stop offset="1" stop-color="#6555cc"/></linearGradient>
+<linearGradient id="skin" x2="1" y2=".2"><stop stop-color="#d89975"/><stop offset=".5" stop-color="#f6cfaf"/><stop offset="1" stop-color="#e4ad87"/></linearGradient>
+<linearGradient id="panel" x2="0" y2="1"><stop stop-color="#eef4ff"/><stop offset="1" stop-color="#ccd9f6"/></linearGradient>
+</defs></svg>

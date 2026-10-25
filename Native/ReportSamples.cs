@@ -19,6 +19,19 @@ internal static class ReportSamples
         NativePdf.Export(ReportFactory.Certificate(profile, english), Path.Combine(directory, "test-certificate.pdf"));
         NativePdf.Export(ReportFactory.Examination(profile, english), Path.Combine(directory, "assessment-examination-sheet.pdf"));
         NativePdf.Export(ReportFactory.Progress(profile), Path.Combine(directory, "complete-progress-report.pdf"));
+        var candidateSamples=Path.Combine(Path.GetDirectoryName(directory)!,"candidate-samples");Directory.CreateDirectory(candidateSamples);
+        foreach(bool longSkills in new[]{false,true})
+        {
+            var candidate=new Profile{Name=longSkills?"Sample Candidate With A Longer Name":"Sample Candidate",Created=DateTime.Today.AddDays(-2),LastUsed=DateTime.Today.AddHours(10),Sessions=4,TestTakenBy="Sample Interviewer",TrainingProfile="Interview assessment",AssessmentRemarks=longSkills?"Candidate demonstrated the selected technical skills during the practical assessment. Formula knowledge and spreadsheet tasks were reviewed by the examiner. Additional training requirements can be recorded here.":"Candidate completed four typing attempts and demonstrated the selected Excel skills. Practical observations and interview feedback can be recorded here."};
+            for(int attempt=0;attempt<4;attempt++)
+            {
+                var result=System.Text.Json.JsonSerializer.Deserialize<TypingResult>(System.Text.Json.JsonSerializer.Serialize(attempt%2==0?english:numeric))!;
+                result.Title="Attempt "+(attempt+1)+" - "+(attempt%2==0?"English typing test":"Numpad numbers-only test");result.StartedAt=DateTime.Today.AddHours(9).AddMinutes(attempt*15);result.Date=result.StartedAt.AddMinutes(1);candidate.Results.Add(result);
+            }
+            candidate.TechnicalSkills=longSkills?TechnicalSkills.Groups.Where(g=>g.Group.StartsWith("Excel ")).SelectMany(g=>g.Items).Distinct().Take(110).Concat(new[]{"Document formatting","Create and format slides"}).ToHashSet():new HashSet<string>{"Addition (+)","Subtraction (-)","SUM","IF","VLOOKUP","Data entry"};
+            NativePdf.Export(ReportFactory.Progress(candidate),Path.Combine(candidateSamples,longSkills?"sample-candidate-long-skills.pdf":"sample-candidate-short-skills.pdf"));
+        }
+
     }
 }
 

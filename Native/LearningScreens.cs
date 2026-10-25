@@ -15,28 +15,11 @@ public partial class MainWindow
     static readonly Dictionary<string, BitmapSource> assetBitmaps = new(StringComparer.OrdinalIgnoreCase);
     internal static BitmapSource AssetBitmap(string file)
     {
+        file = RuntimeArtwork.Resolve(file);
         string full = Path.GetFullPath(Path.Combine(Assets.Root, file));
         if (!full.StartsWith(Assets.Root + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase)) throw new InvalidDataException("Invalid image path.");
         if (assetBitmaps.TryGetValue(full, out var cached)) return cached;
         var bitmap = new BitmapImage(); bitmap.BeginInit(); bitmap.CacheOption = BitmapCacheOption.OnLoad; bitmap.UriSource = new Uri(full); bitmap.EndInit(); bitmap.Freeze();
-        if (file is "logo_login.bmp" or "pipe_tileset.bmp")
-        {
-            var converted = new FormatConvertedBitmap(bitmap, PixelFormats.Bgra32, null, 0); int w = converted.PixelWidth, h = converted.PixelHeight; byte[] pixels = new byte[w * h * 4]; converted.CopyPixels(pixels, w * 4, 0);
-            for (int p = 0; p < pixels.Length; p += 4)
-            {
-                bool background = file == "logo_login.bmp" ? pixels[p] > 245 && pixels[p + 1] > 245 && pixels[p + 2] > 245 && p / 4 % w > 78 : Math.Abs(pixels[p] - pixels[p + 1]) < 5 && Math.Abs(pixels[p + 1] - pixels[p + 2]) < 5 && pixels[p] < 50;
-                if (background) pixels[p + 3] = 0;
-            }
-            // Clear only white connected to the edge around the circular logo; keep the white dotted T.
-            if (file == "logo_login.bmp")
-            {
-                var queue = new Queue<int>(); var seen = new bool[w * h];
-                void Enqueue(int x, int y) { if (x < 0 || y < 0 || x >= Math.Min(79, w) || y >= h) return; int index = y * w + x; int p = index * 4; if (seen[index] || pixels[p] < 246 || pixels[p + 1] < 246 || pixels[p + 2] < 246) return; seen[index] = true; queue.Enqueue(index); }
-                for (int y = 0; y < h; y++) { Enqueue(0, y); Enqueue(78, y); } for (int x = 0; x < 79; x++) { Enqueue(x, 0); Enqueue(x, h - 1); }
-                while (queue.Count > 0) { int index = queue.Dequeue(), x = index % w, y = index / w; pixels[index * 4 + 3] = 0; Enqueue(x - 1, y); Enqueue(x + 1, y); Enqueue(x, y - 1); Enqueue(x, y + 1); }
-            }
-            var transparent = BitmapSource.Create(w, h, 96, 96, PixelFormats.Bgra32, null, pixels, w * 4); transparent.Freeze(); assetBitmaps[full] = transparent; return transparent;
-        }
         assetBitmaps[full] = bitmap; return bitmap;
     }
     internal static Image Picture(string file, double width, double height = 180) => new() { Source = AssetBitmap(file), Width = width, MaxHeight = height, Stretch = Stretch.Uniform, HorizontalAlignment = HorizontalAlignment.Center };
@@ -159,7 +142,12 @@ public partial class MainWindow
     void MoreAbout()
     {
         Heading("Information"); Add(Picture("Branding/typemaster-wordmark.png", 310, 65)); Add(Text("TypeMaster", 21, true));
-        Add(Text($"User       {Current!.Name}\nBuild       Native Windows · C# / WPF\nLibrary    {Library.Count} tests · {allCourses.Count} courses\nGames    Bubbles, WordTris, Clouds, ABC Speed Race, Pipe Game, Cloud Race"));
+        Add(Text("Developed by "+AppInfo.Developer,18,true));
+        Add(Text("TypeMaster is a typing-practice application customised for our computer-assessment workflow. Use it to practise typing, test candidates, record examiner-observed technical skills and create individual PDF reports."));
+        Add(Outline("GitHub project",()=>UpdatesWindow.Open(AppUpdates.Project)));
+        Add(Outline("Releases & downloads",()=>UpdatesWindow.Open(AppUpdates.Releases)));
+        Add(Outline("Check for updates",Updates));
+        Add(Text($"Version   {AppInfo.Version}\nBuild       {AppInfo.Build}\nPlatform  Native Windows · C# / WPF\nUser       {Current!.Name}\nLibrary    {Library.Count} tests · {allCourses.Count} courses\nGames    Bubbles, WordTris, Clouds, ABC Speed Race, Pipe Game, Cloud Race"));
         Add(Outline("Learning guide", () => { Heading("Learning Guide"); AddImage("ergo_deskchair.gif", 250); Add(Text("Sit comfortably, keep your wrists relaxed, and place your fingers on the home row. Work through Studying, then use Typing Test to measure progress. Custom Review targets keys that need attention. Pause regularly and aim for accuracy before speed.")); }));
         Note("Supplied artwork and course content retain their original ownership.");
     }

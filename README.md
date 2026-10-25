@@ -19,6 +19,8 @@
 
 ## About
 
+Current release: **1.11.9**, with original TypeMaster artwork, refined reports and optional GitHub updates. See [the artwork guide](docs/ARTWORK.md).
+
 TypeMaster was built for a practical interview workflow: a candidate completes a typing test, the examiner records demonstrated computer skills and remarks, and the company receives a readable assessment report.
 
 The application is written in C# with WPF. It runs locally on Windows, keeps candidate profiles on the current Windows account and exports PDF files directly. The distributed Windows build includes the .NET runtime.
@@ -34,7 +36,8 @@ The application is written in C# with WPF. It runs locally on Windows, keeps can
 | Technical skills | Searchable catalogue of 521 Excel function names, practical skills, custom entries and application grouping |
 | Candidate assessment | Selected skills, free-form remarks and examiner name |
 | Reports | Test results, certificate, examination sheet and complete progress report |
-| PDF output | Selectable text, embedded fonts, company header and page numbers |
+| PDF output | Selectable text, embedded fonts, aligned company header, three-column skills, continuation headers and examiner footer on every page |
+| Updates | Optional daily GitHub checks, verified installer downloads and user-controlled installation |
 | Company branding | Configurable company name and logos; supplied company branding remains the default |
 | Data protection | Profile backup and restore, atomic profile saves, backup recovery and interrupted-exercise recovery |
 | Practice games | Bubbles, WordTris, Clouds, ABC Speed Race, Pipe Game and Cloud Race |
@@ -64,6 +67,12 @@ These images show the running native application with demonstration profiles.
 |---|---|
 | ![Searchable skills checklist](docs/images/skills-checklist.png) | ![Company-branded candidate progress report](docs/images/progress-report.png) |
 
+### About and updates
+
+| Developer and build information | GitHub updates |
+|---|---|
+| ![About TypeMaster](docs/images/about.png) | ![Update settings](docs/images/updates.png) |
+
 [Browse the complete screenshot gallery](docs/SCREENSHOTS.md) · [Open the sample progress PDF](docs/reports/complete-progress-report.pdf)
 
 ## Assessment workflow
@@ -76,7 +85,7 @@ These images show the running native application with demonstration profiles.
 4. Select demonstrated skills under Excel, Word, PowerPoint or another relevant application. Add remarks and **Test taken by**.
 5. Apply the assessment, review the report and save a PDF or print it.
 
-Selected Excel functions and practical Excel skills share one Excel section. Every typing result uses a compact layout. The examiner name appears at the bottom left of the final progress-report page.
+Selected Excel functions and practical Excel skills share one Excel section. Every typing result uses a compact layout. The examiner name appears at the bottom left of every progress-report page.
 
 ## Download and run
 
@@ -84,9 +93,10 @@ Download from [GitHub Releases](https://github.com/yateshr/TypeMaster/releases/l
 
 | File | Use |
 |---|---|
-| `TypeMaster-Native-1.10.2-Setup.exe` | Install for the current Windows account with shortcuts and uninstall support |
-| `TypeMaster-Native-1.10.2-win-x64.zip` | Extract the whole archive and run `native-win-x64-1.10.2/TypeMaster.exe` without installing |
-| `SHA256SUMS.txt` | Verify the installer and ZIP against their published SHA-256 hashes |
+| `TypeMaster-Native-1.11.9-Setup.exe` | Install for the current Windows account with shortcuts and uninstall support |
+| `TypeMaster-Native-1.11.9-win-x64.zip` | Extract the whole archive and run `native-win-x64-1.11.9/TypeMaster.exe` without installing |
+| `TypeMaster-Artwork-1.11.9.zip` | Individual original artwork and logo files, including editable SVG sources |
+| `SHA256SUMS.txt` | Verify release downloads against their published SHA-256 hashes |
 
 Keep every file in the portable folder together. Close TypeMaster and exit the Typing Meter tray icon before updating.
 
@@ -101,6 +111,8 @@ Keep every file in the portable folder together. Close TypeMaster and exit the T
 | Number test results | [Numeric typing results](docs/reports/numeric-test-results.pdf) |
 | Certificate | [Typing test certificate](docs/reports/test-certificate.pdf) |
 | Examination sheet | [Typed text with mistakes and corrections](docs/reports/assessment-examination-sheet.pdf) |
+
+[Four-attempt short-skills sample](docs/reports/sample-candidate-short-skills.pdf) · [Four-attempt long-skills sample](docs/reports/sample-candidate-long-skills.pdf)
 
 All examples use demonstration candidate data. Company name and logos can be changed through **Settings → Company Branding**.
 
@@ -145,7 +157,7 @@ TypeMaster/
 
 ## Validation and limitations
 
-Release 1.10.2 passed **341 native application checks**. Five sample PDF reports passed text extraction and word-selection hit-area verification. Display checks include small windows and DPI/maximized-frame cases; this does not imply every monitor configuration has been tested.
+Release 1.11.9 passed **568 native application checks**. Five sample PDF reports passed text extraction and word-selection hit-area verification. Display checks include small windows and DPI/maximized-frame cases; this does not imply every monitor configuration has been tested.
 
 Typing scores use the currently implemented scoring rules based on supplied report evidence. Source-comparison notes and known scope differences are documented in [Native/REPORTS.md](Native/REPORTS.md) and [Native/SOURCE_GAPS.md](Native/SOURCE_GAPS.md). TypeMaster is a separate application and is not endorsed by TypingMaster or Microsoft.
 
@@ -164,3 +176,7 @@ Typing scores use the currently implemented scoring rules based on supplied repo
 **Yatesh Rohit** · Nirmal Poly Plast Private Limited
 
 Original TypeMaster source code is released under the MIT license. Supplied artwork, lesson content, reference images and company trademarks retain their respective ownership; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+### GitHub updates
+
+Open **About > Updates & GitHub** for optional daily checks, verified installer downloads and links to the project and releases. TypeMaster is a typing-practice application customised for computer assessments and candidate reports; skill observations are entered by the examiner. See [update details](docs/UPDATING.md).

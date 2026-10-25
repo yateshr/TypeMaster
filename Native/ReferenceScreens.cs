@@ -46,12 +46,12 @@ public partial class MainWindow
         var panel = new Border(); panel.SetResourceReference(Border.BackgroundProperty, "SoftBrush"); Position(canvas, panel, 17, 90, 744, 429);
         Position(canvas, RefTitle("Welcome New User!"), 230, 102, 350, 35).FontSize = 22;
         Position(canvas, RefText("Welcome to TypeMaster touch typing tutor!\nPlease give a user name below and click Enter.", 13), 230, 133, 350, 38);
-        Position(canvas, ReferenceGraphic("new-user-reference.png", new Int32Rect(560, 394, 22, 21)), 229, 222, 22, 21);
+        Position(canvas, Picture("TypeMasterArtwork/profile.png",22,21), 229, 222, 22, 21);
         Position(canvas, RefText("Enter your name", 14, true, true), 260, 223, 260, 22);
         var name = Position(canvas, new TextBox { Text = initial, MaxLength = 50, Padding = new Thickness(1), BorderBrush = Brushes.LightGray, FontFamily = new FontFamily("Tahoma"), FontSize = 13 }, 260, 242, 253, 24);
         var dark = Position(canvas, new CheckBox { Content = "Use Dark Mode", FontFamily = new FontFamily("Georgia"), FontWeight = FontWeights.Bold, FontSize = 13 }, 260, 279, 253, 24);
         dark.Style = (Style)Application.Current.FindResource("ReferenceCheck");
-        Position(canvas, ReferenceGraphic("new-user-reference.png", new Int32Rect(560, 563, 22, 21)), 229, 391, 22, 21);
+        Position(canvas, Picture("TypeMasterArtwork/training-profile.png",22,21), 229, 391, 22, 21);
         Position(canvas, RefText("Typing Configuration Profile", 14, true, true), 260, 392, 300, 22);
         string training = "Default Training Profile"; Position(canvas, RefChoice(["Default Training Profile", "Accuracy First", "Speed Builder"], training, v => training = v), 260, 414, 253, 24);
         var cancel = RefButton("Cancel", Login, true); cancel.HorizontalContentAlignment = HorizontalAlignment.Center; Position(canvas, cancel, 230, 480, 129, 34);
@@ -74,7 +74,7 @@ public partial class MainWindow
             var toggle = RefButton("", () => { expandedCourse = expanded ? "" : id; Courses(); }); toggle.Tag = new CornerRadius(8,8,0,0); toggle.Background = new SolidColorBrush(Color.FromRgb(20,111,226)); toggle.Padding = new Thickness(0); toggle.HorizontalContentAlignment = HorizontalAlignment.Stretch;
             var header = new Canvas { Width = 550, Height = 35 }; var label = RefText(title, 18, true); label.FontFamily = new FontFamily("Arial"); label.Foreground = Brushes.White; if (!expanded) label.TextDecorations = TextDecorations.Underline; Position(header, label, 8, 8, 519, 27); Position(header, RefText(expanded ? "⌃" : "⌄", 19), 524, 4, 22, 25).Foreground = Brushes.White; toggle.Content = header; Position(canvas, toggle, 22,y,550,35);
             if (!expanded) { top += 76; return; }
-            Brush background = Current!.Dark ? new LinearGradientBrush(Color.FromRgb(49,77,138),Color.FromRgb(27,41,61),90) : new ImageBrush(new CroppedBitmap(AssetBitmap("ReferenceUI/course-reference.png"),new Int32Rect(355,272,1,164))) { Stretch=Stretch.Fill };
+            Brush background = Current!.Dark ? new LinearGradientBrush(Color.FromRgb(49,77,138),Color.FromRgb(27,41,61),90) : new LinearGradientBrush(Color.FromRgb(231,229,255),Color.FromRgb(202,209,251),90);
             var panel = new Border { Background = background }; RenderOptions.SetBitmapScalingMode(panel,BitmapScalingMode.NearestNeighbor); Position(canvas,panel,22,y+35,550,164);
             CourseDefinition selected = choices[0]; bool choice = choices.Count > 1;
             var description=Position(canvas,RefText("",16),34,y+(choice?75:49),520,choice?43:65);description.FontFamily=new FontFamily("Arial");description.LineHeight=21;
@@ -112,9 +112,7 @@ public partial class MainWindow
         other.Checked += (_, _) => { if (Current.Keyboard == "us.kbd") { Current.Keyboard = files.FirstOrDefault(f => f != "us.kbd") ?? "us.kbd"; Save(); Settings(); } };
         var layouts = new ComboBox { ItemsSource = values, DisplayMemberPath = "Value", SelectedValuePath = "Key", SelectedValue = Current.Keyboard, Style = (Style)Application.Current.FindResource("ReferenceCombo") }; layouts.SelectionChanged += (_, _) => { if (layouts.SelectedValue is string file) { Current.Keyboard = file; Save(); Settings(); } }; layouts.ToolTip = "Choose the same keyboard layout in Windows using Windows + Space."; Position(canvas, layouts, 208, 263, 224, 24);
         var custom = RefButton("Add Custom Layout", ImportKeyboard, true); custom.FontSize = 11; custom.Foreground = Brushes.Black; custom.Tag = new CornerRadius(3); custom.BorderBrush = Brushes.LightGray; Position(canvas, custom, 442, 254, 136, 32);
-        if (Current.Keyboard == "us.kbd" && !Current.Dark && Localization.Language == "eng")
-            Position(canvas, ReferenceGraphic("settings-reference.png", new Int32Rect(376, 488, 501, 175)), 45, 316, 501, 175);
-        else Position(canvas, new KeyboardView(LoadKeyboard()) { MaxHeight = 175, Stretch = Stretch.Fill }, 45, 316, 500, 175);
+        Position(canvas, new KeyboardView(LoadKeyboard()) { MaxHeight = 175, Stretch = Stretch.Fill }, 45, 316, 500, 175);
         Position(canvas,RefButton("Company Branding",CompanyBrandingSettings,true),24,498,205,27);
         var menu = new ContextMenu(); var tools = new MenuItem { Header = "More settings, profile backup and restore" }; tools.Click += (_, _) => MoreSettings(); menu.Items.Add(tools); canvas.ContextMenu = menu;
     }

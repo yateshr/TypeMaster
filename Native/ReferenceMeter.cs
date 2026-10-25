@@ -43,7 +43,7 @@ public partial class MainWindow
     void ReferenceMeterLaunch()
     {
         var canvas = ReferencePage("Typing Meter"); Position(canvas, new Border { Background = new SolidColorBrush(Color.FromRgb(213, 229, 250)) }, 282, 1, 303, 528);
-        Position(canvas, new Image { Source = new CroppedBitmap(AssetBitmap("ReferenceUI/meter-reference.png"), new Int32Rect(360, 246, 236, 133)), Stretch = Stretch.Fill }, 29, 74, 236, 133);
+        Position(canvas, new Image { Source = AssetBitmap("TypeMasterArtwork/meter-launch.png"), Stretch = Stretch.Fill }, 29, 74, 236, 133);
         var meterHeading = RefText("What is Typing Meter Widget?", 14, true); meterHeading.FontFamily = new FontFamily("Arial"); Position(canvas, meterHeading, 29, 211, 248, 26).Foreground = new SolidColorBrush(Color.FromRgb(0, 102, 204));
         var body = RefText("Typing Meter is a handy Windows widget that measures and analyzes your typing habits in the background while you work.\n\nIt gathers basic typing stats, and also detects those keys and key pairs that are problematic for you.\n\nWhen recurring problems are detected, Typing Meter suggests a quick training session to improve those problem areas.", 13); body.FontFamily = new FontFamily("Arial"); body.FontSize = 14; body.LineHeight = 17; Position(canvas, body, 29, 239, 241, 224);
         Position(canvas, RefButton("▸ More information", () => Notify("The meter saves aggregate key counts and timing only. Use its visible widget or tray icon to pause or stop it. Backspace use provides correction hints. Typed words are not collected.", "Typing Meter"), true), 56, 467, 170, 34);

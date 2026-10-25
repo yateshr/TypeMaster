@@ -1,0 +1,34 @@
+TypeMaster 1.11.9
+Developed by YATESH ROHIT
+
+WELCOME TO TYPEMASTER
+TypeMaster is a typing-practice application customised for our computer-assessment
+workflow. Use it to practise typing, take candidate computer tests, record
+examiner-observed technical skills and create individual PDF reports.
+
+GET STARTED
+1. Open TypeMaster from your desktop or Start menu.
+2. Create or select the candidate profile.
+3. Open Typing Test, select a test and duration, then complete the assessment.
+4. Open Statistics > Progress Report and record demonstrated technical skills,
+   examiner name and remarks.
+5. Save the PDF report. Skills use three columns, remarks follow all skills,
+   and examiner details appear on every page.
+
+YOUR DATA
+Candidate records are stored locally under your Windows account.
+Use the application's backup and restore options to keep a separate backup.
+Uninstalling the application preserves your candidate records.
+
+ABOUT AND SUPPORT
+Open About inside TypeMaster for the developer, version and build information.
+Project: https://github.com/yateshr/TypeMaster
+Releases: https://github.com/yateshr/TypeMaster/releases
+
+UPDATES
+Open About > Updates & GitHub to check, download and install a newer stable release.
+Automatic checks run at most once per day and can be turned off in that window.
+Downloads require a GitHub-provided SHA-256 digest and are verified before setup.
+Updates never install silently or during an exercise. Candidate records are kept.
+Portable users can download the ZIP from the releases page.
+Please do not include private candidate records when reporting an issue.

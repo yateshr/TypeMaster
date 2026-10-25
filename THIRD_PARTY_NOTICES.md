@@ -4,6 +4,8 @@ The MIT license in this repository applies to the original TypeMaster applicatio
 
 ## Supplied runtime and reference material
 
+The local 1.11.0 preview adds original TypeMaster artwork in `Asset/TypeMasterArtwork/`: code-authored SVG diagrams and controls, exact-size PNG exports and four AI-generated photo/scene sources. Runtime illustration lookups select this set. Company logos, lessons, localization data and historical references retain the ownership described below.
+
 The project includes supplied artwork, course/lesson data, test content, localization resources and UI reference images originating from TypingMaster12. The repository owner confirmed permission to redistribute this supplied material for this release. These resources retain their respective ownership and are not covered by the TypeMaster source-code MIT grant.
 
 Relevant locations are `Asset/` (other than original TypeMaster branding and the documented catalogue) and `UI/`. Original third-party executables, DLLs, unused licensing files and editor-state files are excluded from the repository and build. The About reference image has been replaced with a demonstration capture of TypeMaster rather than publishing the original licensing-information screenshot.

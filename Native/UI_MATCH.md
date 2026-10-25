@@ -1,5 +1,7 @@
 # UI reference mapping — native 1.2
 
+Current 1.11.0 artwork preview: runtime screenshot crops are replaced by original assets and native controls. The original dimensions and placements are retained; historical RGB comparisons below are diagnostic, not acceptance checks. The new image audit decodes all 92 replacements and verifies their exact original pixel dimensions, standalone asset footprints and shared finger cue positions. See `docs/ARTWORK.md` for source files and generation details.
+
 | Native screen | Supplied screenshot time |
 |---|---|
 | Welcome / existing user | 113337 / 113357 |

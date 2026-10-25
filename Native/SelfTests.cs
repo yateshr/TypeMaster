@@ -3,6 +3,7 @@ using System.Text.Json;
 using System.Windows;
 using System.Windows.Threading;
 using System.Windows.Documents;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
@@ -73,6 +74,8 @@ internal static class SelfTests
             var store = new ProfileStore(Path.Combine(output, Guid.NewGuid().ToString("N")));
             var window = new MainWindow(store) { ShowInTaskbar = false };
             window.Show(); window.Dispatcher.Invoke(() => { }, DispatcherPriority.Render); window.Capture(Path.Combine(output, "native-login.png"));
+            Check(window.Icon!=null,"Application windows load the embedded TypeMaster icon");
+            Check(window.WorkspaceFrame.Effect==null,"Workspace content is rendered independently of the decorative shadow");
             window.NewUser("YATESH"); window.Dispatcher.Invoke(() => { }, DispatcherPriority.Render); window.Capture(Path.Combine(output, "native-new-user.png"));
             window.EnterProfile("Native test");
             Check(window.WorkspaceFrame.ActualWidth == 790 && window.WorkspaceFrame.ActualHeight == 541, "Reference workspace is exactly 790 by 541");
@@ -91,11 +94,15 @@ internal static class SelfTests
                 ["Game selector background"] = MatchReferenceRegion(Path.Combine(output, "screen-Games.png"), "games-reference.png", new Int32Rect(332, 400, 10, 200))
             };
             File.WriteAllText(Path.Combine(output, "visual-asset-audit.json"), JsonSerializer.Serialize(visualAudit, new JsonSerializerOptions { WriteIndented = true }));
-            foreach (var audit in visualAudit) Check(audit.Value == 100, audit.Key + " matches reference RGB pixels exactly");
+            // Historical screenshot comparison remains diagnostic: original artwork intentionally differs.
+            VerifyOriginalArtwork(Check);
             var screenAudit = new Dictionary<string, double>();
             foreach (var sample in new[] { ("Studying", "course-reference.png"), ("Typing-Meter", "meter-reference.png"), ("Typing-Test", "tests-reference.png"), ("Games", "games-reference.png"), ("Statistics", "statistics-reference.png"), ("Settings", "settings-reference.png"), ("About", "about-reference.png"), ("new-user", "new-user-reference.png") })
                 screenAudit[sample.Item1] = MatchReferenceRegion(Path.Combine(output, sample.Item1 == "new-user" ? "native-new-user.png" : "screen-" + sample.Item1 + ".png"), sample.Item2, new Int32Rect(325, 166, 790, 541));
             File.WriteAllText(Path.Combine(output, "screen-pixel-audit.json"), JsonSerializer.Serialize(new { measurement = "Percentage of workspace pixels with exactly equal RGB values; includes differing live text and profile data. This is not a perceptual similarity score.", exactRgbPercent = screenAudit }, new JsonSerializerOptions { WriteIndented = true }));
+            Descendants<System.Windows.Controls.Button>(window.PageContent).First(b=>b.Content?.ToString()=="▸ User Support and Manual").RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Button.ClickEvent));
+            Check(Descendants<System.Windows.Controls.Image>(window.PageContent).Any(i=>ReferenceEquals(i.Source,MainWindow.AssetBitmap("ergo_deskchair.gif"))),"Learning guide uses the authored ergonomic illustration rather than a raw legacy bitmap");
+            window.Capture(Path.Combine(output,"native-learning-guide.png"));window.ShowPage("About");
             window.StartMeter(); window.ShowPage("Typing Meter"); window.Dispatcher.Invoke(() => { }, DispatcherPriority.Render); window.Capture(Path.Combine(output, "native-meter-training.png")); window.StopMeter(false); checks.Add("Meter widget, tray, training screen and stop lifecycle");
             foreach (var mode in TypingGameEngine.Names) { window.StartGame(mode); window.Dispatcher.Invoke(() => { }, DispatcherPriority.Render); window.Capture(Path.Combine(output, "game-" + mode.Replace(" ", "-") + ".png")); checks.Add("Game canvas renders: " + mode); }
             window.ShowPage("Studying"); var intro = courses.First(c => c.File == "uk7qwert.cnt").Chapters.SelectMany(c => c.Lessons).First(l => l.Kind == "Introduction"); window.ShowLesson(intro); window.Dispatcher.Invoke(() => { }, DispatcherPriority.Render); window.Capture(Path.Combine(output, "native-introduction.png"));
@@ -197,6 +204,7 @@ internal static class SelfTests
             VerifyVectorPdf(output, Check);
             VerifyCandidateSkills(output,Check);
             VerifyCompanyBranding(output,Check);
+            AppUpdateTests.Verify(output,Check);
             window.Close();
             File.WriteAllText(Path.Combine(output, "results.json"), JsonSerializer.Serialize(new { passed = true, checks, texts = tests.Count, courses = courses.Count, activities = courses.Sum(c => c.Chapters.Sum(ch => ch.Lessons.Count)), missingSourceReferences = courses.Sum(c => c.MissingEvents) }, new JsonSerializerOptions { WriteIndented = true }));
             return 0;
@@ -298,9 +306,9 @@ internal static class SelfTests
         foreach (var document in new[] { ReportFactory.Result(profile,result),ReportFactory.Certificate(profile,result),ReportFactory.Examination(profile,result),ReportFactory.Progress(profile) })
         {
             var paginator=ReportFactory.Paginator(document);paginator.ComputePageCount();var bitmap=new RenderTargetBitmap(794,1123,96,96,PixelFormats.Pbgra32);bitmap.Render(paginator.GetPage(0).Visual);
-            var pixels=new byte[714*76*4];bitmap.CopyPixels(new Int32Rect(40,24,714,76),pixels,714*4,0);expected??=pixels;check(pixels.SequenceEqual(expected),"Shared company header is identical on "+(document.Tag as ReportHeading)?.Title);
+            var pixels=new byte[714*76*4];bitmap.CopyPixels(new Int32Rect(40,24,714,76),pixels,714*4,0);expected??=pixels;bool progress=(document.Tag as ReportHeading)?.CandidateName is not null;check(progress?!pixels.SequenceEqual(expected):pixels.SequenceEqual(expected),(progress?"Approved progress masthead differs from legacy report headers on ":"Shared company header is identical on ")+(document.Tag as ReportHeading)?.Title);
             int RedOrBlue(Int32Rect rect,bool red){var data=new byte[rect.Width*rect.Height*4];bitmap.CopyPixels(rect,data,rect.Width*4,0);int count=0;for(int i=0;i<data.Length;i+=4)if(red?data[i+2]>200&&data[i+1]<100&&data[i]<100:data[i]>130&&data[i+1]>50&&data[i+2]<70)count++;return count;}
-            check(RedOrBlue(new Int32Rect(50,34,90,26),true)>200&&RedOrBlue(new Int32Rect(50,64,90,26),false)>200,"Both original brand logos render visibly on "+(document.Tag as ReportHeading)?.Title);
+            check(RedOrBlue(progress?new Int32Rect(40,31,102,29):new Int32Rect(50,34,90,26),true)>200&&RedOrBlue(progress?new Int32Rect(40,64,102,29):new Int32Rect(50,64,90,26),false)>200,"Both original brand logos render visibly on "+(document.Tag as ReportHeading)?.Title);
         }
         result.TypedText=string.Join("\n",Enumerable.Range(1,70).Select(n=>n.ToString("D8")));result.OriginalText=result.ExpectedText=result.TypedText;var multi=ReportFactory.Paginator(ReportFactory.Result(profile,result));multi.ComputePageCount();check(multi.PageCount>1,"Branded numeric report still paginates");
         for(int page=1;page<multi.PageCount;page++){var bitmap=new RenderTargetBitmap(794,1123,96,96,PixelFormats.Pbgra32);bitmap.Render(multi.GetPage(page).Visual);var pixels=new byte[714*76*4];bitmap.CopyPixels(new Int32Rect(40,24,714,76),pixels,714*4,0);check(pixels.SequenceEqual(expected!),"Company header repeats unchanged on continuation page "+(page+1));}
@@ -334,14 +342,16 @@ internal static class SelfTests
         check(loaded.Profiles[1].TechnicalSkills.Count==0&&loaded.Profiles[1].AssessmentRemarks=="","Skills and remarks remain specific to one candidate");
         check(saved.TestTakenBy=="Asha Rao"&&loaded.Profiles[1].TestTakenBy=="","Test taken by is saved per candidate and survives restart");
         var cancelled=new CandidateSkillsWindow(candidate,store.Save);cancelled.SetSkill("IF",true);cancelled.SetRemarks("Unsaved remarks");cancelled.Close();check(!candidate.TechnicalSkills.Contains("IF")&&candidate.AssessmentRemarks.StartsWith("Good Excel"),"Cancelling skills editing leaves saved assessment unchanged");
-        var document=ReportFactory.Progress(candidate);string text=new TextRange(document.ContentStart,document.ContentEnd).Text;
+        var document=ReportFactory.Progress(candidate);check(document.Blocks.OfType<Table>().Any(table=>table.Columns.Count==3)&&!new TextRange(document.ContentStart,document.ContentEnd).Text.Contains("CANDIDATE ASSESSMENT"),"Approved skills report uses three columns and leaves the unused assessment label blank");string text=new TextRange(document.ContentStart,document.ContentEnd).Text;
+        var identityValues=((Grid)((Border)((Grid)((BlockUIContainer)document.Blocks.FirstBlock).Child).Children[0]).Child).Children.OfType<TextBlock>().Select(t=>t.Text).ToList();check(identityValues.Contains("CANDIDATE NAME")&&identityValues.Contains(candidate.Name)&&!identityValues.Contains(candidate.Name.ToUpperInvariant()),"Progress report clearly labels the candidate and preserves the entered name casing");
         check(text.IndexOf("Technical Skills")>text.IndexOf("Typing Tests")&&text.IndexOf("Remarks")>text.IndexOf("Technical Skills"),"Selected skills and remarks appear below the typing test results");
         check(text.Contains("SUM")&&text.Contains("PivotTable Creation")&&!text.Contains("XLOOKUP"),"Progress report includes only ticked technical skills");
         check(text.Contains("Excel  (2)")&&!text.Contains("Excel data and analysis")&&!text.Contains("Excel math and trigonometry"),"Excel formulas and practical skills share one compact Excel section");
         check(((ReportHeading)document.Tag).TestTakenBy=="Asha Rao"&&document.PagePadding.Bottom>=100,"Progress report reserves footer space for the examiner name");
         check(TechnicalSkills.DisplayName("Data entry")=="Data Entry"&&TechnicalSkills.DisplayName("PivotTable creation")=="PivotTable Creation"&&TechnicalSkills.DisplayName("SUM")=="SUM"&&TechnicalSkills.DisplayName("Export to PDF")=="Export To PDF","Skill labels use consistent title case while preserving official function names and acronyms");
         var mixed=new Profile{Name="Mixed application skills",TechnicalSkills=["SUM","Document formatting","Create and format slides","Microsoft Outlook"]};var appGroups=TechnicalSkills.ReportGroups(mixed).ToDictionary(g=>g.Group,g=>g.Items);check(appGroups["Excel"].SequenceEqual(new[]{"SUM"})&&appGroups["Word"].Contains("Document formatting")&&appGroups["PowerPoint"].Contains("Create and format slides")&&appGroups["Outlook"].Contains("Microsoft Outlook"),"Excel, Word, PowerPoint and Outlook skills stay under their own application headings");
-        var older=new TypingResult{Kind="Test",Title="Older attempt",Date=new DateTime(2026,1,1),Completed=true};var newest=new TypingResult{Kind="Test",Title="Latest attempt",Date=new DateTime(2026,2,1),NetWpm=42,Accuracy=97,Completed=true};mixed.Results=[newest,older,new TypingResult{Kind="Course",Date=new DateTime(2026,3,1)}];var compactDocument=ReportFactory.Progress(mixed);string compactText=new TextRange(compactDocument.ContentStart,compactDocument.ContentEnd).Text;check(!compactText.Contains("Latest Typing Result")&&compactText.Contains("42 wpm")&&compactText.Contains("97%")&&compactText.Split("Latest attempt").Length==2&&compactText.Split("Older attempt").Length==2,"Compact typing history includes every attempt once and retains latest metrics without a highlighted card");
+        var older=new TypingResult{Kind="Test",Title="Older attempt",Date=new DateTime(2026,1,1),Completed=true};var newest=new TypingResult{Kind="Test",Title="Latest attempt",Date=new DateTime(2026,2,1),NetWpm=42,Accuracy=97,Completed=true};mixed.Results=[newest,older,new TypingResult{Kind="Course",Date=new DateTime(2026,3,1)}];var compactDocument=ReportFactory.Progress(mixed);check(compactDocument.Blocks.OfType<Table>().Where(table=>table.RowGroups[0].Rows.Count==1).All(table=>table.RowGroups[0].Rows[0].Cells.Count==1&&table.RowGroups[0].Rows[0].Cells[0].ColumnSpan==3),"Single-skill application rows span all three report columns");string compactText=new TextRange(compactDocument.ContentStart,compactDocument.ContentEnd).Text;check(!compactText.Contains("Latest Typing Result")&&compactText.Contains("42 wpm")&&compactText.Contains("97%")&&compactText.Split("Latest attempt").Length==2&&compactText.Split("Older attempt").Length==2,"Compact typing history includes every attempt once and retains latest metrics without a highlighted card");
+        check(((ReportHeading)compactDocument.Tag).AssessmentDate==new DateTime(2026,2,1),"Assessment date comes from the latest typing test rather than later course activity or export time");
         NativePdf.Export(document,Path.Combine(output,"candidate-skills-report.pdf"));RenderReport(document,Path.Combine(output,"candidate-skills-report.png"));
         var editAgain=new CandidateSkillsWindow(candidate,store.Save);editAgain.SetSkill("SUM",false);editAgain.SetRemarks("");editAgain.Apply();editAgain.Close();
         check(!new ProfileStore(store.DirectoryPath).Profiles[0].TechnicalSkills.Contains("SUM")&&candidate.AssessmentRemarks=="","Skills can be unticked and remarks cleared");
@@ -356,6 +366,8 @@ internal static class SelfTests
         var classify=new CandidateSkillsWindow(candidate,store.Save);classify.AddCustomSkill("GST reconciliation","Excel");classify.AddCustomSkill("Letter formatting","Word");classify.Apply();classify.Close();var classified=new ProfileStore(store.DirectoryPath).Profiles[0];check(TechnicalSkills.ApplicationFor("GST reconciliation",classified)=="Excel"&&TechnicalSkills.ApplicationFor("Letter formatting",classified)=="Word","Custom skill application assignments persist and print under the correct application");NativePdf.Export(ReportFactory.Progress(classified),Path.Combine(output,"classified-skills-report.pdf"));
         var captured=new CandidateSkillsWindow(candidate,()=>{});captured.SetFilter("","Excel advanced / dynamic arrays");captured.Show();captured.Dispatcher.Invoke(()=>{},DispatcherPriority.ApplicationIdle);captured.UpdateLayout();var bitmap=new RenderTargetBitmap((int)captured.ActualWidth,(int)captured.ActualHeight,96,96,PixelFormats.Pbgra32);bitmap.Render(captured);var encoder=new PngBitmapEncoder();encoder.Frames.Add(BitmapFrame.Create(bitmap));using(var stream=File.Create(Path.Combine(output,"skills-catalogue.png")))encoder.Save(stream);captured.Close();
         var longCandidate=new Profile{Name="Long assessment",TestTakenBy="Sample Interviewer",TechnicalSkills=TechnicalSkills.Groups.Where(g=>g.Group.StartsWith("Excel ")).SelectMany(g=>g.Items).Distinct().Take(100).ToHashSet()};var multi=ReportFactory.Progress(longCandidate);var paginator=ReportFactory.Paginator(multi);paginator.ComputePageCount();check(paginator.PageCount>1,"Large Excel checklists paginate with reserved examiner footer space");NativePdf.Export(paginator,Path.Combine(output,"progress-footer-multipage.pdf"));
+        var longRemarks=new Profile{Name="Long remarks candidate",TestTakenBy="Sample Interviewer",AssessmentRemarks=string.Join("\n",Enumerable.Range(1,90).Select(i=>"Observation "+i+": Candidate independently completed the assigned spreadsheet task and explained the calculation clearly."))};
+        var remarksDocument=ReportFactory.Progress(longRemarks);var remarksPaginator=ReportFactory.Paginator(remarksDocument);remarksPaginator.ComputePageCount();check(remarksPaginator.PageCount>1&&new TextRange(remarksDocument.ContentStart,remarksDocument.ContentEnd).Text.Contains("Observation 90:"),"Long assessment remarks flow across pages and retain the final observation");NativePdf.Export(remarksPaginator,Path.Combine(output,"progress-long-remarks.pdf"));
     }
     static void VerifyCompanyBranding(string output,Action<bool,string> check)
     {
@@ -378,6 +390,29 @@ internal static class SelfTests
             File.WriteAllText(Path.Combine(directory,"company-branding.json"),"{broken");check(BrandingStorage.Load(directory).Name==custom.Name,"Damaged company settings recover from the previous backup");
         }
         finally{ReportBranding.Configure(Path.Combine(output,"branding-defaults"));}
+    }
+    static void VerifyOriginalArtwork(Action<bool,string> check)
+    {
+        string directory=Path.Combine(Assets.Root,"TypeMasterArtwork");
+        using var manifest=JsonDocument.Parse(File.ReadAllText(Path.Combine(directory,"manifest.json")));
+        var legacy=manifest.RootElement.GetProperty("legacy").EnumerateObject().ToArray();
+        check(legacy.Length==92,"All 92 legacy image canvases have original TypeMaster replacements");
+        foreach(var entry in legacy)
+        {
+            using var input=File.OpenRead(Path.Combine(Assets.Root,entry.Name));
+            var old=BitmapDecoder.Create(input,BitmapCreateOptions.PreservePixelFormat,BitmapCacheOption.OnLoad).Frames[0];
+            var current=MainWindow.AssetBitmap(entry.Name);
+            check(current.PixelWidth==old.PixelWidth&&current.PixelHeight==old.PixelHeight,"Original artwork preserves exact pixel canvas: "+entry.Name);
+            check(RuntimeArtwork.Resolve(entry.Name).StartsWith("TypeMasterArtwork/",StringComparison.Ordinal),"Runtime selects authored replacement: "+entry.Name);
+        }
+        foreach(var entry in manifest.RootElement.GetProperty("extras").EnumerateObject())
+        {
+            var spec=entry.Value;var bitmap=MainWindow.AssetBitmap("TypeMasterArtwork/"+spec.GetProperty("file").GetString());
+            check(bitmap.PixelWidth==spec.GetProperty("width").GetInt32()&&bitmap.PixelHeight==spec.GetProperty("height").GetInt32(),"Standalone illustration retains its layout footprint: "+entry.Name);
+        }
+        check(RuntimeArtwork.FingerCue(0).X<RuntimeArtwork.FingerCue(9).X,"Left and right thumb markers use their corresponding hands");
+        check(RuntimeArtwork.FingerCue(1).X<RuntimeArtwork.FingerCue(4).X&&RuntimeArtwork.FingerCue(5).X<RuntimeArtwork.FingerCue(8).X,"Finger cues follow the teaching hands from little finger to index and index to little finger");
+        check(RuntimeArtwork.Resolve("Branding/ratan.png")=="Branding/ratan.png"&&RuntimeArtwork.Resolve("Branding/kolorr.png")=="Branding/kolorr.png","Authentic company branding is unaffected by illustration replacements");
     }
     static void RenderReport(FlowDocument document, string file)
     {
