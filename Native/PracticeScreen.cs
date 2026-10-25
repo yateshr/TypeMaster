@@ -14,6 +14,7 @@ public partial class MainWindow
     internal void StartExercise(string text, string title, int seconds, string exerciseKind = "Practice", string? id = null)
     {
         if (!restoringDraft) ClearExerciseDraft();
+        CancelTypingPaint();
         timer.Stop(); watch.Reset(); restoredElapsed = 0; attemptId = Guid.NewGuid();
         pendingCompletion = null; typingFeedback = null; lastPaintedText = null; lastDraftSave = DateTime.MinValue;
         exerciseStarted = DateTime.Now;
@@ -41,7 +42,7 @@ public partial class MainWindow
         TypingBox = new TextBox { FontFamily = new FontFamily("Georgia"), FontSize = 19, Padding = new Thickness(0, 4, 0, 0), TextWrapping = TextWrapping.Wrap, AcceptsReturn = exerciseKind == "Test", IsUndoEnabled = false, AllowDrop = false, Background = Brushes.Transparent, BorderBrush = Brushes.RoyalBlue, BorderThickness = new Thickness(0, 1, 0, 0), VerticalScrollBarVisibility = ScrollBarVisibility.Hidden };
         TypingBox.Margin = new Thickness(0); var decorator = new AdornerDecorator { Child = TypingBox }; Position(canvas, decorator, 37, 270, 492, 111);
         foreach (var textControl in new System.Windows.DependencyObject[] { targetBlock, TypingBox }) { TextOptions.SetTextFormattingMode(textControl, TextFormattingMode.Display); TextOptions.SetTextHintingMode(textControl, TextHintingMode.Fixed); }
-        TypingBox.SelectionChanged += (_, _) => { if (exercising && !restoringDraft && TypingBox.Text.Replace("\r\n", "\n").Replace('\r', '\n') == typed) Paint(); };
+        TypingBox.SelectionChanged += (_, _) => { if (exercising && !restoringDraft) RequestTypingPaint(); };
         var input = TypingBox; input.Loaded += (_, _) => { if (ReferenceEquals(input, TypingBox) && kind == "Test" && AdornerLayer.GetAdornerLayer(input) is { } layer) { typingFeedback = new TypingFeedback(input); layer.Add(typingFeedback); typingFeedback.Refresh(target); } };
         DataObject.AddPastingHandler(TypingBox, (_, e) => e.CancelCommand()); TypingBox.TextChanged += (_, _) => InputChanged();
         Position(canvas, new Ellipse { Fill = new SolidColorBrush(Color.FromRgb(174, 216, 110)) }, 144, 375, 22, 22);

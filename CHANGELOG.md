@@ -1,5 +1,14 @@
 # Release notes
 
+## 1.11.11 — 2026-10-25
+
+- Prioritised queued typing input over passage painting; bursts of input share one latest-state display update.
+- Removed forced layout from passage painting and deferred scrolling until after normal WPF layout.
+- Avoided TextBox geometry queries for empty feedback overlays and redundant idle overlay redraws.
+- Added separate input, passage and feedback timings to the isolated benchmark.
+- Local measured input handling averaged 0.6–1.1 ms versus 8–12 ms in the previous profiled build; these timings exclude subsequent screen redraw work.
+- All 578 native checks passed, including a 600-character burst that preserves the exact response and coalesces to one passage paint. UI layout and final scoring rules remain unchanged.
+
 ## 1.11.10 — 2026-10-25
 
 - Fixed severe typing-test input delays caused by synchronous recovery writes and repeated WPF text/layout rebuilding.

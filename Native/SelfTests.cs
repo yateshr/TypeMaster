@@ -155,14 +155,16 @@ internal static class SelfTests
             {
                 if (position > 0 && normalizedNumbers[position - 1] != '\n' && position != normalizedNumbers.Length - 1) continue;
                 window.TypingBox!.Text = normalizedNumbers[..position]; window.TypingBox.Select(window.TypingBox.Text.Length, 0);
+                window.Dispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle);
                 Check(window.ActiveTargetBounds.Top >= 0 && window.ActiveTargetBounds.Bottom <= 225, "Next numeric character remains visible at position " + position);
             }
             int eighteenthNumber = normalizedNumbers.IndexOf("8671155", StringComparison.Ordinal);
             window.TypingBox!.Text = normalizedNumbers[..eighteenthNumber];
             window.TypingBox.Select(window.TypingBox.Text.Length, 0); window.TypingBox.ScrollToEnd();
+            window.Dispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle);
             Check(new TextRange(numberText.ContentStart, numberText.ContentEnd).Text.StartsWith("593522") && new TextRange(numberText.ContentStart, numberText.ContentEnd).Text.Contains("8671155") && !new TextRange(numberText.ContentStart, numberText.ContentEnd).Text.Contains("…"), "Numeric page two retains rows ten through eighteen without partial numbers or ellipses");
-            window.TypingBox.Select(0, 0); Check(new TextRange(numberText.ContentStart, numberText.ContentEnd).Text.StartsWith("1622"), "Moving the caret back reveals the earlier numeric page for corrections");
-            window.TypingBox.Select(window.TypingBox.Text.Length, 0); Check(new TextRange(numberText.ContentStart, numberText.ContentEnd).Text.StartsWith("593522"), "Returning the caret to the end restores the active numeric page");
+            window.TypingBox.Select(0, 0); window.Dispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle); Check(new TextRange(numberText.ContentStart, numberText.ContentEnd).Text.StartsWith("1622"), "Moving the caret back reveals the earlier numeric page for corrections");
+            window.TypingBox.Select(window.TypingBox.Text.Length, 0); window.Dispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle); Check(new TextRange(numberText.ContentStart, numberText.ContentEnd).Text.StartsWith("593522"), "Returning the caret to the end restores the active numeric page");
             window.UpdateCountdownPie(.78);
             window.Capture(Path.Combine(output, "native-numbers-running.png"));
             window.TypingBox.Text = normalizedNumbers[..^1];

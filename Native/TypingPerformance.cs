@@ -7,6 +7,9 @@ using System.Windows.Threading;
 namespace TypeMaster.Native;
 internal static class TypingPerformance
 {
+    internal static bool Profiling;
+    internal static double TargetMilliseconds, FeedbackMilliseconds;
+    internal static int TargetPaints;
     internal static void Verify(string output, Action<bool, string> check)
     {
         string file = Path.Combine(output, "background-draft.json");
@@ -32,9 +35,14 @@ internal static class TypingPerformance
         window.Show(); window.EnterProfile("Input regression sample", false); window.Current!.Sound = false;
         string passage = string.Concat(Enumerable.Repeat("The candidate types accurately. ", 100));
         window.StartExercise(passage, "Rapid typing", 600, "Test"); window.UpdateLayout();
+        TargetPaints = 0; Profiling = true;
         for (int i = 0; i < 600; i++) { window.TypingBox!.SelectedText = passage[i].ToString(); window.TypingBox.Select(window.TypingBox.Text.Length, 0); }
-        check(window.TypingBox!.Text == passage[..600], "Rapid typing preserves every character in order");
+        check(TargetPaints == 0, "Queued typing does not force passage painting or layout inside keystrokes");
         check(!Directory.GetFiles(window.Store.DirectoryPath, "exercise-*.json").Any(), "Individual keystrokes do not synchronously write recovery files");
+        window.Dispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle);
+        Profiling = false;
+        check(TargetPaints == 1, "A burst of 600 characters coalesces into one latest-state passage paint");
+        check(window.TypingBox!.Text == passage[..600], "Rapid typing preserves every character in order");
         var result = window.FinishExercise(true)!;
         check(result.TypedText == passage[..600] && result.Errors == 0 && result.Correct == 600 && result.Accuracy == 100, "Rapid input preserves exact response, error counts and scoring");
         window.Close();
@@ -53,17 +61,21 @@ internal static class TypingPerformance
             window.TypingBox!.Text = passage[..prefix]; window.TypingBox.Select(prefix, 0);
             window.Dispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle);
             var samples = new List<double>();
+            double inputMilliseconds = 0;
+            TargetMilliseconds = FeedbackMilliseconds = 0; TargetPaints = 0; Profiling = true;
             long allocated = GC.GetAllocatedBytesForCurrentThread();
             for (int i = prefix; i < prefix + 120; i++)
             {
                 var elapsed = Stopwatch.StartNew();
                 window.TypingBox.SelectedText = passage[i].ToString();
                 window.TypingBox.Select(window.TypingBox.Text.Length, 0);
+                inputMilliseconds += elapsed.Elapsed.TotalMilliseconds;
                 window.Dispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle);
                 samples.Add(elapsed.Elapsed.TotalMilliseconds);
             }
             var ordered = samples.Order().ToArray();
-            results.Add(new { prefix, keystrokes = samples.Count, averageMs = samples.Average(), p95Ms = ordered[(int)(ordered.Length * .95)], maxMs = samples.Max(), allocatedBytes = GC.GetAllocatedBytesForCurrentThread() - allocated, inputPreserved = window.TypingBox.Text == passage[..(prefix + 120)] });
+            Profiling = false;
+            results.Add(new { prefix, keystrokes = samples.Count, averageMs = samples.Average(), p95Ms = ordered[(int)(ordered.Length * .95)], maxMs = samples.Max(), inputAverageMs = inputMilliseconds / samples.Count, targetAverageMs = TargetMilliseconds / samples.Count, feedbackAverageMs = FeedbackMilliseconds / samples.Count, targetPaints = TargetPaints, allocatedBytes = GC.GetAllocatedBytesForCurrentThread() - allocated, inputPreserved = window.TypingBox.Text == passage[..(prefix + 120)] });
             window.FinishExercise(true);
         }
         window.Close();

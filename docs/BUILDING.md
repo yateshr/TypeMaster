@@ -24,14 +24,14 @@ The `Asset` and `UI` directories are build inputs. Preserve their paths and file
 & '.\Build Native.ps1' -NsisPath 'C:\Tools\NSIS\makensis.exe'
 ```
 
-The script publishes `dist/native-win-x64-1.11.10`, runs the application's checks, copies demonstration reports and creates a ZIP. It builds the NSIS installer when NSIS is available. An installer build is not implied if NSIS is absent.
+The script publishes `dist/native-win-x64-1.11.11`, runs the application's checks, copies demonstration reports and creates a ZIP. It builds the NSIS installer when NSIS is available. An installer build is not implied if NSIS is absent.
 
 ## Native checks
 
 The published application supports an isolated self-test run:
 
 ```powershell
-$testRun = Start-Process '.\dist\native-win-x64-1.11.10\TypeMaster.exe' -ArgumentList '--self-test' -PassThru -Wait
+$testRun = Start-Process '.\dist\native-win-x64-1.11.11\TypeMaster.exe' -ArgumentList '--self-test' -PassThru -Wait
 $testRun.ExitCode
 Get-Content "$env:TEMP\TypeMasterNative-tests\results.json"
 ```
@@ -50,8 +50,8 @@ The build script automatically runs this verifier when its configured bundled Py
 ## Release checksums
 
 ```powershell
-Get-FileHash dist/TypeMaster-Native-1.11.10-Setup.exe -Algorithm SHA256
-Get-FileHash dist/TypeMaster-Native-1.11.10-win-x64.zip -Algorithm SHA256
+Get-FileHash dist/TypeMaster-Native-1.11.11-Setup.exe -Algorithm SHA256
+Get-FileHash dist/TypeMaster-Native-1.11.11-win-x64.zip -Algorithm SHA256
 ```
 
 Candidate data, backups, logs and local branding settings must not be committed or packaged.

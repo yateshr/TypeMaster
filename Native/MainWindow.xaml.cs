@@ -144,13 +144,14 @@ public partial class MainWindow : Window
             if (errorSoundReady) { errorSound.Position = TimeSpan.Zero; errorSound.Play(); }
         }
         if (typed.Length == 0) ClearExerciseDraft();
-        Paint(); typingFeedback?.InvalidateVisual(); liveKeyboard?.Highlight(kind == "ReviewKeys" && typed.Length < target.Length ? target[typed.Length].ToString() : "");
+        RequestTypingPaint(); typingFeedback?.InvalidateVisual(); liveKeyboard?.Highlight(kind == "ReviewKeys" && typed.Length < target.Length ? target[typed.Length].ToString() : "");
         if (typed.Length >= target.Length) FinishExercise();
     }
     void Paint()
     {
         if (kind == "ReviewKeys") { PaintKeyDrill(); return; }
         if (targetBlock == null || paintingTarget) return;
+        long paintStarted = TypingPerformance.Profiling ? Stopwatch.GetTimestamp() : 0;
         paintingTarget = true;
         try {
         int cursor = Math.Min(typed.Length, (TypingBox?.Text[..Math.Min(TypingBox.CaretIndex, TypingBox.Text.Length)] ?? typed).Replace("\r\n", "\n").Replace('\r', '\n').Length);
@@ -187,16 +188,35 @@ public partial class MainWindow : Window
         }
         if (activeRun != null && targetViewport != null)
         {
-            targetViewport.UpdateLayout();
-            var bounds = activeRun.ContentStart.GetCharacterRect(LogicalDirection.Forward);
-            targetViewport.ScrollToVerticalOffset(numericPassage ? 0 : Math.Max(0, bounds.Top - 50));
-            ActiveTargetBounds = new Rect(bounds.X, bounds.Y - targetViewport.VerticalOffset, bounds.Width, bounds.Height);
+            var viewport = targetViewport;
+            // Run after WPF's normal layout pass, rather than forcing layout inside input.
+            Dispatcher.BeginInvoke(DispatcherPriority.Loaded, new Action(() =>
+            {
+                if (!exercising || !viewport.IsLoaded || !ReferenceEquals(viewport, targetViewport) || activeRun.Parent != targetBlock) return;
+                var bounds = activeRun.ContentStart.GetCharacterRect(LogicalDirection.Forward);
+                if (bounds.IsEmpty) return;
+                double offset = numericPassage ? 0 : Math.Max(0, bounds.Top - 50);
+                viewport.ScrollToVerticalOffset(offset);
+                ActiveTargetBounds = new Rect(bounds.X, bounds.Y - offset, bounds.Width, bounds.Height);
+            }));
         }
-        } finally { paintingTarget = false; }
+        } finally { paintingTarget = false; if (paintStarted != 0) { TypingPerformance.TargetMilliseconds += Stopwatch.GetElapsedTime(paintStarted).TotalMilliseconds; TypingPerformance.TargetPaints++; } }
     }
     bool paintingTarget;
     string? lastPaintedText;
     int lastPaintedCursor;
+    DispatcherOperation? pendingTypingPaint;
+    void RequestTypingPaint()
+    {
+        if (pendingTypingPaint?.Status == DispatcherOperationStatus.Pending) return;
+        var input = TypingBox;
+        pendingTypingPaint = Dispatcher.BeginInvoke(DispatcherPriority.Background, new Action(() =>
+        {
+            pendingTypingPaint = null;
+            if (exercising && ReferenceEquals(input, TypingBox)) Paint();
+        }));
+    }
+    void CancelTypingPaint() { pendingTypingPaint?.Abort(); pendingTypingPaint = null; }
     ScrollViewer? targetViewport;
     bool numericPassage;
     System.Windows.Shapes.Path? countdownPie;

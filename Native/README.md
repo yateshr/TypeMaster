@@ -1,6 +1,6 @@
-# TypeMaster 1.11.10
+# TypeMaster 1.11.11
 
-Run the installed TypeMaster shortcut, or extract the complete portable ZIP and open `native-win-x64-1.11.10/TypeMaster.exe`. Close TypeMaster and its Typing Meter tray icon before updates.
+Run the installed TypeMaster shortcut, or extract the complete portable ZIP and open `native-win-x64-1.11.11/TypeMaster.exe`. Close TypeMaster and its Typing Meter tray icon before updates.
 
 The native C# / WPF solution is `TypeMaster.Native.sln`. See the repository's main README and `docs/BUILDING.md` for build and test instructions.
 

@@ -19,7 +19,7 @@
 
 ## About
 
-Current release: **1.11.10**, fixing typing-test input delays while preserving the approved UI and report design. See [the artwork guide](docs/ARTWORK.md).
+Current release: **1.11.11**, prioritising typing input over queued display work while preserving the approved UI and report design. See [the artwork guide](docs/ARTWORK.md).
 
 TypeMaster was built for a practical interview workflow: a candidate completes a typing test, the examiner records demonstrated computer skills and remarks, and the company receives a readable assessment report.
 
@@ -93,8 +93,8 @@ Download from [GitHub Releases](https://github.com/yateshr/TypeMaster/releases/l
 
 | File | Use |
 |---|---|
-| `TypeMaster-Native-1.11.10-Setup.exe` | Install for the current Windows account with shortcuts and uninstall support |
-| `TypeMaster-Native-1.11.10-win-x64.zip` | Extract the whole archive and run `native-win-x64-1.11.10/TypeMaster.exe` without installing |
+| `TypeMaster-Native-1.11.11-Setup.exe` | Install for the current Windows account with shortcuts and uninstall support |
+| `TypeMaster-Native-1.11.11-win-x64.zip` | Extract the whole archive and run `native-win-x64-1.11.11/TypeMaster.exe` without installing |
 | `SHA256SUMS.txt` | Verify release downloads against their published SHA-256 hashes |
 
 Keep every file in the portable folder together. Close TypeMaster and exit the Typing Meter tray icon before updating.
@@ -158,7 +158,7 @@ TypeMaster/
 
 The typing responsiveness fix and before/after measurements are documented in [performance validation](docs/PERFORMANCE.md).
 
-Release 1.11.10 passed **576 native application checks**. Five sample PDF reports passed text extraction and word-selection hit-area verification. Display checks include small windows and DPI/maximized-frame cases; this does not imply every monitor configuration has been tested.
+Release 1.11.11 passed **578 native application checks**. Five sample PDF reports passed text extraction and word-selection hit-area verification. Display checks include small windows and DPI/maximized-frame cases; this does not imply every monitor configuration has been tested.
 
 Typing scores use the currently implemented scoring rules based on supplied report evidence. Source-comparison notes and known scope differences are documented in [Native/REPORTS.md](Native/REPORTS.md) and [Native/SOURCE_GAPS.md](Native/SOURCE_GAPS.md). TypeMaster is a separate application and is not endorsed by TypingMaster or Microsoft.
 
