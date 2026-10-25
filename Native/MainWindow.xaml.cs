@@ -28,6 +28,7 @@ public partial class MainWindow : Window
     internal TextBox? TypingBox;
     TextBlock? targetBlock, clockBlock, speedBlock, accuracyBlock;
     readonly MediaPlayer errorSound = new();
+    bool errorSoundReady;
     TypingGameView? gameView;
     readonly List<CourseDefinition> allCourses = CourseLibrary.LoadAll();
     KeyboardView? liveKeyboard;
@@ -140,10 +141,10 @@ public partial class MainWindow : Window
         typed = value;
         if (madeError && Current!.Sound)
         {
-            var file = Path.Combine(Assets.Root, "Error.wav");
-            if (File.Exists(file)) { errorSound.Open(new Uri(file)); errorSound.Volume = .12; errorSound.Play(); }
+            if (errorSoundReady) { errorSound.Position = TimeSpan.Zero; errorSound.Play(); }
         }
-        Paint(); UpdateMetrics(); SaveExerciseDraft(); typingFeedback?.Refresh(target); liveKeyboard?.Highlight(kind == "ReviewKeys" && typed.Length < target.Length ? target[typed.Length].ToString() : "");
+        if (typed.Length == 0) ClearExerciseDraft();
+        Paint(); typingFeedback?.InvalidateVisual(); liveKeyboard?.Highlight(kind == "ReviewKeys" && typed.Length < target.Length ? target[typed.Length].ToString() : "");
         if (typed.Length >= target.Length) FinishExercise();
     }
     void Paint()
@@ -152,8 +153,10 @@ public partial class MainWindow : Window
         if (targetBlock == null || paintingTarget) return;
         paintingTarget = true;
         try {
-        targetBlock.Inlines.Clear();
         int cursor = Math.Min(typed.Length, (TypingBox?.Text[..Math.Min(TypingBox.CaretIndex, TypingBox.Text.Length)] ?? typed).Replace("\r\n", "\n").Replace('\r', '\n').Length);
+        if (lastPaintedText == typed && lastPaintedCursor == cursor) return;
+        lastPaintedText = typed; lastPaintedCursor = cursor;
+        targetBlock.Inlines.Clear();
         int start = Math.Max(0, cursor - 100), end = Math.Min(target.Length, start + 550);
         if (numericPassage)
         {
@@ -168,26 +171,32 @@ public partial class MainWindow : Window
         if (kind == "Test") while (activeEnd < target.Length && !char.IsWhiteSpace(target[activeEnd])) activeEnd++;
         if (start > 0 && !numericPassage) targetBlock.Inlines.Add(new Run("… "));
         Run? activeRun = null;
-        for (int i = start; i < end; i++)
+        int Style(int index) => index < typed.Length ? (typed[index] == target[index] ? 1 : 2) : index == typed.Length || index < activeEnd ? 3 : 0;
+        for (int i = start; i < end;)
         {
-            var run = new Run(target[i] == '\n' ? "↵" : target[i].ToString());
-            if (i < typed.Length) { run.Foreground = typed[i] == target[i] ? (kind == "Test" ? Brushes.DarkOliveGreen : Brushes.SeaGreen) : Brushes.Crimson; if (typed[i] != target[i]) run.Background = Brushes.MistyRose; }
-            else if (i == typed.Length || i < activeEnd) { run.Foreground = Brushes.Blue; run.TextDecorations = TextDecorations.Underline; }
+            int style = Style(i), next = i + 1;
+            if (target[i] != '\n') while (next < end && next != cursor && target[next] != '\n' && Style(next) == style) next++;
+            var run = new Run(target[i] == '\n' ? "↵" : target[i..next]);
+            if (style == 1) run.Foreground = kind == "Test" ? Brushes.DarkOliveGreen : Brushes.SeaGreen;
+            else if (style == 2) { run.Foreground = Brushes.Crimson; run.Background = Brushes.MistyRose; }
+            else if (style == 3) { run.Foreground = Brushes.Blue; run.TextDecorations = TextDecorations.Underline; }
             targetBlock.Inlines.Add(run);
             if (i == cursor) activeRun = run;
             if (target[i] == '\n') { targetBlock.Inlines.Add(new LineBreak()); if (paragraphSpacing) targetBlock.Inlines.Add(new LineBreak()); }
+            i = next;
         }
         if (activeRun != null && targetViewport != null)
         {
             targetViewport.UpdateLayout();
             var bounds = activeRun.ContentStart.GetCharacterRect(LogicalDirection.Forward);
             targetViewport.ScrollToVerticalOffset(numericPassage ? 0 : Math.Max(0, bounds.Top - 50));
-            targetViewport.UpdateLayout();
             ActiveTargetBounds = new Rect(bounds.X, bounds.Y - targetViewport.VerticalOffset, bounds.Width, bounds.Height);
         }
         } finally { paintingTarget = false; }
     }
     bool paintingTarget;
+    string? lastPaintedText;
+    int lastPaintedCursor;
     ScrollViewer? targetViewport;
     bool numericPassage;
     System.Windows.Shapes.Path? countdownPie;
@@ -204,7 +213,7 @@ public partial class MainWindow : Window
         countdownPie.Data = new PathGeometry(new[] { figure });
     }
     internal Rect ActiveTargetBounds { get; private set; }
-    void Tick() { if (exercising && !paused) { if (typed.Length > 0 && (DateTime.UtcNow - lastDraftSave).TotalSeconds >= 1) { SaveExerciseDraft(); lastDraftSave = DateTime.UtcNow; } UpdateMetrics(); if (liveKeyboard != null && typed.Length < target.Length && (DateTime.UtcNow - lastInput).TotalMilliseconds > (Current!.HintSpeed == "Fast" ? 250 : Current.HintSpeed == "Slow" ? 2000 : 1000)) liveKeyboard.Highlight(target[typed.Length].ToString()); if (ExerciseSeconds >= duration) FinishExercise(); } }
+    void Tick() { if (exercising && !paused) { if (typed.Length > 0 && (DateTime.UtcNow - lastDraftSave).TotalSeconds >= 1) { SaveExerciseDraft(background: true); lastDraftSave = DateTime.UtcNow; } UpdateMetrics(); typingFeedback?.Refresh(target); if (liveKeyboard != null && typed.Length < target.Length && (DateTime.UtcNow - lastInput).TotalMilliseconds > (Current!.HintSpeed == "Fast" ? 250 : Current.HintSpeed == "Slow" ? 2000 : 1000)) liveKeyboard.Highlight(target[typed.Length].ToString()); if (ExerciseSeconds >= duration) FinishExercise(); } }
     void UpdateMetrics()
     {
         if (kind == "ReviewKeys") { clockBlock!.Text = Math.Min(100, typed.Length * 100 / target.Length) + " %"; return; }

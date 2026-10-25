@@ -144,7 +144,7 @@ internal static class SelfTests
             var numberText = Descendants<System.Windows.Controls.TextBlock>(window.PageContent).First(t => new TextRange(t.ContentStart, t.ContentEnd).Text.StartsWith("1622"));
             var numberRuns = numberText.Inlines.OfType<Run>().ToList();
             double firstRow = numberRuns[0].ContentStart.GetCharacterRect(LogicalDirection.Forward).Top;
-            double secondRow = numberRuns[5].ContentStart.GetCharacterRect(LogicalDirection.Forward).Top;
+            double secondRow = numberText.Inlines.OfType<LineBreak>().First().ElementEnd.GetCharacterRect(LogicalDirection.Forward).Top;
             Check(Math.Abs(secondRow - firstRow - 25) < 1, "Numeric rows match the reference's compact 25-pixel spacing despite trailing blank lines");
             var countdown = Descendants<System.Windows.Shapes.Path>(window.PageContent).Single(p => p.Fill is SolidColorBrush brush && brush.Color == Color.FromRgb(155, 193, 85));
             Check(countdown.Data.IsEmpty(), "Countdown pie begins empty before the first keystroke");
@@ -199,6 +199,7 @@ internal static class SelfTests
             var oldSheet = ReportFactory.Examination(window.Current, legacy); string oldText = new TextRange(oldSheet.ContentStart, oldSheet.ContentEnd).Text; Check(oldText.Contains("Not recorded") && !oldText.Contains(legacy.Date.ToString("dd-MM-yyyy hh:mm tt")), "Legacy examination sheets do not invent an exam start time from the completion timestamp");
             VerifyCourseScreens(window, output, Check);
             VerifyDisplayAndRecovery(window, output, Check);
+            TypingPerformance.Verify(output, Check);
             VerifyReportBranding(Check);
             ReportSamples.Write(Path.Combine(output, "reports")); Check(Directory.GetFiles(Path.Combine(output, "reports"), "*.pdf").Length == 5, "All five sample PDF reports export directly without a PDF printer");
             VerifyVectorPdf(output, Check);

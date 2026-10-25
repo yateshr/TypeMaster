@@ -16,7 +16,7 @@ sealed class TypingFeedback : Adorner
     {
         if (!includeLast && input.Text.StartsWith(analyzed, StringComparison.Ordinal) && input.Text[analyzed.Length..].All(c => !char.IsWhiteSpace(c))) { InvalidateVisual(); return; }
         analyzed = input.Text;
-        var words = Regex.Matches(input.Text, @"\S+").ToArray(); var incorrect = ReportFactory.IncorrectWords(original, input.Text); mistakes.Clear();
+        var words = Regex.Matches(input.Text, @"\S+").ToArray(); var incorrect = ReportFactory.IncorrectWords(original, input.Text, live: !includeLast); mistakes.Clear();
         for (int i = 0; i < words.Length; i++) if (incorrect[i] && (includeLast || i + 1 < words.Length || char.IsWhiteSpace(input.Text[^1]))) mistakes.Add((words[i].Index, words[i].Length));
         InvalidateVisual();
     }

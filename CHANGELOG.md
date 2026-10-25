@@ -1,5 +1,15 @@
 # Release notes
 
+## 1.11.10 — 2026-10-25
+
+- Fixed severe typing-test input delays caused by synchronous recovery writes and repeated WPF text/layout rebuilding.
+- Coalesced recovery snapshots on one background worker, preserving explicit saves and preventing cleared drafts from reappearing.
+- Grouped passage text by formatting instead of creating a separate Run for every character, and suppressed duplicate caret redraws.
+- Moved live metrics and bounded word feedback to the exercise timer; final scoring and report comparisons remain unchanged.
+- Reused the error sound rather than reopening its file on each mistake.
+- Added rapid-input, slow-storage, snapshot ordering and cancellation regression checks, plus an isolated typing benchmark.
+- Measured average input latency decreased from 446–485 ms to 13–17 ms in the local benchmark; all 360 measured characters were preserved. See [performance validation](docs/PERFORMANCE.md).
+
 ## 1.11.9 — 2026-10-25
 
 - Includes all artwork, report and installer refinements developed in the 1.11.0–1.11.8 previews below.

@@ -168,10 +168,10 @@ public static class ReportFactory
         d.Blocks.Add(Table([546, 142], new[] { new[] { "Signature of Candidate", "Examiner Signature" }, new[] { "________________", "________________" } }, 135, headers: true, labels: false));
         return d;
     }
-    internal static bool[] IncorrectWords(string original, string typed)
+    internal static bool[] IncorrectWords(string original, string typed, bool live = false)
     {
         var a = Regex.Matches(original, @"\S+").Select(m => m.Value).ToArray(); var b = Regex.Matches(typed, @"\S+").Select(m => m.Value).ToArray(); var bad = Enumerable.Repeat(true, b.Length).ToArray();
-        if ((long)a.Length * b.Length > 2_000_000)
+        if (live || (long)a.Length * b.Length > 2_000_000)
         {
             int i = 0, j = 0;
             while (i < a.Length && j < b.Length)

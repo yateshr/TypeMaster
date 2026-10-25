@@ -8,6 +8,7 @@ public partial class App : Application
     protected override void OnStartup(StartupEventArgs e)
     {
         base.OnStartup(e);
+        if (e.Args.Contains("--typing-benchmark")) { Shutdown(TypingPerformance.Run()); return; }
         EventManager.RegisterClassHandler(typeof(Window), FrameworkElement.LoadedEvent, new RoutedEventHandler((sender, _) => { var window=(Window)sender;window.Icon??=AppInfo.WindowIcon;DisplayLayout.FitWindow(window); }));
         if (e.Args.Contains("--self-test"))
         {

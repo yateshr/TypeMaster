@@ -27,20 +27,19 @@ public partial class MainWindow
     bool restoringDraft;
     double ExerciseSeconds => restoredElapsed + watch.Elapsed.TotalSeconds;
     string DraftFile => Path.Combine(Store.DirectoryPath, "exercise-" + Current!.Id.ToString("N") + ".json");
-    internal void SaveExerciseDraft()
+    readonly ExerciseDraftWriter draftWriter = new();
+    internal void SaveExerciseDraft(bool background = false)
     {
         if (Current == null || !exercising || restoringDraft) return;
         if (typed.Length == 0) { ClearExerciseDraft(); return; }
         int caret = TypingBox == null ? typed.Length : TypingBox.Text[..Math.Min(TypingBox.CaretIndex, TypingBox.Text.Length)].Replace("\r\n", "\n").Replace('\r', '\n').Length;
         var draft = new ExerciseDraft { AttemptId = attemptId, Source = exerciseSourceText, Typed = typed, Title = exerciseTitle, Kind = kind, LessonId = lessonId, CourseFile = Current.CourseFile, Duration = duration, Elapsed = Math.Min(ExerciseSeconds, duration), Started = exerciseStarted, Attempts = attempts, Errors = errors, Caret = caret, Mistakes = new(sessionMistakes) };
-        string file = DraftFile, temp = file + ".tmp";
-        using (var stream = new FileStream(temp, FileMode.Create, FileAccess.Write, FileShare.None)) { JsonSerializer.Serialize(stream, draft); stream.Flush(true); }
-        if (File.Exists(file)) File.Replace(temp, file, file + ".bak", true); else File.Move(temp, file);
+        if (background) draftWriter.Queue(DraftFile, draft); else draftWriter.Save(DraftFile, draft);
     }
     void ClearExerciseDraft()
     {
         if (Current == null) return;
-        foreach (string file in new[] { DraftFile, DraftFile + ".bak", DraftFile + ".tmp" }) if (File.Exists(file)) File.Delete(file);
+        draftWriter.Clear(DraftFile);
     }
     ExerciseDraft? ReadExerciseDraft()
     {
