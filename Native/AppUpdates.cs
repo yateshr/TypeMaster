@@ -78,6 +78,14 @@ internal sealed class AppUpdates
         int read;while((read=await input.ReadAsync(buffer,timeout.Token))>0){if(data.Length+read>2*1024*1024)throw new InvalidDataException("The release response is too large.");data.Write(buffer,0,read);}
         return Parse(System.Text.Encoding.UTF8.GetString(data.ToArray()),current);
     }
+    internal async Task<ReleaseUpdate?> CheckStartupAsync(Version current, string directory)
+    {
+        if (!UpdatePreferences.Load(directory).AutomaticChecks) return null;
+        var update = await CheckAsync(current);
+        var latest = UpdatePreferences.Load(directory);
+        (latest with { LastCheckedUtc = DateTime.UtcNow }).Save(directory);
+        return latest.AutomaticChecks ? update : null;
+    }
     internal static async Task<bool> VerifyAsync(string file,string hash,CancellationToken cancel=default)
     {
         if(!Regex.IsMatch(hash,@"^[a-fA-F0-9]{64}$",RegexOptions.CultureInvariant))return false;

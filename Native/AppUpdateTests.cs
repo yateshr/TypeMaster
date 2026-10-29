@@ -40,6 +40,17 @@ internal static class AppUpdateTests
         {
             using var client=new HttpClient(new FixtureHandler(request=>new(HttpStatusCode.OK){Content=request.RequestUri!.AbsoluteUri==AppUpdates.LatestApi?new StringContent(Json()):new ByteArrayContent(bytes)}));
             var service=new AppUpdates(client);check((await service.CheckAsync(new Version(1,0,0)))?.Version==release.Version,"Update metadata is read asynchronously through the GitHub release endpoint");
+            string startupFolder = Path.Combine(folder, "startup");
+            new UpdatePreferences { AutomaticChecks = true, LastCheckedUtc = DateTime.UtcNow, DismissedVersion = "99.0.0" }.Save(startupFolder);
+            int startupRequests = 0;
+            using var startupClient = new HttpClient(new FixtureHandler(_ => { startupRequests++; return new(HttpStatusCode.OK) { Content = new StringContent(Json()) }; }));
+            var startupService = new AppUpdates(startupClient);
+            var firstLaunch = await startupService.CheckStartupAsync(new Version(1,0,0), startupFolder);
+            var secondLaunch = await startupService.CheckStartupAsync(new Version(1,0,0), startupFolder);
+            check(startupRequests == 2 && firstLaunch?.Version == release.Version && secondLaunch?.Version == release.Version, "Each launch checks GitHub even after a recent check or a previous dismissal");
+            check(await startupService.CheckStartupAsync(new Version(99,0,0), startupFolder) is null && startupRequests == 3, "An up-to-date startup produces no update to notify or open");
+            (UpdatePreferences.Load(startupFolder) with { AutomaticChecks = false }).Save(startupFolder);
+            check(await startupService.CheckStartupAsync(new Version(1,0,0), startupFolder) is null && startupRequests == 3, "Disabling automatic checks prevents startup network requests");
             string file=await service.DownloadAsync(release,folder);check(File.Exists(file)&&await AppUpdates.VerifyAsync(file,digest),"A matching installer download is verified before becoming installable");
             await File.WriteAllTextAsync(file,"altered");check(!await AppUpdates.VerifyAsync(file,digest),"Installer verification detects changes after download");
             using var corruptClient=new HttpClient(new FixtureHandler(_=>new(HttpStatusCode.OK){Content=new ByteArrayContent(Enumerable.Repeat((byte)42,bytes.Length).ToArray())}));
@@ -54,7 +65,7 @@ internal static class AppUpdateTests
         }).GetAwaiter().GetResult();
         check(UpdatePreferences.Load(folder).AutomaticChecks,"Automatic update checks are enabled for a new installation");
         var settings=new UpdatePreferences{AutomaticChecks=false,LastCheckedUtc=new DateTime(2026,10,25,0,0,0,DateTimeKind.Utc),DismissedVersion="99.0.0"};settings.Save(folder);
-        check(UpdatePreferences.Load(folder)==settings,"Automatic-update preference, daily check time and dismissed version persist");
+        check(UpdatePreferences.Load(folder)==settings,"Automatic-update preference and legacy check metadata persist");
         File.WriteAllText(Path.Combine(folder,"updates.json"),"{damaged");check(!UpdatePreferences.Load(folder).AutomaticChecks,"Damaged update preferences fall back to manual checks");
         using var uiClient=new HttpClient(new FixtureHandler(_=>new(HttpStatusCode.OK){Content=new StringContent(Json())}));
         var window=new UpdatesWindow(folder,_=>throw new InvalidOperationException("The UI capture must not launch an installer."),new AppUpdates(uiClient)){ShowInTaskbar=false};window.Show();window.Dispatcher.Invoke(()=>{},DispatcherPriority.ApplicationIdle);window.UpdateLayout();

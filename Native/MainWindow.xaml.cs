@@ -40,7 +40,11 @@ public partial class MainWindow : Window
     List<Lesson> lessonSequence = [];
     int lessonIndex;
 
-    public MainWindow() : this(new ProfileStore()) { }
+    internal Func<string, bool>? ExitConfirmation;
+    public MainWindow() : this(new ProfileStore())
+    {
+        ExitConfirmation = message => MessageBox.Show(this, message, "Exit TypeMaster", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No) == MessageBoxResult.Yes;
+    }
     internal MainWindow(ProfileStore store)
     {
         InitializeComponent();
@@ -51,7 +55,13 @@ public partial class MainWindow : Window
         timer.Tick += (_, _) => Tick();
         Closing += (_, e) =>
         {
-            if (exercising && typed.Length > 0 && MessageBox.Show(this, "An exercise is in progress. Save it for recovery and close?", "Close TypeMaster", MessageBoxButton.YesNo, MessageBoxImage.Question) != MessageBoxResult.Yes) e.Cancel = true;
+            if (!quitting && ExitConfirmation != null)
+            {
+                string message = exercising && typed.Length > 0 ? "An exercise is in progress. Save it for recovery and exit TypeMaster?" : "Are you sure you want to exit TypeMaster?";
+                if (!ExitConfirmation(message)) { e.Cancel = true; return; }
+                quitting = true;
+            }
+            else if (!quitting && exercising && typed.Length > 0 && MessageBox.Show(this, "An exercise is in progress. Save it for recovery and close?", "Close TypeMaster", MessageBoxButton.YesNo, MessageBoxImage.Question) != MessageBoxResult.Yes) e.Cancel = true;
             if (!e.Cancel && meter?.IsRunning == true && !quitting) { e.Cancel = true; Hide(); return; }
             if (!e.Cancel) { SaveExerciseDraft(); timer.Stop(); gameView?.Dispose(); StopMeter(false); errorSound.Close(); }
         };

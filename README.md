@@ -19,7 +19,7 @@
 
 ## About
 
-Current release: **1.11.12**, fixing typing comparisons and session recording, stabilising line scrolling and locking completed test words. See [the artwork guide](docs/ARTWORK.md).
+Current release: **1.11.13**, adding exit confirmation and checking for updates on every launch without up-to-date notifications. See [the artwork guide](docs/ARTWORK.md).
 
 TypeMaster was built for a practical interview workflow: a candidate completes a typing test, the examiner records demonstrated computer skills and remarks, and the company receives a readable assessment report.
 
@@ -37,7 +37,7 @@ The application is written in C# with WPF. It runs locally on Windows, keeps can
 | Candidate assessment | Selected skills, free-form remarks and examiner name |
 | Reports | Test results, certificate, examination sheet and complete progress report |
 | PDF output | Selectable text, embedded fonts, aligned company header, three-column skills, continuation headers and examiner footer on every page |
-| Updates | Optional daily GitHub checks, verified installer downloads and user-controlled installation |
+| Updates | Optional GitHub checks on each launch, verified installer downloads and user-controlled installation |
 | Company branding | Configurable company name and logos; supplied company branding remains the default |
 | Data protection | Profile backup and restore, atomic profile saves, backup recovery and interrupted-exercise recovery |
 | Practice games | Bubbles, WordTris, Clouds, ABC Speed Race, Pipe Game and Cloud Race |
@@ -93,8 +93,8 @@ Download from [GitHub Releases](https://github.com/yateshr/TypeMaster/releases/l
 
 | File | Use |
 |---|---|
-| `TypeMaster-Native-1.11.12-Setup.exe` | Install for the current Windows account with shortcuts and uninstall support |
-| `TypeMaster-Native-1.11.12-win-x64.zip` | Extract the whole archive and run `native-win-x64-1.11.12/TypeMaster.exe` without installing |
+| `TypeMaster-Native-1.11.13-Setup.exe` | Install for the current Windows account with shortcuts and uninstall support |
+| `TypeMaster-Native-1.11.13-win-x64.zip` | Extract the whole archive and run `native-win-x64-1.11.13/TypeMaster.exe` without installing |
 | `SHA256SUMS.txt` | Verify release downloads against their published SHA-256 hashes |
 
 Keep every file in the portable folder together. Close TypeMaster and exit the Typing Meter tray icon before updating.
@@ -158,7 +158,7 @@ TypeMaster/
 
 The typing responsiveness fix and before/after measurements are documented in [performance validation](docs/PERFORMANCE.md).
 
-Release 1.11.12 passed **849 native application checks**. Five sample PDF reports passed text extraction and word-selection hit-area verification. Display checks include small windows and DPI/maximized-frame cases; this does not imply every monitor configuration has been tested.
+Release 1.11.13 passed **855 native application checks**. Five sample PDF reports passed text extraction and word-selection hit-area verification. Display checks include small windows and DPI/maximized-frame cases; this does not imply every monitor configuration has been tested.
 
 Typing scores use the currently implemented scoring rules based on supplied report evidence. Source-comparison notes and known scope differences are documented in [Native/REPORTS.md](Native/REPORTS.md) and [Native/SOURCE_GAPS.md](Native/SOURCE_GAPS.md). TypeMaster is a separate application and is not endorsed by TypingMaster or Microsoft.
 
@@ -180,4 +180,4 @@ Original TypeMaster source code is released under the MIT license. Supplied artw
 
 ### GitHub updates
 
-Open **About > Updates & GitHub** for optional daily checks, verified installer downloads and links to the project and releases. TypeMaster is a typing-practice application customised for computer assessments and candidate reports; skill observations are entered by the examiner. See [update details](docs/UPDATING.md).
+Open **About > Updates & GitHub** for optional startup checks, verified installer downloads and links to the project and releases. TypeMaster is a typing-practice application customised for computer assessments and candidate reports; skill observations are entered by the examiner. See [update details](docs/UPDATING.md).

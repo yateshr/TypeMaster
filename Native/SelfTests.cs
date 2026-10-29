@@ -275,6 +275,17 @@ internal static class SelfTests
             VerifyCandidateSkills(output,Check);
             VerifyCompanyBranding(output,Check);
             AppUpdateTests.Verify(output,Check);
+            var exitWindow = new MainWindow(new ProfileStore(Path.Combine(output, "exit-confirmation"))) { ShowInTaskbar = false };
+            exitWindow.Show(); int exitPrompts = 0;
+            exitWindow.ExitConfirmation = message => { exitPrompts++; return false; };
+            var exitKey = new System.Windows.Input.KeyEventArgs(System.Windows.Input.Keyboard.PrimaryDevice, PresentationSource.FromVisual(exitWindow), 0, System.Windows.Input.Key.Escape) { RoutedEvent = System.Windows.Input.Keyboard.KeyDownEvent };
+            exitWindow.RaiseEvent(exitKey);
+            Check(exitKey.Handled && exitPrompts == 1 && exitWindow.IsVisible, "Escape at the welcome screen asks before exiting and No keeps TypeMaster open");
+            exitWindow.Close();
+            Check(exitPrompts == 2 && exitWindow.IsVisible, "Window close also respects a declined exit confirmation");
+            exitWindow.ExitConfirmation = message => { exitPrompts++; return true; };
+            exitWindow.GoBack();
+            Check(exitPrompts == 3 && !exitWindow.IsVisible, "Confirming exit closes TypeMaster through its normal cleanup path");
             window.Close();
             File.WriteAllText(Path.Combine(output, "results.json"), JsonSerializer.Serialize(new { passed = true, checks, texts = tests.Count, courses = courses.Count, activities = courses.Sum(c => c.Chapters.Sum(ch => ch.Lessons.Count)), missingSourceReferences = courses.Sum(c => c.MissingEvents) }, new JsonSerializerOptions { WriteIndented = true }));
             return 0;

@@ -76,16 +76,16 @@ internal sealed class UpdatesWindow:Window
 public partial class MainWindow
 {
     void Updates()=>new UpdatesWindow(Store.DirectoryPath,InstallUpdate){Owner=this}.ShowDialog();
+    bool startupUpdateChecked;
     internal async Task CheckAutomaticUpdatesAsync()
     {
+        if (startupUpdateChecked) return;
+        startupUpdateChecked = true;
         try
         {
-            var preferences=UpdatePreferences.Load(Store.DirectoryPath);if(!preferences.AutomaticChecks||DateTime.UtcNow-preferences.LastCheckedUtc<TimeSpan.FromDays(1))return;
-            var update=await new AppUpdates().CheckAsync(Version.Parse(AppInfo.Version));
-            var latest=UpdatePreferences.Load(Store.DirectoryPath);(latest with{LastCheckedUtc=DateTime.UtcNow}).Save(Store.DirectoryPath);
-            if(!latest.AutomaticChecks||update is null||preferences.DismissedVersion==update.Version.ToString()||exercising||!IsVisible||!IsActive||!IsLoaded||Application.Current.MainWindow!=this||Application.Current.Windows.OfType<Window>().Any(window=>window!=this&&window.IsVisible))return;
+            var update=await new AppUpdates().CheckStartupAsync(Version.Parse(AppInfo.Version), Store.DirectoryPath);
+            if(update is null||exercising||!IsVisible||!IsActive||!IsLoaded||Application.Current.MainWindow!=this||Application.Current.Windows.OfType<Window>().Any(window=>window!=this&&window.IsVisible))return;
             if(MessageBox.Show(this,"TypeMaster "+update.Version+" is available. Open Updates & GitHub? No files will download until you choose Download update.","TypeMaster update",MessageBoxButton.YesNo,MessageBoxImage.Information)==MessageBoxResult.Yes)Updates();
-            else (preferences with{LastCheckedUtc=DateTime.UtcNow,DismissedVersion=update.Version.ToString()}).Save(Store.DirectoryPath);
         }
         catch{ /* An offline update check must not prevent typing practice or tests. */ }
     }

@@ -92,7 +92,7 @@ public partial class MainWindow
         var service = new WindowsTypingMeter(Current); service.Start(); meter = service;
         meterWidget = new MeterWidget(ToggleMeter, ShowMain, () => StopMeter()); meterWidget.Show();
         tray = new Forms.NotifyIcon { Icon = System.Drawing.Icon.ExtractAssociatedIcon(Environment.ProcessPath!) ?? System.Drawing.SystemIcons.Application, Text = "TypeMaster — Typing Meter running", Visible = true };
-        var menu = new Forms.ContextMenuStrip(); menu.Items.Add("Open TypeMaster", null, (_, _) => Dispatcher.Invoke(ShowMain)); menu.Items.Add("Pause / Resume", null, (_, _) => Dispatcher.Invoke(ToggleMeter)); menu.Items.Add("Stop Meter", null, (_, _) => Dispatcher.Invoke(() => StopMeter())); menu.Items.Add("Exit TypeMaster", null, (_, _) => Dispatcher.Invoke(() => { quitting = true; StopMeter(false); Close(); })); tray.ContextMenuStrip = menu; tray.DoubleClick += (_, _) => Dispatcher.Invoke(ShowMain);
+        var menu = new Forms.ContextMenuStrip(); menu.Items.Add("Open TypeMaster", null, (_, _) => Dispatcher.Invoke(ShowMain)); menu.Items.Add("Pause / Resume", null, (_, _) => Dispatcher.Invoke(ToggleMeter)); menu.Items.Add("Stop Meter", null, (_, _) => Dispatcher.Invoke(() => StopMeter())); menu.Items.Add("Exit TypeMaster", null, (_, _) => Dispatcher.Invoke(() => { ShowMain(); Close(); })); tray.ContextMenuStrip = menu; tray.DoubleClick += (_, _) => Dispatcher.Invoke(ShowMain);
         lastBreak = lastTrainingNotice = DateTime.Now; meterTicks = 0;
         meterTimer.Tick -= MeterTick; meterTimer.Tick += MeterTick; meterTimer.Start(); MeterTick(null, EventArgs.Empty);
     }

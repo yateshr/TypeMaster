@@ -9,7 +9,7 @@ TypeMaster is a typing-practice application customised for computer assessments 
 
 Open **About > Updates & GitHub**. You can turn automatic checks on or off, check immediately, open GitHub, download a newer stable installer and choose when to install it.
 
-Automatic checks run at most once per day. They contact GitHub's public release API with the application version in the user-agent; candidate records are not uploaded. Offline checks do not prevent practice or assessments. Automatic notifications are suppressed during exercises, while another application is active, or while another TypeMaster dialog is open.
+When enabled, automatic checks run once on every application launch, including reopening on the same day. Startup stays silent when no newer stable release is available or the connection fails. Dismissing a notification only skips it for the current launch; the next launch checks again. They contact GitHub's public release API with the application version in the user-agent; candidate records are not uploaded. Offline checks do not prevent practice or assessments. Automatic notifications are suppressed during exercises, while another application is active, or while another TypeMaster dialog is open.
 
 Downloads only use a version-matched installer in this project's GitHub release. The downloaded size and SHA-256 digest must match GitHub's asset metadata. Missing verification metadata leaves the release-page link available but does not enable installer execution. The digest checks file integrity; it does not make the installer code-signed.
 

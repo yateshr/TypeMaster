@@ -8,7 +8,7 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <AssemblyName>TypeMaster</AssemblyName>
     <RootNamespace>TypeMaster.Native</RootNamespace>
-    <Version>1.11.12</Version>
+    <Version>1.11.13</Version>
     <Authors>YATESH ROHIT</Authors>
     <Product>TypeMaster</Product>
     <Title>TypeMaster</Title>
@@ -19,7 +19,7 @@
     <Resource Include="TypeMaster.ico" />
     <Content Include="TypeMaster.ico"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
     <Content Include="Getting Started.txt"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
-    <AssemblyMetadata Include="Build" Value="2026.10.29.12" />
+    <AssemblyMetadata Include="Build" Value="2026.10.29.13" />
     <AssemblyMetadata Include="Developer" Value="YATESH ROHIT" />
     <Content Include="..\UI\Screenshot 2026-10-24 010206.png"><Link>Assets\ReferenceUI\review-new-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
     <Content Include="..\UI\Screenshot 2026-10-24 010215.png"><Link>Assets\ReferenceUI\key-drill-new-reference.png</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory></Content>
