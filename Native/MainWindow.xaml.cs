@@ -124,28 +124,45 @@ public partial class MainWindow : Window
     }
     void InputChanged()
     {
-        if (!exercising || paused || restoringDraft || TypingBox == null) return;
+        if (!exercising || paused || restoringDraft || rejectingCommittedEdit || TypingBox == null) return;
+        string value = TypingBox.Text.Replace("\r\n", "\n").Replace('\r', '\n');
+        if (kind == "Test" && committedInputLength > 0 && (value.Length < committedInputLength || !value.AsSpan(0, committedInputLength).SequenceEqual(typed.AsSpan(0, committedInputLength))))
+        {
+            // Covers Backspace, Delete, cut, selection replacement and context-menu edits.
+            // Reject before changing the timer, alignment or error history.
+            rejectingCommittedEdit = true;
+            try { TypingBox.Text = typed; TypingBox.Select(TypingBox.Text.Length, 0); TypingBox.ScrollToEnd(); }
+            finally { rejectingCommittedEdit = false; }
+            return;
+        }
         lastInput = DateTime.UtcNow;
         if (!watch.IsRunning && TypingBox.Text.Length > 0) { if (ExerciseSeconds == 0) exerciseStarted = DateTime.Now; watch.Start(); timer.Start(); }
-        string value = TypingBox.Text.Replace("\r\n", "\n").Replace('\r', '\n');
-        if (value.Length > target.Length) { int caret = TypingBox.CaretIndex; TypingBox.Text = value[..target.Length]; TypingBox.CaretIndex = Math.Min(caret, TypingBox.Text.Length); return; }
+        if (kind != "Test" && value.Length > target.Length) { int caret = TypingBox.CaretIndex; TypingBox.Text = value[..target.Length]; TypingBox.CaretIndex = Math.Min(caret, TypingBox.Text.Length); return; }
         int prefix = 0; while (prefix < typed.Length && prefix < value.Length && typed[prefix] == value[prefix]) prefix++;
         int oldEnd = typed.Length, newEnd = value.Length;
         while (oldEnd > prefix && newEnd > prefix && typed[oldEnd - 1] == value[newEnd - 1]) { oldEnd--; newEnd--; }
         bool madeError = false;
+        int alignedErrors = testInputTracker?.Update(value) ?? 0;
         for (int i = prefix; i < newEnd; i++)
         {
             attempts++;
-            if (i < target.Length && value[i] != target[i]) { errors++; madeError = true; sessionMistakes[target[i]] = sessionMistakes.GetValueOrDefault(target[i]) + 1; }
+            if (testInputTracker == null && i < target.Length && value[i] != target[i]) { errors++; madeError = true; sessionMistakes[target[i]] = sessionMistakes.GetValueOrDefault(target[i]) + 1; }
+        }
+        if (testInputTracker != null && alignedErrors > 0)
+        {
+            errors += alignedErrors; madeError = true;
+            char expected = target[Math.Min(target.Length - 1, Math.Max(0, testInputTracker.Position - 1))];
+            sessionMistakes[expected] = sessionMistakes.GetValueOrDefault(expected) + alignedErrors;
         }
         typed = value;
+        if (kind == "Test") committedInputLength = Math.Max(committedInputLength, CommittedLength(typed));
         if (madeError && Current!.Sound)
         {
             if (errorSoundReady) { errorSound.Position = TimeSpan.Zero; errorSound.Play(); }
         }
         if (typed.Length == 0) ClearExerciseDraft();
         RequestTypingPaint(); typingFeedback?.InvalidateVisual(); liveKeyboard?.Highlight(kind == "ReviewKeys" && typed.Length < target.Length ? target[typed.Length].ToString() : "");
-        if (typed.Length >= target.Length) FinishExercise();
+        if ((testInputTracker?.Position ?? typed.Length) >= target.Length) FinishExercise();
     }
     void Paint()
     {
@@ -155,10 +172,12 @@ public partial class MainWindow : Window
         paintingTarget = true;
         try {
         int cursor = Math.Min(typed.Length, (TypingBox?.Text[..Math.Min(TypingBox.CaretIndex, TypingBox.Text.Length)] ?? typed).Replace("\r\n", "\n").Replace('\r', '\n').Length);
+        if (testInputTracker != null) cursor = testInputTracker.PositionAt(cursor);
         if (lastPaintedText == typed && lastPaintedCursor == cursor) return;
         lastPaintedText = typed; lastPaintedCursor = cursor;
         targetBlock.Inlines.Clear();
-        int start = Math.Max(0, cursor - 100), end = Math.Min(target.Length, start + 550);
+        if (cursor < passageWindowStart || cursor >= passageWindowStart + 550) passageWindowStart = Math.Max(0, cursor - 100);
+        int start = passageWindowStart, end = Math.Min(target.Length, start + 550);
         if (numericPassage)
         {
             int row = target.Take(cursor).Count(c => c == '\n');
@@ -168,11 +187,12 @@ public partial class MainWindow : Window
             end = start;
             for (int line = 0; line < 9 && end < target.Length; line++) { int next = target.IndexOf('\n', end); end = next < 0 ? target.Length : next + 1; }
         }
-        int activeEnd = typed.Length;
+        int activePosition = testInputTracker?.Position ?? typed.Length;
+        var matchedPositions = testInputTracker?.MatchedPositions();
+        int activeEnd = activePosition;
         if (kind == "Test") while (activeEnd < target.Length && !char.IsWhiteSpace(target[activeEnd])) activeEnd++;
-        if (start > 0 && !numericPassage) targetBlock.Inlines.Add(new Run("… "));
         Run? activeRun = null;
-        int Style(int index) => index < typed.Length ? (typed[index] == target[index] ? 1 : 2) : index == typed.Length || index < activeEnd ? 3 : 0;
+        int Style(int index) => index < activePosition ? ((matchedPositions?.Contains(index) ?? (typed[index] == target[index])) ? 1 : 2) : index == activePosition || index < activeEnd ? 3 : 0;
         for (int i = start; i < end;)
         {
             int style = Style(i), next = i + 1;
@@ -195,7 +215,15 @@ public partial class MainWindow : Window
                 if (!exercising || !viewport.IsLoaded || !ReferenceEquals(viewport, targetViewport) || activeRun.Parent != targetBlock) return;
                 var bounds = activeRun.ContentStart.GetCharacterRect(LogicalDirection.Forward);
                 if (bounds.IsEmpty) return;
-                double offset = numericPassage ? 0 : Math.Max(0, bounds.Top - 50);
+                if (!numericPassage && bounds.Top >= 75 && activeRun.ContentStart.GetLineStartPosition(-2) is { } lineStart)
+                {
+                    // Keep wrapping anchored until a complete visual line can leave.
+                    string prefix = new TextRange(targetBlock.ContentStart, lineStart).Text.Replace("\r\n", "\n");
+                    prefix = prefix.Replace("↵", "");
+                    if (paragraphSpacing) prefix = System.Text.RegularExpressions.Regex.Replace(prefix, @"\n+", "\n");
+                    if (prefix.Length > 0) { passageWindowStart = start + prefix.Length; lastPaintedText = null; RequestTypingPaint(); return; }
+                }
+                double offset = numericPassage ? 0 : Math.Max(0, Math.Floor(bounds.Top / 25) * 25 - 50);
                 viewport.ScrollToVerticalOffset(offset);
                 ActiveTargetBounds = new Rect(bounds.X, bounds.Y - offset, bounds.Width, bounds.Height);
             }));
@@ -203,6 +231,8 @@ public partial class MainWindow : Window
         } finally { paintingTarget = false; if (paintStarted != 0) { TypingPerformance.TargetMilliseconds += Stopwatch.GetElapsedTime(paintStarted).TotalMilliseconds; TypingPerformance.TargetPaints++; } }
     }
     bool paintingTarget;
+    int passageWindowStart;
+    internal int VisiblePassageStart => passageWindowStart;
     string? lastPaintedText;
     int lastPaintedCursor;
     DispatcherOperation? pendingTypingPaint;
@@ -249,7 +279,8 @@ public partial class MainWindow : Window
         watch.Stop(); timer.Stop();
         var result = kind == "Test" ? Scoring.MeasureTest(target, typed, Math.Min(ExerciseSeconds, duration), attempts, errors) : Scoring.Measure(target, typed, Math.Min(ExerciseSeconds, duration), attempts, errors);
         result.AttemptId = attemptId; result.Title = exerciseTitle; result.Kind = kind;
-        result.Completed = ExerciseSeconds >= duration || typed.Length == target.Length;
+        if (testInputTracker != null) { result.Correct = testInputTracker.Correct; result.ScoringPolicy = "test-five-stroke-aligned-v2"; }
+        result.Completed = ExerciseSeconds >= duration || (testInputTracker?.Position ?? typed.Length) >= target.Length;
         result.StartedAt = exerciseStarted; result.PlannedSeconds = duration; result.OriginalText = exerciseSourceText; result.ExpectedText = target; result.TypedText = typed; result.HasTextSnapshot = true;
         if (kind != "Test") { result.GrossStrokes = typed.Length; result.NetStrokes = result.Correct; result.ErrorHits = errors; }
         var specification = Library.FirstOrDefault(t => t.Name == exerciseTitle); result.RequiredAccuracy = specification?.MinAccuracy ?? 0; result.RequiredWpm = specification?.MinSpeed ?? 0; result.CriteriaRecorded = true;

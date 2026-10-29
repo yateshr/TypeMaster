@@ -11,12 +11,22 @@ public partial class MainWindow
 {
     DateTime exerciseStarted;
     string exerciseSourceText = "";
+    TestInputTracker? testInputTracker;
+    int committedInputLength;
+    bool rejectingCommittedEdit;
+    static int CommittedLength(string text)
+    {
+        for (int i = text.Length - 1; i >= 0; i--) if (char.IsWhiteSpace(text[i])) return i + 1;
+        return 0;
+    }
     internal void StartExercise(string text, string title, int seconds, string exerciseKind = "Practice", string? id = null)
     {
         if (!restoringDraft) ClearExerciseDraft();
         CancelTypingPaint();
         timer.Stop(); watch.Reset(); restoredElapsed = 0; attemptId = Guid.NewGuid();
         pendingCompletion = null; typingFeedback = null; lastPaintedText = null; lastDraftSave = DateTime.MinValue;
+        passageWindowStart = 0;
+        committedInputLength = 0;
         exerciseStarted = DateTime.Now;
         exerciseSourceText = text;
         paragraphSpacing = exerciseKind == "Test" && Regex.IsMatch(text.Trim(), @"\r?\n\s*\r?\n");
@@ -25,6 +35,7 @@ public partial class MainWindow
         if (numericPassage) paragraphSpacing = false;
         countdownPie = null;
         if (target.Length == 0) { Notify("This exercise has no text."); return; }
+        testInputTracker = exerciseKind == "Test" ? new TestInputTracker(target) : null;
         typed = ""; exerciseTitle = title; duration = seconds; kind = exerciseKind; lessonId = id; attempts = errors = 0; sessionMistakes = []; paused = false; lastInput = DateTime.UtcNow;
         if (Current!.Sound && !errorSoundReady)
         {
@@ -45,9 +56,10 @@ public partial class MainWindow
         TypingBox.SelectionChanged += (_, _) => { if (exercising && !restoringDraft) RequestTypingPaint(); };
         var input = TypingBox; input.Loaded += (_, _) => { if (ReferenceEquals(input, TypingBox) && kind == "Test" && AdornerLayer.GetAdornerLayer(input) is { } layer) { typingFeedback = new TypingFeedback(input); layer.Add(typingFeedback); typingFeedback.Refresh(target); } };
         DataObject.AddPastingHandler(TypingBox, (_, e) => e.CancelCommand()); TypingBox.TextChanged += (_, _) => InputChanged();
-        Position(canvas, new Ellipse { Fill = new SolidColorBrush(Color.FromRgb(174, 216, 110)) }, 144, 375, 22, 22);
-        Position(canvas, new TextBlock { Text = "▶", FontSize = 12, Foreground = Brushes.White }, 149, 377, 18, 18);
-        Position(canvas, RefText("Type the above text here", 13), 174, 377, 280, 23).Foreground = new SolidColorBrush(Color.FromRgb(121, 155, 49));
+        double promptY = id == null ? 399 : 389;
+        Position(canvas, new Ellipse { Fill = new SolidColorBrush(Color.FromRgb(174, 216, 110)) }, 144, promptY, 22, 22);
+        Position(canvas, new TextBlock { Text = "▶", FontSize = 12, Foreground = Brushes.White }, 149, promptY + 2, 18, 18);
+        Position(canvas, RefText("Type the above text here", 13), 174, promptY + 2, 280, 23).Foreground = new SolidColorBrush(Color.FromRgb(121, 155, 49));
         Position(canvas, RefText("Time", 14, true, true), 585, 48, 180, 22); Rule(canvas, 584, 67, 180, Brushes.WhiteSmoke);
         clockBlock = RefText("", 24, true); clockBlock.FontFamily = new FontFamily("Tahoma"); Position(canvas, clockBlock, 585, 70, 180, 36);
         var oval = new Ellipse { Stroke = new SolidColorBrush(Color.FromRgb(166, 196, 57)), StrokeThickness = .7 }; oval.SetResourceReference(Shape.FillProperty, "SoftBrush"); Position(canvas, oval, 609, 104, 122, 67);

@@ -35,6 +35,7 @@ internal static class SelfTests
             var halfMinute = Scoring.MeasureTest(new string('a',158),new string('a',158),30,158,5); Check(halfMinute.GrossWpm == 63 && halfMinute.NetWpm == 53 && halfMinute.Accuracy == 84, "Test speeds use elapsed minutes before truncation, without changing accuracy");
             var exhausted = Scoring.MeasureTest("abc", "a", 60, 1, 1); Check(exhausted.NetStrokes == 0 && exhausted.NetWpm == 0 && exhausted.Accuracy == 0, "Penalty cannot produce negative strokes, speed or accuracy");
             var emptyTest = Scoring.MeasureTest("abc", "", 0, 0, 0); Check(emptyTest.GrossWpm == 0 && emptyTest.NetWpm == 0 && emptyTest.Accuracy == 100, "Empty test metrics remain defined");
+            Check(!new TypingResult { Completed = true, Accuracy = 0, NetWpm = 0 }.Passed, "A zero-net result cannot pass a test with unspecified minimums");
             Check(ReportFactory.IncorrectWords("one two three", "one too three").SequenceEqual(new[] { false, true, false }), "Examination report highlights changed candidate words");
             var corrections=ReportFactory.CorrectedWords("country is home to over","country i hom to");
             Check(corrections.Select(w=>w.Display).SequenceEqual(new[]{"country","i [is]","hom [home]","to"}),"Result report shows reference-style wrong words and bracketed corrections without the unattempted suffix");
@@ -42,6 +43,13 @@ internal static class SelfTests
             Check(ReportFactory.CorrectedWords("one two three four","one three four").Any(w=>w.Typed==""&&w.Expected=="two"),"Skipped words are shown as missing corrections");
             string longOriginal = string.Join(" ", Enumerable.Repeat("alpha beta gamma delta", 600)); Check(ReportFactory.IncorrectWords(longOriginal, "extra " + longOriginal).Count(b => b) == 1, "Long report comparisons recover after an inserted word without a large quadratic matrix");
             var tests = Assets.Tests(); Check(tests.Count > 0, "Supplied tests load");
+            var insertionTracker = new TestInputTracker("one two three four");
+            Check(insertionTracker.Update("one Xtwo three four") == 1 && insertionTracker.Correct == 18, "One inserted character does not penalize the following correct passage");
+            var omissionTracker = new TestInputTracker("one two three four");
+            Check(omissionTracker.Update("one tw three four") == 1 && omissionTracker.Correct == 17, "One omitted character does not penalize the following correct passage");
+            var correctedTracker = new TestInputTracker("hello world");
+            int correctedErrors = correctedTracker.Update("hxllo"); correctedErrors += correctedTracker.Update("hello"); correctedErrors += correctedTracker.Update("hello world");
+            Check(correctedErrors == 1 && correctedTracker.Correct == 11, "Correcting an error preserves its penalty without penalizing the corrected suffix");
             Check(tests.Any(t => t.Name == "Astronauts"), "Test metadata imported");
             Check(Assets.Course().Count == 12, "All 12 course chapters import");
             var courses = CourseLibrary.LoadAll();
@@ -159,6 +167,12 @@ internal static class SelfTests
                 Check(window.ActiveTargetBounds.Top >= 0 && window.ActiveTargetBounds.Bottom <= 225, "Next numeric character remains visible at position " + position);
             }
             int eighteenthNumber = normalizedNumbers.IndexOf("8671155", StringComparison.Ordinal);
+            // A fresh attempt is required to test an earlier response length now
+            // that entered rows are committed and cannot be erased.
+            window.StartExercise(numbers, "Numpad viewport check", 300, "Test");
+            window.Dispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle);
+            numberText = Descendants<System.Windows.Controls.TextBlock>(window.PageContent).First(t => new TextRange(t.ContentStart, t.ContentEnd).Text.StartsWith("1622"));
+            countdown = Descendants<System.Windows.Shapes.Path>(window.PageContent).Single(p => p.Fill is SolidColorBrush brush && brush.Color == Color.FromRgb(155, 193, 85));
             window.TypingBox!.Text = normalizedNumbers[..eighteenthNumber];
             window.TypingBox.Select(window.TypingBox.Text.Length, 0); window.TypingBox.ScrollToEnd();
             window.Dispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle);
@@ -175,6 +189,59 @@ internal static class SelfTests
             window.StartExercise("one\n\ntwo", "Paragraph input check", 60, "Test"); window.TypingBox!.Text = "one\r\ntwo"; Check(window.Current!.Results.Last().Correct == 7 && window.Current.Results.Last().Completed, "Native paragraph input matches a single Enter between paragraphs");
             Check(window.Current.Results.Last().OriginalText == "one\n\ntwo" && window.Current.Results.Last().ExpectedText == "one\ntwo", "Original paragraph spacing is archived separately from comparison text");
             Check(window.CompletionWaiting, "Completed test waits for Enter or Next before showing results"); window.Dispatcher.Invoke(() => { }, DispatcherPriority.Render); window.Capture(Path.Combine(output, "native-test-completed.png")); int resultCount = window.Current.Results.Count; window.ContinueCompleted(); Check(!window.CompletionWaiting && window.Current.Results.Count == resultCount, "Completion continues without saving the same result twice");
+            var sampleAudit = new List<object>();
+            var priorSampleResults = window.Current!.Results.ToList();
+            foreach (var sample in tests)
+            {
+                string original = Assets.Read(sample.File);
+                string expected = System.Text.RegularExpressions.Regex.Replace(original.Replace("\r\n", "\n").Replace('\r', '\n').Replace('\t', ' '), @" *\n(?:\s*\n)*", "\n").Trim();
+                window.StartExercise(original, sample.Name, 60, "Test");
+                string response = expected[..Math.Min(120, expected.Length)];
+                // Exercise native CRLF input as produced by Enter, not just the scorer.
+                window.TypingBox!.Text = response.Replace("\n", "\r\n");
+                var saved = window.CompletionWaiting ? window.Current!.Results.Last() : window.FinishExercise(true)!;
+                Check(saved.HasTextSnapshot && saved.GrossStrokes == response.Length && saved.NetStrokes == response.Length && saved.ErrorHits == 0 && saved.Errors == 0 && saved.Accuracy == 100 && saved.Seconds >= 0 && saved.PlannedSeconds == 60 && saved.TypedText == response && saved.ExpectedText == expected, "Native sample records all session metrics: " + sample.Name);
+                var reloaded = new ProfileStore(store.DirectoryPath).Profiles.Single(p => p.Id == window.Current!.Id).Results.Single(r => r.AttemptId == saved.AttemptId);
+                Check(reloaded.GrossWpm == saved.GrossWpm && reloaded.NetWpm == saved.NetWpm && reloaded.NetStrokes == saved.NetStrokes && reloaded.Accuracy == 100 && reloaded.StartedAt != default, "Sample metrics survive disk reload: " + sample.Name);
+                sampleAudit.Add(new { sample.Name, File = Path.GetFileName(sample.File), saved.GrossStrokes, saved.NetStrokes, saved.ErrorHits, saved.GrossWpm, saved.NetWpm, saved.Accuracy, saved.Seconds, saved.PlannedSeconds });
+            }
+            File.WriteAllText(Path.Combine(output, "test-sample-metrics-audit.json"), JsonSerializer.Serialize(sampleAudit, new JsonSerializerOptions { WriteIndented = true }));
+            string scrollingPassage = string.Concat(Enumerable.Repeat("The candidate types words and numbers accurately. ", 30));
+            window.StartExercise(scrollingPassage, "Stable line scrolling", 600, "Test");
+            int lineMoves = 0, previousStart = 0;
+            for (int position = 1; position <= 250; position++)
+            {
+                window.TypingBox!.Text = scrollingPassage[..position]; window.TypingBox.Select(position, 0);
+                window.Dispatcher.Invoke(() => { }, DispatcherPriority.ApplicationIdle);
+                if (window.VisiblePassageStart != previousStart) { lineMoves++; previousStart = window.VisiblePassageStart; }
+            }
+            Check(lineMoves > 0 && lineMoves < 15, "Passage advances by visual lines instead of rewrapping on each word or character");
+            Check(window.ActiveTargetBounds.Top >= 0 && window.ActiveTargetBounds.Bottom <= 225, "Active typing line remains visible after stable line advances");
+            window.FinishExercise(true);
+            window.StartExercise("one two three four five", "Committed word editing", 600, "Test");
+            window.TypingBox!.Text = "one to"; window.TypingBox.Text = "one too";
+            Check(window.TypingBox.Text == "one too", "Current unfinished test word remains editable");
+            window.TypingBox.Text = "one too ";
+            window.TypingBox.Text = "one two ";
+            Check(window.TypingBox.Text == "one too ", "A wrong word is locked after Space");
+            window.TypingBox.Text = "one too";
+            Check(window.TypingBox.Text == "one too ", "Backspace cannot remove the committed space to unlock a word");
+            window.TypingBox.Select(0, 4); window.TypingBox.SelectedText = "";
+            Check(window.TypingBox.Text == "one too ", "Cut or selection deletion cannot change committed words");
+            window.TypingBox.Text = "one too th"; window.TypingBox.Text = "one too three";
+            Check(window.TypingBox.Text == "one too three", "Typing and correcting the current word continues after a locked mistake");
+            window.Capture(Path.Combine(output, "native-word-lock.png"));
+            var typingPrompt = Descendants<TextBlock>(window.PageContent).First(t => t.Text == "Type the above text here");
+            var inputBounds = window.TypingBox.TransformToAncestor(window.PageContent).TransformBounds(new Rect(window.TypingBox.RenderSize));
+            var promptBounds = typingPrompt.TransformToAncestor(window.PageContent).TransformBounds(new Rect(typingPrompt.RenderSize));
+            Check(promptBounds.Top >= inputBounds.Bottom + 14, "Typing instruction has a clear gap below the entire input area");
+            var lockedResult = window.FinishExercise(true)!;
+            Check(lockedResult.TypedText == "one too three" && lockedResult.Errors == 1, "Rejected changes do not add errors and the original committed mistake remains recorded");
+            window.ShowPage("Typing Test"); window.StartExercise("Escape leaves an empty test", "Escape navigation", 60, "Test");
+            var escape = new System.Windows.Input.KeyEventArgs(System.Windows.Input.Keyboard.PrimaryDevice, PresentationSource.FromVisual(window), 0, System.Windows.Input.Key.Escape) { RoutedEvent = System.Windows.Input.Keyboard.KeyDownEvent };
+            window.RaiseEvent(escape);
+            Check(escape.Handled && window.Navigation.Visibility == Visibility.Visible && !window.CompletionWaiting, "Escape uses the current test's cancel action and returns to the test screen");
+            window.Current!.Results = priorSampleResults; store.Save();
             window.ShowResult(new TypingResult { Title = "Numpad 10-key test, numbers only", Kind = "Test", Seconds = 60, PlannedSeconds = 60, GrossWpm = 30, NetWpm = 30, Accuracy = 100, Completed = true }); window.Dispatcher.Invoke(() => { }, DispatcherPriority.Render); window.Capture(Path.Combine(output, "native-test-results.png"));
             var failedTest = new TypingResult { Title = "Sample failed assessment", Kind = "Test", Seconds = 60, PlannedSeconds = 60, GrossWpm = 28, NetWpm = 21, Accuracy = 75, RequiredAccuracy = 95, RequiredWpm = 35, Completed = true };
             Check(!failedTest.Passed && failedTest.Completed, "Completed and passed are independent test states"); window.ShowResult(failedTest); window.Dispatcher.Invoke(() => { }, DispatcherPriority.Render); window.Capture(Path.Combine(output, "native-failed-results.png"));
@@ -290,14 +357,16 @@ internal static class SelfTests
         first.ShowPage("Studying"); first.Close();
         var second = new MainWindow(new ProfileStore(directory)) { ShowInTaskbar = false }; second.Show(); second.EnterProfile("Recovery candidate", false);
         check(second.ResumeExerciseDraft() && second.TypingBox!.Text == "12\n54" && second.TypingBox.CaretIndex == 2, "Restart recovery restores actual candidate text and the saved cursor position");
+        second.TypingBox!.Select(0, 2); second.TypingBox.SelectedText = "99";
+        check(second.TypingBox.Text == "12\n54", "Recovery restores the completed-word lock without allowing earlier edits");
         var recoveredResult = second.FinishExercise(true)!;
         check(recoveredResult.Seconds == 37 && recoveredResult.StartedAt == draft.Started && recoveredResult.Errors == draft.Errors && recoveredResult.AttemptId == draft.AttemptId, "Recovery preserves elapsed time, original start, errors and attempt identity without counting downtime");
         check(!File.Exists(draftFile) && !second.ResumeExerciseDraft(), "Finishing a recovered attempt clears recovery data and cannot save a duplicate");
         File.WriteAllText(draftFile, JsonSerializer.Serialize(draft)); check(!second.ResumeExerciseDraft() && !File.Exists(draftFile), "A crash after result saving cannot recover the same completed attempt twice");
         second.StartExercise("abcdefghi", "Overflow check", 120, "Test"); second.TypingBox!.Text = "abc"; second.TypingBox.Text = "abcdefghiEXTRA";
-        check(second.Current!.Results.Last().TypedText == "abcdefghi" && second.TypingBox.Text == "abcdefghi", "Extra end characters cannot leave visible input different from the saved response");
+        check(second.Current!.Results.Last().TypedText == "abcdefghiEXTRA" && second.TypingBox.Text == "abcdefghiEXTRA" && second.Current.Results.Last().Errors == 5, "Extra end characters remain in the saved response and count as errors");
         second.StartExercise("12\n34\n56\n78", "Correction check", 120, "Test"); second.TypingBox.Text = "12\r\n56\r\n"; second.TypingBox.Select(4, 2); second.TypingBox.SelectedText = "34";
-        var corrected = second.FinishExercise(true)!; check(corrected.TypedText == "12\n34\n" && corrected.Errors > 0 && corrected.Correct == 6, "Skipped-number correction retains Enter boundaries and the original error history");
+        var corrected = second.FinishExercise(true)!; check(corrected.TypedText == "12\n56\n" && corrected.Errors > 0, "Enter commits a numeric row and blocks later correction while retaining its error history");
         second.StartExercise("longer passage", "Clear check", 120, "Test"); second.TypingBox.Text = "long"; second.TypingBox.Clear();
         check(!Directory.GetFiles(directory, "exercise-*.json").Any(), "Erasing the entire response removes stale recovery text"); second.ShowPage("Studying"); second.Close();
     }

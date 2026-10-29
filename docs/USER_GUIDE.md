@@ -8,6 +8,8 @@ Open TypeMaster, select a saved candidate or choose **I am a new user**. Use one
 
 Open **Typing Test**, select a text or number test and choose the duration. Start the test and type in the entry area. On completion, continue to the results screen. A stopped or unfinished attempt can have a partial status; completing a test and passing its targets are separate outcomes.
 
+During a typing test, Space or Enter commits the completed word. You can edit the current unfinished word, but cannot return to change completed words, including mistakes. Recovery preserves this rule. The sample passage advances by visual lines. Press Esc to go back or close a screen; cancelling an in-progress test asks before discarding your response.
+
 Results include gross speed, net speed, accuracy, duration and recorded error information. The examination sheet uses the saved original and typed text. Older imported records without a text snapshot cannot reconstruct a word-by-word examination sheet.
 
 ## Record practical skills and remarks

@@ -4,7 +4,7 @@ Set-Location -LiteralPath $PSScriptRoot
 dotnet publish Native\TypeMaster.Native.csproj -c Release -r win-x64 --self-contained true -p:DebugType=None -p:DebugSymbols=false
 if ($LASTEXITCODE -ne 0) { throw 'Native publish failed.' }
 $publishPath = Join-Path $PSScriptRoot 'Native\bin\Release\net10.0-windows\win-x64\publish'
-$releasePath = Join-Path $PSScriptRoot 'dist\native-win-x64-1.11.11'
+$releasePath = Join-Path $PSScriptRoot 'dist\native-win-x64-1.11.12'
 New-Item -ItemType Directory -Path $releasePath -Force | Out-Null
 Get-ChildItem -LiteralPath $publishPath | Copy-Item -Destination $releasePath -Recurse -Force
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'Native\README.md') -Destination (Join-Path $releasePath 'README.md') -Force
@@ -24,7 +24,7 @@ Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'Native\RuntimeNotices') -Destin
 $reportSamples = Join-Path $releasePath 'docs\reports'
 New-Item -ItemType Directory -Path $reportSamples -Force | Out-Null
 Get-ChildItem -LiteralPath (Join-Path $env:TEMP 'TypeMasterNative-tests\reports') -Filter '*.pdf' | Copy-Item -Destination $reportSamples -Force
-$zip = Join-Path $PSScriptRoot 'dist\TypeMaster-Native-1.11.11-win-x64.zip'
+$zip = Join-Path $PSScriptRoot 'dist\TypeMaster-Native-1.11.12-win-x64.zip'
 Compress-Archive -LiteralPath $releasePath -DestinationPath $zip -Force
 if (-not $NsisPath) {
     $nsisCommand = Get-Command makensis.exe -ErrorAction SilentlyContinue
@@ -46,12 +46,12 @@ if ($NsisPath) {
     $manifest | Set-Content -LiteralPath (Join-Path $PSScriptRoot 'Native\uninstall-files.nsh') -Encoding utf8
     & $NsisPath /V2 (Join-Path $PSScriptRoot 'Native\Installer.nsi')
     if ($LASTEXITCODE -ne 0) { throw 'Native installer build failed.' }
-    Write-Output 'Installer: dist\TypeMaster-Native-1.11.11-Setup.exe'
+    Write-Output 'Installer: dist\TypeMaster-Native-1.11.12-Setup.exe'
 }
 Write-Output "Native application: $releasePath\TypeMaster.exe"
 Write-Output "Distribution archive: $zip"
 $packageFiles = @($zip)
-$installerFile = Join-Path $PSScriptRoot 'dist\TypeMaster-Native-1.11.11-Setup.exe'
+$installerFile = Join-Path $PSScriptRoot 'dist\TypeMaster-Native-1.11.12-Setup.exe'
 if (Test-Path -LiteralPath $installerFile) { $packageFiles += $installerFile }
 $checksumLines = foreach ($packageFile in $packageFiles) {
     $packageHash = Get-FileHash -LiteralPath $packageFile -Algorithm SHA256

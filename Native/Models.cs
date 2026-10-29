@@ -68,7 +68,7 @@ public sealed class TypingResult
     public string CourseFile { get; set; } = "";
     public string LessonId { get; set; } = "";
     public Dictionary<char, int> Mistakes { get; set; } = [];
-    [System.Text.Json.Serialization.JsonIgnore] public bool Passed => Completed && Accuracy >= RequiredAccuracy && NetWpm >= RequiredWpm;
+    [System.Text.Json.Serialization.JsonIgnore] public bool Passed => Completed && Accuracy > 0 && NetWpm > 0 && Accuracy >= RequiredAccuracy && NetWpm >= RequiredWpm;
     public override string ToString() => Date.ToString("g") + " · " + NetWpm + " WPM · " + Title;
 }
 public sealed record GameResult(string Game, int Score, int Errors, double Seconds, DateTime Date);

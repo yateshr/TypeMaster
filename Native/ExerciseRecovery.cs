@@ -79,12 +79,14 @@ public partial class MainWindow
                 lessonSequence = course.Chapters.SelectMany(c => c.Lessons).ToList(); activeLesson = lessonSequence.FirstOrDefault(e => e.Id == draft.LessonId); lessonIndex = lessonSequence.FindIndex(e => e.Id == draft.LessonId);
             }
             attemptId = draft.AttemptId; exerciseStarted = draft.Started; restoredElapsed = draft.Elapsed;
-            attempts = draft.Attempts; errors = draft.Errors; sessionMistakes = new(draft.Mistakes); typed = draft.Typed[..Math.Min(draft.Typed.Length, target.Length)];
+            attempts = draft.Attempts; errors = draft.Errors; sessionMistakes = new(draft.Mistakes); typed = draft.Kind == "Test" ? draft.Typed : draft.Typed[..Math.Min(draft.Typed.Length, target.Length)];
+            testInputTracker?.Update(typed);
+            committedInputLength = draft.Kind == "Test" ? CommittedLength(typed) : 0;
             TypingBox!.Text = typed; TypingBox.Select(Math.Clamp(draft.Caret, 0, TypingBox.Text.Length), 0); TypingBox.ScrollToEnd();
             Paint(); UpdateMetrics(); typingFeedback?.Refresh(target);
         }
         finally { restoringDraft = false; }
-        if (typed.Length >= target.Length || ExerciseSeconds >= duration) FinishExercise();
+        if ((testInputTracker?.Position ?? typed.Length) >= target.Length || ExerciseSeconds >= duration) FinishExercise();
         return true;
     }
 }

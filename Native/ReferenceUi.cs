@@ -65,7 +65,13 @@ public partial class MainWindow
     }
     static void ReferenceClose(Canvas canvas, double x, double y, Action action)
     {
+        canvas.Tag = action;
         var button = RefButton("Close", action); button.Content = Picture("TypeMasterArtwork/close.png",17,17); button.Padding = new Thickness(0); button.Tag = new CornerRadius(0); button.Background = Brushes.Transparent; System.Windows.Automation.AutomationProperties.SetName(button, "Close"); Position(canvas, button, x, y, 17, 17);
+    }
+    internal void GoBack()
+    {
+        if (PageContent.Children.OfType<Canvas>().FirstOrDefault()?.Tag is Action back) { back(); return; }
+        if (Current != null) { if (page == "Studying") Login(); else ShowPage("Studying"); }
     }
     static FrameworkElement NavigationIcon(string title, bool active, bool dark)
     {

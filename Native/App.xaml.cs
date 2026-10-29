@@ -8,6 +8,12 @@ public partial class App : Application
     protected override void OnStartup(StartupEventArgs e)
     {
         base.OnStartup(e);
+        EventManager.RegisterClassHandler(typeof(Window), System.Windows.Input.Keyboard.KeyDownEvent, new System.Windows.Input.KeyEventHandler((sender, key) =>
+        {
+            if (key.Key != System.Windows.Input.Key.Escape) return;
+            key.Handled = true;
+            if (sender is MainWindow main) main.GoBack(); else ((Window)sender).Close();
+        }));
         if (e.Args.Contains("--typing-benchmark")) { Shutdown(TypingPerformance.Run()); return; }
         EventManager.RegisterClassHandler(typeof(Window), FrameworkElement.LoadedEvent, new RoutedEventHandler((sender, _) => { var window=(Window)sender;window.Icon??=AppInfo.WindowIcon;DisplayLayout.FitWindow(window); }));
         if (e.Args.Contains("--self-test"))

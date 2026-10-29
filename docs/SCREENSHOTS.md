@@ -10,6 +10,10 @@ Actual application captures from an isolated demonstration run. Screenshots show
 
 ![Numeric typing test in progress](images/typing-test.png)
 
+## Completed-word locking
+
+![A committed incorrect word stays recorded while the candidate continues typing](images/typing-word-lock.png)
+
 ## Studying
 
 ![Course and lesson navigation](images/studying.png)
